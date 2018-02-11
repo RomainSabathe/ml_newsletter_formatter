@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html>
+<title>ML newsletter</title>
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+	html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+
+	.category{
+	  padding: 20px;
+	  margin: auto;
+	  background: #F5F5F5;
+	  margin-bottom: 25px;
+	  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+	  transition: all 0.3s; 
+	  border-radius: 3px;
+	}
+
+    .category-title{
+      margin-bottom: 30px;
+    }
+
+	.category-logo{
+	  margin-right: 10px;
+	}
+
+	.article-logo{
+	  margin-right: 3px;
+	}
+
+    .recommended{
+	  margin-right: 2px;
+    }
+</style>
+
+
+<body>
+
+<!-- Page Container -->
+<div class="container" style="max-width:1400px;">
+
+  <!-- The Grid -->
+  <div class="row">
+  
+      <!-- Dummy container to force centering. Yes. I'm a front-end noob. -->
+      <div class="col-sm-2"></div>
+
+      <div class="col-sm-8">
+
+          
+          <!-- Category block -->
+          <div class="category">
+              <h2 class="category-title">
+                  <img src="https://image.flaticon.com/icons/png/512/653/653500.png"
+                       class="fa fa-fw category-logo">General Machine Learning
+              </h2>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/149/149353.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="">Article - AAAI 2018 Notes</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                        <span class="label label-default recommended">
+                                  Recommended
+                              </span>
+                                                    
+                  </h6>
+                  <p>Some people are just too great. 80 pages worth of notes on the AAAI 2018 conference. 82 actually. Lots of content about AI, Ehtics & Society. Lots of content about RL. A few pages on learning theory.</p>
+              </div>
+              <hr>
+
+                          
+          </div>
+          
+          <!-- Category block -->
+          <div class="category">
+              <h2 class="category-title">
+                  <img src="https://image.flaticon.com/icons/png/512/149/149243.png"
+                       class="fa fa-fw category-logo">Deep Learning
+              </h2>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/60/60736.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="">Speedy Neural Networks for Smart Auto-Cropping of Images</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    Twitter
+                  </h6>
+                  <p>An introduction/presentation of a recent work from Twitter. They perform saliency detection (i.e. detection of the zones where the human eye is likely to attend) to choose which regions on an image should be cropped. Their main research deals with optimizing the inference time. Pruning  and knowledge distillation are at stake.</p>
+              </div>
+              <hr>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/155/155292.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="">Regularized Evolution for Image Classifier Architecture Search</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    Google Brain
+                  </h6>
+                  <p>Another paper that explores evolutionary algorithms to come up with powerful architectures and compares it to RL-based approaches.'Finally, we present new architectures discovered with evolution that we nickname AmoebaNets. These models set a new state of the art for CIFAR-10 (mean test error = 2.13%) and mobile-size ImageNet (top-5 accuracy = 92.1% with 5.06M parameters), and reach the current state of the art for ImageNet (top-5 accuracy = 96.2%).
+' '450 GPU / 7 days & 900 TPU / 5 days'.... just saying :-)</p>
+              </div>
+              <hr>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/155/155292.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="">Object-Oriented Deep Learning</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    MIT
+                  </h6>
+                  <p>'We propose Object-Oriented Deep Learning, a novel computational paradigm of deep learning that adopts interpretable 'objects/symbols' as a basic representational atom instead of N-dimensional tensors (as in traditional 'feature-oriented' deep learning).' -- The abstract makes me think about Capsules. But these are not capsules! In particular, they don't use any  CNNs. The graphs look a bit odd.</p>
+              </div>
+              <hr>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/155/155292.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="">Mixed Link Networks</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    
+                  </h6>
+                  <p>A network architecture that generalizes ResNet and DenseNet: 'Consequently, ResNet, DenseNet and Dual Path Network (DPN) can be regarded as a special case of MixNet'.</p>
+              </div>
+              <hr>
+
+                          
+          </div>
+          
+          <!-- Category block -->
+          <div class="category">
+              <h2 class="category-title">
+                  <img src="https://image.flaticon.com/icons/png/512/722/722174.png"
+                       class="fa fa-fw category-logo">Computer Vision
+              </h2>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/155/155292.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="">DensePose: Dense Human Pose Estimation In The Wild</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    Facebook Research
+                  </h6>
+                  <p>Impressive results on human pose estimation. Thanks @Zhiyuan for the reading group. ;-)</p>
+              </div>
+              <hr>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/60/60736.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="">The Instant Motion Tracking Behind Motion Stills AR</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    Google Research
+                  </h6>
+                  <p>Finally, AR objects will remain still and robustly attached to the ground! Even when the objects move away/closer from the camera. Impressive gifs in this link. 'The core idea behind instant motion tracking is to decouple the camera's translation and rotation estimation, treating them instead as independent optimization problems.'</p>
+              </div>
+              <hr>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <b><a href="">3D Machine Learning</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    
+                  </h6>
+                  <p>It's one of those GitHub pages that records EVERYTHING you want to find on a specific subject. Here it's about 3D ML.</p>
+              </div>
+              <hr>
+
+                          
+          </div>
+          
+          <!-- Category block -->
+          <div class="category">
+              <h2 class="category-title">
+                  <img src="https://image.flaticon.com/icons/png/512/179/179121.png"
+                       class="fa fa-fw category-logo">Optimisation & Learning Theory
+              </h2>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/60/60736.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="">Pruning Neural Networks: Two Recent Papers</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    inFERENce
+                  </h6>
+                  <p>Quite hard to follow if you're not up to comfortable with variational inference but interesting nonetheless. He shows how the Fisher-Rao norm could be interesting as a criterion for pruning. The last paragraph is a metaphor trying to explain why fine-tuned networks suffer from catastrophic forgetting.</p>
+              </div>
+              <hr>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/60/60736.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="">Evolutionary Optimization as a Variational Method</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    
+                  </h6>
+                  <p>Provides hindsight on the links between variational methods (and SGD) can be seen as evolutionary algorithms.</p>
+              </div>
+              <hr>
+
+                          
+          </div>
+          
+          <!-- Category block -->
+          <div class="category">
+              <h2 class="category-title">
+                  <img src="https://image.flaticon.com/icons/png/512/112/112272.png"
+                       class="fa fa-fw category-logo">GANs & Adversarial Attacks
+              </h2>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/25/25231.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="">Visual Feature Attribution Using Wasserstein GANs</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    Pytorch
+                  </h6>
+                  <p>Not sure I understood what this is used for. Per-pixel labeling? </p>
+              </div>
+              <hr>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/25/25231.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="">Unsupervised Image to Image Translation Networks</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    Tensorflow
+                  </h6>
+                  <p>In the images given as example, cats become tigers and tigers become cat. The pose is preserved. See the NIPS 2017 paper.</p>
+              </div>
+              <hr>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/155/155292.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="">Decision-Based Adversarial Attacks: Reliable Attacks Against Black-Box Machine Learning Models</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    ICLR 2018
+                  </h6>
+                  <p></p>
+              </div>
+              <hr>
+
+                          
+          </div>
+          
+          <!-- Category block -->
+          <div class="category">
+              <h2 class="category-title">
+                  <img src="https://image.flaticon.com/icons/png/512/45/45669.png"
+                       class="fa fa-fw category-logo">Interpratibility & Fairness
+              </h2>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/60/60736.png"
+                           class="fa fa-fw article-logo">
+                                            <img src="https://image.flaticon.com/icons/png/512/149/149125.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="">Ideas on interpreting machine learning</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    
+                  </h6>
+                  <p>Yuge post on O'Reilly's website. Gives a good overview (I suppose) of interpretability in ML up to mid 2017. If you are more of a listener rather than a reader, here's a video from the author that goes through the article</p>
+              </div>
+              <hr>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/25/25231.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="">LIME</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    
+                  </h6>
+                  <p>It is a well-known paper and project (and is described in the blog post mentioned above). But the authors of the SHAP method argues their solution is better compared to LIME... :-) </p>
+              </div>
+              <hr>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/4/4442.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="">Is your software racist?</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    
+                  </h6>
+                  <p></p>
+              </div>
+              <hr>
+
+                          
+          </div>
+          
+          <!-- Category block -->
+          <div class="category">
+              <h2 class="category-title">
+                  <img src="https://image.flaticon.com/icons/png/512/249/249156.png"
+                       class="fa fa-fw category-logo">Reinforcement Learning
+              </h2>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/155/155292.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="">One-Shot Imitation from Observing Humans via Domain-Adaptive Meta-Learning</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    Berkeley Artificial Intelligence Research
+                  </h6>
+                  <p>A robot is pretrained on a variety of tasks. At testing time, the robot is presented with a single video of a human performing a specific action (like taking the red ball into the blue basket). The robot now reproduces the same action!</p>
+              </div>
+              <hr>
+
+                          
+          </div>
+          
+          <!-- Category block -->
+          <div class="category">
+              <h2 class="category-title">
+                  <img src="https://image.flaticon.com/icons/png/512/484/484582.png"
+                       class="fa fa-fw category-logo">Natural Language Processing
+              </h2>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/60/60736.png"
+                           class="fa fa-fw article-logo">
+                                            <img src="https://image.flaticon.com/icons/png/512/155/155292.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="">Discovering Types for Entity Disambiguation</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    OpenAI
+                  </h6>
+                  <p>Authors achieved state of the art (by quite a margin) on entity disambiguation tasks. It's NLP. Even though we don't do NLP, this webpage is awesome. With its slick UI and cool animations,... a new way of presenting research?</p>
+              </div>
+              <hr>
+
+                          
+          </div>
+          
+          <!-- Category block -->
+          <div class="category">
+              <h2 class="category-title">
+                  <img src="https://image.flaticon.com/icons/png/512/543/543723.png"
+                       class="fa fa-fw category-logo">Food For Thoughts
+              </h2>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/60/60736.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="">The Linearization Principle</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    
+                  </h6>
+                  <p>A discussion on how concepts already studied for linear models could help us understand the contradictions of deep models.</p>
+              </div>
+              <hr>
+
+                          
+          </div>
+          
+          <!-- Category block -->
+          <div class="category">
+              <h2 class="category-title">
+                  <img src="https://image.flaticon.com/icons/png/512/680/680208.png"
+                       class="fa fa-fw category-logo">Data Science & Visualisations
+              </h2>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/60/60736.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="">Make Patterns Pop Out of Heatmaps with Seriation - Data Science</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    
+                  </h6>
+                  <p>Seriation is the study of ways to place sets of items in an order that reveals structural information about the said set. In this article, the author presents an example with heatmaps: it appears close to random but a rich pattern is actully present. Is it quite surprising!!</p>
+              </div>
+              <hr>
+
+                          
+          </div>
+          
+          <!-- Category block -->
+          <div class="category">
+              <h2 class="category-title">
+                  <img src="https://image.flaticon.com/icons/png/512/263/263051.png"
+                       class="fa fa-fw category-logo">Everything else
+              </h2>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <b><a href="">Core50 - A new dataset and benchmark for continuous object recognition</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    
+                  </h6>
+                  <p>A starting point for document liveness?</p>
+              </div>
+              <hr>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/149/149125.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="">Information Theory, Pattern Recognition, and Neural Networks</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    
+                  </h6>
+                  <p>A series of sixteen lectures covering the core of the book 'Information Theory, Inference, and Learning Algorithms'.</p>
+              </div>
+              <hr>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/149/149125.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="">MIT Course on AGI: first lecture</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    
+                  </h6>
+                  <p>This course website is here. Lots of well-known speakers.
+ Added Fri.: I think the talk from Tenenbaum has been added as well.</p>
+              </div>
+              <hr>
+
+                          
+          </div>
+                </div>
+      
+  <!-- Dummy container to force centering. Yes. I'm a front-end noob. -->
+  <div class="col-sm-2"></div>
+
+  <!-- End Grid -->
+  </div>
+  
+  <!-- End Page Container -->
+</div>
+
+</body>
+</html>
