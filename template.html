@@ -43,6 +43,10 @@
     .recommended{
 	  margin-right: 2px;
     }
+
+    .quote{
+      font-size: 11px;
+    }
 </style>
 
 
@@ -88,6 +92,11 @@
                           {{ article['lab'] }}
                   </h6>
                   <p>{{ article['description'] }}</p>
+                  {% if article['quote'] != "" %}
+                  <blockquote class="blockquote">
+                     <p class="quote">{{ article['quote'] }}</p>
+                  </blockquote>
+                  {% endif %}
               </div>
               <hr>
 
