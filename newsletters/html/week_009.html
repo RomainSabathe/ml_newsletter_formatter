@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html>
+<title>ML newsletter</title>
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+	html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+
+	.category{
+	  padding: 20px;
+	  margin: auto;
+	  background: #F5F5F5;
+	  margin-bottom: 25px;
+	  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+	  transition: all 0.3s; 
+	  border-radius: 3px;
+	}
+
+    .category-title{
+      margin-bottom: 30px;
+    }
+
+	.category-logo{
+	  margin-right: 10px;
+	}
+
+	.article-logo{
+	  margin-right: 3px;
+	}
+
+    .recommended{
+	  margin-right: 2px;
+    }
+
+    .quote{
+      font-size: 11px;
+    }
+</style>
+
+
+<body>
+
+<!-- Page Container -->
+<div class="container" style="max-width:1400px;">
+
+  <!-- The Grid -->
+  <div class="row">
+  
+      <!-- Dummy container to force centering. Yes. I'm a front-end noob. -->
+      <div class="col-sm-2"></div>
+
+      <div class="col-sm-8">
+
+          
+          <!-- Category block -->
+          <div class="category">
+              <h2 class="category-title">
+                  <img src="https://image.flaticon.com/icons/png/512/263/263051.png"
+                       class="fa fa-fw category-logo">Everything Else
+              </h2>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/60/60736.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://distill.pub/2018/building-blocks/">The Building Blocks of Interpretability</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                        <span class="badge">
+                                  Recommended
+                              </span>
+                                                    Distill - Google Brain/Cloud/Research - CMU
+                  </h6>
+                  <p>A new post from Distill and as usual it's a fantastic piece of work. Lots of visualisations and Javascript snippets to play with. Authors advocate that current approaches to deep net interpretability need to converge somehow. For instance, saliency maps are not enough. Usually interpretation is done by comparing the outputs and feature maps to the input image. Here the idea is to directly explore the concepts learned by the network (via its feature maps) by slicing the hypercube of layers+feature maps in all possible ways. In the end they are trying to achieve an interface for easier interpretability.</p>
+                                    <blockquote class="blockquote">
+                     <p class="quote">This type of layer-to-layer attribution is a prime example of how carefully considering interface design drives the generalization of our existing abstractions for interpretability.</p>
+                  </blockquote>
+                                </div>
+              <hr>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/60/60736.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="http://www.offconvex.org/2018/03/02/acceleration-overparameterization/">Can increasing depth seve to accelerate optimization?</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                        <span class="badge">
+                                  Recommended
+                              </span>
+                                                    Off the convex path - Nadav Cohen
+                  </h6>
+                  <p>Nadav Cohen shares the ideas and discoveries from his recent paper <a href=https://arxiv.org/pdf/1802.06509.pdf>On the Optimization of Deep Networks: Implicit Accelration by Overparameterization</a>. He and his collegues show that in the setting of regression task, setting the loss function to <i>Lp</i> with <i>p>2</i> (usually we use <i>p=2</i>) and overparametrizing the network lead to an interesting dynamic of SGD whereby it exhibits a sort of implicit momentum. On toy problems they show that it outperforms (by almost an order of magnitude!) Adadelta and Adagrad. They also theoretically show that this behavior cannot be obtained by performing 'tricks' on SGD a la Adalta, Adagrad etc. You could think this result is obvious since they overparametrized the network... but this result was actually obtained on linear models where adding more layers does not increase the expressiveness of the model. <br /> For some reason, their result seem to be valid on MNIST as well.</p>
+                                </div>
+              <hr>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/149/149125.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://www.youtube.com/watch?v=mFYM9j8bGtg">Advances in Deep Neural Networks</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    ACM Turing 50 Celebration
+                  </h6>
+                  <p>An on-stage discussion about 'how deep neural netwoeks are changing our wold and our jobs' and the future of deep learning. Featuring Judea Pearl, Michael Jordan, Fei-Fei Li, Stuart Rusell, Ilya Sutskever and Raquel Urtasun. A fine panel...</p>
+                                </div>
+              <hr>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/60/60736.png"
+                           class="fa fa-fw article-logo">
+                                            <img src="https://image.flaticon.com/icons/png/512/155/155292.png"
+                           class="fa fa-fw article-logo">
+                                            <img src="https://image.flaticon.com/icons/png/512/25/25231.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://blog.openai.com/reptile/">Reptile: A Scalable Meta-Learning Algorithm</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    OpenAI
+                  </h6>
+                  <p>You can try out the interactive demo. A classifier is trained on 3 small binary images (that you can edit), and you test the classifier.</p>
+                                    <blockquote class="blockquote">
+                     <p class="quote">Like MAML, Reptile seeks an initialization for the parameters of a neural network, such that the network can be fine-tuned using a small amount of data from a new task. But while MAML unrolls and differentiates through the computation graph of the gradient descent algorithm, Reptile simply performs stochastic gradient descent (SGD) on each task in a standard way — it does not unroll a computation graph or calculate any second derivatives. This makes Reptile take less computation and memory than MAML.</p>
+                  </blockquote>
+                                </div>
+              <hr>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/60/60736.png"
+                           class="fa fa-fw article-logo">
+                                            <img src="https://image.flaticon.com/icons/png/512/155/155292.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://sites.google.com/view/totally-looks-like-dataset">Totally-Looks-Like: How Humans Compare, Conpared to Machines</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    York University, Toronto
+                  </h6>
+                  <p>A dataset containing pairs of images that visually don't look like the same,.... but humans can't help themselves finding similarities somehow... Worth a quick look at least!</p>
+                                </div>
+              <hr>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/25/25231.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://github.com/adambielski/siamese-triplet">Siamese and triplet learning with online pair/triplet mining</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    adambielski
+                  </h6>
+                  <p>PyTorch implementation of siamese and triplet networks for learning embeddings.</p>
+                                </div>
+              <hr>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/174/174858.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://towardsdatascience.com/building-a-deep-neural-net-in-google-sheets-49cdaf466da0">Building a Deep Neural Net In Google Sheets</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    Blake West
+                  </h6>
+                  <p>You read it right. MNIST. In Google Sheet. Yes.</p>
+                                </div>
+              <hr>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/155/155292.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://arxiv.org/abs/1803.01216">Deep Bayesian Active Semi-Supervised Learning</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    Matthias Rottmann, Karsten Kahl, Hanno Gottschalk
+                  </h6>
+                  <p></p>
+                                    <blockquote class="blockquote">
+                     <p class="quote">In a setting where a small amount of labeled data as well as a large amount of unlabeled data is available, our method first learns the labeled data set. This initialization is followed by an expectation maximization algorithm, where further training reduces classification entropy on the unlabeled data by targeting a low entropy fit which is consistent with the labeled data. In addition the algorithm asks at a specified frequency an oracle for labels of data with entropy above a certain entropy quantile. Using this active learning component we obtain an agile labeling process that achieves high accuracy, but requires only a small amount of known labels.</p>
+                  </blockquote>
+                                </div>
+              <hr>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/155/155292.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://arxiv.org/abs/1803.00676">Meta-Learning for Semi-Supervised Few-Shot Classification</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    Lots of labs (University of Toronto, Princeton, Google Brain, MIT, CIFAR...), lots of people...
+                  </h6>
+                  <p></p>
+                                    <blockquote class="blockquote">
+                     <p class="quote">We propose novel extensions of Prototypical Networks (Snell et al., 2017) that are augmented with the ability to use unlabeled examples when producing prototypes. These models are trained in an end-to-end way on episodes, to learn to leverage the unlabeled examples successfully.</p>
+                  </blockquote>
+                                </div>
+              <hr>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/155/155292.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://arxiv.org/abs/1803.01798">One-Class Adversarial Nets for Fraud Detection</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    Panpan Zheng, Shuhan Yuan, Xintao Wu, Jun Li, Aidong Lu
+                  </h6>
+                  <p>Their setting is not in computer vision but I guess it can be intersting nonetheless.</p>
+                                    <blockquote class="blockquote">
+                     <p class="quote">In this paper, we develop one-class adversarial nets (OCAN) for fraud detection using training data with only benign users. OCAN first uses LSTM-Autoencoder to learn the representations of benign users from their sequences of online activities. It then detects malicious users by training a discriminator with a complementary GAN model that is different from the regular GAN model. Experimental results show that our OCAN outperforms the state-of-the-art one-class classification models and achieves comparable performance with the latest multi-source LSTM model that requires both benign and malicious users in the training phase.</p>
+                  </blockquote>
+                                </div>
+              <hr>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/149/149125.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://www.youtube.com/watch?v=fKk9KhGRBdI">Yann LeCun and Christopher Manning discuss Deep Learning and Innate Priors</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    
+                  </h6>
+                  <p></p>
+                                </div>
+              <hr>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/60/60736.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://research.googleblog.com/2018/03/mobile-real-time-video-segmentation.html?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+blogspot%2FgJZg+%28Official+Google+Research+Blog%29">Mobile Real-time Video Segmentation</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    Google Research
+                  </h6>
+                  <p>Thanks @Abhishek for the link. As he says: 'by massively reducing the number of feature maps with 1X1 convolutions, using skip connections like UNet, and increasing strides to decrease feature map size they are able to get high accuracy at 100 FPS on iPhone 7!'</p>
+                                </div>
+              <hr>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/155/155292.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://openreview.net/forum?id=rylSzl-R-&noteId=rJkg4yTSM">On Unifying Deep Generative Models</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    ICLR 2018 - (Carnegie Mellon) Zhiting Hu, Zichao Yang, Ruslan Salakhutdinov, Eric P. Xing
+                  </h6>
+                  <p></p>
+                                    <blockquote class="blockquote">
+                     <p class="quote"> Generative Adversarial Networks (GANs) and Variational Autoencoders (VAEs), as powerful frameworks for deep generative model learning, have largely been considered as two distinct paradigms and received extensive independent studies respectively. This paper aims to establish formal connections between GANs and VAEs through a new formulation of them.</p>
+                  </blockquote>
+                                </div>
+              <hr>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/155/155292.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://openreview.net/forum?id=rydeCEhs-">SMASH: One-Shot Model Architecture Search through HyperNetworks </a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    ICLR 2018 - Andrew Brock, Theo Lim, J.M. Ritchie, Nick Weston
+                  </h6>
+                  <p></p>
+                                    <blockquote class="blockquote">
+                     <p class="quote">We propose a technique to accelerate architecture selection by learning an auxiliary HyperNet that generates the weights of a main model conditioned on that model's architecture. By comparing the relative validation performance of networks with HyperNet-generated weights, we can effectively search over a wide range of architectures at the cost of a single training run.</p>
+                  </blockquote>
+                                </div>
+              <hr>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/155/155292.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://arxiv.org/abs/1803.00942">Not All Samples Are Created Equal: Deep Learning with Importance Sampling</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    Angelos Katharopoulos, François Fleuret
+                  </h6>
+                  <p></p>
+                                    <blockquote class="blockquote">
+                     <p class="quote">Deep neural network training spends most of the computation on examples that are properly handled, and could be ignored. We propose to mitigate this phenomenon with a principled importance sampling scheme that focuses computation on 'informative' examples, and reduces the variance of the stochastic gradients during training. [...]  We demonstrate experimentally, on image classification, CNN fine-tuning, and RNN training, that for a fixed wall-clock time budget, it provides a reduction of the train losses of up to an order of magnitude and a relative improvement of test errors between 5% and 17%.</p>
+                  </blockquote>
+                                </div>
+              <hr>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/155/155292.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://arxiv.org/abs/1802.10171">Tell Me Where to Look: Guided Attention Inference Network</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    Siemens - Kunpeng Li, Ziyan Wu, Kuan-Chuan Peng, Jan Ernst, Yun Fu
+                  </h6>
+                  <p>The visualisations in the paper are quite impressive! We have seen attention maps in the past (indication regarding where the network 'looks at'). The attention maps we see in this paper are much more refined.</p>
+                                    <blockquote class="blockquote">
+                     <p class="quote">We (1) for the first time make attention maps an explicit and natural component of the end-to-end training, (2) provide self-guidance directly on these maps by exploring supervision form the network itself to improve them, and (3) seamlessly bridge the gap between using weak and extra supervision </p>
+                  </blockquote>
+                                </div>
+              <hr>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/155/155292.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://arxiv.org/abs/1803.00885">Essentially No Barriers in Neural Network Energy Landscape</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    Felix Draxler, Kambis Veschgini, Manfred Salmhofer, Fred A. Hamprecht
+                  </h6>
+                  <p></p>
+                                    <blockquote class="blockquote">
+                     <p class="quote">Relaxing from linear interpolations, we construct continuous paths between minima of recent neural network architectures on CIFAR10 and CIFAR100. Surprisingly, the paths are essentially flat in both the training and test landscapes. This implies that neural networks have enough capacity for structural changes, or that these changes are small between minima. Also, each minimum has at least one vanishing Hessian eigenvalue in addition to those resulting from trivial invariance.</p>
+                  </blockquote>
+                                </div>
+              <hr>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/155/155292.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://arxiv.org/abs/1802.08770">A Walk with SGD</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    Chen Xing, Devansh Arpit, Christos Tsirigotis, Yoshua Bengio
+                  </h6>
+                  <p></p>
+                                    <blockquote class="blockquote">
+                     <p class="quote">We empirically study the dynamics of SGD when training over-parametrized deep networks. Specifically we study the DNN loss surface along the trajectory of SGD by interpolating the loss surface between parameters from consecutive iterations and tracking various metrics during the training process. [...] Specifically, our experiments show evidence that for the most part of training, SGD explores regions along a valley by bouncing off valley walls at a height above the valley floor. This 'bouncing off walls at a height' mechanism helps SGD traverse larger distance for small batch sizes and large learning rates which we find play qualitatively different roles in the dynamics.</p>
+                  </blockquote>
+                                </div>
+              <hr>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/60/60736.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://www.theverge.com/2018/3/7/17089860/microsoft-windows-ml-windows-10-ai-platform">Windows ML on a future update of Windows 10</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    The Verge
+                  </h6>
+                  <p>While Apple released TuriCreate, Microsoft will provide tools and APIs to use ML algorithms in Visual Studio.</p>
+                                    <blockquote class="blockquote">
+                     <p class="quote">Developers will be able to import existing learning models from different AI platforms and run them locally on PCs and devices running Windows 10, speeding up real-time analysis of local data like images or video, or even improving background tasks like indexing files for quick search inside apps.  [...] Developers will be able to get an early look at the AI platform on Windows with Visual Studio Preview 15.7, and they’ll be able to use the Windows ML API in standard desktops apps and Universal Windows Apps across all editions of Windows 10 this year. </p>
+                  </blockquote>
+                                </div>
+              <hr>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/25/25231.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://github.com/fizyr/keras-retinanet">Keras RetinaNet</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    fizyr
+                  </h6>
+                  <p>A Keras implementation of <a href=https://arxiv.org/abs/1708.02002>Focal Loss for Dense Object Detection</a>.</p>
+                                </div>
+              <hr>
+
+                          
+          </div>
+                </div>
+      
+  <!-- Dummy container to force centering. Yes. I'm a front-end noob. -->
+  <div class="col-sm-2"></div>
+
+  <!-- End Grid -->
+  </div>
+  
+  <!-- End Page Container -->
+</div>
+
+</body>
+</html>

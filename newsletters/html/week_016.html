@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html>
+<title>ML newsletter</title>
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+	html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+
+	.category{
+	  padding: 20px;
+	  margin: auto;
+	  background: #F5F5F5;
+	  margin-bottom: 25px;
+	  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+	  transition: all 0.3s; 
+	  border-radius: 3px;
+	}
+
+    .category-title{
+      margin-bottom: 30px;
+    }
+
+	.category-logo{
+	  margin-right: 10px;
+	}
+
+	.article-logo{
+	  margin-right: 3px;
+	}
+
+    .recommended{
+	  margin-right: 2px;
+    }
+
+    .quote{
+      font-size: 11px;
+    }
+</style>
+
+
+<body>
+
+<!-- Page Container -->
+<div class="container" style="max-width:1400px;">
+
+  <!-- The Grid -->
+  <div class="row">
+  
+      <!-- Dummy container to force centering. Yes. I'm a front-end noob. -->
+      <div class="col-sm-2"></div>
+
+      <div class="col-sm-8">
+
+          
+          <!-- Category block -->
+          <div class="category">
+              <h2 class="category-title">
+                  <img src="https://image.flaticon.com/icons/png/512/722/722174.png"
+                       class="fa fa-fw category-logo">Computer Vision
+              </h2>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/155/155292.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://arxiv.org/abs/1804.07723">Image Inpainting for Irregular Holes Using Partial Convolutions</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    NVIDIA
+                  </h6>
+                  <p></p>
+                                    <blockquote class="blockquote">
+                     <p class="quote">We propose the use of partial convolutions, where the convolution is masked and renormalized to be conditioned on only valid pixels. We further include a mechanism to automatically generate an updated mask for the next layer as part of the forward pass. Our model outperforms other methods for irregular masks.</p>
+                  </blockquote>
+                                </div>
+              <hr>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/60/60736.png"
+                           class="fa fa-fw article-logo">
+                                            <img src="https://image.flaticon.com/icons/png/512/155/155292.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="http://feedbacknet.stanford.edu/">Feeback Networks</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    Standford University
+                  </h6>
+                  <p>In traditional deep learning architectures, the prediction of the model is obtained after a single forward pass. In this paper (CVPR 2017), authors propose to obtain the prediction after several passes. The first pass will be a 'rough' prediction of the model. The second pass will be a refined prediction, based on the first pass. And so on, until the last pass which will be the ultimate refined prediction of the model. The webpage provides a Youtube video of about 5 minutes long. It does a great job at summarising the method and the results obtained in the paper.</p>
+                                </div>
+              <hr>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/174/174858.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://medium.com/@jeff_97181/generating-image-segmentation-datasets-with-unreal-engine-4-2b5b9f75da34">Generating image segmentation datasets with Unreal Engine 4</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    Jeff Grenier
+                  </h6>
+                  <p>Imagine the wonders of being able to synthetise an infinite amount of data... Well, we could leverage existing physics engine to do this. That is exactly what is tackled in this very interesting blog post. It is not a tutorial on how to generate data with Unreal Engine 4, but rather a story of the different steps the author went through. He shares code, resources and training materials he used to generate landscapes in the engine. I think it would make a fine starting point if you wanted to get started in this sort of project.</p>
+                                </div>
+              <hr>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/155/155292.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://arxiv.org/abs/1804.09803">Progressive Neural Networks for Image Classification</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    University of Missouri-Columbia, Department of Computer Science, Beijing Jiaotong University
+                  </h6>
+                  <p></p>
+                                    <blockquote class="blockquote">
+                     <p class="quote">In this work, we develop a multi-stage progressive structure with integrated confidence analysis and decision policy learning for deep neural networks. This new framework consists of a set of network units to be activated in a sequential manner with progressively increased complexity and visual recognition power. </p>
+                  </blockquote>
+                                </div>
+              <hr>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/155/155292.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://arxiv.org/abs/1804.10021">Deep Keyframe Detection in Human Action Videos</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    Xidian University, University of Western Australia,  Hunan University
+                  </h6>
+                  <p></p>
+                                    <blockquote class="blockquote">
+                     <p class="quote">Detecting representative frames in videos based on human actions is quite challenging because of the combined factors of human pose in action and the background. This paper addresses this problem and formulates the key frame detection as one of finding the video frames that optimally maximally contribute to differentiating the underlying action category from all other categories. [...] We specify a new ConvNet framework, consisting of a summarizer and discriminator. The summarizer is a two-stream ConvNet aimed at, first, capturing the appearance and motion features of video frames, and then encoding the obtained appearance and motion features for video representation. The discriminator is a fitting function aimed at distinguishing between the key frames and others in the video. </p>
+                  </blockquote>
+                                </div>
+              <hr>
+
+                          
+          </div>
+          
+          <!-- Category block -->
+          <div class="category">
+              <h2 class="category-title">
+                  <img src="https://image.flaticon.com/icons/png/512/179/179121.png"
+                       class="fa fa-fw category-logo">Optimisation & Learning Theory
+              </h2>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/155/155292.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://www.youtube.com/watch?v=uSZWeRADTFI">Measuring the Intrinsic Dimension of Objective Landscapes</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                        <span class="badge">
+                                  Recommended
+                              </span>
+                                                    Uber AI Labs
+                  </h6>
+                  <p>Two researchers are in front of a white board and explain their paper. It could sound boring but they actually made it very interesting and even entertaining. It's maybe not as slick as the OpenAI webpages, but it certaintly catches the attention! Their finding is quite intriguing as well. Instead of optimizing a network by searchinig in the whole parameter space, they limit the search to a sub-space. For instance, they will train a network by searching solutions on a line. They'll train another one by searching solutions within a plane. Then another network with solutions in a 3d space, etc. Likely, those networks won't really learn anything. But they observe that there is a critical dimension in which a good minima can be obtained. They call this the 'Intrinsic Dimension'. As an example, they trained a small CNN on MNIST and found that its intrinsic dimension was only 290! From there, they make other interesting observations.</p>
+                                </div>
+              <hr>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/155/155292.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://arxiv.org/pdf/1803.09820.pdf">A disciplined approach to neural network hyper-parameters: Part 1 -- learning rate, batch size, momentum, and weight decay </a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    US Naval Research Laboratory
+                  </h6>
+                  <p></p>
+                                    <blockquote class="blockquote">
+                     <p class="quote">This report proposes several efficient ways to set the hyper-parameters that significantly reduce training time and improves performance. Specifically, this report shows how to examine the training validation/test loss function for subtle clues of underfitting and overfitting and suggests guidelines for moving toward the optimal balance point. Then it discusses how to increase/decrease the learning rate/momentum to speed up training.</p>
+                  </blockquote>
+                                </div>
+              <hr>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/155/155292.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://arxiv.org/abs/1804.07612">Revisiting Small Batch Training for Deep Neural Networks</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    Graphcore Research
+                  </h6>
+                  <p>I feel like we're going back and forth on this...</p>
+                                    <blockquote class="blockquote">
+                     <p class="quote">The collected experimental results for the CIFAR-10, CIFAR-100 and ImageNet datasets show that increasing the mini-batch size progressively reduces the range of learning rates that provide stable convergence and acceptable test performance. On the other hand, small mini-batch sizes provide more up-to-date gradient calculations, which yields more stable and reliable training. The best performance has been consistently obtained for mini-batch sizes between m=2 and m=32, which contrasts with recent work advocating the use of mini-batch sizes in the thousands.</p>
+                  </blockquote>
+                                </div>
+              <hr>
+
+                          
+          </div>
+          
+          <!-- Category block -->
+          <div class="category">
+              <h2 class="category-title">
+                  <img src="https://image.flaticon.com/icons/png/512/249/249156.png"
+                       class="fa fa-fw category-logo">Reinforcement Learning
+              </h2>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/60/60736.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://eng.uber.com/accelerated-neuroevolution/">Accelerating Deep Neuroevolution: Train Atari in Hours on a Single Personal Computer</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    Uber
+                  </h6>
+                  <p>When Uber did its research on Deep Neuroevolution, researchers needed monstruous machines of around 720 CPU cores. In this blog post, they show how they managed to reduce this number of cores to about 48, enabling more people to use and apply Deep Neuroevolution algorithms. In the original implementation, a lot of time was wasted alternating between GPU processing time (for forward/backward pass) and CPU processing time (for rendering the physics engine). The speedup therefore consists in making the CPU and GPU work simultaneously. They also managed to process minibatches through the GPU, which is not so obvious to do with Deep Neuroevolution. I also liked how by recoding some Python operations as Tensorflow operations they obtained significant speedups. This demonstrates again the versatility of Tensorflow.</p>
+                                </div>
+              <hr>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/155/155292.png"
+                           class="fa fa-fw article-logo">
+                                            <img src="https://image.flaticon.com/icons/png/512/60/60736.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://pathak22.github.io/zeroshot-imitation/">Zero-Shot Visual Imitation</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    University of California, Berkeley
+                  </h6>
+                  <p></p>
+                                    <blockquote class="blockquote">
+                     <p class="quote">The current dominant paradigm of imitation learning relies on strong supervision of expert actions for learning both what to and how to imitate. We propose an alternative paradigm wherein an agent first explores the world without any expert supervision and then distills its own experience into a goal-conditioned skill policy using a novel forward consistency loss formulation.</p>
+                  </blockquote>
+                                </div>
+              <hr>
+
+                          
+          </div>
+          
+          <!-- Category block -->
+          <div class="category">
+              <h2 class="category-title">
+                  <img src="https://imageog.flaticon.com/icons/png/512/248/248114.png"
+                       class="fa fa-fw category-logo">Production & Engineering
+              </h2>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/155/155292.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://arxiv.org/abs/1804.09963">Near-Lossless Deep Feature Compression for Collaborative Intelligence</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    Simon Fraser University
+                  </h6>
+                  <p></p>
+                                    <blockquote class="blockquote">
+                     <p class="quote">Collaborative intelligence is a new paradigm for efficient deployment of deep neural networks across the mobile-cloud infrastructure. By dividing the network between the mobile and the cloud, it is possible to distribute the computational workload such that the overall energy and/or latency of the system is minimized. However, this necessitates sending deep feature data from the mobile to the cloud in order to perform inference. In this work, we examine the differences between the deep feature data and natural image data, and propose a simple and effective near-lossless deep feature compressor.</p>
+                  </blockquote>
+                                </div>
+              <hr>
+
+                          
+          </div>
+          
+          <!-- Category block -->
+          <div class="category">
+              <h2 class="category-title">
+                  <img src="https://image.flaticon.com/icons/png/512/263/263051.png"
+                       class="fa fa-fw category-logo">Everything Else
+              </h2>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <b><a href="https://github.com/sksq96/pytorch-summary">Keras' inspired model.summary() with Pytorch</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    sksq96
+                  </h6>
+                  <p>Keras provides a handy model.summary() method that prints the architecture of your network, the shape at each layers and the number of parameters it has. It can be useful to have this as a sanity check; for instance to check that all the layers are connected within the network, or to verify the shapes of feature maps. Well, this project offers a Python package that does exactly what model.summary() does, the difference being that you can use it with Pytorch. </p>
+                                </div>
+              <hr>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/25/25231.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://github.com/pytorch/pytorch/releases/tag/v0.4.0">Pytorch 0.4.0 is out</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    
+                  </h6>
+                  <p>Pytorch keeps getting more amazing... Oh, that sounded biased... Well, nobody will be surprised... The changes are somewhat important and could potentially break existing code. Some time will be required to update the code. Variables objects and Tensors objects are now the same thing. As a result, using something like 'x.data' is useless. Other thing: scalars are now possible (before they had to be a vector of length 1). 'torch.FloatTensor', 'torch.LongTensor', 'torch.DoubleTensor' are deprecated and a Numpy-style notation is now available (torch.float32).</p>
+                                </div>
+              <hr>
+
+                          
+          </div>
+          
+          <!-- Category block -->
+          <div class="category">
+              <h2 class="category-title">
+                  <img src="https://image.flaticon.com/icons/png/512/56/56243.png"
+                       class="fa fa-fw category-logo">Laugh Of The Week
+              </h2>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <b><a href="https://twitter.com/ylecun/status/989610208497360896">Training with large minibatches is bad for your health</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    
+                  </h6>
+                  <p></p>
+                                </div>
+              <hr>
+
+                          
+          </div>
+                </div>
+      
+  <!-- Dummy container to force centering. Yes. I'm a front-end noob. -->
+  <div class="col-sm-2"></div>
+
+  <!-- End Grid -->
+  </div>
+  
+  <!-- End Page Container -->
+</div>
+
+</body>
+</html>

@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html>
+<title>ML newsletter</title>
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+	html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+
+	.category{
+	  padding: 20px;
+	  margin: auto;
+	  background: #F5F5F5;
+	  margin-bottom: 25px;
+	  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+	  transition: all 0.3s; 
+	  border-radius: 3px;
+	}
+
+    .category-title{
+      margin-bottom: 30px;
+    }
+
+	.category-logo{
+	  margin-right: 10px;
+	}
+
+	.article-logo{
+	  margin-right: 3px;
+	}
+
+    .recommended{
+	  margin-right: 2px;
+    }
+
+    .quote{
+      font-size: 11px;
+    }
+</style>
+
+
+<body>
+
+<!-- Page Container -->
+<div class="container" style="max-width:1400px;">
+
+  <!-- The Grid -->
+  <div class="row">
+  
+      <!-- Dummy container to force centering. Yes. I'm a front-end noob. -->
+      <div class="col-sm-2"></div>
+
+      <div class="col-sm-8">
+
+          
+          <!-- Category block -->
+          <div class="category">
+              <h2 class="category-title">
+                  <img src="https://image.flaticon.com/icons/png/512/653/653500.png"
+                       class="fa fa-fw category-logo">General Machine Learning
+              </h2>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/60/60736.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://www.mindcodec.com/an-intuitive-guide-to-optimal-transport-for-machine-learning/">An Intuitive Guide to Optimal Transport (Part I and II)</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    Luca Ambrogioni
+                  </h6>
+                  <p>The whole field of machine learning is exploring more and more the properties of optimal transport as an alternative to Kullback-Leibler divergence. This post is a short but clear and interesting introduction to optimal transport. The author offers different views (from intuition to discrete formulation and continuous formulation). The <a href=https://www.mindcodec.com/an-intuitive-guide-to-optimal-transport-part-ii-the-wasserstein-gan-made-easy/>second part</a> deals more specifically with a highlight of last year: the <a href=https://arxiv.org/abs/1701.07875>Wasserstein GAN</a>. On the same subject, you can also find a recent application of optimal transport to NLP in the paper <a href=https://arxiv.org/abs/1808.09663>Wasserstein is all you need</a>. To go even further, check out the  workshop presented at NIPS 2017, <a href=https://vimeo.com/248504509>A Primer on Optimal Transport</a> by Cuturi and Solomon. </p>
+                                </div>
+              <hr>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/60/60736.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="http://www.bayeswatch.com/2018/09/17/GINN/">GINN: Geometric Illustrations for Neural Networks</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    Luke Darlow
+                  </h6>
+                  <p>This blog post offers a rather entertaining demo that you can find <a href=http://www.bayeswatch.com/assets/ginn/good3.html>here</a>. A shallow fully-connected ReLU-activated network is trained to output a fixed predefined shape. The demo lets you see how the decision frontier of the different ReLU units evolve over time. As the post indicates, we can observe how it is the biases which are mainly modified in the first iterations and how deeper layers build a more comprehensive representation of the image.</p>
+                                </div>
+              <hr>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/60/60736.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://chrisorm.github.io/NGP.html">Neural Processes in PyTorch</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    Chris Ormandy
+                  </h6>
+                  <p>A few weeks ago, we shared a <a href=https://kasparmartens.rbind.io/post/np/>blog post</a> giving an introduction to one of DeepMind's latest work: neural processes. The goal of this technique is to model a distribution of <i>functions</i> (rather than a distribution of vectors) and to use neural networks to do so. In other words, it can be seen as the 'deep learning' equivalent to gaussian processes. This blog post offers a more hands-on view as code is made available to create neural processes. </p>
+                                </div>
+              <hr>
+
+                          
+          </div>
+          
+          <!-- Category block -->
+          <div class="category">
+              <h2 class="category-title">
+                  <img src="https://image.flaticon.com/icons/png/512/149/149243.png"
+                       class="fa fa-fw category-logo">Deep Learning
+              </h2>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/155/155292.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://openreview.net/group?id=ICLR.cc/2019/Conference">The submitted papers at ICLR 2019 are out for reviews</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    ICLR
+                  </h6>
+                  <p>The submission deadline was yesterday. Now it's time for reviewers to go over the papers. The OpenReview system lets us read all the submissions still!</p>
+                                </div>
+              <hr>
+
+                          
+          </div>
+          
+          <!-- Category block -->
+          <div class="category">
+              <h2 class="category-title">
+                  <img src="https://image.flaticon.com/icons/png/512/179/179121.png"
+                       class="fa fa-fw category-logo">Optimisation & Learning Theory
+              </h2>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/149/149125.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://www.youtube.com/watch?v=wXNWVhE2Dl4">ICM 2018 - Dynamical, symplectic and stochastic perspectives on optimization</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    Michael Jordan
+                  </h6>
+                  <p>A 1 hour-long presentation given at the International Congress of Mathematians that was held in early August this year.</p>
+                                    <blockquote class="blockquote">
+                     <p class="quote">Our topic is the relationship between dynamical systems and optimization. [...] We aim to build some new connections in this general area, studying aspects of gradient-based optimization from a continuous-time, variational point of view. We go beyond classical gradient flow to focus on second-order dynamics, aiming to show the relevance of such dynamics to optimization algorithms that not only converge, but converge quickly.</p>
+                  </blockquote>
+                                </div>
+              <hr>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/155/155292.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://arxiv.org/abs/1809.05042">Hamiltonian Descent Methods</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    University of Oxford, DeepMind
+                  </h6>
+                  <p></p>
+                                    <blockquote class="blockquote">
+                     <p class="quote">We propose a family of optimization methods that achieve linear convergence using first-order gradient information and constant step sizes on a class of convex functions much larger than the smooth and strongly convex ones. [...] They are first-order in the sense that they require only gradient computation. [...] In sum, these methods expand the class of convex functions on which linear convergence is possible with first-order computation.</p>
+                  </blockquote>
+                                </div>
+              <hr>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/155/155292.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://emtiyaz.github.io/papers/ki_riken_2018.pdf">Fast Computation of Uncertainty in Deep Learning</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    Mohammad Emtiyaz Khan
+                  </h6>
+                  <p>These are the slides given at a presentation in Singapore. They can serve as an introduction to the paper the author published at ICLM 2018 with his colleagues (see <a href=https://arxiv.org/abs/1806.04854>here</a>). They perturb the gradient updates during optimisation in such a way that performing variational inference is made easier.</p>
+                                </div>
+              <hr>
+
+                          
+          </div>
+          
+          <!-- Category block -->
+          <div class="category">
+              <h2 class="category-title">
+                  <img src="https://image.flaticon.com/icons/png/512/249/249156.png"
+                       class="fa fa-fw category-logo">Reinforcement Learning
+              </h2>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/60/60736.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://int8.io/counterfactual-regret-minimization-for-poker-ai/">Counterfactual Regret Minimization – the core of Poker AI beating professional players</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    Kamil Czarnogórski
+                  </h6>
+                  <p>In recent years, artificial intelligence was able to beat professional poker players in Heads Up Texas Hold'em. This post goes over the progress that has been made over the last few years and offers a detailed explanation of counterfactual regret minimization: the core algorithm that won those games. Dedicate a bit of free time as the post is lengthy (in the good sense!).</p>
+                                </div>
+              <hr>
+
+                          
+          </div>
+          
+          <!-- Category block -->
+          <div class="category">
+              <h2 class="category-title">
+                  <img src="https://imageog.flaticon.com/icons/png/512/248/248114.png"
+                       class="fa fa-fw category-logo">Production & Engineering
+              </h2>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/149/149125.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://www.youtube.com/watch?v=WTNH0tcscqo">TensorFlow 2.0 Changes</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    Aurelien Geron
+                  </h6>
+                  <p>Tensorflow 2.0 is coming fast and there are a number of reasons to be excited. This video gives an overview of the major changes brought by the update. If you are a Pytorch user, you will like the multiple comparisons that are being made between TF and PT. It appears that the difference is going to be tighter and tighter as Tensorflow will now use its Eager mode as default. We will all also appreciate the cleanup of the <i>contrib</i> part of the project.</p>
+                                </div>
+              <hr>
+
+                          
+          </div>
+          
+          <!-- Category block -->
+          <div class="category">
+              <h2 class="category-title">
+                  <img src="https://image.flaticon.com/icons/png/512/263/263051.png"
+                       class="fa fa-fw category-logo">Everything Else
+              </h2>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <b><a href="https://toolbox.google.com/datasetsearch">Google Dataset Search</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    Google
+                  </h6>
+                  <p>The title says it all... Use the power of Google search to find datasets!</p>
+                                </div>
+              <hr>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/174/174858.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://medium.com/inbrowserai/simple-diagrams-of-convoluted-neural-networks-39c097d2925b">Simple diagrams of convoluted neural networks</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    Piotr Migdał
+                  </h6>
+                  <p>One can be surprised to notice that there is still no common, unified way of graphically representing neural networks in papers. We could argue that the diversity of architectures can't be represented though a unique type of visualisation. While this blog post does not offer an explicit solution, its author does a great job at going over different types of visualisations that have been tested in the past, while highlighting their respective strenghts and weaknesses. I particularly liked the end of the post where you will find a list of tools that can help you build a good visualisation of your architecture. </p>
+                                </div>
+              <hr>
+
+                          
+          </div>
+                </div>
+      
+  <!-- Dummy container to force centering. Yes. I'm a front-end noob. -->
+  <div class="col-sm-2"></div>
+
+  <!-- End Grid -->
+  </div>
+  
+  <!-- End Page Container -->
+</div>
+
+</body>
+</html>

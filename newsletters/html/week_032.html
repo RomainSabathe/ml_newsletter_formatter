@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html>
+<title>ML newsletter</title>
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+	html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+
+	.category{
+	  padding: 20px;
+	  margin: auto;
+	  background: #F5F5F5;
+	  margin-bottom: 25px;
+	  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+	  transition: all 0.3s; 
+	  border-radius: 3px;
+	}
+
+    .category-title{
+      margin-bottom: 30px;
+    }
+
+	.category-logo{
+	  margin-right: 10px;
+	}
+
+	.article-logo{
+	  margin-right: 3px;
+	}
+
+    .recommended{
+	  margin-right: 2px;
+    }
+
+    .quote{
+      font-size: 11px;
+    }
+</style>
+
+
+<body>
+
+<!-- Page Container -->
+<div class="container" style="max-width:1400px;">
+
+  <!-- The Grid -->
+  <div class="row">
+  
+      <!-- Dummy container to force centering. Yes. I'm a front-end noob. -->
+      <div class="col-sm-2"></div>
+
+      <div class="col-sm-8">
+
+          
+          <!-- Category block -->
+          <div class="category">
+              <h2 class="category-title">
+                  <img src="https://image.flaticon.com/icons/png/512/653/653500.png"
+                       class="fa fa-fw category-logo">General Machine Learning
+              </h2>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/60/60736.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="http://kasparmartens.rbind.io/post/np/">Neural Processes as distributions over functions</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                        <span class="badge">
+                                  Recommended
+                              </span>
+                                                    Kaspar Märtens
+                  </h6>
+                  <p>If you don't know what neural processes are, this blog post is a great place to start. This concept which builds on the ideas of deep learning and gaussian processes was recently explored by DeepMind in their <a href=https://arxiv.org/abs/1807.01622>ICML 2018 workshop publication</a>. The idea is quite audacious I thought as it models each weight in a network as a Gaussian distribution. This gives you virtually an infinite number of deep networks; only a few datapoints should suffice to sample one specific network that will be well-suited for these datapoints (i.e. for the task at hand).</p>
+                                </div>
+              <hr>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/60/60736.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="http://www.fast.ai/2018/08/10/fastai-diu-imagenet/">Now anyone can train Imagenet in 18 minutes</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    fast.ai
+                  </h6>
+                  <p>This article was quite discussed this week as it has been covered by some mainstream technology media. A group of 3 from fast.ai (Andrew Shaw, Yaroslav Bulatov and Jeremy Howard) managed to train a ResNet 50 on ImagetNet from scratch and to reach 93+% top-5 accuracy in 18 minutes for about $40. This article explains their approach. I wish we had a bit more details on the results; in particular an ablation study of the different tricks they used (using rectangular images, proressive resizing, dynamic batch sizes...).</p>
+                                </div>
+              <hr>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/60/60736.png"
+                           class="fa fa-fw article-logo">
+                                            <img src="https://image.flaticon.com/icons/png/512/155/155292.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="http://petar-v.com/GAT/">Graph Attention Networks</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    University of Cambridge, UAB, Montreal Institute for Learning Algorithms
+                  </h6>
+                  <p>More and more work is dedicated to applying the tools of deep learning on computer vision to graph structures. As this blog post explains clearly, this problem is far from being trivial. The paper related in the blog post, titled Graph Attention Networks was published at ICLR this year and offers a clever solution. In this blog post, authors summarise the proposed solution and point to other works which extend their idea.</p>
+                                </div>
+              <hr>
+
+                          
+          </div>
+          
+          <!-- Category block -->
+          <div class="category">
+              <h2 class="category-title">
+                  <img src="https://image.flaticon.com/icons/png/512/179/179121.png"
+                       class="fa fa-fw category-logo">Optimisation & Learning Theory
+              </h2>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/60/60736.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="http://nsaphra.github.io/post/model-scheduling/">Model Scheduling</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    Naomi Saphra (Objective Funk)
+                  </h6>
+                  <p>This blog post is an extended litterature review on the topic of <i>model scheduling</i> which is here described as anything that has to do with modifying hyper-parameters of a model during training. The covered themes range from dropout to architecture growth, not to mention pruning and teacher/student techniques.</p>
+                                </div>
+              <hr>
+
+                          
+          </div>
+          
+          <!-- Category block -->
+          <div class="category">
+              <h2 class="category-title">
+                  <img src="https://image.flaticon.com/icons/png/512/112/112272.png"
+                       class="fa fa-fw category-logo">Gans & Adversarial Attacks
+              </h2>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/60/60736.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="http://people.csail.mit.edu/madry/lab/blog/adversarial/2018/08/10/robust_optimization_part2/">Training Robust Classifiers</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    gradient science (Aleksander Mądry, Ludwig Schmidt, Dimitris Tsipras)
+                  </h6>
+                  <p>This is the second part of a collection of blog posts targeted towards adversarial training and robustness of classifiers againt adversarial perturbations; the first part can be found <a href=http://people.csail.mit.edu/madry/lab/blog/adversarial/2018/07/11/robust_optimization_part1/>here</a>. The explanations are clear and I liked that the authors presented the results of their experiments while giving an overview of the topic of robustness. We learn about the min-max formulation of this problem, Danskin's theorem and how to apply it (using Projected Gradient Descent) and how former methods such as Fast Gradient Sign Method (FGSM) were seemingly not following the theorem.</p>
+                                </div>
+              <hr>
+
+                          
+          </div>
+          
+          <!-- Category block -->
+          <div class="category">
+              <h2 class="category-title">
+                  <img src="https://image.flaticon.com/icons/png/512/249/249156.png"
+                       class="fa fa-fw category-logo">Reinforcement Learning
+              </h2>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/60/60736.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://yobibyte.github.io/rlss17.html#rlss17">Notes on the Reinforcement Learning Summer School (2017)</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                        <span class="badge">
+                                  Recommended
+                              </span>
+                                                    Vitaly Kurin
+                  </h6>
+                  <p>This is not a recent post but it has been directly sent to me; and the amount of work is impressive. This can be basically seen as a webpage summarizing the entirety of the 2017th edition of the Reinforcement Learning Summer School by the CIFAR Institute. The writing style is a bit on the note-taking side than on the explantion side but considering Mr. Kurin also provides the links to the slides and videos of each presentation he covers, I think this page could serves as a wonderful helping material if you decide to go through the presentations yourself.</p>
+                                </div>
+              <hr>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/60/60736.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://github.com/lyndonzheng/Synthetic2Realistic">OpenAI & DOTA 2: Game Is Hard</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    Michael Cook
+                  </h6>
+                  <p>Nothing technical in this blog post; however the author who is a regular DOTA 2 player explains in details and with examples why the 3 games played by OpenAI last week were so surprising. He analyses the apparent behavior of the bot players and makes it simple to understand for those who are not familiar with the game!</p>
+                                </div>
+              <hr>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/155/155292.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://pathak22.github.io/large-scale-curiosity/">Large-Scale Study of Curiosity-Driven Learning</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    OpenAI, UC Berkeley, University of Edinburgh
+                  </h6>
+                  <p>In reinforcement learning, most of the reward functions are tailored for the task at hand. For instance, in the <a href=https://medium.com/@tuzzer/cart-pole-balancing-with-q-learning-b54c6068d947>car pole balancing</a> problem, the reward value is traditionally based on the angle of the pole to the vertical (if it's too high, the reward could be negative for instance). Designing a reward function for each problem is not scalable and time consuming. On the contrary, this work explores reward functions which are <i>not</i> based on the problem at hand. Rather, in intuitive terms, authors try to model <i>curiosity</i> and encourage the network not to be bored!</p>
+                                </div>
+              <hr>
+
+                          
+          </div>
+          
+          <!-- Category block -->
+          <div class="category">
+              <h2 class="category-title">
+                  <img src="https://image.flaticon.com/icons/png/512/484/484582.png"
+                       class="fa fa-fw category-logo">Natural Language Processing
+              </h2>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/60/60736.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://blog.feedly.com/transfer-learning-in-nlp/">Transfer Learning in NLP</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    Peter Martigny
+                  </h6>
+                  <p>This is a rather high-level introduction of the paper <a href=https://arxiv.org/abs/1801.06146> Universal Language Model Fine-tuning for Text Classification</a> by Howard & Ruder in which they present a transfer learning method specifically for NLP. The claims are quite impressive as they report same performance when fine-tuning with 100 samples than when training from scratch with 10,000 samples. The author of the blog post also provides notebooks of experiments he did on his own to test this method on the Amazon Reviews dataset.</p>
+                                </div>
+              <hr>
+
+                          
+          </div>
+          
+          <!-- Category block -->
+          <div class="category">
+              <h2 class="category-title">
+                  <img src="https://image.flaticon.com/icons/png/512/263/263051.png"
+                       class="fa fa-fw category-logo">Everything Else
+              </h2>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <b><a href="http://academictorrents.com/">Acamedic Torrents</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    
+                  </h6>
+                  <p>27 terabytes worth of datasets, papers and courses shared via the torrent protocol. You will find classic material (Andrew Ng's Coursera course, ImagetNet, MNIST) and some more exotic (Labeled Fishes in the Wild, Movies Fight Detection Dataset,...)</p>
+                                </div>
+              <hr>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/25/25231.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://p.migdal.pl/interactive-machine-learning-list/">Interactive Machine Learning List</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    Piotr Migdał
+                  </h6>
+                  <p>A collection of all the interactive ML demos you can find online. Well, maybe not all of them, but a fair number. And the project is open-source so anyone is invited to contribute to the list. </p>
+                                </div>
+              <hr>
+
+                          
+          </div>
+          
+          <!-- Category block -->
+          <div class="category">
+              <h2 class="category-title">
+                  <img src="https://image.flaticon.com/icons/png/512/56/56243.png"
+                       class="fa fa-fw category-logo">Laugh Of The Week
+              </h2>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <b><a href="https://www.facebook.com/722677142/posts/10155453249732143/">The four kinds of (young) deep learners</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    
+                  </h6>
+                  <p></p>
+                                </div>
+              <hr>
+
+                          
+          </div>
+                </div>
+      
+  <!-- Dummy container to force centering. Yes. I'm a front-end noob. -->
+  <div class="col-sm-2"></div>
+
+  <!-- End Grid -->
+  </div>
+  
+  <!-- End Page Container -->
+</div>
+
+</body>
+</html>

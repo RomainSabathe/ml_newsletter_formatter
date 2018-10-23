@@ -1,0 +1,94 @@
+intro_text:
+
+outro_text:
+
+articles:
+    - title: "The hacker's guide to uncertainty estimates" 
+      url: "https://erikbern.com/2018/10/08/the-hackers-guide-to-uncertainty-estimates.html"
+      type: blog
+      category: ml
+      lab:  Erik Bernhardsson
+      description: "It is not an article about machine learning properly speaking but rather about statistics and uncertainy estimates in particular. Readers are not expected to know a lot (or at all) about statistics as admittedly this is a <i>hacker's guide</i>. In other words, you will find quick tips to compute the uncertainty on the mean of a distribution, performing bootstraping or using the beta distribution to get the confidence interval of a Bernouilli distribution etc.; but there is not much about <i>why</i> these methods work. So this article is great to get you started and clarify some common pratical misunderstandings. For the rest, you will need to dig deeper! "
+      quote: ""
+      recommended: true
+
+    - title:  "Learning Acrobatics by Watching Youtube"
+      url: "https://bair.berkeley.edu/blog/2018/10/09/sfv/"
+      type: blog+paper
+      category: rl
+      lab: Berkeley Artifical Intelligence Research
+      description: "As often with BAIR, this article is an introduction to their recent paper, <a href=https://xbpeng.github.io/projects/SFV/2018_TOG_SFV.pdf>SFV: Reinforcement Learning of Physical Skills from Videos</a>. Learning motion and acroabtics in particular is a hard problem. Previous methods leverage for instance imitation learning using motion capture data which is costly and long to obtain. This paper adresses this problem by learning directly from Youtube videos which is more difficult as it implies learning from raw pixel data. The main idea is actually to <i>simulate</i> having motion capture data by first estimating the pose of the human in the video and then reconstructing the motion (to counter camera shaking etc). The last step consists in standard motion-imitation RL based on the obtained pose. "
+      quote: ""
+      recommended: 
+
+    - title: Reinforcement Learning for Improving Agent Design
+      url: "https://designrl.github.io/"
+      type: blog + paper
+      category: rl
+      lab: David Ha (Google Brain)
+      description: "In traditional reinforcement learning benchmarks, an agent with fixed characterics has to perform a set of actions successfully. This paper gets rid of the 'fixed characterics' constraints and instead the agent is free to <i>evolve</i>. The author claims that this kind of method has the potential to uncover novel and well-adapted designs. The page shows a bunch of videos so have a look. For instance, in the RoboschoolAnt-v1 task (where a four-legged robot needs to travel as far as possible from the origin), the agent learnt to develop long and thinner legs!"
+      quote: ""
+      recommended: 
+
+    - title: Generative Neural Machine Translation
+      url: "https://davidbarber.github.io/blog/2018/09/12/Generative-Neural-Machine-Translation/"
+      type: blog+paper
+      category: nlp
+      lab: Harshil Shah, David Barber
+      description: "That is a really interesting blog post (and paper) that is well-written enough that even if you have no prior knowledge of NLP you would be able to read along (some fundamentals on variational inference may be required). In a typical latent representation model, a vector is sampled from a prior distribution and a learned model (like a neural network) transforms this vector into an entity of interest like an image or a sentence. Here the idea of the paper is to build a representation model where the latent space is common to two (or more) languages. The latent vector <i>z</i> then models the commonality between two sentences which have the same semantic meaning but expressed in different languages. Oh and you get to know about the banana trick, which is fun (spoiler: it's pretty much the same as the EM algorithm)."
+      quote: ""
+      recommended: 
+
+    - title: Progressive InfoGAN
+      url: "https://github.com/jonasz/progressive_infogan/"
+      type: github
+      category: gan
+      lab: Jonasz Pamuła
+      description: "You probably know about InfoGAN, a method presented at NIPS 2016 which gives a bit more  predictability to the traditional GANs via the use of <i>latent codes</i>. Simply speaking, the latent code is part of the noise vector that is used to generate an image; its particularity being that it is optimised during training to maximise its mutual information with the generated image. In other words, there's high chance that each dimension of the latent code encodes a specific property of the image (like glasses/no glasses, length of the nose etc.). Now you also likely know about Progressive Growing of GANs presented last year by NVIDIA; a method that can be used to generate HD images with astonishing levels of details. For his Master's thesis, Mr. Pamuła had the idea to combine both, and the results are fascinating!"
+      quote: ""
+      recommended: true
+
+    - title: When your training set is unbalanced
+      url: "http://smbc-comics.com/comic/rise-of-the-machines"
+      type: ""
+      category: laugh
+      lab: 
+      description: ""
+      quote: ""
+      recommended: 
+
+    - title: CINIC-10 
+      url: "https://github.com/BayesWatch/cinic-10"
+      type: github
+      category:
+      lab: Institute for Adaptive and Neural Computation - University of Edinburgh
+      description: "CINIC-10 is a new dataset that has the ambition to replace CIFAR-10. Authors claim that CIFAR-10 has become too easy and the benchmarks are not necessarily representative anymore (see also <a href=https://arxiv.org/abs/1806.00451>this manuscript</a> that we relayed in June). CINIC-10 has the same classes as CIFAR-10 and the images have the same size. Actually, CIFAR-10 is included in CINIC-10. The major difference is that CINIC-10 is 4.5 times larger than CIFAR."
+      quote: ""
+      recommended: 
+
+    - title: Gradient Descent Provably Optimizes Over-parameterized Neural Networks
+      url: "https://arxiv.org/abs/1810.02054"
+      type: paper
+      category: theory
+      lab: Carnegie Mellon University, Massachusetts Institute of Technology
+      description: ""
+      quote: "[...] For an m hidden node shallow neural network with ReLU activation and n training data, we show as long as m is large enough and the data is non-degenerate, randomly initialized gradient descent converges a globally optimal solution with a linear convergence rate for the quadratic loss function. "
+      recommended: 
+
+    - title: Deep, Skinny Neural Networks are not Universal Approximators
+      url: "https://arxiv.org/abs/1810.00393"
+      type: paper
+      category: theory
+      lab: Jesse Johnson, Sanofi
+      quote: "[...]  In this paper, we examine the topological constraints that the architecture of a neural network imposes on the level sets of all the functions that it is able to approximate. This approach is novel for both the nature of the limitations and the fact that they are independent of network depth for a broad family of activation functions."
+      description: ""
+      recommended: 
+
+    - title: NVTOP
+      url: "https://github.com/Syllo/nvtop"
+      type: github
+      category: 
+      lab: Maxime Schmitt
+      description: "You love htop? (I do!) Then you'll love <i>nvtop</i>, the equivalent of htop for our GPUs."
+      quote: ""
+      recommended: 

@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html>
+<title>ML newsletter</title>
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+	html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+
+	.category{
+	  padding: 20px;
+	  margin: auto;
+	  background: #F5F5F5;
+	  margin-bottom: 25px;
+	  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+	  transition: all 0.3s; 
+	  border-radius: 3px;
+	}
+
+    .category-title{
+      margin-bottom: 30px;
+    }
+
+	.category-logo{
+	  margin-right: 10px;
+	}
+
+	.article-logo{
+	  margin-right: 3px;
+	}
+
+    .recommended{
+	  margin-right: 2px;
+    }
+
+    .quote{
+      font-size: 11px;
+    }
+</style>
+
+
+<body>
+
+<!-- Page Container -->
+<div class="container" style="max-width:1400px;">
+
+  <!-- The Grid -->
+  <div class="row">
+  
+      <!-- Dummy container to force centering. Yes. I'm a front-end noob. -->
+      <div class="col-sm-2"></div>
+
+      <div class="col-sm-8">
+
+          
+          <!-- Category block -->
+          <div class="category">
+              <h2 class="category-title">
+                  <img src="https://image.flaticon.com/icons/png/512/653/653500.png"
+                       class="fa fa-fw category-logo">General Machine Learning
+              </h2>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/60/60736.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://research.googleblog.com/2018/04/google-at-iclr-2018.html">All Google publications at ICLR 2018</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    Google
+                  </h6>
+                  <p>There's no best way to experience how much Google publishes. <a href=https://deepmind.com/blog/deepmind-papers-iclr-2018/>DeepMind has done the same thing</a>.</p>
+                                </div>
+              <hr>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/60/60736.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="http://www.fast.ai/2018/04/30/dawnbench-fastai/">Training Imagenet in 3 hours for $25; and CIFAR10 for $0.26</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    fast.ai
+                  </h6>
+                  <p>A student from fast.ai achieved training a model on ImageNet up to 93% accuracy in a very short amount of time and at a reduced cost (notebook <a href=https://github.com/radekosmulski/machine_learning_notebooks/blob/master/cifar10_fastai_dawnbench.ipynb>here</a>). This blog post explains the method they followed. It seems they relied on the phenomenon of <i>super convergence</i> apparently discovered last year where the learning rate is gradually increased while the momentum is gradually lowered. They used half-precision floats as well as a technique inspired by <i>Progressive Growing of GANs</i> (discussed by Joao in our paper reading group). They started training the network on small images and increased the size of the input images along training. To make this possible they made use of 'adaptative pooling'. <br />The whole blog post is also a lampoon against the race to more computing power and more data. Jeremy Howard (founder of fast.ai and author of the post) obviously promotes the creativity and awesomeness of his class.... </p>
+                                    <blockquote class="blockquote">
+                     <p class="quote">I worry when I talk to my friends at Google, OpenAI, and other well-funded institutions that their easy access to massive resources is stifling their creativity.</p>
+                  </blockquote>
+                                </div>
+              <hr>
+
+                          
+          </div>
+          
+          <!-- Category block -->
+          <div class="category">
+              <h2 class="category-title">
+                  <img src="https://image.flaticon.com/icons/png/512/722/722174.png"
+                       class="fa fa-fw category-logo">Computer Vision
+              </h2>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/25/25231.png"
+                           class="fa fa-fw article-logo">
+                                            <img src="https://image.flaticon.com/icons/png/512/155/155292.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://github.com/YadiraF/PRNet">Joint 3D Face Reconstruction and Dense Alignment with Position Map Regression Network</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                        <span class="badge">
+                                  Recommended
+                              </span>
+                                                    YadiraF
+                  </h6>
+                  <p>Better keep an eye on that repo. More than 600 stars. It provides an end-to-end model to regress the 3D geometry of a face and its semantic from a 2D image. They use their method and extend it to perform face alignment, 3D face reconstruction and pose estimation. It is claimed to be robust to poses, illuminations and occlusions. Oh, and it runs at 100fps (on a 1080...).</p>
+                                </div>
+              <hr>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/155/155292.png"
+                           class="fa fa-fw article-logo">
+                                            <img src="https://image.flaticon.com/icons/png/512/60/60736.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://code.facebook.com/posts/1700437286678763/">Advancing state-of-the-art image recognition with deep learning on hashtags</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    Facebook Research
+                  </h6>
+                  <p>The claim is bold here. +2% accuracy on ImageNet thanks to 'semi-supervised' learning. The idea is to extend the training data ny using public online images with their hastag annotations.</p>
+                                </div>
+              <hr>
+
+                          
+          </div>
+          
+          <!-- Category block -->
+          <div class="category">
+              <h2 class="category-title">
+                  <img src="https://image.flaticon.com/icons/png/512/179/179121.png"
+                       class="fa fa-fw category-logo">Optimisation & Learning Theory
+              </h2>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/155/155292.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://arxiv.org/abs/1804.10200v1">The loss landscape of overparameterized neural networks</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    Y. Cooper
+                  </h6>
+                  <p>Remember last week we linked a work from Uber where they explored a so-called 'Intrinsic Dimension' of neural networks? These were empirical observations stating that a good minima of the loss function lied in a subspace of lower dimension. If you have 1000 parameters (therefore the loss function is 1000-dimentional), it could well be that that a minima can be found by solely exploring a subspace of only 200 dimensions. Although I haven't read the paper linked here, I feel like the abstract describes exactly this observation. The author attempts to provide a theoretical explanation.</p>
+                                </div>
+              <hr>
+
+                          
+          </div>
+          
+          <!-- Category block -->
+          <div class="category">
+              <h2 class="category-title">
+                  <img src="https://image.flaticon.com/icons/png/512/112/112272.png"
+                       class="fa fa-fw category-logo">Gans & Adversarial Attacks
+              </h2>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/155/155292.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://arxiv.org/abs/1711.05772">Latent Constraints: Learning to Generate Conditionally from Unconditional Generative Models</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    Google Brain
+                  </h6>
+                  <p></p>
+                                    <blockquote class="blockquote">
+                     <p class="quote">Deep generative neural networks have proven effective at both conditional and unconditional modeling of complex data distributions. Conditional generation enables interactive control, but creating new controls often requires expensive retraining. In this paper, we develop a method to condition generation without retraining the model. By post-hoc learning latent constraints, value functions that identify regions in latent space that generate outputs with desired attributes, we can conditionally sample from these regions with gradient-based optimization or amortized actor functions.</p>
+                  </blockquote>
+                                </div>
+              <hr>
+
+                          
+          </div>
+          
+          <!-- Category block -->
+          <div class="category">
+              <h2 class="category-title">
+                  <img src="https://image.flaticon.com/icons/png/512/45/45669.png"
+                       class="fa fa-fw category-logo">Interpratibility & Fairness
+              </h2>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <b><a href="https://www.youtube.com/watch?v=iYP4sYz0jho&feature=youtu.be&t=1h13m21s">Tutorial and demo and private ML thanks to distributed training</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    OpenMined
+                  </h6>
+                  <p>Could be useful for us in the future.</p>
+                                </div>
+              <hr>
+
+                          
+          </div>
+          
+          <!-- Category block -->
+          <div class="category">
+              <h2 class="category-title">
+                  <img src="https://image.flaticon.com/icons/png/512/249/249156.png"
+                       class="fa fa-fw category-logo">Reinforcement Learning
+              </h2>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/60/60736.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://research.fb.com/facebook-open-sources-elf-opengo/">Facebook open sources ELF OpenGo</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    Facebook Research
+                  </h6>
+                  <p>Facebook reproduced the results from AlphaGoZero and unlike DeepMind released the code as well as a pretained model. A single GPU is apparently enough to run the model in real-time. It's also a good operation to promote Facebook's reinforcement learning library called ELF.</p>
+                                </div>
+              <hr>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/155/155292.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://arxiv.org/abs/1805.00909">Reinforcement Learning and Control as Probabilistic Inference: Tutorial and Review</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    UC Berkeley
+                  </h6>
+                  <p></p>
+                                    <blockquote class="blockquote">
+                     <p class="quote">. In this article, we will discuss how a generalization of the reinforcement learning or optimal control problem, which is sometimes termed maximum entropy reinforcement learning, is equivalent to exact probabilistic inference in the case of deterministic dynamics, and variational inference in the case of stochastic dynamics.</p>
+                  </blockquote>
+                                </div>
+              <hr>
+
+                          
+          </div>
+          
+          <!-- Category block -->
+          <div class="category">
+              <h2 class="category-title">
+                  <img src="https://image.flaticon.com/icons/png/512/263/263051.png"
+                       class="fa fa-fw category-logo">Everything Else
+              </h2>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/60/60736.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://rockt.github.io/2018/04/30/einsum">Einsum is all you need - Einstein summation in Deep Learning</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                        <span class="badge">
+                                  Recommended
+                              </span>
+                                                    Tim Rocktaschel
+                  </h6>
+                  <p>Did you know that the Einstein summation was supported in Numpy, Tensorflow and Pytorch? This blog post explains how to use it and how it can make complex matrix multiplications super easy; especially when it involves convoluted shapes and batch dimensions. Tons of examples are provided. Some people has been questionning the speed efficiency of <i>einsum</i> functions though.</p>
+                                </div>
+              <hr>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/60/60736.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://pytorch.org/2018/05/02/road-to-1.0.html">The road to 1.0: production ready PyTorch</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                        <span class="badge">
+                                  Recommended
+                              </span>
+                                                    Facebook Research
+                  </h6>
+                  <p>Very exciting news for PyTorch. Engineers are targeting to release PyTorch 1.0 this summer. It will be 'production-ready'. This doesn't only mean that the library needs to be stable, it also needs to be scalable, low-level optimised and deployable on several architectures. The post explains the design decisions that have been taken to get there. I'm pleased to see engineers are doing their best to offer both the best of the flexibility of PyTorch and the rigidity of an optimised ML code. TO this end they will release a Just In Time compiler. It will dynamically analyse the Python code and generate and underlying C++ optimised code for faster computation.</p>
+                                </div>
+              <hr>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/25/25231.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://github.com/skrish13/ml-contests-conf">List of Machine Learning Contests</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    skrish13
+                  </h6>
+                  <p>All is said.</p>
+                                </div>
+              <hr>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <b><a href="https://mlperf.org/">MLPerf</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    
+                  </h6>
+                  <p>A suite of tools to perform benchmarking of ML framework, cloud platforms and hardware accelerators. This initiative is backed up by some big names (Google, Intel, AMD (!), Baidu, Stanford, Berkeley and others). The deadline is set to the end of July so we'll have some juicy comparisons in a few months.</p>
+                                </div>
+              <hr>
+
+                          
+          </div>
+                </div>
+      
+  <!-- Dummy container to force centering. Yes. I'm a front-end noob. -->
+  <div class="col-sm-2"></div>
+
+  <!-- End Grid -->
+  </div>
+  
+  <!-- End Page Container -->
+</div>
+
+</body>
+</html>

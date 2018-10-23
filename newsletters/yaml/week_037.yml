@@ -1,0 +1,85 @@
+intro_text:
+
+outro_text:
+
+articles:
+    - title: "GPyTorch: Gaussian processes for modern machine learning systems"
+      url: "https://gpytorch.ai/"
+      type: "github"
+      category: "ml"
+      lab: "Geoff Pleiss, Jacob R. Gardner, Kilian Q. Weinberger, Andrew Gordon Wilson"
+      description: "This library built on top of PyTorch 1.0 features a bunch of functionalities to manipulate Gaussian processes, with GPU support. There's a ton of documentation to get you going; see for instance <a href=https://gpytorch.readthedocs.io/en/latest/examples/01_Simple_GP_Regression/Simple_GP_Regression.html>the regression tutorial</a>."
+      quote: ""
+      recommended: ""
+
+    - title: "Holodeck: High Fidelity Simulator for Reinforcement Learning and Robotics Research"
+      url: "https://github.com/byu-pccl/holodeck"
+      type: github
+      category: rl
+      lab: "Brigham Young University"
+      description: "Training an agent in a simulated 3d environment (powered by Unreal Engine 4!) with the ease of the Python programming language: that's what Holodeck is made for. Engineers have made the syntax close to OpenAI's Gym environments."
+      quote: ""
+      recommended: 
+
+    - title: "Food Discovery with Uber Eats: Recommending for the Marketplace"
+      url: "https://eng.uber.com/uber-eats-recommending-marketplace/"
+      type: blog
+      category: ml
+      lab: Uber
+      description: "This blog post is interesting in the sense that it is more than a regular machine learning blog post. Actually, the emphasis is on the analysis of an industry problem, which is: how to match a type of food (or restaurant) to a customer, based on her search query and her tastes? We learn different aspects of this difficult problem and how it has been handled at Uber Eats."
+      quote: ""
+      recommended: 
+
+    - title: mmdetection
+      url: "https://github.com/open-mmlab/mmdetection"
+      type: github
+      category: cv
+      lab: "Chinese University of Hong Kong"
+      description: "This repo has been made public in late August of this year and it has already more than 1,400 stars on GitHub. It provides a PyTorch-based toolbox for object detection with tuned weights for a variety of detectors (RPN, Faster R-CNN, Mask R-CNN etc.). You can find the download links for the weights in this <a href=https://github.com/open-mmlab/mmdetection/issues/23>GitHub issue</a>."
+      quote: ""
+      recommended: 
+
+    - title: "Variational Bayesian Monte Carlo"
+      url: "https://arxiv.org/abs/1810.05558"
+      type: paper
+      category: theory
+      lab: "Luigi Acerbi (University of Geneva)"
+      description: ""
+      quote: "Many probabilistic models of interest in scientific computing and machine learning have expensive, black-box likelihoods that prevent the application of standard techniques for Bayesian inference, such as MCMC, which would require access to the gradient or a large number of likelihood evaluations. We introduce here a novel sample-efficient inference framework, Variational Bayesian Monte Carlo (VBMC). VBMC combines variational inference with Gaussian-process based, active-sampling Bayesian quadrature, using the latter to efficiently approximate the intractable integral in the variational objective. Our method produces both a nonparametric approximation of the posterior distribution and an approximate lower bound of the model evidence, useful for model selection. [...] "
+      recommended: 
+
+    - title: "Online notebook to play with Tensorflow Eager"
+      url: "https://colab.research.google.com/github/zaidalyafeai/Notebooks/blob/master/Eager_Execution_Enabled.ipynb#scrollTo=Xm5mBuUOSQwg"
+      type: github
+      category: 
+      lab: "Zaid Alyafeai"
+      description: "Tensorflow Eager has been out for a while now. But for some reasons I never had the chance to properly test it. This notebook is a good remedy. No need to set up a complex project; the code is already laid down in an interactive online notebook. You can learn, tweak and play, all in the browser."
+      quote: ""
+      recommended: 
+
+    - title: "Discriminator Rejection Sampling"
+      url: "https://arxiv.org/abs/1810.06758"
+      type: paper
+      category: gan
+      lab: "UC Berkeley, Google Brain"
+      description: ""
+      quote: "We propose a rejection sampling scheme using the discriminator of a GAN to approximately correct errors in the GAN generator distribution. We show that under quite strict assumptions, this will allow us to recover the data distribution exactly. We then examine where those strict assumptions break down and design a practical algorithm - called Discriminator Rejection Sampling (DRS) - that can be used on real data-sets."
+      recommended: 
+
+    - title: "t-SNE explained in plain javascript"
+      url: "https://beta.observablehq.com/@nstrayer/t-sne-explained-in-plain-javascript"
+      type: blog
+      category: ml
+      lab: "Nick Strayer"
+      description: "Combine effective explanations, interactive visualisations and code examples and you will obtain something similar to this post. Nick Strayer explains all the concepts behind the t-SNE algorithm in a very approachable way."
+      quote: ""
+      recommended: True
+
+    - title: "Flow-based Deep Generative Models"
+      url: "https://lilianweng.github.io/lil-log/2018/10/13/flow-based-deep-generative-models.html"
+      type: blog
+      category: dl
+      lab: "Lilian Weng"
+      description: "You may have recently heard of the Glow model (we mentionned it a few issues ago); it is a generative model which is neither a GAN nor a VAE. Rather, it is a <i>flow-based generative model</i> where the input is transformed through a sequence of invertible, easy-to-compute functions. This blog post can be seen as a review of the different flow-based models that have been proposed. In particular, it helped me make more sense of why the 1x1 convolution from the Glow paper is so central. And since the post is signed Lilan Weng, you know it is going to be a great read!"
+      quote: ""
+      recommended: True

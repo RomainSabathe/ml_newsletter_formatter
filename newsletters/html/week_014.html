@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html>
+<title>ML newsletter</title>
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+	html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+
+	.category{
+	  padding: 20px;
+	  margin: auto;
+	  background: #F5F5F5;
+	  margin-bottom: 25px;
+	  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+	  transition: all 0.3s; 
+	  border-radius: 3px;
+	}
+
+    .category-title{
+      margin-bottom: 30px;
+    }
+
+	.category-logo{
+	  margin-right: 10px;
+	}
+
+	.article-logo{
+	  margin-right: 3px;
+	}
+
+    .recommended{
+	  margin-right: 2px;
+    }
+
+    .quote{
+      font-size: 11px;
+    }
+</style>
+
+
+<body>
+
+<!-- Page Container -->
+<div class="container" style="max-width:1400px;">
+
+  <!-- The Grid -->
+  <div class="row">
+  
+      <!-- Dummy container to force centering. Yes. I'm a front-end noob. -->
+      <div class="col-sm-2"></div>
+
+      <div class="col-sm-8">
+
+          
+          <!-- Category block -->
+          <div class="category">
+              <h2 class="category-title">
+                  <img src="https://image.flaticon.com/icons/png/512/653/653500.png"
+                       class="fa fa-fw category-logo">General Machine Learning
+              </h2>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/174/174858.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://medium.com/tensorflow/introducing-tensorflow-probability-dca4c304e245">TensorFlow Probability</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    Google
+                  </h6>
+                  <p>Tensorflow keeps growing... And now I can't even understand the examples (also due my lack of knowledge on probabilistic models). :|</p>
+                                    <blockquote class="blockquote">
+                     <p class="quote">We announce TensorFlow Probability: a probabilistic programming toolbox for machine learning researchers and practitioners to quickly and reliably build sophisticated models that leverage state-of-the-art hardware.</p>
+                  </blockquote>
+                                </div>
+              <hr>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/155/155292.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://arxiv.org/abs/1804.02476">Associative Compression Networks</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    DeepMind (Alex Graves et al.)
+                  </h6>
+                  <p></p>
+                                    <blockquote class="blockquote">
+                     <p class="quote">This paper introduces Associative Compression Networks (ACNs), a new framework for variational autoencoding with neural networks. The system differs from existing variational autoencoders in that the prior distribution used to model each code is conditioned on a similar code from the dataset. [...] [Experiments] also demonstrate that ACNs learn high-level features such as object class, writing style, pose and facial expression, which can be used to cluster and classify the data, as well as to generate diverse and convincing samples.</p>
+                  </blockquote>
+                                </div>
+              <hr>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/155/155292.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://arxiv.org/abs/1804.00779">Neural Autoregressive Flows</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    MILA, University of Montreal, Element AI
+                  </h6>
+                  <p></p>
+                                    <blockquote class="blockquote">
+                     <p class="quote">We demonstrate that the proposed neural autoregressive flows (NAF) are universal approximators for continuous probability distributions, and their greater expressivity allows them to better capture multimodal target distributions</p>
+                  </blockquote>
+                                </div>
+              <hr>
+
+                          
+          </div>
+          
+          <!-- Category block -->
+          <div class="category">
+              <h2 class="category-title">
+                  <img src="https://image.flaticon.com/icons/png/512/149/149243.png"
+                       class="fa fa-fw category-logo">Deep Learning
+              </h2>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/60/60736.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://abidlabs.github.io/Atomic-Experiments/">12 Atomic Experiments in Deep Learning</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                        <span class="badge">
+                                  Recommended
+                              </span>
+                                                    Zou Group @Stanford
+                  </h6>
+                  <p>A collection of 12 small but worthy experiments that can be ran on CPU for a couple minutes each. It goes from 'are all activation function performing equally?' to 'to what extent does adding data improve performance?' and so on. Take with a pinch of salt though; all the networks used are still relatively small (about 4 layers) and fully connected.</p>
+                                </div>
+              <hr>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/60/60736.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://research.googleblog.com/2018/04/looking-to-listen-audio-visual-speech.html">Looking to Listen: Audio-Visual Speech Recognition</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    Google Research
+                  </h6>
+                  <p>Researchers solve the cocktail party problem using audio information,... but also visual information. They gathered 2,000 hours of Youtube videos to train their model. Faces are detected first to extract video features. The audio features consist of a Fourier transform. Audio-Visual features are concatenated and passed to recurrent layers. The ouput is an audio mask that we can apply to the original audio stream. We'll get as many masks as there are of speakers (and depending on the training procedure). Applying the mask isolates the audio from one speaker to the other. The examples shown are super convincing!</p>
+                                </div>
+              <hr>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/155/155292.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://arxiv.org/abs/1804.02485">Fortified Networks: Improving the Robustness of Deep Networks by Modeling the Manifold of Hidden Representations</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    MILA
+                  </h6>
+                  <p></p>
+                                    <blockquote class="blockquote">
+                     <p class="quote">We propose Fortified Networks, a simple transformation of existing networks, which fortifies the hidden layers in a deep network by identifying when the hidden states are off of the data manifold, and maps these hidden states back to parts of the data manifold where the network performs well. Our principal contribution is to show that fortifying these hidden states improves the robustness of deep networks and our experiments demonstrate improved robustness to standard adversarial attacks in both black-box and white-box threat models [...]</p>
+                  </blockquote>
+                                </div>
+              <hr>
+
+                          
+          </div>
+          
+          <!-- Category block -->
+          <div class="category">
+              <h2 class="category-title">
+                  <img src="https://image.flaticon.com/icons/png/512/722/722174.png"
+                       class="fa fa-fw category-logo">Computer Vision
+              </h2>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/155/155292.png"
+                           class="fa fa-fw article-logo">
+                                            <img src="https://image.flaticon.com/icons/png/512/25/25231.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://arxiv.org/abs/1804.03189">Deep Painterly Harmonization</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                        <span class="badge">
+                                  Recommended
+                              </span>
+                                                    Cornell University, Adobe Research
+                  </h6>
+                  <p>Just when I started to get used to (even bored??) by style transfer examples, this work brings a bit of fresh air. The idea is the following: you start from an existing image with a strong distinctive appearance (say a painting) and you paste on this image an element which has a completely different appearance (say a photo of a car). The goal is to modify the photo of the car so its appearance melts with the appearance of the painting, resulting in a unified painting with a car in it. The paper provides some interesting visuals but I also liked the examples provided in this <a href=https://github.com/luanfujun/deep-painterly-harmonization#examples>Github implementation</a>. Some of them are stunning. Could we use this to digitally tamper documents?</p>
+                                </div>
+              <hr>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/155/155292.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://arxiv.org/abs/1803.10827">Who Let The Dogs Out? Modeling Dog Behavior From Visual Data (CVPR 2018)</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    University of Washington, Allen Institute for AI
+                  </h6>
+                  <p>See this <a href=https://techcrunch.com/2018/04/11/whos-a-good-ai-dog-based-data-creates-a-canine-machine-learning-system/>TechCrunch article</a> for an overview.</p>
+                                    <blockquote class="blockquote">
+                     <p class="quote">Our model takes visual information as input and directly predicts the actions of the agent. Toward this end we introduce DECADE, a large-scale dataset of ego-centric videos from a dog's perspective as well as her corresponding movements. Using this data we model how the dog acts and how the dog plans her movements. </p>
+                  </blockquote>
+                                </div>
+              <hr>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/155/155292.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://arxiv.org/abs/1804.04412">Unsupervised Discovery of Object Landmarks as Structural Representations (CVPR 2018)</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    University of Michigan, Ann Arbor, Google Brain
+                  </h6>
+                  <p></p>
+                                    <blockquote class="blockquote">
+                     <p class="quote">We propose an autoencoding formulation to discover landmarks as explicit structural representations. The encoding module outputs landmark coordinates, whose validity is ensured by constraints that reflect the necessary properties for landmarks. The decoding module takes the landmarks as a part of the learnable input representations in an end-to-end differentiable framework. Our discovered landmarks are semantically meaningful and more predictive of manually annotated landmarks than those discovered by previous methods.</p>
+                  </blockquote>
+                                </div>
+              <hr>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/155/155292.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://arxiv.org/abs/1804.04241">Capsules for Object Segmentation</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    University of Central Florida
+                  </h6>
+                  <p></p>
+                                    <blockquote class="blockquote">
+                     <p class="quote">The proposed convolutional-deconvolutional capsule network, called SegCaps, shows strong results for the task of object segmentation with substantial decrease in parameter space. As an example application, we applied the proposed SegCaps to segment pathological lungs from low dose CT scans and compared its accuracy and efficiency with other U-Net-based architectures. SegCaps is able to handle large image sizes (512 x 512) as opposed to baseline capsules (typically less than 32 x 32).</p>
+                  </blockquote>
+                                </div>
+              <hr>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/155/155292.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://arxiv.org/abs/1801.10130">ICLR 2018 Best Paper Award - Spherical CNNs</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    University of Admsterdam, EPFL, CIFAR
+                  </h6>
+                  <p>CNNs designed to work with spherical images (I didn't know that existed...) such as omnidirectional vision for drones and autonomous cars, climate modelling etc. Side-note: the paper <a href=https://openreview.net/forum?id=ryQu7f-RZ>On the Convergence of Adam and Beyond</a> reviewed by @Blanca during a paper reading session also received a Best Paper Award.</p>
+                                </div>
+              <hr>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/25/25231.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://github.com/cameronfabbri/Compute-Features">Compute-Features</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    
+                  </h6>
+                  <p>Nice and handy. A small Python script to extract features from a given image. It supports many architectures (that you have to download separately): Inception V1-4, Inception-ResNet, ResNet V1-2, VGG 16 and 19.</p>
+                                </div>
+              <hr>
+
+                          
+          </div>
+          
+          <!-- Category block -->
+          <div class="category">
+              <h2 class="category-title">
+                  <img src="https://image.flaticon.com/icons/png/512/179/179121.png"
+                       class="fa fa-fw category-logo">Optimisation & Learning Theory
+              </h2>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/60/60736.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://eng.uber.com/differentiable-plasticity/">Differentiable Plasticity: A New Method for Learning to Learn</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                        <span class="badge">
+                                  Recommended
+                              </span>
+                                                    Uber
+                  </h6>
+                  <p>The kind of idea that gets me excited. The goal is simple to formulate: they are trying to model the plasticity of the brain and to incorporate it in the standard deep learning framework with gradient descent. Their suggested solution is to extend the weights so that they have two components. The first one changes over time depending on the inputs (that's the plasticity part) while the second one is fixed over time and can be seen as a traditional weight. During training, a parameter is learned to determine which of the first or second component should be predominant. Ideally, this should produce a network which has at the same time fixed connections (ideal for learned tasks) and plastic connections (suitable for retraining and few-shot learning).</p>
+                                    <blockquote class="blockquote">
+                     <p class="quote">While evolving such plastic neural networks is a longstanding area of research in evolutionary computation, to our knowledge the work introduced here is the first to show it is possible to optimize plasticity itself through gradient descent.</p>
+                  </blockquote>
+                                </div>
+              <hr>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/25/25231.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://github.com/nathanhubens/Learning-Rate">Learning Rate Finder for Keras</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    
+                  </h6>
+                  <p>A few callbaks that use Keras' backend to implement SGD with restart and cyclical learning rate. There's also an 'optimal learning rate finder' which seemed a bit dubious to me...</p>
+                                </div>
+              <hr>
+
+                          
+          </div>
+          
+          <!-- Category block -->
+          <div class="category">
+              <h2 class="category-title">
+                  <img src="https://image.flaticon.com/icons/png/512/45/45669.png"
+                       class="fa fa-fw category-logo">Interpratibility & Fairness
+              </h2>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/155/155292.png"
+                           class="fa fa-fw article-logo">
+                                            <img src="https://image.flaticon.com/icons/png/512/25/25231.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://arxiv.org/abs/1610.02391">Grad-CAM: Visual Explanations from Deep Networks via Gradient-based Localization</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    Virginia Tech, Georgia Institute of Technology
+                  </h6>
+                  <p>This paper proposes a method to interpret decisions from a CNN architecture. This has been attempted in the past; yet the novelty of this paper is that their method can be used in a variety of applications and architectures (classification, reinforcement learning, captioning, visual question answering,...). A Pytorch implementation is available <a href=https://github.com/meliketoy/gradcam.pytorch>here</a>.</p>
+                                    <blockquote class="blockquote">
+                     <p class="quote">We propose a technique for producing 'visual explanations' for decisions from a large class of CNN-based models, making them more transparent. Our approach - Gradient-weighted Class Activation Mapping (Grad-CAM), uses the gradients of any target concept, flowing into the final convolutional layer to produce a coarse localization map highlighting the important regions in the image for predicting the concept.</p>
+                  </blockquote>
+                                </div>
+              <hr>
+
+                          
+          </div>
+          
+          <!-- Category block -->
+          <div class="category">
+              <h2 class="category-title">
+                  <img src="https://image.flaticon.com/icons/png/512/249/249156.png"
+                       class="fa fa-fw category-logo">Reinforcement Learning
+              </h2>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/60/60736.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="http://amid.fish/reproducing-deep-rl#fnref:norm2">Lessons Learned Reproducting a Deep Reinforcement Learning Paper</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                        <span class="badge">
+                                  Recommended
+                              </span>
+                                                    Amid Fish
+                  </h6>
+                  <p>This person wanted to implement the famous Deep Reinforcement Learning From Human Preferences as a side project. He estimated it would take him 3 months, most of it being implementation. It actually took 8 months, most of it was tweaking and debugging. This post has been highly praised online, especially among the DRL community. The author shares hindsights and advises (regarding DRL, machine learning in general, Python, Tensorflow...). I particularly liked his statement on the sense of <i>confusion</i>.</p>
+                                    <blockquote class="blockquote">
+                     <p class="quote">Develop the habit of following through on confusion. There are some sources of discomfort that it can be better to ignore in the moment (e.g. code smell while prototyping), but confusion isn’t one of them. It seems important to really commit yourself to always investigate whenever you notice confusion.</p>
+                  </blockquote>
+                                </div>
+              <hr>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/60/60736.png"
+                           class="fa fa-fw article-logo">
+                                            <img src="https://image.flaticon.com/icons/png/512/155/155292.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="http://bair.berkeley.edu/blog/2018/04/10/virtual-stuntman/">Towards a Virtual Stuntman</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    Berkely Artificial Intelligence Research
+                  </h6>
+                  <p>This paper presents a reward functions and a few tricks to make an agent learn realistic movements from a single training sample. The reward function is (as they say) quite simple: it consists in minimizing the L2 distance between the current pose and the target pose and to do this over time. Among the tricks they used, they suggested to initialise the simulation at mid-course of the action. For instance, if you want to teach a backflip, you can initialise the simulation when the agent is in the air and needs to fall on the floor. This forces the exploration  of rewards that otherwise would never had been discovered if the agent had started on the floor. Also, they suggest that early termination (i.e. the action of stopping the simulation when it obviously failed) plays a determinant role. For example, back to the idea of backflip, if the agent fails to jump and land and the floor, we should terminate the simulation. Otherwise, the agent will try to do the movements of a backflip on the ground and will likely get some reward out of it. Next time, it'll be incentivized to do the movement directly on the floor.</p>
+                                </div>
+              <hr>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/174/174858.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://medium.freecodecamp.org/diving-deeper-into-reinforcement-learning-with-q-learning-c18d0db58efe">Diving deeper into Reinforcement Learning with Q-Learning</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    8 mins read - Thomas Simonini
+                  </h6>
+                  <p>The second post of a series on introducing deep reinforcement learning (yes, another one). You can find the first post <a href=https://medium.freecodecamp.org/an-introduction-to-reinforcement-learning-4339519de419>here</a>. I found the specificity of this series is to emphasize intuitive explanations using diagrams and explicit examples. This specific post deals with Q-Learning which is a well-known algorithm pre deep learning era.</p>
+                                </div>
+              <hr>
+
+                          
+          </div>
+          
+          <!-- Category block -->
+          <div class="category">
+              <h2 class="category-title">
+                  <img src="https://image.flaticon.com/icons/png/512/484/484582.png"
+                       class="fa fa-fw category-logo">Natural Language Processing
+              </h2>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/25/25231.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://github.com/niderhoff/nlp-datasets">A collection of NLP datasets</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    
+                  </h6>
+                  <p></p>
+                                </div>
+              <hr>
+
+                          
+          </div>
+          
+          <!-- Category block -->
+          <div class="category">
+              <h2 class="category-title">
+                  <img src="https://image.flaticon.com/icons/png/512/680/680208.png"
+                       class="fa fa-fw category-logo">Data Science & Visualisations
+              </h2>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <b><a href="http://projects.susielu.com/viz-palette">Viz Palette</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    
+                  </h6>
+                  <p>A neat tool to build a nice-looking, color bling-friendly color palette!</p>
+                                </div>
+              <hr>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/25/25231.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://altair-viz.github.io/">Altair</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    
+                  </h6>
+                  <p>This declarative plotting library (a la ggplot from R) has just been updated to version 2.0.0. According to the changelog, this update involved a complete rewrite of the library to focus on supporting Vega-Lite 2.X which is a 'is a high-level grammar of interactive graphics'. For the love of plots.</p>
+                                </div>
+              <hr>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/60/60736.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://github.com/NirantK/best-of-jupyter">Making the best of Jupyter</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    
+                  </h6>
+                  <p>A collection of tips to improve productivity with Jupyter notebooks (how to debug, how to execute shell commands from the notebook and other tips).</p>
+                                </div>
+              <hr>
+
+                          
+          </div>
+          
+          <!-- Category block -->
+          <div class="category">
+              <h2 class="category-title">
+                  <img src="https://image.flaticon.com/icons/png/512/263/263051.png"
+                       class="fa fa-fw category-logo">Everything Else
+              </h2>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <b><a href="https://epic-kitchens.github.io/2018">EPIC-Kitchens</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    University of Bristol, University of Toronto, Universita degli Studi di Catania
+                  </h6>
+                  <p>55 hours of full-hd 60fps recordings of... first-person views of activities performed in a kitchen: cooking, slicing, washing the dishes... The actions are anotated and they also provide bounding boxes for objects. Lot of work behind this...</p>
+                                </div>
+              <hr>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/25/25231.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://github.com/hardikvasa/google-images-download">Google Images Downloader</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    
+                  </h6>
+                  <p>Python Script for searching and downloading hundreds of Google images to the local hard disk. Seems handy to create small datasets.</p>
+                                </div>
+              <hr>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <b><a href="https://codepen.io/teropa/full/rdoPbG/">Play music embeddings online</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    
+                  </h6>
+                  <p>This web app uses (as far as I understood) a Magenta backend to compose music on the fly. You can choose which part of the latent space to explore and set the associated chord you want. Kind of dreamy. :-)</p>
+                                </div>
+              <hr>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/174/174858.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://medium.com/@amatsukawa/maximum-likelihood-maximum-a-priori-and-bayesian-parameter-estimation-d99a23a0519f">Making the distinction between Maximum Likelihood, MAP and Bayesian Parameter Estimation</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    
+                  </h6>
+                  <p>4 mins read. Straight to the point.</p>
+                                </div>
+              <hr>
+
+                          
+          </div>
+                </div>
+      
+  <!-- Dummy container to force centering. Yes. I'm a front-end noob. -->
+  <div class="col-sm-2"></div>
+
+  <!-- End Grid -->
+  </div>
+  
+  <!-- End Page Container -->
+</div>
+
+</body>
+</html>

@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html>
+<title>ML newsletter</title>
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+	html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+
+	.category{
+	  padding: 20px;
+	  margin: auto;
+	  background: #F5F5F5;
+	  margin-bottom: 25px;
+	  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+	  transition: all 0.3s; 
+	  border-radius: 3px;
+	}
+
+    .category-title{
+      margin-bottom: 30px;
+    }
+
+	.category-logo{
+	  margin-right: 10px;
+	}
+
+	.article-logo{
+	  margin-right: 3px;
+	}
+
+    .recommended{
+	  margin-right: 2px;
+    }
+
+    .quote{
+      font-size: 11px;
+    }
+</style>
+
+
+<body>
+
+<!-- Page Container -->
+<div class="container" style="max-width:1400px;">
+
+  <!-- The Grid -->
+  <div class="row">
+  
+      <!-- Dummy container to force centering. Yes. I'm a front-end noob. -->
+      <div class="col-sm-2"></div>
+
+      <div class="col-sm-8">
+
+          
+          <!-- Category block -->
+          <div class="category">
+              <h2 class="category-title">
+                  <img src="https://image.flaticon.com/icons/png/512/263/263051.png"
+                       class="fa fa-fw category-logo">Everything Else
+              </h2>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/25/25231.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://github.com/ilkarman/DeepLearningFrameworks">The rosetta stone of Deep Learning</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                        <span class="badge">
+                                  Recommended
+                              </span>
+                                                    Microsoft Data Science - Ilia Karmanov
+                  </h6>
+                  <p>Nice repo if you're familiar with a specific DL framework and want some change. It's basically a collection of notebook. Each of them solves a specific problem (inference in a graph, training a CNN, training an RNN). And there's one notebook per deep learning framework! Allowing you to compare directly the ammount of code required to get a training running. The proposed frameworks are: CNTK, Caffe, Chainer, Gluon, Keras, Knet, MXNet, Pytorch, Tensorflow and Theano.<br/> The best part? The author provides benchmark on running times!! Annndddd Pytorch appears to be faster to train compared to Tensorflow, even on multi GPU configuration! However, Tensorflow is about 15% faster for inference on K80s.</p>
+                                </div>
+              <hr>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <b><a href="https://metro.exchange/">Metro</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    
+                  </h6>
+                  <p>A platform created by two undergraduate students and which aim at providing a platform to sell and buy data.</p>
+                                    <blockquote class="blockquote">
+                     <p class="quote">We empower the community to control their data and we help innovators achieve their goals.</p>
+                  </blockquote>
+                                </div>
+              <hr>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/155/155292.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://arxiv.org/abs/1803.04386v1">Flipout: Efficient Pseudo-Independent Weight Perturbations on Mini-Batches</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    ICLR - University of Toronto, Google - Flipout: Efficient Pseudo-Independent Weight Perturbations on Mini-Batches
+                  </h6>
+                  <p></p>
+                                    <blockquote class="blockquote">
+                     <p class="quote">Due to the large number of weights, all the examples in a mini-batch typically share the same weight perturbation, thereby limiting the variance reduction effect of large mini-batches. We introduce flipout, an efficient method for decorrelating the gradients within a mini-batch by implicitly sampling pseudo-independent weight perturbations for each example. Empirically, flipout achieves the ideal linear variance reduction for fully connected networks, convolutional networks, and RNNs.</p>
+                  </blockquote>
+                                </div>
+              <hr>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/25/25231.png"
+                           class="fa fa-fw article-logo">
+                                            <img src="https://image.flaticon.com/icons/png/512/155/155292.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://arxiv.org/abs/1803.05268v1">Transparency by Design: Closing the Gap Between Performance and Interpretability in Visual Reasoning</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    MIT Lincoln Lab, Planck Aerosystems - David Mascharka, Philip Tran, Ryan Soklaski, Arjun Majumdar
+                  </h6>
+                  <p>Implementation by the authors <a href=https://github.com/davidmascharka/tbd-nets>here</a> (Pytorch). It includes notebooks!! The repo looks super clean with lots of resources.</p>
+                                    <blockquote class="blockquote">
+                     <p class="quote">We propose a set of visual-reasoning primitives which, when composed, manifest as a model capable of performing complex reasoning tasks in an explicitly-interpretable manner. The fidelity and interpretability of the primitives' outputs enable an unparalleled ability to diagnose the strengths and weaknesses of the resulting model. </p>
+                  </blockquote>
+                                </div>
+              <hr>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/155/155292.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://arxiv.org/abs/1803.03764">Variance Networks: When Expectation Does Not Meet Your Expectations</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    Kirill Neklyudov, Dmitry Molchanov, Arsenii Ashukha, Dmitry Vetrov
+                  </h6>
+                  <p></p>
+                                    <blockquote class="blockquote">
+                     <p class="quote">In this paper, we propose variance networks, a new model that stores the learned information in the variances of the network weights. Surprisingly, no information gets stored in the expectations of the weights, therefore if we replace these weights with their expectations, we would obtain a random guess quality prediction. We provide a numerical criterion that uses the loss curvature to determine which random variables can be replaced with their expected values, and find that only a small fraction of weights is needed for ensembling.</p>
+                  </blockquote>
+                                </div>
+              <hr>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/60/60736.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="http://blog.christianperone.com/2018/03/pytorch-internal-architecture-tour/">PyTorch – Internal Architecture Tour</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    Christian Perone
+                  </h6>
+                  <p>Better be comfortable with C to really enjoy this blog post. It is really neat nonetheless. The authors shows the internals of Pytorch (as it binds C and Python, how objects are stored etc.)</p>
+                                </div>
+              <hr>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/60/60736.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://blogs.microsoft.com/ai/machine-translation-news-test-set-human-parity/?wt.mc_id=74788-mcr-fb">Microsoft uses AI to match human performance in translating news from Chinese to English</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    Microsoft
+                  </h6>
+                  <p></p>
+                                </div>
+              <hr>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/155/155292.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://arxiv.org/abs/1803.05407">Averaging Weights Leads to Wider Optima and Better Generalization</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    Pavel Izmailov, Dmitrii Podoprikhin, Timur Garipov, Dmitry Vetrov, Andrew Gordon Wilson
+                  </h6>
+                  <p></p>
+                                    <blockquote class="blockquote">
+                     <p class="quote">We show that simple averaging of multiple points along the trajectory of SGD, with a cyclical or constant learning rate, leads to better generalization than conventional training. We also show that this Stochastic Weight Averaging (SWA) procedure finds much broader optima than SGD, and approximates the recent Fast Geometric Ensembling (FGE) approach with a single model.</p>
+                  </blockquote>
+                                </div>
+              <hr>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/25/25231.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://github.com/googlecreativelab/open-nsynth-super">Open NSynth Super</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    Google Magenta
+                  </h6>
+                  <p>Magenta has released... a device! It is open source (that's awesome). It's a tactile board with 4 corners and an audio output. By moving your finger on the board, the device will produce a sound as a combination of 4 instruments (you can select those instruments). The closer your finger from a corner, the more obvious it will sound from a specific instrument. From a small chat I had at NIPS, it seems the underlying algorithm is based on a Variational Autoencoder. By defining 4 instruments, you can define an hyperplane in the embedding space and move along it. I imagine a tricky part is to produce a non-noisy sound from a given embedding...<br/>Edit Friday: here is a <a href=https://magenta.tensorflow.org/music-vae>blog post</a> explaining the theory behind it. VAE indeed!</p>
+                                </div>
+              <hr>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/60/60736.png"
+                           class="fa fa-fw article-logo">
+                                            <img src="https://image.flaticon.com/icons/png/512/155/155292.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="http://bair.berkeley.edu/blog/2018/03/13/mcgan/">Transfer Your Font Style with GANs</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    BAIR - Samaned Azadi
+                  </h6>
+                  <p></p>
+                                    <blockquote class="blockquote">
+                     <p class="quote">Instead of training a single network for all possible typeface ornamentations, we designed the multi-content GAN architecture [2] to retrain a customized magical network for each observed character set with only a handful of observed glyphs. [...] The multi-content GAN model consists of a stacked cGAN architecture to predict the coarse glyph shapes and an ornamentation network to predict color and texture of the final glyphs. </p>
+                  </blockquote>
+                                </div>
+              <hr>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/155/155292.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://arxiv.org/abs/1803.04831">Independently Recurrent Neural Network (IndRNN): Building A Longer and Deeper RNN</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    CVPR 2018 - University of Wollongong
+                  </h6>
+                  <p>Edit March 15th: this field is crazy... Anyways. The paper has been uploaded on Arvix two days ago and you can already find implementations on Github. Here is one with <a href=https://github.com/batzner/indrnn>Tensorflow</a> and another one with <a href=https://github.com/theSage21/Indrnn>Pytorch</a>.</p>
+                                    <blockquote class="blockquote">
+                     <p class="quote">[We propose] a new type of RNN, referred to as independently recurrent neural network (IndRNN), neurons in the same layer are independent of each other and they are connected across layers. We show that an IndRNN can be easily regulated to prevent the gradient exploding and vanishing problems while allowing the network to learn long-term dependencies. </p>
+                  </blockquote>
+                                </div>
+              <hr>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/60/60736.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://blog.skymind.ai/distributed-deep-learning-part-1-an-introduction-to-distributed-training-of-neural-networks/">Distributed Deep Learning, Part 1: An Introduction to Distributed Training of Neural Networks</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    Skymind
+                  </h6>
+                  <p>Great intro on distributed computing for machine learning.</p>
+                                </div>
+              <hr>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/60/60736.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://thekevinscott.com/common-patterns-for-analyzing-data/">Common Patterns for Analyzing Data</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    Kevin Scott
+                  </h6>
+                  <p>An intro (but detailed) on data analysis and feature engineering.</p>
+                                </div>
+              <hr>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/174/174858.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://hackernoon.com/train-your-machine-learning-models-on-googles-gpus-for-free-forever-a41bd309d6ad">Train Your Machine Learning Models on Google’s GPUs for Free — Forever</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    Mick Bourdakos
+                  </h6>
+                  <p>Sounds like clickbait but apparently Google gives access to a Jupyter-like interface and you use a GPU up to 12hrs straight. After that you get disconnected. Oh, and the GPU memory is shared so likely you'll only be able to fit small models. I wonder what the EULA looks like...</p>
+                                </div>
+              <hr>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/174/174858.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://towardsdatascience.com/how-i-implemented-iphone-xs-faceid-using-deep-learning-in-python-d5dbaa128e1d">How I implemented iPhone X’s FaceID using Deep Learning in Python</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    University of Rome - Norman Di Palo
+                  </h6>
+                  <p>Di Palo implements a siamese network with an RGB-D camera and trains it on a publicly available dataset.</p>
+                                </div>
+              <hr>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/60/60736.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="http://dawn.cs.stanford.edu/2018/03/09/low-precision/">HALP: High-Accuracy Low-Precision Training</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    Stanford Dawn - Chris De Sa, Megan Leszczynski, Jian Zhang, Alana Marzoev, Chris Aberger, Kunle Olukotun, and Chris Ré
+                  </h6>
+                  <p>To get a good training, we need to use high precision numbers (encoded on at least 32 bits and more broadly on 64 bits). This blog post describes an idea which enables to use low precision numbers (on 8 bits for instance). The idea is to refine the range described by those 8 bits during training. During early training, the gradients will have a high value so the 8 bits must cover a high range of values (say from -5 to 5). But as training goes on, gradients become smaller and we can use those 8 bits to cover a narrower range of values (say from -0.1 to 0.1); hence preserving a decent amount of precision. The algorithm has theoretical grounds for strongly convex problems. </p>
+                                    <blockquote class="blockquote">
+                     <p class="quote">We describe a new variant of stochastic gradient descent (SGD) called high-accuracy low precision (HALP) that can sometimes get high-accuracy solutions from low-precision training.</p>
+                  </blockquote>
+                                </div>
+              <hr>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/25/25231.png"
+                           class="fa fa-fw article-logo">
+                                            <img src="https://image.flaticon.com/icons/png/512/155/155292.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://github.com/MSiam/TFSegmentation">Real-time Semantic Segmentation Comparative Study</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    Mennatullah Siam, Mostafa Gamal, Moemen AbdelRazek, Senthil Yogamani, Martin Jagersand
+                  </h6>
+                  <p>The source code used in the paper <a href=https://arxiv.org/abs/1803.02758>RTSeg: Real-time Semantic Segmentation Comparative Study</a>. They compared different feature-extraction architectures (VGG, ResNet, MobileNet, ShuffleNet) coupled with different decoding methods (UNet, SkipNet, Dilation...). The setting is essentially for a driving car; so road-like scenery segmentation. Oh, and the goal is to achieve real-time segmentation so MobileNet seems to obtain good scores.</p>
+                                </div>
+              <hr>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/25/25231.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://github.com/anvaka/word2vec-graph">word2vec graph</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    anvaka
+                  </h6>
+                  <p>A visualisation tool to inspect high-dimensional word2vec embeddings. The link provides GIFs to show you what to expect. It looks pretty cool. :-)</p>
+                                </div>
+              <hr>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/60/60736.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://research.googleblog.com/2018/03/using-evolutionary-automl-to-discover.html">Using Evolutionary AutoML to Discover Neural Network Architectures</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    Google Research
+                  </h6>
+                  <p>A blog post that presents a recent published paper at ICLR in which an evolutionary algorithm is used to generate good-performing network architectures. It's an evolution of their <a href=https://arxiv.org/abs/1707.07012>first paper</a> published last year (and reviewed during one of our paper reading session!): they switched from RL to genetic algorithms.</p>
+                                </div>
+              <hr>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/25/25231.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://github.com/VinceMarron/style_transfer">Style Transfer as Optimal Transport</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    Vince Marron
+                  </h6>
+                  <p>The Wasserstein distance stikes again but this time it is not applied to GANs but rather to style transfer.</p>
+                                </div>
+              <hr>
+
+                          
+          </div>
+                </div>
+      
+  <!-- Dummy container to force centering. Yes. I'm a front-end noob. -->
+  <div class="col-sm-2"></div>
+
+  <!-- End Grid -->
+  </div>
+  
+  <!-- End Page Container -->
+</div>
+
+</body>
+</html>

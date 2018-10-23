@@ -1,0 +1,31 @@
+intro_text:
+
+outro_text:
+
+articles:
+    - title: ""
+      url: "https://github.com/locuslab/trellisnet"
+      type: 
+      category: 
+      lab: 
+      description: ""
+      quote: ""
+      recommended: 
+
+    - title: ""
+      url: "https://sites.google.com/view/imitativeforecastingcontrol"
+      type: 
+      category: 
+      lab: 
+      description: ""
+      quote: ""
+      recommended: 
+
+    - title: ""
+      url: "https://towardsdatascience.com/when-conventional-wisdom-fails-revisiting-data-augmentation-for-self-driving-cars-4831998c5509"
+      type: 
+      category: 
+      lab: 
+      description: ""
+      quote: ""
+      recommended: 

@@ -55,8 +55,8 @@ articles:
     architectures discovered with evolution that we nickname AmoebaNets. These
     models set a new state of the art for CIFAR-10 (mean test error = 2.13%) and
     mobile-size ImageNet (top-5 accuracy = 92.1% with 5.06M parameters), and reach
-    the current state of the art for ImageNet (top-5 accuracy = 96.2%).\n'
-    '450 GPU / 7 days & 900 TPU / 5 days'.... just saying :-)"
+    the current state of the art for ImageNet (top-5 accuracy = 96.2%).</br>'
+    <i>'450 GPU / 7 days & 900 TPU / 5 days'.... just saying :-)</i>"
 
  - title: "Object-Oriented Deep Learning"
    recommended: False
@@ -78,7 +78,7 @@ articles:
    lab:
    url:
    category: Deep Learning
-   description:
+   quote:
     "A network architecture that generalizes ResNet and DenseNet: 'Consequently,
     ResNet, DenseNet and Dual Path Network (DPN) can be regarded as a special case
     of MixNet'."

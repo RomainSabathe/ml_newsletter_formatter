@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+<title>ML newsletter</title>
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+	html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+
+	.category{
+	  padding: 20px;
+	  margin: auto;
+	  background: #F5F5F5;
+	  margin-bottom: 25px;
+	  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+	  transition: all 0.3s; 
+	  border-radius: 3px;
+	}
+
+    .category-title{
+      margin-bottom: 30px;
+    }
+
+	.category-logo{
+	  margin-right: 10px;
+	}
+
+	.article-logo{
+	  margin-right: 3px;
+	}
+
+    .recommended{
+	  margin-right: 2px;
+    }
+
+    .quote{
+      font-size: 11px;
+    }
+</style>
+
+
+<body>
+
+<!-- Page Container -->
+<div class="container" style="max-width:1400px;">
+
+  <!-- The Grid -->
+  <div class="row">
+  
+      <!-- Dummy container to force centering. Yes. I'm a front-end noob. -->
+      <div class="col-sm-2"></div>
+
+      <div class="col-sm-8">
+
+          
+          <!-- Category block -->
+          <div class="category">
+              <h2 class="category-title">
+                  <img src="https://image.flaticon.com/icons/png/512/149/149243.png"
+                       class="fa fa-fw category-logo">Deep Learning
+              </h2>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/25/25231.png"
+                           class="fa fa-fw article-logo">
+                                            <img src="https://image.flaticon.com/icons/png/512/155/155292.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://github.com/NVIDIA/vid2vid">vid2vid</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                        <span class="badge">
+                                  Recommended
+                              </span>
+                                                    NVIDIA, MIT
+                  </h6>
+                  <p>Stop everything and watch <a href=https://www.youtube.com/watch?v=GrP_aOSXt5U&feature=youtu.be>this video</a>. pix2pix HD, but for videos. After having fell off your chair (utch), you can check out the paper and code.</p>
+                                    <blockquote class="blockquote">
+                     <p class="quote">Pytorch implementation for high-resolution (e.g., 2048x1024) photorealistic video-to-video translation. It can be used for turning semantic label maps into photo-realistic videos, synthesizing people talking from edge maps, or generating human motions from poses.</p>
+                  </blockquote>
+                                </div>
+              <hr>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/155/155292.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://research.fb.com/publications/exploring-the-limits-of-weakly-supervised-pretraining/">Exploring the Limits of Weakly Supervised Pretraining</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    Facebook Research
+                  </h6>
+                  <p>We have all used models pretrained on ImageNet and we took this for granted, as a good starting point. But what if we could use a much, much larger dataset for pretraining? Like 3 billion images from Instagram? That's the purpose of this paper. I haven't been through it completely but it seems there's potential to gain a few percents in accuracy. Sadly, the weights have not been released (as far as I know)! </p>
+                                    <blockquote class="blockquote">
+                     <p class="quote">Our experiments demonstrate that training for large-scale hashtag prediction leads to excellent results. We show improvements on several image classification and object detection tasks, and report the highest ImageNet-1k single-crop, top-1 accuracy to date: 85.4% (97.6% top-5). We also perform extensive experiments that provide novel empirical data on the relationship between large-scale pretraining and transfer learning performance.</p>
+                  </blockquote>
+                                </div>
+              <hr>
+
+                          
+          </div>
+          
+          <!-- Category block -->
+          <div class="category">
+              <h2 class="category-title">
+                  <img src="https://image.flaticon.com/icons/png/512/179/179121.png"
+                       class="fa fa-fw category-logo">Optimisation & Learning Theory
+              </h2>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/155/155292.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://arxiv.org/abs/1808.05563">Learning Invariances using the Marginal Likelihood</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    PROWLER.io, University of Cambridge
+                  </h6>
+                  <p>The standard approach in deep learning to make our models robust to deformations is to use data augmentation. This paper explores the possibility of explicitely adding invariance constraints to the model. For this, authors optimize the <i>marginal likelihood</i> instead of the usual likelihood.</p>
+                                    <blockquote class="blockquote">
+                     <p class="quote">We argue that invariances should instead be incorporated in the model structure, and learned using the marginal likelihood, which correctly rewards the reduced complexity of invariant models. We demonstrate this for Gaussian process models, due to the ease with which their marginal likelihood can be estimated. Our main contribution is a variational inference scheme for Gaussian processes containing invariances described by a sampling procedure. We learn the sampling procedure by back-propagating through it to maximise the marginal likelihood.</p>
+                  </blockquote>
+                                </div>
+              <hr>
+
+                          
+          </div>
+          
+          <!-- Category block -->
+          <div class="category">
+              <h2 class="category-title">
+                  <img src="https://image.flaticon.com/icons/png/512/112/112272.png"
+                       class="fa fa-fw category-logo">Gans & Adversarial Attacks
+              </h2>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/60/60736.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://rajatvd.github.io/Exploring-Adversarial-Reprogramming/">Exploring Adversarial Reprogramming</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    Rajat Vadiraj Dwaraknath
+                  </h6>
+                  <p>An introduction to the <a href=https://arxiv.org/abs/1806.11146>Adversarial Reprogramming of Neural Networks paper</a> submitted recently. In the paper, authors manage to adversarially <i>reprogram</i> a network by making it perform tasks it hasn't been trained on (a given example is: from a network trained to classify ImagetNet images, reprogram it to count squares in an adversarial image). The author of the blog post reproduces the results indicated in the paper and extend it by trying a few ideas of his own. For instance: changing how the adversarial image is encoded, changing the regularization scheme etc.</p>
+                                </div>
+              <hr>
+
+                          
+          </div>
+          
+          <!-- Category block -->
+          <div class="category">
+              <h2 class="category-title">
+                  <img src="https://image.flaticon.com/icons/png/512/249/249156.png"
+                       class="fa fa-fw category-logo">Reinforcement Learning
+              </h2>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/25/25231.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://github.com/apockill/DRLPlayground/">Deep Reinforcement Learning Playground</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    Alex Thiel
+                  </h6>
+                  <p>An interface between Unity and Python that allows to run experiment in 3d Unity-generated environments. An example can be seen <a href=https://www.youtube.com/watch?v=GDh9NqJTYKA>here</a>.</p>
+                                </div>
+              <hr>
+
+                          
+          </div>
+          
+          <!-- Category block -->
+          <div class="category">
+              <h2 class="category-title">
+                  <img src="https://image.flaticon.com/icons/png/512/484/484582.png"
+                       class="fa fa-fw category-logo">Natural Language Processing
+              </h2>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/60/60736.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://ai.googleblog.com/2018/08/moving-beyond-translation-with.html">Moving Beyond Translation with the Universal Transformer</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    Google AI
+                  </h6>
+                  <p>Last year, the Transformer paper introduced some new, clever ways to do NLP (and translation in particular) without using explicit recurrent models. Instead, everything was done through attention. As explained in the blog post, although this method was robust on translation tasks, it failed on toy tasks usually handled well by RNNs (like copying a string or counting characters). Authors are now introducing an extension of their original method called the Universal Transformer which alleviates the shortcomings we mentioned. This blog post explains the idea behind the Universal Transformer and serves as an introduction to the corresponding paper.</p>
+                                </div>
+              <hr>
+
+                          
+          </div>
+          
+          <!-- Category block -->
+          <div class="category">
+              <h2 class="category-title">
+                  <img src="https://image.flaticon.com/icons/png/512/263/263051.png"
+                       class="fa fa-fw category-logo">Everything Else
+              </h2>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <b><a href="https://twitter.com/mark_riedl/status/1032093321559252994">The QuAC dataset</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    
+                  </h6>
+                  <p>The dataset is real though! See <a href=https://arxiv.org/abs/1808.07036>here</a>.</p>
+                                </div>
+              <hr>
+
+                          
+          </div>
+                </div>
+      
+  <!-- Dummy container to force centering. Yes. I'm a front-end noob. -->
+  <div class="col-sm-2"></div>
+
+  <!-- End Grid -->
+  </div>
+  
+  <!-- End Page Container -->
+</div>
+
+</body>
+</html>

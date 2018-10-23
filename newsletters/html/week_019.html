@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html>
+<title>ML newsletter</title>
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+	html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+
+	.category{
+	  padding: 20px;
+	  margin: auto;
+	  background: #F5F5F5;
+	  margin-bottom: 25px;
+	  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+	  transition: all 0.3s; 
+	  border-radius: 3px;
+	}
+
+    .category-title{
+      margin-bottom: 30px;
+    }
+
+	.category-logo{
+	  margin-right: 10px;
+	}
+
+	.article-logo{
+	  margin-right: 3px;
+	}
+
+    .recommended{
+	  margin-right: 2px;
+    }
+
+    .quote{
+      font-size: 11px;
+    }
+</style>
+
+
+<body>
+
+<!-- Page Container -->
+<div class="container" style="max-width:1400px;">
+
+  <!-- The Grid -->
+  <div class="row">
+  
+      <!-- Dummy container to force centering. Yes. I'm a front-end noob. -->
+      <div class="col-sm-2"></div>
+
+      <div class="col-sm-8">
+
+          
+          <!-- Category block -->
+          <div class="category">
+              <h2 class="category-title">
+                  <img src="https://image.flaticon.com/icons/png/512/653/653500.png"
+                       class="fa fa-fw category-logo">General Machine Learning
+              </h2>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/60/60736.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://mml-book.github.io/">Book: Mathematics for Machine Learning</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    Marc Peter Deisenroth, A Aldo Faisal, and Cheng Soon Ong
+                  </h6>
+                  <p>A free book that seems very well written and well made covering fundamental math concepts used in machine learning. It's still in the process of being written. In fact, authors just published Chapter 12 on density estimation with GMMs.</p>
+                                </div>
+              <hr>
+
+                          
+          </div>
+          
+          <!-- Category block -->
+          <div class="category">
+              <h2 class="category-title">
+                  <img src="https://image.flaticon.com/icons/png/512/149/149243.png"
+                       class="fa fa-fw category-logo">Deep Learning
+              </h2>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/155/155292.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://arxiv.org/abs/1805.04770">ICML 2018 - Born Again Neural Networks</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    University of Southern California, Amazon AI, Carnegie Mellon University, ETH Zrich, Caltech
+                  </h6>
+                  <p></p>
+                                    <blockquote class="blockquote">
+                     <p class="quote">Knowledge distillation (KD) consists of transferring knowledge from one machine learning model (the teacher) to another (the student). Commonly, the teacher is a high-capacity model with formidable performance, while the student is more compact. By transferring knowledge, one hopes to benefit from the student's compactness. we desire a compact model with performance close to the teacher's. We study KD from a new perspective: rather than compressing models, we train students parameterized identically to their teachers. Surprisingly, these Born-Again Networks (BANs), outperform their teachers significantly, both on computer vision and language modeling tasks. Our experiments with BANs based on DenseNets demonstrate state-of-the-art performance on the CIFAR-10 (3.5%) and CIFAR-100 (15.5%) datasets, by validation error.</p>
+                  </blockquote>
+                                </div>
+              <hr>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/155/155292.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://arxiv.org/abs/1805.05206">DeepMutation: Mutation Testing of Deep Learning Systems</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    Harbin Institute of Technology and a LOT of others
+                  </h6>
+                  <p></p>
+                                    <blockquote class="blockquote">
+                     <p class="quote">Deep learning (DL) defines a new data-driven programming paradigm where the internal system logic is largely shaped by the training data. The standard way of evaluating DL models is to examine their performance on a test dataset. The quality of the test dataset is of great importance to gain confidence of the trained models. Using inadequate test dataset, DL models that have achieved high test accuracy may still suffer from vulnerability against (adversarial) attacks. [...]  In this paper, we propose the mutation testing framework specialized for DL systems. We first propose a source-level mutation testing technique to slightly modify source (i.e., training data and training programs) of DL software, which shares the same spirit of traditional mutation testing. Then we design a set of model-level mutation testing operators that directly mutate on DL models without a training process.</p>
+                  </blockquote>
+                                </div>
+              <hr>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/155/155292.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://arxiv.org/abs/1711.08856">Critical Learning Periods in Deep Neural Networks</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    University of California, Ann Romney Center for Neurologic Diseases
+                  </h6>
+                  <p></p>
+                                    <blockquote class="blockquote">
+                     <p class="quote">Critical periods are phases in the early development of humans and animals during which experience can irreversibly affect the architecture of neuronal networks. In this work, we study the effects of visual stimulus deficits on the training of artificial neural networks (ANNs). [...] We use Fisher Information as a measure of the strength of the network's connections during the training. Our information-theoretic analysis suggests that the first few epochs are critical for the creation of strong connections across different layers, optimal for processing the input data distribution. Once such strong connections are created, they do not appear to change during additional training.</p>
+                  </blockquote>
+                                </div>
+              <hr>
+
+                          
+          </div>
+          
+          <!-- Category block -->
+          <div class="category">
+              <h2 class="category-title">
+                  <img src="https://image.flaticon.com/icons/png/512/722/722174.png"
+                       class="fa fa-fw category-logo">Computer Vision
+              </h2>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/155/155292.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://arxiv.org/abs/1805.04953">CVPR 2018 (?) - Learning Rich Features for Image Manipulation Detection</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                        <span class="badge">
+                                  Recommended
+                              </span>
+                                                    University of Maryland, Adobe Research
+                  </h6>
+                  <p></p>
+                                    <blockquote class="blockquote">
+                     <p class="quote">We propose a two-stream Faster R-CNN network and train it endto- end to detect the tampered regions given a manipulated image.</p>
+                  </blockquote>
+                                </div>
+              <hr>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/155/155292.png"
+                           class="fa fa-fw article-logo">
+                                            <img src="https://image.flaticon.com/icons/png/512/25/25231.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://github.com/cchen156/Learning-to-See-in-the-Dark">Learning-to-See-in-the-Dark</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    UIUC, Intel Labs
+                  </h6>
+                  <p>Ummm... wow??! Check the first image in the link!!</p>
+                                    <blockquote class="blockquote">
+                     <p class="quote"> To support the development of learning-based pipelines for low-light image processing, we introduce a dataset of raw short-exposure low-light images, with corresponding long-exposure reference images. Using the presented dataset, we develop a pipeline for processing low-light images, based on end-to-end training of a fully-convolutional network. The network operates directly on raw sensor data and replaces much of the traditional image processing pipeline, which tends to perform poorly on such data.</p>
+                  </blockquote>
+                                </div>
+              <hr>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/155/155292.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://arxiv.org/abs/1711.07971">CVPR 2018 - Non-local Neural Networks</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    Carnegie Mellon University, Facebook AI Research
+                  </h6>
+                  <p>A nice find for me... Apparently they destroyed previous SOTA on video recongition.</p>
+                                    <blockquote class="blockquote">
+                     <p class="quote">Both convolutional and recurrent operations are building blocks that process one local neighborhood at a time. In this paper, we present non-local operations as a generic family of building blocks for capturing long-range dependencies. Inspired by the classical non-local means method in computer vision, our non-local operation computes the response at a position as a weighted sum of the features at all positions. This building block can be plugged into many computer vision architectures.</p>
+                  </blockquote>
+                                </div>
+              <hr>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/25/25231.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://github.com/Justin-Tan/generative-compression">TensorFlow Implementation of Generative Adversarial Networks for Extreme Learned Image Compression</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    Justin Tan
+                  </h6>
+                  <p>An implementation of <a href=https://github.com/Justin-Tan/generative-compression>Generative Adversarial Networks for Extreme Learned Image Compression</a>. As stated in the title of the paper, this algorithm greatly improves image quality when compressing an image.</p>
+                                </div>
+              <hr>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/155/155292.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://arxiv.org/abs/1805.04668">I Have Seen Enough: A Teacher Student Network for Video Classification Using Fewer Frames</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    Indian Institute of Technology
+                  </h6>
+                  <p></p>
+                                    <blockquote class="blockquote">
+                     <p class="quote">In this paper, we focus on the task of video classification and aim to reduce the computational time by using the idea of distillation. Specifically, we first train a teacher network which looks at all the frames in a video and computes a representation for the video. We then train a student network whose objective is to process only a small fraction of the frames in the video and still produce a representation which is very close to the representation computed by the teacher network.</p>
+                  </blockquote>
+                                </div>
+              <hr>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/155/155292.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://arxiv.org/abs/1805.04554">ContextNet: Exploring Context and Detail for Semantic Segmentation in Real-time</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    Toshiba Research Europe
+                  </h6>
+                  <p></p>
+                                    <blockquote class="blockquote">
+                     <p class="quote">We propose ContextNet, a new deep neural network architecture which builds on factorized convolution, network compression and pyramid representations to produce competitive semantic segmentation in real-time with low memory requirements. ContextNet combines a deep branch at low resolution that captures global context information efficiently with a shallow branch that focuses on high-resolution segmentation details.</p>
+                  </blockquote>
+                                </div>
+              <hr>
+
+                          
+          </div>
+          
+          <!-- Category block -->
+          <div class="category">
+              <h2 class="category-title">
+                  <img src="https://image.flaticon.com/icons/png/512/179/179121.png"
+                       class="fa fa-fw category-logo">Optimisation & Learning Theory
+              </h2>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/155/155292.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://arxiv.org/abs/1805.04928">Doing the impossible: Why neural networks can be trained at all</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    Pacific Northwest National Laboratory
+                  </h6>
+                  <p></p>
+                                    <blockquote class="blockquote">
+                     <p class="quote">In the current work we use the concept of mutual information between successive layers of a deep neural network to elucidate this mechanism and suggest possible ways of exploiting it to accelerate training. We show that adding structure to the neural network that enforces higher mutual information between layers speeds training and leads to more accurate results. High mutual information between layers implies that the effective number of free parameters is exponentially smaller than the raw number of tunable weights.</p>
+                  </blockquote>
+                                </div>
+              <hr>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/155/155292.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://arxiv.org/abs/1805.04756">Predictive Uncertainty in Large Scale Classification using Dropout - Stochastic Gradient Hamiltonian Monte Carlo</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    Universidad Catolica del Maule
+                  </h6>
+                  <p></p>
+                                    <blockquote class="blockquote">
+                     <p class="quote">Predictive uncertainty is crucial for many computer vision tasks, from image classification to autonomous driving systems. Hamiltonian Monte Carlo (HMC) is an inference method for sampling complex posterior distributions. On the other hand, Dropout regularization has been proposed as an approximate model averaging technique that tends to improve generalization in large scale models such as deep neural networks. Although, HMC provides convergence guarantees for most standard Bayesian models, it does not handle discrete parameters arising from Dropout regularization. In this paper, we present a robust methodology for predictive uncertainty in large scale classification problems, based on Dropout and Stochastic Gradient Hamiltonian Monte Carlo. </p>
+                  </blockquote>
+                                </div>
+              <hr>
+
+                          
+          </div>
+          
+          <!-- Category block -->
+          <div class="category">
+              <h2 class="category-title">
+                  <img src="https://image.flaticon.com/icons/png/512/112/112272.png"
+                       class="fa fa-fw category-logo">Gans & Adversarial Attacks
+              </h2>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/155/155292.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://arxiv.org/abs/1805.05010">Detecting Adversarial Samples for Deep Neural Networks through Mutation Testing</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    Singapore University Of Technology and Design, Zhejiang University
+                  </h6>
+                  <p></p>
+                                    <blockquote class="blockquote">
+                     <p class="quote">In this work, we propose an alternative approach. We first observe that adversarial samples are much more sensitive to perturbations than normal samples. That is, if we impose random perturbations on a normal and an adversarial sample respectively, there is a significant difference between the ratio of label change due to the perturbations. Observing this, we design a statistical adversary detection algorithm called nMutant (inspired by mutation testing from software engineering community). Our experiments show that nMutant effectively detects most of the adversarial samples generated by recently proposed attacking methods.</p>
+                  </blockquote>
+                                </div>
+              <hr>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/25/25231.png"
+                           class="fa fa-fw article-logo">
+                                            <img src="https://image.flaticon.com/icons/png/512/155/155292.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://github.com/LynnHo/AttGAN-Tensorflow">Arbitrary Facial Attribute Editing: Only Change What You Want</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    Lynn Ho
+                  </h6>
+                  <p>A Tensorflow implementation of <a href=https://arxiv.org/abs/1711.10678>Arbitrary Facial Attribute Editing: Only Change What You Want</a>.</p>
+                                </div>
+              <hr>
+
+                          
+          </div>
+          
+          <!-- Category block -->
+          <div class="category">
+              <h2 class="category-title">
+                  <img src="https://image.flaticon.com/icons/png/512/484/484582.png"
+                       class="fa fa-fw category-logo">Natural Language Processing
+              </h2>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/60/60736.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://ai.googleblog.com/2018/05/duplex-ai-system-for-natural-conversation.html">Google Duplex: An AI System for Accomplishing Real-World Tasks Over the Phone</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                        <span class="badge">
+                                  Recommended
+                              </span>
+                                                    Google Research
+                  </h6>
+                  <p>You may have seen the presentation of Google Duplex during their IO conference (<a href=https://www.youtube.com/watch?v=D5VN56jQMWM>here</a>). It is in essence an extension to Google Assistant that is able to naturally interact with people over the phone to make bookings, ask for information etc. Highly recommend to watch the video. It's dope. Yet it's a live presentation and we can wonder 'have they really done that?'. This blogpost is here to (almost) prove it! It details the scenarios in which Google Duplex works and the ones where it doesn't. In particular, we learn that they use <i>specialised</i> algorithms for each use scenario. There will be one for flight bookings, another one for restaurant bookings etc. Also, although the core algorithm is using an RNN, they sometimes rely on less sophisticated methods yet more efficient. This is useful for cases where a low latency is critical to create the illusion of natural conversation (for instance when replying to 'hello?').</p>
+                                </div>
+              <hr>
+
+                          
+          </div>
+          
+          <!-- Category block -->
+          <div class="category">
+              <h2 class="category-title">
+                  <img src="https://image.flaticon.com/icons/png/512/680/680208.png"
+                       class="fa fa-fw category-logo">Data Science & Visualisations
+              </h2>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/60/60736.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="http://blog.pyviz.org/release_1.10.html">HoloViews 1.1.0 Release</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    
+                  </h6>
+                  <p>I did not know this data visualisation library. Their motto is quite strong: 'Stop plotting your data - annotate your data and let it visualize itself.'. This update brings a bunch of new plot presets. Not sure we'll be the best suited to make the most of them, but still!</p>
+                                </div>
+              <hr>
+
+                          
+          </div>
+          
+          <!-- Category block -->
+          <div class="category">
+              <h2 class="category-title">
+                  <img src="https://image.flaticon.com/icons/png/512/263/263051.png"
+                       class="fa fa-fw category-logo">Everything Else
+              </h2>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/60/60736.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://www.quantamagazine.org/to-build-truly-intelligent-machines-teach-them-cause-and-effect-20180515/">To Build Truly Intelligent Machines, Teach Them Cause and Effect</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    QuantaMagazine
+                  </h6>
+                  <p>An interview with Turing Award winner Judea Pearl on the occasion of the release of his newest book 'The Book of Why: The New Science of Cause and Effect'. This interview is pretty high level. Pearl does not hide his skepticism towards machine learning and deep learning. He acknowledges that a surprisingly high number of problems were solved with machine learning, but the true way towards AI must incorporate the notion of cause and effect, not just correlations.</p>
+                                </div>
+              <hr>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/149/149125.png"
+                           class="fa fa-fw article-logo">
+                                            <img src="https://image.flaticon.com/icons/png/512/155/155292.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://www.youtube.com/watch?v=uFJvRYtjQ4c">SIGGRAPH 2018 - Mode-Adaptive Neural Networks for Quadruped Motion Control</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    University of Edinburgh
+                  </h6>
+                  <p>I like this type of research because it gives us an idea of how machine learning could/will be used in video games or physics engines.</p>
+                                </div>
+              <hr>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <b><a href="https://www.figure-eight.com/datasets/">8 datasets free to download</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    Figure Eight
+                  </h6>
+                  <p>A way to promote the Figure Eight platform I guess. Datasets cover mainly computer vision (object detection, handwriting recognition, medical imaging) and NLP.</p>
+                                </div>
+              <hr>
+
+                          
+          </div>
+                </div>
+      
+  <!-- Dummy container to force centering. Yes. I'm a front-end noob. -->
+  <div class="col-sm-2"></div>
+
+  <!-- End Grid -->
+  </div>
+  
+  <!-- End Page Container -->
+</div>
+
+</body>
+</html>

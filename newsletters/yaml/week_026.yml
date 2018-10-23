@@ -1,0 +1,68 @@
+intro_text:
+
+outro_text:
+
+articles:
+    - title: "Learning Montezuma’s Revenge from a Single Demonstration"
+      url: "https://blog.openai.com/learning-montezumas-revenge-from-a-single-demonstration/"
+      type: "blog"
+      category: "rl"
+      lab: "OpenAI"
+      description: "Montezuma's Revenge is considered as the most difficult Atari game for a reinforcement algorithm. The reason is you have to move a character across different scenes to gather objects in a specific order while avoiding some obstacles on your way. To simplify the problem, researchers use a successful game played by a human. Instead of mimicking the actions of the human from the start of the game till the end, they do it backwards. The uninitialised network starts from a situation close to the end of the game and therefore just has to do few actions to complete the game. Once this is learned, the game starts from a point further in time and the network still has to complete the game. It is more difficult since there are more actions to be performed, but it can leverage what it has learned earlier. <br />
+      Although this method allowed the network to beat the human player in terms of score, critics observe that the solution found by the network will necessarily be close from the solution found by a human."
+      quote: ""
+      recommended: ""
+
+    - title: "AdamW and Super-convergence is now the fastest way to train neural nets"
+      url: "http://www.fast.ai/2018/07/02/adam-weight-decay/"
+      type: "blog"
+      category: "optim"
+      lab: "fast.ai"
+      description: "A student at fast.ai observed that the way Adam with regularization was implemented in deep learning librairies might be suboptimal. There is actually a distinction between weight decay and L2 regularization, because of the momentum terms used in Adam. In deep learning libraries, it is L2 regularization that is used. But this acticle suggests that weight decay should be used instead."
+      quote: ""
+      recommended: ""
+
+    - title: "A New Angle on L2 Regularization"
+      url: "https://thomas-tanay.github.io/post--L2-regularization/"
+      type: "blog"
+      category: "theory"
+      lab: "CoMPLEX, UCL"
+      description: "Very interesting article with a number of visualisations, that uses the scenario of a linear model to get a better understanding of what happens when a model is being fooled by an adversarial input. Later, they extend the discussion to non-linear models. They hypothesize that the norm of the weights might have to do with it since they have an indirect impact on the order of magnitude of the loss function which in turns lead to underfitting/overfitting scenarios."
+      quote: ""
+      recommended: "True"
+
+    - title: "The Elephant in the Room"
+      url: "https://www.youtube.com/watch?v=qcm3lL4PCC4"
+      type: "video"
+      category: "cv"
+      lab: "Amir Rosenfeld"
+      description: "Very short video. It shows the ouput of an object detector when we paste a cropped image (like an elephant) onto another image (like a room). He hope that the model would find all the items in the room, plus the elephant. It's a whole different scenario. The elephant is not necessarily recognised; worse: depending on the elephant's location, items that were being detected before are not detected anymore. "
+      quote: ""
+      recommended: ""
+
+    - title: "Neural Processes"
+      url: "https://arxiv.org/abs/1807.01622"
+      type: "paper"
+      category: "ml"
+      lab: "DeepMind"
+      description: ""
+      quote: "A neural network (NN) is a parameterised function that can be tuned via gradient descent to approximate a labelled collection of data with high precision. A Gaussian process (GP), on the other hand, is a probabilistic model that defines a distribution over possible functions, and is updated in light of data via the rules of probabilistic inference. GPs are probabilistic, data-efficient and flexible, however they are also computationally intensive and thus limited in their applicability. We introduce a class of neural latent variable models which we call Neural Processes (NPs), combining the best of both worlds."
+      recommended: ""
+
+    - title: "DARTS: Differentiable Architecture Search"
+      url: "https://arxiv.org/abs/1806.09055"
+      type: "paper"
+      category: "ml"
+      lab: "CMU, DeepMind"
+      description: "We knew reinforcement learning and genetic algorithms could be used for architecture search... Well, here comes the old guy, gradient descent..."
+      quote: "Our method is based on the continuous relaxation of the architecture representation, allowing efficient search of the architecture using gradient descent. Extensive experiments on CIFAR-10, ImageNet, Penn Treebank and WikiText-2 show that our algorithm excels in discovering high-performance convolutional architectures for image classification and recurrent architectures for language modeling, while being orders of magnitude faster than state-of-the-art non-differentiable techniques."
+      recommended: ""
+
+    - title: "Social GAN: Socially Acceptable Trajectories with Generative Adversarial Networks"
+      url: "https://arxiv.org/abs/1803.10892"
+      type: "paper"
+      category: "gans"
+      lab: "Stanfor University, Ecole Polytechnique Federale de Lausanne"
+      description: "The paper has been around for a while, but authors just released the code <a href=https://github.com/agrimgupta92/sgan>here</a>."
+      quote: "Understanding human motion behavior is critical for autonomous moving platforms (like self-driving cars and social robots) if they are to navigate human-centric environments. This is challenging because human motion is inherently multimodal: given a history of human motion paths, there are many socially plausible ways that people could move in the future. We tackle this problem by combining tools from sequence prediction and generative adversarial networks: a recurrent sequence-to-sequence model observes motion histories and predicts future behavior, using a novel pooling mechanism to aggregate information across people."
+      recommended: ""

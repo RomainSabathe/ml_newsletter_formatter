@@ -1,0 +1,22 @@
+intro_text:
+
+outro_text:
+
+articles:
+    - title: "Semi-parametric Image Synthesis"
+      url: "https://www.youtube.com/watch?v=U4Q98lenGLQ"
+      type: "youtube + paper"
+      category: "cv"
+      lab: "CUHK, Intel Labs"
+      description: ""
+      quote: ""
+      recommended: ""
+
+    - title: "Learning from Source Code"
+      url: "https://www.microsoft.com/en-us/research/blog/learning-source-code/"
+      type: "blog"
+      category: "general"
+      lab: "Microsoft Research"
+      description: ""
+      quote: ""
+      recommended: ""

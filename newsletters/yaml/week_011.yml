@@ -1,0 +1,232 @@
+intro_text:
+
+outro_text:
+
+articles:
+    - title: "Fast Pandas"
+      recommended: true
+      type: "github"
+      category: "Data Science & Visualisations"
+      lab: "mm-mansour"
+      url: "https://github.com/mm-mansour/Fast-Pandas"
+      description: "A thorough study of the performance of Pandas vs Numpy in diverse scenario. The author shares a Benchmark class that he used as well as the conclusions of this investigation. And it's quite a mess. For instance, you should use df.sum() instead of np.sum(). But for sorting, you better use np.sort() instead of df.sort_item() (the difference is huge, up to 5x...). Interesting read if you want to optimise your data processing performance. "
+      quote:
+          ""
+
+    - title: "Baidu Apollo Releases Massive Self-driving Dataset"
+      recommended: False
+      type: "medium"
+      category: "News"
+      lab: "Baidu"
+      url: "https://medium.com/@Synced/baidu-apollo-releases-massive-self-driving-dataset-teams-up-with-berkeley-deepdrive-5e785ab4053b"
+      description: ""
+      quote:
+          "ApolloScape was released under Baidu’s autonomous driving platform Apollo, which Baidu hopes will become “the Android of the auto industry.” Apollo gives developers access to a complete set of service solutions and open-source codes and can enable for example a software engineer to convert a Lincoln MKZ into a self-driving vehicle in about 48 hours."
+
+
+    - title: "Recent FAIR CV Papers - FPN, RetinaNet, Mask and Mask-X RCNN"
+      recommended: false
+      type: "blog"
+      category: "computer vision"
+      lab: "krish"
+      url: "https://skrish13.github.io/articles/2018-03/fair-cv-saga"
+      description: "A blog post that introduces 4 major papers from Facebook Research in 2017. We have <i>Feature Pyramid Networks for Object Detection</i>, <i>Focal Loss for Dense Object Detection</i>, <i>Mask R-CNN</i> and <i>Learning to Segment Everything</i>. most of them were described in our reading groups (when Pouria came back from ICCV). I was excited to read this post but I'm quite disapointed overall. I'd say it's a good introduction if you want to understand the context of those papers but the explanations did not help me get a better understanding of the ideas presented in the papers..."
+      quote:
+          ""
+
+    - title: "Live Loss Plot"
+      recommended: false
+      type: "github"
+      category: "Everything Else"
+      lab: "Piotr Migdal"
+      url: "https://github.com/stared/livelossplot/"
+      description: "A small utility class to plot training curves in a notebook. Currently supports Keras and PyTorch. It's not ground breaking and will definitevely not compare with Tensorboard but it can be handy for small projects."
+      quote:
+          ""
+
+    - title: "The Machine Learning Reproducibility Crisis"
+      recommended: false
+      type: "blog"
+      category: "General Machine Learning"
+      lab: "Pete Warden"
+      url: "https://petewarden.com/2018/03/19/the-machine-learning-reproducibility-crisis/"
+      description: "A statement in favor of better reproducibility in the field."
+      quote:
+          "It’s hard to explain to people who haven’t worked with machine learning, but we’re still back in the dark ages when it comes to tracking changes and rebuilding models from scratch. It’s so bad it sometimes feels like stepping back in time to when we coded without source control."
+
+
+    - title: "AI2: Safety and Robustness Certification of Neural Networks with Abstract Interpretation"
+      recommended: false
+      type: "paper"
+      category: "Interpratibility & Fairness"
+      lab: "AI2"
+      url: "http://ai2.ethz.ch/"
+      description: "The abstract is promising. See the website for a visualisation of their algorithm."
+      quote:
+          "AI2 is a sound and scalable analysis framework for proving robustness of deep neural networks. It supports networks with convolutional, max-pooling, and fully-connected layers."
+
+
+    - title: "Style Transfer as a Service"
+      recommended: true
+      type: "blog"
+      category: "Production & Engineering"
+      lab: "Rogrigo Castro"
+      url: "https://rodrigo.red/blog/style-transfer-sass/"
+      description: "The details of an implementation of an online service for style transfer. The particularity of this project is that it is (mostly) serverless. The post is very well documented, providing all the finest details of the implementation."
+      quote:
+          ""
+
+
+    - title: "Splash of Color: Instance Segmentation with Mask R-CNN and TensorFlow"
+      recommended: true
+      type: "blog"
+      category: "Computer Vision"
+      lab: "Waleed Abdulla"
+      url: "https://engineering.matterport.com/splash-of-color-instance-segmentation-with-mask-r-cnn-and-tensorflow-7c761e238b46"
+      description: "By the authors of the famous <a href=https://github.com/matterport/Mask_RCNN>Mask R-CNN repo</a>. This post gives an overview of Mask RCNN and indications on how to train a Mask RCNN model from scratch. It also shows you how to create a dataset for instance segmentation. In particular, I was impressed to see that he needed only 75 images to get a decent ballon detection system (the original model was pretrained on COCO)."
+      quote:
+          ""
+
+
+    - title: "Gender shades: How well do IBM, Microsoft, and Face++ AI services guess the gender of a face?"
+      recommended: true
+      type: "blog"
+      category: "Interpratibility & Fairness"
+      lab: "MIT Media Lab"
+      url: "http://gendershades.org/index.html"
+      description: "A study (all in visualisation) on how skin color and gender affects the quality of ouputs. Microsoft seems to be the one which has the less bias (even though it has some)."
+      quote:
+          ""
+
+
+    - title: "How to write a persuasive ICLR review: visualizing the ICLR 2018 open review dataset"
+      recommended: false
+      type: "medium"
+      category: "Natural Language Processing"
+      lab: "Jasson Kessler"
+      url: "https://medium.com/@jasonskessler/how-to-write-a-persuasive-iclr-review-visualizing-the-iclr-2018-review-data-set-a035bf89a946"
+      description: "An NLP study of 2 806 reviews on 930 ICRL papers. The author explores the language of reviews that tend to reject a paper of those that tend to accept it. While there is definitively a lot of work behind this study as well as nice web visualisation, it looks to me the conclusions are rather unsurprising (rejected papers will have negations in their reviews)."
+      quote:
+          ""
+
+
+    - title: "Unsupervised Representation Learning by Predicting Image Rotations"
+      recommended: true
+      type: "paper+github"
+      category: "Computer Vision"
+      lab: "Universite Paris-Est, Ecole des Ponts - Spyros Gidaris, Praveer Singh, Nikos Komodakis"
+      url: "https://arxiv.org/abs/1803.07728"
+      description: "A very interesting idea to perform unsupervised learning. It sounds simple but it reportedly leads to strong performance."
+      quote:
+          "In our work we propose to learn image features by training ConvNets to recognize the 2d rotation that is applied to the image that it gets as input. We demonstrate both qualitatively and quantitatively that this apparently simple task actually provides a very powerful supervisory signal for semantic feature learning. "
+
+
+    - title: "Video Object Segmentation with Language Referring Expressions"
+      recommended: false
+      type: "paper"
+      category: "Computer Vision"
+      lab: "Max Plank Institute, University of Berkeley - Anna Khoreva, Anna Rohrbach, Bernt Schiele"
+      url: "https://arxiv.org/abs/1803.08006"
+      description: "I really love this ambitious idea that facilitates the labelling of videos."
+      quote:
+          "In this work we explore an alternative way of identifying a target object, namely by employing language referring expressions. Besides being a more practical and natural way of pointing out a target object, using language specifications can help to avoid drift as well as make the system more robust to complex dynamics and appearance variations. "
+
+
+    - title: "Dynamic Sampling Convolutional Neural Networks"
+      recommended: false
+      type: "paper"
+      category: "Deep Learning"
+      lab: "University of Texas - Jialin Wu, Dai Li, Yu Yang, Chandrajit Bajaj, Xiangyang Ji"
+      url: "https://arxiv.org/abs/1803.07624"
+      description: ""
+      quote:
+          "We present Dynamic Sampling Convolutional Neural Networks (DSCNN), where the position-specific kernels learn from not only the current position but also multiple sampled neighbour regions. During sampling, residual learning is introduced to ease training and an attention mechanism is applied to fuse features from different samples. And the kernels are further factorized to reduce parameters."
+
+
+    - title: "PyramidBox: A Context-assisted Single Shot Face Detector"
+      recommended: true
+      type: "paper"
+      category: "Computer Vision"
+      lab: "Baidu - Xu Tang, Daniel K. Du, Zeqiang He, Jingtuo Liu"
+      url: "https://arxiv.org/abs/1803.07737"
+      description: "IMPRESSIVE face detector!!!"
+      quote:
+          "This paper proposes a novel context-assisted single shot face detector, named PyramidBox, to handle the hard face detection problem. Observing the importance of the context, we improve the utilization of contextual information."
+
+
+    - title: "Modeling Camera Effects to Improve Deep Vision for Real and Synthetic Data"
+      recommended: false
+      type: "paper"
+      category: "Computer Vision"
+      lab: "University of Michigan - Alexandra Carlson, Katherine A. Skinner, Matthew Johnson-Roberson"
+      url: "https://arxiv.org/abs/1803.07721"
+      description: "This paper explores new sets of data augmentation where we try to simulate camera artefacts that can arise in the wild."
+      quote:
+          "This paper proposes an efficient, automated physically-based augmentation pipeline to vary sensor effects -- specifically, chromatic aberration, blur, exposure, noise, and color cast -- across both real and synthetic imagery. "
+
+
+    - title: "Stochastic Weight Averaging (SWA)"
+      recommended: false
+      type: "github"
+      category: "Optimisation & Learning Theory"
+      lab: "timgaripov"
+      url: "https://github.com/timgaripov/swa"
+      description: "A pytorch implementation of last week's paper <a href=https://arxiv.org/abs/1803.05407>Averaging Weights Leads to Wider Optima and Better Generalization</a>."
+      quote:
+          ""
+
+
+    - title: "Visualizing high-dimensional functions with cross-sections"
+      recommended: false
+      type: "blog"
+      category: "Optimisation & Learning Theory"
+      lab: "Tim Vieira"
+      url: "http://timvieira.github.io/blog/post/2014/02/12/visualizing-high-dimensional-functions-with-cross-sections/"
+      description: "A very short read that gives some ideas onhow we can try to plot a multi-dimensional surface back to 2d."
+      quote:
+          ""
+
+
+    - title: "Group Normalization"
+      recommended: false
+      type: "paper"
+      category: "Optimisation & Learning Theory"
+      lab: "FAIR - Yuxin Wu, Kaiming He"
+      url: "https://arxiv.org/abs/1803.08494"
+      description: "An alternative to batch norm which does not suffer from performance drop when using a small batch size."
+      quote:
+          ""
+
+
+    - title: "Some Theoretical Properties of GANs"
+      recommended: false
+      type: "paper"
+      category: "GANs & Adversarial Attacks"
+      lab: "Sorbonne Universite - G. Biau (LPSM), B. Cadre (ENS Rennes), M. Sangnier (LPSM), U. Tanielian (LPSM)"
+      url: "https://arxiv.org/abs/1803.07819"
+      description: ""
+      quote:
+          "In this paper, we offer a better theoretical understanding of GANs by analyzing some of their mathematical and statistical properties. We study the deep connection between the adversarial principle underlying GANs and the Jensen-Shannon divergence, together with some optimality characteristics of the problem."
+
+
+
+    - title: "Residual Networks: Lyapunov Stability and Convex Decomposition"
+      recommended: false
+      type: "paper"
+      category: "Optimisation & Learning Theory"
+      lab: "ICML 2018 - University of Berkeley - Kamil Nar, Shankar Sastry"
+      url: "https://arxiv.org/abs/1803.08203"
+      description: ""
+      quote:
+          "While training error of most deep neural networks degrades as the depth of the network increases, residual networks appear to be an exception. We show that the main reason for this is the Lyapunov stability of the gradient descent algorithm: for an arbitrarily chosen step size, the equilibria of the gradient descent are most likely to remain stable for the parametrization of residual networks."
+
+
+    - title: "Data Version Control Tutorial"
+      recommended: false
+      type: "medium"
+      category: "Data Science & Visualisations"
+      lab: "Dmitry Petrov"
+      url: "https://blog.dataversioncontrol.com/data-version-control-tutorial-9146715eda46"
+      description: "A blog post that serves as tutorial to introduce a service the author created: Data Version Control. It seems to be a sort of plug in to Git,... made to work with data and to facilitate reproducibility. The post (and the product) are clearly targeted towards data science so I'm not sure to what extent this might concern us."
+      quote:
+          ""

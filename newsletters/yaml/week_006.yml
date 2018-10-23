@@ -1,0 +1,306 @@
+intro_text:
+
+outro_text:
+
+articles:
+    - title: "Online Learning: A Comprehensive Survey"
+      recommended: False
+      type: Paper
+      category: General Machine Learning
+      lab:
+      url: https://arxiv.org/abs/1802.02871
+      description:
+      quote:
+          "This survey aims to provide a comprehensive survey of the online
+          machine learning literatures through a systematic review of basic ideas and key
+          principles and a proper categorization of different algorithms and techniques."
+
+    - title: "A Survey of Methods For Explaining Black Box Models"
+      recommended: False
+      type: Paper
+      category: Interpratibility & Fairness
+      lab:
+      url: https://arxiv.org/abs/1802.01933
+      description:
+      quote:
+        "The aim of this paper is to provide a classification of the main problems
+        addressed in the literature with respect to the notion of explanation and the
+        type of black box system. Given a problem definition, a black box type, and a
+        desired explanation this survey should help the researcher to find the
+        proposals more useful for his own work."
+
+    - title: "Going Deeper in Spiking Neural networks: VGG and Residual Architectures"
+      recommended: False
+      type: Paper
+      category: General Machine Learning
+      lab:
+      url: https://arxiv.org/abs/1802.02627
+      description:
+      quote:
+        "In this paper, we propose a novel algorithmic technique for generating a
+        Spiking Neural Network with a deep architecture, and demonstrate its
+        effectiveness on complex visual recognition problems such as CIFAR-10 and
+        ImageNet."
+
+    - title: "When reviewers blame you for not being a psychic"
+      recommended: False
+      type: Tweet
+      category: Laugh of the Week
+      url: https://twitter.com/xbresson/status/962520288343703553
+
+    - title: "Learning Features by Watching Objects Move"
+      recommended: False
+      type: github + paper
+      category: Computer Vision
+      lab: Facebook AI Research
+      url: https://github.com/pathak22/unsupervised-video
+      description: 
+
+    - title: "Weakly Supervised Segmentation with Tensorflow"
+      recommended: False
+      type: github + paper
+      category: Computer Vision
+      url: "https://github.com/philferriere/tfwss"
+      description:
+          'An implementation of <a href="https://arxiv.org/abs/1603.07485">
+          Simple Does It: Weakly Supervised Instance and Semantic Segmentation</a>.'
+      quote:
+         "The idea behind weakly supervised segmentation is to train a model
+        using cheap-to-generate label approximations (e.g., bounding boxes) as
+        substitute/guiding labels for computer vision classification tasks that usually
+        require very detailed labels. In semantic labelling, each image pixel is
+        assigned to a specific class (e.g., boat, car, background, etc.). In instance
+        segmentation, all the pixels belonging to the same object instance are given
+        the same instance ID."
+
+    - title: "UMAP: Uniform Manifold Approximation and Projection for Dimension Reduction"
+      recommended: True
+      type: paper
+      lab: "Tutte Institute for Mathematics and Computing"
+      category: "General Machine Learning"
+      url: "https://arxiv.org/abs/1802.03426"
+      description:
+          "This dimentionality reduction method looks very interesting. It produces interesting visualisations and is reportedly faster than t-SNE (up to 100 times faster) and multicore t-SNE (up to 10 times faster) for large datasets."
+      quote:
+          "UMAP (Uniform Manifold Approximation and Projection) is a novel manifold learning technique for dimension reduction. UMAP is constructed from a theoretical framework based in Riemannian geometry and algebraic topology. The result is a practical scalable algorithm that applies to real world data. The UMAP algorithm is competitive with t-SNE for visualization quality, and arguably preserves more of the global structure with superior run time performance. Furthermore, UMAP as described has no computational restrictions on embedding dimension, making it viable as a general purpose dimension reduction technique for machine learning."
+
+    - title: "The GAN Zoo: a list of all named GANs"
+      recommended: False
+      type: medium
+      lab: ""
+      category: "GANs & Adversarial Attacks"
+      url: "https://deephunt.in/the-gan-zoo-79597dc8c347"
+      description:
+          "The title says it all. It's a loong list of (all?) the papers that propose a GAN-based method. As a bonus, you get a graph that shows the number of GAN papers uploaded on arXiv per month. Yes, it looks exponential."
+      quote:
+          ""
+
+    - title: "How good are you at selling your start up to robots?"
+      recommended: False
+      type: tweet
+      lab: ""
+      category: "Laugh of the Week"
+      url: "https://twitter.com/preseries/status/963090114946719745"
+      description:
+          ""
+      quote:
+          ""
+
+    - title: "ICLR2018 Publications Explorer"
+      recommended: True
+      type: paper
+      lab: ""
+      category: "General Machine Learning"
+      url: "https://chillee.github.io/OpenReviewExplorer/index.html"
+      description:
+          "This lets you see all the ICLR publications by their ratings, variance and confidences. Definitively a great thing to have if you're looking for new paper to read. :-) @people working on fraud: amongst the top 10 publications, we find <a href=https://openreview.net/forum?id=BJJLHbb0->Deep Autoencoding Gaussian Mixture Model for Unsupervised Anomaly Detection</a>, could be worth a read. Added Fri: well... we did it!!! :-) Thanks @Jacques."
+      quote:
+          ""
+
+    - title: "HDR+ Burst Photography Dataset"
+      recommended: False
+      type: dataset
+      lab: "Google Research"
+      category: "Everything Else"
+      url: "https://research.googleblog.com/2018/02/introducing-hdr-burst-photography.html"
+      description:
+          ""
+      quote:
+          "Today we're pleased to announce the public release of an archive of image bursts to the research community. This provides a way for others to compare their methods to the results of Google's HDR+ software running on the same input images. This dataset consists of 3,640 bursts of full-resolution raw images, made up of 28,461 individual images, along with HDR+ intermediate and final results for comparison. The images cover a wide range of photographic situations, including variation in subject, level of motion, brightness, and dynamic range."
+
+    - title: "Globally and Locally Consistent Image Completion (TensorFlow)"
+      recommended: False
+      type: github + paper
+      lab: ""
+      category: "Computer Vision"
+      url: "https://github.com/shinseung428/GlobalLocalImageCompletion_TF"
+      description:
+          "Check out the paper's webpage. The video they provide is quite a fun watch. <a href=http://hi.cs.waseda.ac.jp/~iizuka/projects/completion/extra.html#comp>here</a> are some other results. I've read people doubting about the results though... 'Too good to be true'."
+      quote:
+          "This is a tensorflow implementation of the paper <a href=http://hi.cs.waseda.ac.jp/~iizuka/projects/completion/en/>Globally and Locally Consistent Image Completion</a> (SIGGRAPH 2017). Training procedure is a bit different from the one described in the paper."
+
+    - title: "Winner's Curse? On Pace, Progress, and Empirical Rigor"
+      recommended: True
+      type: paper
+      lab: "Google AI"
+      category: "Food for Thoughts"
+      url: "https://openreview.net/forum?id=rJWF0Fywf"
+      description:
+          "Ali Rahimi is listed as one of the authors of this lampoon (are you surprised?). Their assessment is that the community promotes wins rather than research (see the quote below) which hampers pace of meaningful discoveries. I was a bit disapointed at first because this observation is hardly backed up by facts. However page 3 is extremely refreshing. They propose tons of positive ideas on how to write consistent and rigorous papers; consider alternative medium to publish research such as notebooks, videos etc.; suggest that *all* experiments performed when doing research should be stored in an electronic doc (...Sacred!...), promotes collaboration as it's done in physics..."
+      quote:
+          "The pace of this progress has grown in a research and publication culture that emphasizes wins, most often demonstrating that a new method beats previous methods on a given task or benchmark. It is a truism within the community that at least one clear win is needed for acceptance at a top venue. Yet, a moment of reflection recalls that the goal of science is not wins, but knowledge."
+
+    - title: "Automatic Learning Rate Scheduling That Really Works"
+      recommended: True
+      type: blog
+      lab: "Dlib"
+      category: "Optimisation & Learning Theory"
+      url: "http://blog.dlib.net/2018/02/automatic-learning-rate-scheduling-that.html"
+      description:
+          "A number of papers report achieving SOTA results by using vanilla SGD (or SGD + momentum) in contrast to using more refined optimisers like Adam. This gain in performance is often the result of lots of tweaking to determine the best moments to lower the learning rate. This article presents an admittedly super simple idea to automatically determine when this should be done. The idea is to model the slope of the loss curve (either training or validation) by a random variable and compute the probability that this slope is actually negative. This can be challenging as the loss across mini-batches is often hardly consistent. Look at the plots given in the blog post. This simple modelisation is able to detect very subtle variations in the slope."
+      quote:
+          ""
+
+    - title: "SGD on Random Mixtures: Private Machine Learning Under Data Breach Threats"
+      recommended: False
+      type: paper
+      lab: "ICLE2018 Workshop - School of EE, KAIST & Dept. of EECS, UC Berkeley"
+      category: "Everything Else"
+      url: "https://openreview.net/forum?id=r17_wzJPM"
+      description:
+          ""
+      quote:
+          "We propose Stochastic Gradient Descent on Random Mixtures (SGDRM) as a simple way of protecting data under data breach threats. We show that SGDRM converges to the globally optimal point for deep neural networks with linear activations while being differentially private. We also train nonlinear neural networks with private mixtures as the training data, proving the practicality of SGDRM."
+
+    - title: "ARM Announces Project Trillium Machine Learning IPs"
+      recommended: False
+      type: blog
+      lab: "ARM"
+      category: "News"
+      url: "https://www.anandtech.com/show/12427/arm-announces-trillium-machine-learning-ip"
+      description:
+          ""
+      quote:
+          "Arm's ML processor promises to reach theoretical throughput of over 4.6TOPs (8-bit integer) at target power envelopes of around 1.5W, advertising up to 3TOPs/W. The power and efficiency estimates are based on a 7nm implementation of the IP."
+
+    - title: "Announcing Tensor Comprehensions"
+      recommended: False
+      type: blog
+      lab: "Facebook Artificial Intelligence Research"
+      category: "Everything Else"
+      url: "https://research.fb.com/announcing-tensor-comprehensions/"
+      description:
+          "From what I understood, it will become easier to write low-level code (closer to the GPU) thanks to this. They propose a new mathematical notation (haven't checked that yet) and an implementation example for evolutionary search. So it could eventually become an alternative to CuDNN;... I've read they plan to support OpenCL as well...!! <a href=https://twitter.com/soumithchintala/status/963823615803379712>Link to tweet.</a>"
+      quote:
+          "Today, Facebook AI Research (FAIR) is announcing the release of Tensor Comprehensions, a C++ library and mathematical language that helps bridge the gap between researchers, who communicate in terms of mathematical operations, and engineers focusing on the practical needs of running large-scale models on various hardware backends. The main differentiating feature of Tensor Comprehensions is that it represents a unique take on Just-In-Time compilation to produce the high-performance codes that the machine learning community needs, automatically and on-demand."
+
+    - title: "Deep Reinforcement Learning Doesn't Work Yet"
+      recommended: True
+      type: blog
+      lab: "Sorta Insightful"
+      category: "Reinforcement Learning"
+      url: "https://www.alexirpan.com/2018/02/14/rl-hard.html"
+      description:
+          "A long read, highly acclaimed on Twitter, that studies recent works on Deep Reinforcement Learning. The message is simple: DRL looks cool but it ain't easy. '30% failure rate count as working'."
+      quote:
+          "In the rest of the post, I explain why deep RL doesn't work, cases where it does work, and ways I can see it working more reliably in the future. [...] I'm doing this because I believe it's easier to make progress on problems if there's agreement on what those problems are, and it's easier to build agreement if people actually talk about the problems, instead of independently re-discovering the same issues over and over again."
+
+    - title: "On Characterizing the Capacity of Neural Networks using Algebraic Topology"
+      recommended: False
+      type: paper
+      lab: ""
+      category: "Optimisation & Learning Theory"
+      url: "https://arxiv.org/abs/1802.04443"
+      description:
+          ""
+      quote:
+          " After suggesting algebraic topology as a measure for data complexity, we show that the power of a network to express the topological complexity of a dataset in its decision region is a strictly limiting factor in its ability to generalize."
+
+    - title: "On the Blindspots of Convolutional Networks"
+      recommended: False
+      type: paper
+      lab: ""
+      category: "Deep learning"
+      url: "https://arxiv.org/abs/1802.05187"
+      description:
+          ""
+      quote:
+          "The various forms of the carefully designed signals shed a light on the strengths and weaknesses of convolutional network, which may provide insights for both theoreticians that study the power of deep architectures, and for practitioners that consider to apply convolutional networks to the task at hand."
+
+    - title: "Accelerating I/O bound deep learning"
+      recommended: False
+      type: medium
+      lab: "RiseML"
+      category: "Everything Else"
+      url: "https://blog.riseml.com/accelerating-io-bound-deep-learning-e0e3f095fd0"
+      description:
+          "The story of a quick win from RiseML who got their segmentation model processing from 9.6 images per second to 36.2 images per second by fixing I/O limitations (from shared storage. Just like us with /media)."
+      quote:
+          "We would like to bring attention to cachefilesd, a Linux user-space daemon to manage caching for network filesystems. Setting it up takes less than a minute and in our experiments (see below) we achieved a speed-up of 377% compared to accessing data directly from shared storage."
+
+    - title: "Interpretable Machine Learning through Teaching"
+      recommended: False
+      type: paper + blog
+      lab: "OpenAI"
+      category: "Interpratibility & Fairness"
+      url: "https://blog.openai.com/interpretable-machine-learning-through-teaching/"
+      description:
+          "Interesting idea. The paper dedicates a section to cooperation between human and machines... Could be relevant to us."
+      quote:
+          "Our machine teaching approach works as a cooperative game played between two agents, with one functioning as a student and the other as a teacher. The goal of the game is for the student to guess a particular concept (i.e. 'dog', 'zebra') based on examples of that concept (such as images of dogs), and the goal of the teacher is to learn to select the most illustrative examples for the student."
+
+    - title: "Dissecting Adam: The Sign, Magnitude and Variance of Stochastic Gradients"
+      recommended: False
+      type: paper
+      lab: "Lukas Balles, Philipp Hennig"
+      category: "Optimisation & Learning Theory"
+      url: "https://arxiv.org/abs/1705.07774"
+      description:
+          "The abstract makes me think of <a href=https://openreview.net/forum?id=ryQu7f-RZ>this paper</a> (ICLR 2018). Don't know to what extent the two are different..."
+      quote:
+          "This analysis also extends recent results on adverse effects of ADAM on generalization, isolating the sign aspect as the problematic one. Transferring the variance adaptation to SGD gives rise to a novel method, completing the practitioner's toolbox for problems where ADAM fails."
+
+    - title: "Learning Rates"
+      recommended: False
+      type: github
+      lab: ""
+      category: "Everything Else"
+      url: "https://learning-rates.com/"
+      description:
+          "A simple python package that works with PyTorch, Numpy and Keras. It lets you visualise the stats of your current training in a server, as well as the parameters you used for the experiment. It seems easy to set up. Sacred is more powerful but requires more tweaking. So 'Learning Rates' could be a good introductory solution."
+      quote:
+          ""
+
+    - title: "mlpack"
+      recommended: True
+      type: github
+      lab: ""
+      category: "Optimisation & Learning Theory"
+      url: "http://www.mlpack.org/docs/mlpack-git/doxygen/optimizertutorial.html"
+      description:
+          "It's a C++ machine learning library... But we don't care much about this... I recommend to check the website out because of its neat visualisations. You can choose from a variety of optimisation algorithms, choose their hyperparameters, choose a loss landscape and see how it behaves both in 2D and 3D!! (the case of 2D corresponds to the usual loss curve we see in Tensorboard)."
+      quote:
+          ""
+
+    - title: "Datalore"
+      recommended: False
+      type: github + blog
+      lab: "JetBrains"
+      category: "Data Science & Visualisations"
+      url: "https://blog.datalore.io/introducing-datalore/"
+      description:
+          "A tool by JetBrains which, from from my understanding, is like an augmented Jupyer Notebook. Best used with pandas and sklearn."
+      quote:
+          ""
+
+
+    - title: "Schimdhubered"
+      recommended: False
+      type: tweet
+      lab: ""
+      category: "Laugh of the Week"
+      url: "https://twitter.com/poolio/status/963657047299559424"
+      description:
+          "The 'discovery' of an uncited 1988 paper introducing the ideas of DenseNet has been quite debated (thanks @Abhishek). This man may have the solution.<br/>On a more serious note, the concern is real. People replying to the tweet have linked nice suggestions such as <a href=http://labs.semanticscholar.org/citeomatic/>Citeomatic</a>."
+      quote:
+          ""

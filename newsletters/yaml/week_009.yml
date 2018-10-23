@@ -1,0 +1,222 @@
+intro_text:
+
+outro_text:
+
+articles:
+    - title: "Advances in Deep Neural Networks"
+      recommended: False
+      type: "video"
+      category: "Deep Learning"
+      lab: "ACM Turing 50 Celebration"
+      url: "https://www.youtube.com/watch?v=mFYM9j8bGtg"
+      description: "An on-stage discussion about 'how deep neural netwoeks are changing our wold and our jobs' and the future of deep learning. Featuring Judea Pearl, Michael Jordan, Fei-Fei Li, Stuart Rusell, Ilya Sutskever and Raquel Urtasun. A fine panel..."
+      quote:
+          ""
+    - title: "A Walk with SGD"
+      recommended: False
+      type: "paper"
+      category: "Optimisation & Learning Theory"
+      lab: "Chen Xing, Devansh Arpit, Christos Tsirigotis, Yoshua Bengio"
+      url: "https://arxiv.org/abs/1802.08770"
+      description: ""
+      quote:
+          "We empirically study the dynamics of SGD when training over-parametrized deep networks. Specifically we study the DNN loss surface along the trajectory of SGD by interpolating the loss surface between parameters from consecutive iterations and tracking various metrics during the training process. [...] Specifically, our experiments show evidence that for the most part of training, SGD explores regions along a valley by bouncing off valley walls at a height above the valley floor. This 'bouncing off walls at a height' mechanism helps SGD traverse larger distance for small batch sizes and large learning rates which we find play qualitatively different roles in the dynamics."
+
+
+    - title: "Essentially No Barriers in Neural Network Energy Landscape"
+      recommended: False
+      type: "paper"
+      category: "Optimisation & Learning Theory"
+      lab: "Felix Draxler, Kambis Veschgini, Manfred Salmhofer, Fred A. Hamprecht"
+      url: "https://arxiv.org/abs/1803.00885"
+      description: ""
+      quote:
+          "Relaxing from linear interpolations, we construct continuous paths between minima of recent neural network architectures on CIFAR10 and CIFAR100. Surprisingly, the paths are essentially flat in both the training and test landscapes. This implies that neural networks have enough capacity for structural changes, or that these changes are small between minima. Also, each minimum has at least one vanishing Hessian eigenvalue in addition to those resulting from trivial invariance."
+
+
+    - title: "Tell Me Where to Look: Guided Attention Inference Network"
+      recommended: False
+      type: "paper"
+      category: "Deep Learning"
+      lab: "Siemens - Kunpeng Li, Ziyan Wu, Kuan-Chuan Peng, Jan Ernst, Yun Fu"
+      url: "https://arxiv.org/abs/1802.10171"
+      description: "The visualisations in the paper are quite impressive! We have seen attention maps in the past (indication regarding where the network 'looks at'). The attention maps we see in this paper are much more refined."
+      quote:
+          "We (1) for the first time make attention maps an explicit and natural component of the end-to-end training, (2) provide self-guidance directly on these maps by exploring supervision form the network itself to improve them, and (3) seamlessly bridge the gap between using weak and extra supervision "
+
+
+    - title: "Not All Samples Are Created Equal: Deep Learning with Importance Sampling"
+      recommended: False
+      type: "paper"
+      category: "Deep Learning"
+      lab: "Angelos Katharopoulos, François Fleuret"
+      url: "https://arxiv.org/abs/1803.00942"
+      description: ""
+      quote:
+          "Deep neural network training spends most of the computation on examples that are properly handled, and could be ignored. We propose to mitigate this phenomenon with a principled importance sampling scheme that focuses computation on 'informative' examples, and reduces the variance of the stochastic gradients during training. [...]  We demonstrate experimentally, on image classification, CNN fine-tuning, and RNN training, that for a fixed wall-clock time budget, it provides a reduction of the train losses of up to an order of magnitude and a relative improvement of test errors between 5% and 17%."
+
+
+    - title: "SMASH: One-Shot Model Architecture Search through HyperNetworks "
+      recommended: False
+      type: "paper"
+      category: "Optimisation & Learning Theory"
+      lab: "ICLR 2018 - Andrew Brock, Theo Lim, J.M. Ritchie, Nick Weston"
+      url: "https://openreview.net/forum?id=rydeCEhs-"
+      description: ""
+      quote:
+          "We propose a technique to accelerate architecture selection by learning an auxiliary HyperNet that generates the weights of a main model conditioned on that model's architecture. By comparing the relative validation performance of networks with HyperNet-generated weights, we can effectively search over a wide range of architectures at the cost of a single training run." 
+
+
+    - title: "On Unifying Deep Generative Models"
+      recommended: False
+      type: "paper"
+      category: "GANs & Adversarial Attacks"
+      lab: "ICLR 2018 - (Carnegie Mellon) Zhiting Hu, Zichao Yang, Ruslan Salakhutdinov, Eric P. Xing"
+      url: "https://openreview.net/forum?id=rylSzl-R-&noteId=rJkg4yTSM"
+      description: ""
+      quote:
+          " Generative Adversarial Networks (GANs) and Variational Autoencoders (VAEs), as powerful frameworks for deep generative model learning, have largely been considered as two distinct paradigms and received extensive independent studies respectively. This paper aims to establish formal connections between GANs and VAEs through a new formulation of them." 
+
+
+    - title: "Mobile Real-time Video Segmentation"
+      recommended: False
+      type: "Blog"
+      category: "Computer Vision"
+      lab: "Google Research"
+      url: "https://research.googleblog.com/2018/03/mobile-real-time-video-segmentation.html?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+blogspot%2FgJZg+%28Official+Google+Research+Blog%29"
+      description: "Thanks @Abhishek for the link. As he says: 'by massively reducing the number of feature maps with 1X1 convolutions, using skip connections like UNet, and increasing strides to decrease feature map size they are able to get high accuracy at 100 FPS on iPhone 7!'"
+      quote:
+          "" 
+
+
+    - title: "Can increasing depth seve to accelerate optimization?"
+      recommended: True
+      type: "Blog"
+      category: "Optimisation & Learning Theory"
+      lab: "Off the convex path - Nadav Cohen"
+      url: "http://www.offconvex.org/2018/03/02/acceleration-overparameterization/"
+      description: "Nadav Cohen shares the ideas and discoveries from his recent paper <a href=https://arxiv.org/pdf/1802.06509.pdf>On the Optimization of Deep Networks: Implicit Accelration by Overparameterization</a>. He and his collegues show that in the setting of regression task, setting the loss function to <i>Lp</i> with <i>p>2</i> (usually we use <i>p=2</i>) and overparametrizing the network lead to an interesting dynamic of SGD whereby it exhibits a sort of implicit momentum. On toy problems they show that it outperforms (by almost an order of magnitude!) Adadelta and Adagrad. They also theoretically show that this behavior cannot be obtained by performing 'tricks' on SGD a la Adalta, Adagrad etc. You could think this result is obvious since they overparametrized the network... but this result was actually obtained on linear models where adding more layers does not increase the expressiveness of the model. <br />
+      For some reason, their result seem to be valid on MNIST as well."
+      quote:
+          "" 
+
+
+    - title: "Yann LeCun and Christopher Manning discuss Deep Learning and Innate Priors"
+      recommended: False
+      type: "video"
+      category: "Deep Learning"
+      lab: ""
+      url: "https://www.youtube.com/watch?v=fKk9KhGRBdI"
+      description: ""
+      quote:
+          ""
+
+    - title: "One-Class Adversarial Nets for Fraud Detection"
+      recommended: False
+      type: "paper"
+      category: "GANs & Adversarial Attacks"
+      lab: "Panpan Zheng, Shuhan Yuan, Xintao Wu, Jun Li, Aidong Lu"
+      url: "https://arxiv.org/abs/1803.01798"
+      description: "Their setting is not in computer vision but I guess it can be intersting nonetheless."
+      quote:
+          "In this paper, we develop one-class adversarial nets (OCAN) for fraud detection using training data with only benign users. OCAN first uses LSTM-Autoencoder to learn the representations of benign users from their sequences of online activities. It then detects malicious users by training a discriminator with a complementary GAN model that is different from the regular GAN model. Experimental results show that our OCAN outperforms the state-of-the-art one-class classification models and achieves comparable performance with the latest multi-source LSTM model that requires both benign and malicious users in the training phase."
+
+
+    - title: "Meta-Learning for Semi-Supervised Few-Shot Classification"
+      recommended: False
+      type: "paper"
+      category: "Computer Vision"
+      lab: "Lots of labs (University of Toronto, Princeton, Google Brain, MIT, CIFAR...), lots of people..."
+      url: "https://arxiv.org/abs/1803.00676"
+      description: ""
+      quote:
+          "We propose novel extensions of Prototypical Networks (Snell et al., 2017) that are augmented with the ability to use unlabeled examples when producing prototypes. These models are trained in an end-to-end way on episodes, to learn to leverage the unlabeled examples successfully."
+
+
+    - title: "Deep Bayesian Active Semi-Supervised Learning"
+      recommended: False
+      type: "paper"
+      category: "Deep Learning"
+      lab: "Matthias Rottmann, Karsten Kahl, Hanno Gottschalk"
+      url: "https://arxiv.org/abs/1803.01216"
+      description: ""
+      quote:
+          "In a setting where a small amount of labeled data as well as a large amount of unlabeled data is available, our method first learns the labeled data set. This initialization is followed by an expectation maximization algorithm, where further training reduces classification entropy on the unlabeled data by targeting a low entropy fit which is consistent with the labeled data. In addition the algorithm asks at a specified frequency an oracle for labels of data with entropy above a certain entropy quantile. Using this active learning component we obtain an agile labeling process that achieves high accuracy, but requires only a small amount of known labels."
+
+
+
+    - title: "The Building Blocks of Interpretability"
+      recommended: True
+      type: "blog"
+      category: "Interpratibility & Fairness"
+      lab: "Distill - Google Brain/Cloud/Research - CMU"
+      url: "https://distill.pub/2018/building-blocks/"
+      description: "A new post from Distill and as usual it's a fantastic piece of work. Lots of visualisations and Javascript snippets to play with. Authors advocate that current approaches to deep net interpretability need to converge somehow. For instance, saliency maps are not enough. Usually interpretation is done by comparing the outputs and feature maps to the input image. Here the idea is to directly explore the concepts learned by the network (via its feature maps) by slicing the hypercube of layers+feature maps in all possible ways. In the end they are trying to achieve an interface for easier interpretability."
+      quote:
+          "This type of layer-to-layer attribution is a prime example of how carefully considering interface design drives the generalization of our existing abstractions for interpretability."
+
+
+    - title: "Building a Deep Neural Net In Google Sheets"
+      recommended: False
+      type: "medium"
+      category: "Laugh of the Week"
+      lab: "Blake West"
+      url: "https://towardsdatascience.com/building-a-deep-neural-net-in-google-sheets-49cdaf466da0"
+      description: "You read it right. MNIST. In Google Sheet. Yes."
+      quote:
+          ""
+
+
+    - title: "Siamese and triplet learning with online pair/triplet mining"
+      recommended: False
+      type: "GitHub"
+      category: "General Machine Learning"
+      lab: "adambielski"
+      url: "https://github.com/adambielski/siamese-triplet"
+      description: "PyTorch implementation of siamese and triplet networks for learning embeddings."
+      quote:
+          ""
+
+
+    - title: "Totally-Looks-Like: How Humans Compare, Conpared to Machines"
+      recommended: False
+      type: "blog+paper"
+      category: "Everything Else"
+      lab: "York University, Toronto"
+      url: "https://sites.google.com/view/totally-looks-like-dataset"
+      description: "A dataset containing pairs of images that visually don't look like the same,.... but humans can't help themselves finding similarities somehow... Worth a quick look at least!"
+      quote:
+          ""
+
+
+    - title: "Reptile: A Scalable Meta-Learning Algorithm"
+      recommended: False
+      type: "blog+paper+github"
+      category: "General Machine Learning"
+      lab: "OpenAI"
+      url: "https://blog.openai.com/reptile/"
+      description: "You can try out the interactive demo. A classifier is trained on 3 small binary images (that you can edit), and you test the classifier."
+      quote:
+          "Like MAML, Reptile seeks an initialization for the parameters of a neural network, such that the network can be fine-tuned using a small amount of data from a new task. But while MAML unrolls and differentiates through the computation graph of the gradient descent algorithm, Reptile simply performs stochastic gradient descent (SGD) on each task in a standard way — it does not unroll a computation graph or calculate any second derivatives. This makes Reptile take less computation and memory than MAML."
+
+
+    - title: "Windows ML on a future update of Windows 10"
+      recommended: False
+      type: "blog"
+      category: "News"
+      lab: "The Verge"
+      url: "https://www.theverge.com/2018/3/7/17089860/microsoft-windows-ml-windows-10-ai-platform"
+      description: "While Apple released TuriCreate, Microsoft will provide tools and APIs to use ML algorithms in Visual Studio."
+      quote:
+          "Developers will be able to import existing learning models from different AI platforms and run them locally on PCs and devices running Windows 10, speeding up real-time analysis of local data like images or video, or even improving background tasks like indexing files for quick search inside apps.  [...] Developers will be able to get an early look at the AI platform on Windows with Visual Studio Preview 15.7, and they’ll be able to use the Windows ML API in standard desktops apps and Universal Windows Apps across all editions of Windows 10 this year. "
+
+
+    - title: "Keras RetinaNet"
+      recommended: False
+      type: "github"
+      category: "Computer Vision"
+      lab: "fizyr"
+      url: "https://github.com/fizyr/keras-retinanet"
+      description: "A Keras implementation of <a href=https://arxiv.org/abs/1708.02002>Focal Loss for Dense Object Detection</a>."
+      quote:
+          ""

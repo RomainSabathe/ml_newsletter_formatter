@@ -1,0 +1,168 @@
+intro_text:
+
+outro_text:
+
+articles:
+    - title: "How to unit test machine learning code"
+      recommended: true
+      category: "prod"
+      type: "medium"
+      lab: "Chase Roberts"
+      url: "https://medium.com/@keeper6928/how-to-unit-test-machine-learning-code-57cf6fd81765"
+      description: "Unit testing models has been a dream of mine for a while... Well, this article is not ground breaking per say, but it at least shows that you can thoroughly test some of the properties of your model. Among the examples presented: is the loss different from zero? Do the tensors have the expected shape? Do all the parameters get updated? Do they get updated when they are supposed to? Oh, and can I say that some of the problems encountered by the author come from weird designs from Tensorflow, like setting the training of batch norm to false by default? :smirk:"
+      quote: ""
+
+    - title: "MUNIT: Multimodal UNsupervised Image-to-image Translation"
+      recommended: false
+      category: "gan"
+      type: "paper + github"
+      lab: "Cornell University, NVIDIA"
+      url: "https://arxiv.org/abs/1804.04732"
+      description: "Given an image of a specific modality (say a dog with a certain pose), you want to generate a similar content with new modalities (e..g a cat with the same pose. Or a lion with the same pose, etc.). This paper explores this idea. Since it's unsupervised, I see this as a sort of CycleGAN. Although here admittedly the novelty of the paper is that you can transfer an image to a number of different modalities (and not just one). Code and images <a href=https://github.com/NVlabs/MUNIT>here</a>. "
+      quote: ""
+
+    - title: "Text Classification with Tensorflow Estimators"
+      recommended: false
+      category: "nlp"
+      type: "blog"
+      lab: "Sebastian Ruder"
+      url: "http://ruder.io/text-classification-tensorflow-estimators/"
+      description: "A tutorial that introduces some of the recent Tensorflow high-level APIs used to create a model quickly. The post is the 4th of a series so some of the functions and classes that are used feel sometimes mysterious. Nonetheless, this post can serve as an introduction to NLP and can point you to some of those new ways of writing models with Tensorflow."
+      quote: ""
+
+    - title: "The Ethics of Reward Shaping"
+      recommended: false
+      category: ""
+      type: "blog"
+      lab: "Ben Recht for 'arg min' blog"
+      url: "http://www.argmin.net/2018/04/16/ethical-rewards/"
+      description: ""
+      quote: ""
+
+    - title: "(A bit of) Biological Neural Networks - Part I, Spiking Neurons"
+      recommended: true
+      category: "ml"
+      type: "blog"
+      lab: "Jack Terwilliger"
+      url: "http://jackterwilliger.com/biological-neural-networks-part-i-spiking-neurons/"
+      description: "A long post of great quality with visualisations and equations. The most famous spiking models are introduced, as well as an introduction on dynamical systems and the different types of bifurcations. There is a Lot of information so it's hard to sink it all in but it serves as a great introduction overall."
+      quote: ""
+
+    - title: "The unreasonable effectiveness of the forget gate"
+      recommended: false
+      category: "ml"
+      type: "paper"
+      lab: "University of Cambridge"
+      url: "https://arxiv.org/abs/1804.04849"
+      description: ""
+      quote: "Surprisingly, the results indicate that the JANET yields higher accuracies than the standard, LSTM.
+      Moreover, JANET is among the top performing models on all of the analysed datasets. Thus, by
+      simplifying the LSTM, we not only save on computational cost but also gain in test set accuracy!"
+
+    - title: "Semantic Feature Augmentation in Few-shot Learning"
+      recommended: false
+      category: "cv"
+      type: "paper"
+      lab: "Fudan University, Princeton University, University of British Columbia"
+      url: "https://arxiv.org/abs/1804.05298"
+      description: ""
+      quote: "A fundamental problem with few-shot learning is the scarcity of data in training. A natural solution to alleviate this scarcity is to augment the existing images for each training class. However, directly augmenting samples in image space may not necessarily, nor sufficiently, explore the intra-class variation. To this end, we propose to directly synthesize instance features by leveraging the semantics of each class. Essentially, a novel auto-encoder network dual TriNet, is proposed for feature augmentation."
+
+    - title: "VINE: An Open Source Interactive Data Visualization Tool for Neuroevolution"
+      recommended: false
+      category: "ml"
+      type: "blog"
+      lab: "Uber"
+      url: "https://eng.uber.com/vine/"
+      description: "Uber open source the monitoring tool they used to solve the Humanoid Locomotion task with genetic algorithms."
+      quote: ""
+
+    - title: "Hallucinogenic Deep Reinforcement Learning Using Python and Keras"
+      recommended: true
+      category: "rl"
+      type: "medium"
+      lab: "David Foster"
+      url: "https://medium.com/applied-data-science/how-to-build-your-own-world-model-using-python-and-keras-64fb388ba459"
+      description: "A few weeks ago we mentioned in this newsletter <a href=https://arxiv.org/abs/1803.10122>a new paper from Ha & Schmidhuber</a> called 'World Models' where an agent was building a sort of mental representation of its environment. It wasn't very clear to me was all this was about. Well, this blog post is an easy and simplified explanation of the paper. It also provides an implementation."
+      quote: ""
+
+    - title: "Evolved Policy Gradients"
+      recommended: false
+      category: "rl"
+      type: "paper + blog"
+      lab: "OpenAI"
+      url: "https://blog.openai.com/evolved-policy-gradients/"
+      description: "Very interesting work. They present an algorithm called Evolved Policy Gradients which aim aim at improving the generalisation capabilities of agents. The core idea is to dynamically shape the reward function via an evolutionary algorithm. The whole process works in two steps: at a lower level, the agent tries to solve a specific task (like moving the arm to a given location) via SGD and at a higher level, the evolutionary algorithm modifies the reward function to lead to higher returns."
+      quote: ""
+
+    - title: "Adafactor: Adaptive Learning Rates with Sublinear Memory Cost"
+      recommended: false
+      category: "optim"
+      type: "paper"
+      lab: "Google Brain"
+      url: "https://arxiv.org/abs/1804.04235"
+      description: "A new optimiser that claims to be as efficient as Adam while requiring little memory overhead (compared to Adam that stores the second moment estimators for every single parameter in the network)."
+      quote: ""
+
+    - title: "Training Deep Networks with Synthetic Data: Bridging the Reality Gap by Domain Randomization"
+      recommended: false
+      category: "cv"
+      type: "paper"
+      lab: "NVIDIA, University of Toronto"
+      url: "https://arxiv.org/abs/1804.06516"
+      description: ""
+      quote: "We present a system for training deep neural networks for object detection using synthetic images. To handle the variability in real-world data, the system relies upon the technique of domain randomization, in which the parameters of the simulator−such as lighting, pose, object textures, etc.−are randomized in non-realistic ways to force the neural network to learn the essential features of the object of interest."
+
+    - title: "Compressibility and Generalization in Large-Scale Deep Learning"
+      recommended: false
+      category: "theory"
+      type: "paper"
+      lab: ""
+      url: "https://arxiv.org/abs/1804.05862"
+      description: ""
+      quote: "Modern neural networks are highly overparameterized, with capacity to substantially overfit to training data. Nevertheless, these networks often generalize well in practice. It has also been observed that trained networks can often be 'compressed' to much smaller representations. The purpose of this paper is to connect these two empirical observations. Our main technical result is a generalization bound for compressed networks based on the compressed size."
+
+    - title: "Neuroevolution for Reinforcement Learning"
+      recommended: false
+      category: "rl"
+      type: "github"
+      lab: "Charles Shenton"
+      url: "https://github.com/cshenton/neuroevolution"
+      description: "An alternative implementation of the Neuroevoluation paper from Uber. Uses Tensorflow and Gym."
+      quote: ""
+
+    - title: "Executing gradient descent on earth"
+      recommended: false
+      category: ""
+      type: "blog"
+      lab: "Chris Foster"
+      url: "https://fosterelli.co/executing-gradient-descent-on-the-earth"
+      description: "Funny thing to do. Although I didn't really understand the equation he used to compute the slopes. Is it just me?"
+      quote: ""
+
+    - title: "Machine Learning's 'Amazing' Ability to Predict Chaos"
+      url: "https://www.quantamagazine.org/machine-learnings-amazing-ability-to-predict-chaos-20180418/"
+      type: "blog"
+      category: "news"
+      lab: "University of Maryland"
+      description: "Some researchers used reservoir networks (yes) to predict the evolution of a chaotic system over time (the dynamic of a flame for instance) and observed quite astonishing predicting performance. Quote: 'As a ballpark estimate, you’d have to measure a typical system’s initial conditions 100,000,000 times more accurately to predict its future evolution [as well as the network did].'"
+      quote: ""
+      recommended: false
+
+    - title: "Artificial Intelligence - The Revolution Hasn't Happened Yet"
+      url: "https://medium.com/@mijordan3/artificial-intelligence-the-revolution-hasnt-happened-yet-5e1d5812e1e7"
+      type: "medium"
+      category: ""
+      lab: "Michael Jordan"
+      description: "A long essay which has been quite debated. My limited understanding of it would be: 'making a human-like AI is not going to be achieved in the near future. In the meantime, there are other challenges to tackle like how to structure AI as a 'human augmentation' system in such a way that is safe and stable. For instance: how to design a network of self-driving cars?'. He advocates for a new field that he described as the AI equivalent of civil engineering: civil engineers are building bridges and buildings that are safe and stable. Can we do the same?"
+      quote: ""
+      recommended: false
+
+    - title: "Sparse Unsupervised Capsules Generalize Better"
+      url: "https://arxiv.org/abs/1804.06094"
+      type: "paper"
+      category: "dl"
+      lab: "Incubator 491"
+      description: ""
+      quote: "We show that unsupervised training of latent capsule layers using only the reconstruction loss, without masking to select the correct output class, causes a loss of equivariances and other desirable capsule qualities. This implies that supervised capsules networks can't be very deep. Unsupervised sparsening of latent capsule layer activity both restores these qualities and appears to generalize better than supervised masking, while potentially enabling deeper capsules networks."
+      recommended: false

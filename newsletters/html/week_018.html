@@ -63,48 +63,57 @@
 
       <div class="col-sm-8">
 
-          {% for category in categories %}
-
+          
           <!-- Category block -->
           <div class="category">
               <h2 class="category-title">
-                  <img src="{{ category['url_logo'] }}"
-                       class="fa fa-fw category-logo">{{ category['name'] }}
+                  <img src="https://image.flaticon.com/icons/png/512/653/653500.png"
+                       class="fa fa-fw category-logo">General Machine Learning
               </h2>
 
-              {% for article in category['articles'] %}
-
+              
               <div class="article">
                   <h5 class="article-title">
-                      {% for url_logo in article['urls_logo'] %}
-                      <img src="{{ url_logo }}"
+                                            <img src="https://image.flaticon.com/icons/png/512/60/60736.png"
                            class="fa fa-fw article-logo">
-                      {% endfor %}
-                      <b><a href="{{ article['url'] }}">{{ article['title'] }}</a></b>
+                                            <b><a href="https://www.microsoft.com/en-us/research/blog/learning-source-code/">Learning from Source Code</a></b>
                   </h5>
 
                   <h6 class="w3-text">
-                          {% if article['recommended'] %}
-                              <span class="badge">
-                                  Recommended
-                              </span>
-                          {% endif %}
-                          {{ article['lab'] }}
+                                                    Microsoft Research
                   </h6>
-                  <p>{{ article['description'] }}</p>
-                  {% if article['quote'] != "" %}
-                  <blockquote class="blockquote">
-                     <p class="quote">{{ article['quote'] }}</p>
-                  </blockquote>
-                  {% endif %}
-              </div>
+                  <p></p>
+                                </div>
               <hr>
 
-              {% endfor %}
-            
+                          
           </div>
-          {% endfor %}
-      </div>
+          
+          <!-- Category block -->
+          <div class="category">
+              <h2 class="category-title">
+                  <img src="https://image.flaticon.com/icons/png/512/722/722174.png"
+                       class="fa fa-fw category-logo">Computer Vision
+              </h2>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/155/155292.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://www.youtube.com/watch?v=U4Q98lenGLQ">Semi-parametric Image Synthesis</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    CUHK, Intel Labs
+                  </h6>
+                  <p></p>
+                                </div>
+              <hr>
+
+                          
+          </div>
+                </div>
       
   <!-- Dummy container to force centering. Yes. I'm a front-end noob. -->
   <div class="col-sm-2"></div>

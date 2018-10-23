@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+<title>ML newsletter</title>
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+	html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+
+	.category{
+	  padding: 20px;
+	  margin: auto;
+	  background: #F5F5F5;
+	  margin-bottom: 25px;
+	  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+	  transition: all 0.3s; 
+	  border-radius: 3px;
+	}
+
+    .category-title{
+      margin-bottom: 30px;
+    }
+
+	.category-logo{
+	  margin-right: 10px;
+	}
+
+	.article-logo{
+	  margin-right: 3px;
+	}
+
+    .recommended{
+	  margin-right: 2px;
+    }
+
+    .quote{
+      font-size: 11px;
+    }
+</style>
+
+
+<body>
+
+<!-- Page Container -->
+<div class="container" style="max-width:1400px;">
+
+  <!-- The Grid -->
+  <div class="row">
+  
+      <!-- Dummy container to force centering. Yes. I'm a front-end noob. -->
+      <div class="col-sm-2"></div>
+
+      <div class="col-sm-8">
+
+          
+          <!-- Category block -->
+          <div class="category">
+              <h2 class="category-title">
+                  <img src="https://image.flaticon.com/icons/png/512/653/653500.png"
+                       class="fa fa-fw category-logo">General Machine Learning
+              </h2>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/60/60736.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://distill.pub/2018/feature-wise-transformations/">Differentiable Image Parameterizations</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                        <span class="badge">
+                                  Recommended
+                              </span>
+                                                    Distill
+                  </h6>
+                  <p>A new brilliant blog post from Distill. This one deals with image parameterization in the context of style transfer of image optimisation (when we optimise the input image to maximise the activation of certain neurons). A number of approaches are explored (conditioning the input on external images,  chaging the input space using FFT or a Compositional Pattern Producing Networks). The article has mostly been acclaimed for its exploration of texture-map generation for 3d objects. By incorporating the knowledge of UV map to the network, authors were able to generate convincing texture maps for given 3d objects. Similarly, they managed to perform style transfer in 3d! As usual with the Distill articles, prepare 30 to 40 minutes of reading time if you want to dig a little bit. Oh and if that wasn't enough,  they provide all the code they used directly in a Colab notebook, ready to be used!</p>
+                                </div>
+              <hr>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/155/155292.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://arxiv.org/abs/1807.06699">Adaptive Neural Trees</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    University College London, Imperial College London, Microsoft Research
+                  </h6>
+                  <p></p>
+                                    <blockquote class="blockquote">
+                     <p class="quote">Deep neural networks and decision trees operate on largely separate paradigms; typically, the former performs representation learning with pre-specified architectures, while the latter is characterised by learning hierarchies over pre-specified features with data-driven architectures. We unite the two via adaptive neural trees (ANTs), a model that incorporates representation learning into edges, routing functions and leaf nodes of a decision tree, along with a backpropagation-based training algorithm that <b>adaptively grows the architecture from primitive modules</b> (e.g., convolutional layers).</p>
+                  </blockquote>
+                                </div>
+              <hr>
+
+                          
+          </div>
+          
+          <!-- Category block -->
+          <div class="category">
+              <h2 class="category-title">
+                  <img src="https://image.flaticon.com/icons/png/512/722/722174.png"
+                       class="fa fa-fw category-logo">Computer Vision
+              </h2>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/155/155292.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://arxiv.org/abs/1807.06653">Invariant Information Distillation for Unsupervised Image Segmentation and Clustering</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    University of Oxford
+                  </h6>
+                  <p></p>
+                                    <blockquote class="blockquote">
+                     <p class="quote">We present a new method that learns to segment and cluster images without labels of any kind. A simple loss based on information theory is used to extract meaningful representations directly from raw images. This is achieved by maximising mutual information of images known to be related by spatial proximity or randomized transformations, which distills their shared abstract content. Unlike much of the work in unsupervised deep learning, <b>our learned function outputs segmentation heatmaps and discrete classifications labels directly</b>, rather than embeddings that need further processing to be usable.</p>
+                  </blockquote>
+                                </div>
+              <hr>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/155/155292.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://arxiv.org/pdf/1807.05520.pdf">Deep Clustering for Unsupervised Learning of Visual Features</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    Facebook Research
+                  </h6>
+                  <p></p>
+                                    <blockquote class="blockquote">
+                     <p class="quote">In this work, we present DeepCluster, a clustering method that jointly learns the parameters of a neural network and the cluster assignments of the resulting features. DeepCluster iterativel groups the features with a standard clustering algorithm, kmeans, and uses the subsequent assignments as supervision to update the weights of the network.</p>
+                  </blockquote>
+                                </div>
+              <hr>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/155/155292.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="http://www.kdd.org/kdd2018/accepted-papers/view/rosetta-large-scale-system-for-text-detection-and-recognition-in-images">(KDD 2018) Rosetta: Large scale system for text detection and recognition in images</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    Facebook AI
+                  </h6>
+                  <p>In the video presenting this paper, the narrator states that Rosetta (the OCR method and pipeline presented here) is <i>designed to process images uploaded daily at Facebook scale</i>. Their method uses the faily common CTC loss with a ResNet architecture. Where it stands out however is that their approach is fully convolutional; in other words: they do not use explicitely any recurrent architectures (like LSTMs). This choice is explained in the paper: <i>The main argument is that recurrent models are slower at inference time, and a small loss in accuracy is affordable if the inference time is reduced.</i>. Besides, they propose a strategy to train their model whereby the training is first performed on small and simple words and is gradually increased to longer/harder words. They also provide the engineering details of the Rosetta pipeline.</p>
+                                </div>
+              <hr>
+
+                          
+          </div>
+          
+          <!-- Category block -->
+          <div class="category">
+              <h2 class="category-title">
+                  <img src="https://image.flaticon.com/icons/png/512/179/179121.png"
+                       class="fa fa-fw category-logo">Optimisation & Learning Theory
+              </h2>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/155/155292.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="http://proceedings.mlr.press/v80/kuleshov18a.html">ICML 2018 - Accurate Uncertainties for Deep Learning Using Calibrated Regression</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    Stanford University, Afresh Technologies
+                  </h6>
+                  <p></p>
+                                    <blockquote class="blockquote">
+                     <p class="quote">Methods for reasoning under uncertainty are a key building block of accurate and reliable machine learning systems. Bayesian methods provide a general framework to quantify uncertainty. However, because of model misspecification and the use of approximate inference, Bayesian uncertainty estimates are often inaccurate —- for example, a 90% credible interval may not contain the true outcome 90% of the time. Here, we propose a simple procedure for calibrating any regression algorithm; when applied to Bayesian and probabilistic models, it is guaranteed to produce calibrated uncertainty estimates given enough data. Our procedure is inspired by Platt scaling and extends previous work on classification</p>
+                  </blockquote>
+                                </div>
+              <hr>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/149/149125.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://www.youtube.com/watch?v=31mqB4yGgQY">Nuts and Bolts of WGANs, Kantorovich-Rubestein Duality, Earth Movers Distance</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    Crazymuse AI
+                  </h6>
+                  <p>A short-ish video (about 13 minutes) that deals with the notion of distance between distributions. The author presents the problem first tackled by Monge and then resolved by Kantorovich. All of this is of course to introduce the Wasserstein distance and its use in  WGANs. Although the video is presented as an introduction to these notions, I found it quite hard to follow and would personally characterise it rather as an excellent <i>refresher</i> video.</p>
+                                </div>
+              <hr>
+
+                          
+          </div>
+          
+          <!-- Category block -->
+          <div class="category">
+              <h2 class="category-title">
+                  <img src="https://image.flaticon.com/icons/png/512/263/263051.png"
+                       class="fa fa-fw category-logo">Everything Else
+              </h2>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/25/25231.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://github.com/omenyayl/dataset-annotator">Dataset Annotator</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    Omenyayl
+                  </h6>
+                  <p>A local GUI dataset annotator that has notably been optimised for speed through keyboard navigation.</p>
+                                </div>
+              <hr>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <b><a href="http://www.djlu.fr/">DjLu</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    
+                  </h6>
+                  <p>An alternative to Mendeley? The main difference is that it's more of a DIY service. From my initial understanding, what they provide is a web interface to serve your library of papers. However, they do not host the said library (this being the list of papers and their associated PDF). For this, you will need to define your library in a Git repo and use Google Drive to store the PDFs. Also, the project is open-source! I will give it a try.</p>
+                                    <blockquote class="blockquote">
+                     <p class="quote">DjLu (pronounce DéjàLu, with a French accent) is a simple and free tool to organize research papers.</p>
+                  </blockquote>
+                                </div>
+              <hr>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/149/149125.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://www.youtube.com/watch?v=t952yS8tcg8">Technical Papers Preview: SIGGRAPH 2018</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    SIGGRAPH
+                  </h6>
+                  <p>If you like 'Best of' music albums, you'll love this video. It presents succinctly in 4 minutes or so the best of technical papers that will be presented at SIGGRAPH 2018 this year. It's not really machine learning, but it's so cool to watch...</p>
+                                </div>
+              <hr>
+
+                          
+          </div>
+                </div>
+      
+  <!-- Dummy container to force centering. Yes. I'm a front-end noob. -->
+  <div class="col-sm-2"></div>
+
+  <!-- End Grid -->
+  </div>
+  
+  <!-- End Page Container -->
+</div>
+
+</body>
+</html>

@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html>
+<title>ML newsletter</title>
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+	html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+
+	.category{
+	  padding: 20px;
+	  margin: auto;
+	  background: #F5F5F5;
+	  margin-bottom: 25px;
+	  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+	  transition: all 0.3s; 
+	  border-radius: 3px;
+	}
+
+    .category-title{
+      margin-bottom: 30px;
+    }
+
+	.category-logo{
+	  margin-right: 10px;
+	}
+
+	.article-logo{
+	  margin-right: 3px;
+	}
+
+    .recommended{
+	  margin-right: 2px;
+    }
+
+    .quote{
+      font-size: 11px;
+    }
+</style>
+
+
+<body>
+
+<!-- Page Container -->
+<div class="container" style="max-width:1400px;">
+
+  <!-- The Grid -->
+  <div class="row">
+  
+      <!-- Dummy container to force centering. Yes. I'm a front-end noob. -->
+      <div class="col-sm-2"></div>
+
+      <div class="col-sm-8">
+
+          
+          <!-- Category block -->
+          <div class="category">
+              <h2 class="category-title">
+                  <img src="https://image.flaticon.com/icons/png/512/263/263051.png"
+                       class="fa fa-fw category-logo">Everything Else
+              </h2>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/60/60736.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://www.pyimagesearch.com/2018/02/05/deep-learning-production-keras-redis-flask-apache/">Deep learning in production with Keras, Redis, Flask, and Apache</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                        <span class="badge">
+                                  Recommended
+                              </span>
+                                                    PyImageSearch
+                  </h6>
+                  <p>This post is actually the third chapter of this series. In this one, the author creates a stress test script to test the scalability of his server. The script sends one request every 0.05 seconds for 25 seconds (that's 500 requests). The post features a Youtube video where the stress test is being executed... and it works! The caveat: it's running on GPUs. Although there's something interesting: from what I understood, the queue manager is able to pick up several images at a time and pack them into a batch. So instead of processing images per request, the model can process several requests at the same time. Have to check how it's properly being done but... Pretty clever.</p>
+                                </div>
+              <hr>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/60/60736.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="http://blcv.pl/static//2018/02/27/demystifying-face-recognition-v-data-augmentation/">Demystifying Face Recognition V: Data Augmentation</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                        <span class="badge">
+                                  Recommended
+                              </span>
+                                                    Bartosz Ludwiczuk
+                  </h6>
+                  <p>I'm sharing not because it's about face. But rather because it's a thorough analysis of many data augmentation techniques and their impact on performance/generalization. Also explores data-augmentation techniques from 2017 that I personally wasn't aware of: random-erasing and mixup.</p>
+                                </div>
+              <hr>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/25/25231.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://www.deepvideoanalytics.com/">Deep Video Analytics: Data-centric platform for Computer Vision</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                        <span class="badge">
+                                  Recommended
+                              </span>
+                                                    Cornell University - Akshay Bhat
+                  </h6>
+                  <p>Contrary to the link above, this project is not a dataset manager but rather a dataset explorer. It seems EXTREMELY versatile. You can visualise images from your dataset and their annotations. You can see frames from videos. You can perform image search on your dataset. Lots of cool things. Check the video on the website,... very, very interesting.</p>
+                                    <blockquote class="blockquote">
+                     <p class="quote">Deep Video Analytics aims to revolutionize visual data analysis by providing a comprehensive platform for storage, analysis & sharing.</p>
+                  </blockquote>
+                                </div>
+              <hr>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/149/149125.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://www.youtube.com/watch?v=9zKuYvjFFS8&feature=youtu.be">Variational Autoencoders</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    Arxiv Insights
+                  </h6>
+                  <p>A 15 minutes introduction to Variational Autoencoders.</p>
+                                </div>
+              <hr>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/60/60736.png"
+                           class="fa fa-fw article-logo">
+                                            <img src="https://image.flaticon.com/icons/png/512/155/155292.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://deepmind.com/blog/learning-playing/">Learning by playing</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    Deep Mind
+                  </h6>
+                  <p>A robotic arm is provided with a touch sensor and is rewarded for intermediate actions such as: moving objets around, grabing objets, coordinating grabing and lifting etc. Afer a while, the robot is able to stack object and to put them in a box!</p>
+                                    <blockquote class="blockquote">
+                     <p class="quote">Our new paper proposes a new learning paradigm called ‘Scheduled Auxiliary Control (SAC-X)’ which seeks to overcome this exploration issue. SAC-X is based on the idea that to learn complex tasks from scratch, an agent has to learn to explore and master a set of basic skills first. Just as a baby must develop coordination and balance before she crawls or walks—providing an agent with internal (auxiliary) goals corresponding to simple skills increases the chance it can understand and perform more complicated tasks.</p>
+                  </blockquote>
+                                </div>
+              <hr>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/60/60736.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="http://mlexplained.com/2018/02/08/a-comprehensive-tutorial-to-torchtext/">A Comprehensive Introduction to Torchtext</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    ML Explained
+                  </h6>
+                  <p></p>
+                                    <blockquote class="blockquote">
+                     <p class="quote">In this post, I’ll demonstrate how torchtext can be used to build and train a text classifier from scratch.</p>
+                  </blockquote>
+                                </div>
+              <hr>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/155/155292.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://arxiv.org/abs/1802.09662">Directional Statistics-based Deep Metric Learning for Image Classification and Retrieval</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    City University of Hong Kong - Xuefei Zhe, Shifeng Chen, Hong Yan
+                  </h6>
+                  <p>Probably relevant to some of you (@Abhishek). See also <a href=https://arxiv.org/abs/1708.01682>Deep Metric Learning with Angular Loss</a> and <a href=https://arxiv.org/abs/1801.07698>ArcFace</a>.</p>
+                                    <blockquote class="blockquote">
+                     <p class="quote">Another challenge of current deep distance metric learning methods is that their loss functions are usually based on rigid data formats, such as the triplet tuple. Thus, an extra process is needed to prepare data in specific formats. In addition, their losses are obtained from a limited number of samples, which leads to a lack of the global view of the embedding space. In this paper, we replace the Euclidean distance with the cosine similarity to better utilize the L2-normalization, which is able to attenuate the curse of dimensionality.</p>
+                  </blockquote>
+                                </div>
+              <hr>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/155/155292.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://arxiv.org/abs/1802.08864">One Big Net For Everything</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    Juergen Schmidhuber
+                  </h6>
+                  <p>Ideas but no experiments.</p>
+                                    <blockquote class="blockquote">
+                     <p class="quote">The problem solver is a single recurrent neural network (or similar general purpose computer) called ONE. ONE is unusual in the sense that it is trained in various ways, e.g., by black box optimization / reinforcement learning / artificial evolution as well as supervised / unsupervised learning. For example, ONE may learn through neuroevolution to control a robot through environment-changing actions, and learn through unsupervised gradient descent to predict future inputs and vector-valued reward signals as suggested in 1990.</p>
+                  </blockquote>
+                                </div>
+              <hr>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/25/25231.png"
+                           class="fa fa-fw article-logo">
+                                            <img src="https://image.flaticon.com/icons/png/512/174/174858.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://www.brine.io/">Brine: Dataset management for computer vision</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    
+                  </h6>
+                  <p>An open-source project that could potentially make our life simpler. It is a package that handles datasets, and provides integration with Pytorch and Keras. The given examples (in the documentation) are interesting. It could be worth investigating this sort of solution. Especially if we want to share datasets across the team. The authors made a <a href=https://medium.com/@hanrelan/a-non-experts-guide-to-image-segmentation-using-deep-neural-nets-dda5022f6282>blog post</a> where they present how they used Brine in the context of a segmentation problem.</p>
+                                </div>
+              <hr>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/25/25231.png"
+                           class="fa fa-fw article-logo">
+                                            <img src="https://image.flaticon.com/icons/png/512/155/155292.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://github.com/titu1994/neural-image-assessment">NIMA: Neural Image Assessment</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    
+                  </h6>
+                  <p>An implementation of the <a href=https://arxiv.org/abs/1709.05424>NIMA: Neural Image Assessment</a> paper. Weights are provided for MobileNet. Could be interesting to see if it can detect low quality images.</p>
+                                </div>
+              <hr>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/155/155292.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://arxiv.org/abs/1802.09419">Stochastic Hyperparameter Optimization through Hypernetworks</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    University of Toronto - Jonathan Lorraine, David Duvenaud
+                  </h6>
+                  <p></p>
+                                    <blockquote class="blockquote">
+                     <p class="quote">Machine learning models are often tuned by nesting optimization of model weights inside the optimization of hyperparameters. We give a <b>method to collapse this nested optimization into joint stochastic optimization of weights and hyperparameters</b>. Our process trains a neural network to output approximately optimal weights as a function of hyperparameters. We show that our technique converges to locally optimal weights and hyperparameters for sufficiently large hypernetworks. We compare this method to standard hyperparameter optimization strategies and demonstrate its effectiveness for tuning thousands of hyperparameters.</p>
+                  </blockquote>
+                                </div>
+              <hr>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/155/155292.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://github.com/eriklindernoren/Keras-GAN">Keras-GAN</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    Erik Lindernonen
+                  </h6>
+                  <p>Wow. Some crazy guy decided to implement 17 different types of GANs for Keras, in the same repo, with the same code structure for each model.</p>
+                                </div>
+              <hr>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/155/155292.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://arxiv.org/abs/1802.08760">Sensitivity and Generalization in Neural Networks: an Empirical Study</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    Google Brain - Roman Novak, Yasaman Bahri, Daniel A. Abolafia, Jeffrey Pennington, Jascha Sohl-Dickstein
+                  </h6>
+                  <p></p>
+                                    <blockquote class="blockquote">
+                     <p class="quote">In this work, we investigate this tension between complexity and generalization through an extensive empirical exploration of two natural metrics of complexity related to sensitivity to input perturbations. Our experiments survey thousands of models with various fully-connected architectures, optimizers, and other hyper-parameters, as well as four different image classification datasets.</p>
+                  </blockquote>
+                                </div>
+              <hr>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/149/149125.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://www.youtube.com/watch?v=gOFdwAlJj8M&feature=youtu.be">Deep learning on the cloud (AWS)</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    Shahzeb
+                  </h6>
+                  <p>A 25-minutes video on how to set up an EC2 instance from scratch and use it for machine learning. Not so relevant anymore but it can be interesting to get a better understanding of this sort of DevOps steps.</p>
+                                </div>
+              <hr>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/25/25231.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://github.com/openai/gym/tree/master/gym/envs/robotics">Robotics environments</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    OpenAI
+                  </h6>
+                  <p>OpenAI gym has now new robotics environment for those you want to try it out :).</p>
+                                </div>
+              <hr>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/155/155292.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://arxiv.org/abs/1802.08232">The Secret Sharer: Measuring Unintended Neural Network Memorization & Extracting Secrets</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    Nicholas Carlini, Chang Liu, Jernej Kos, Ulfar Erlingsson, Dawn Song
+                  </h6>
+                  <p></p>
+                                    <blockquote class="blockquote">
+                     <p class="quote">What models learn, and what they may share, is a significant concern when the training data may contain secrets and the models are public -- e.g., when a model helps users compose text messages using models trained on all users' messages. This paper presents exposure: a simple-to-compute metric that can be applied to any deep learning model for measuring the memorization of secrets.</p>
+                  </blockquote>
+                                </div>
+              <hr>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/155/155292.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://arxiv.org/abs/1802.07740">Machine Theory of Mind</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    DeepMind
+                  </h6>
+                  <p>And a <a href=https://medium.com/@GaryMarcus/deepminds-misleading-campaign-against-innateness-a2ea6eb4d0ba>critique</a>.</p>
+                                    <blockquote class="blockquote">
+                     <p class="quote">We design a Theory of Mind neural network -- a ToMnet -- which uses meta-learning to build models of the agents it encounters, from observations of their behaviour alone. Through this process, it acquires a strong prior model for agents' behaviour, as well as the ability to bootstrap to richer predictions about agents' characteristics and mental states using only a small number of behavioural observations.</p>
+                  </blockquote>
+                                </div>
+              <hr>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/25/25231.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://github.com/Hyperparticle/one-pixel-attack-keras">One Pixel Attack</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    Hyperparticule
+                  </h6>
+                  <p></p>
+                                    <blockquote class="blockquote">
+                     <p class="quote">How simple is it to cause a deep neural network to misclassify an image if we are only allowed to modify the color of one pixel and only see the prediction probability? Turns out it is very simple. In many cases, we can even cause the network to return any answer we want.</p>
+                  </blockquote>
+                                </div>
+              <hr>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/60/60736.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://himanshusahni.github.io/2018/02/23/reinforcement-learning-never-worked.html">Reinforcement Learning never worked, and 'deep' only helped a bit.</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    Himanshu Sahni
+                  </h6>
+                  <p>In the same fashion than a (recommended!) <a href=https://www.alexirpan.com/2018/02/14/rl-hard.html>post</a> posted two weeks ago, the author here details the reasons why DRL is hard and often doesn not work. What sticked to my mind was: the space of training data is huge (infinite number of states, infinite number of actions, both supposedly to be visited an inifinite amount of times); training is often slow and inefficient due to the weaknesses of gradient descent; unlike supervised learning the 'labels' can change over time (a same state can have different rewards); extreme dependence on initial conditions and hyperparameters since the training data is built by the agent  exploring the search space. Hierarchical RL is described at the end and presented as a potential solution to these problems. Actually it seems to be a hot topic (see the Deep Mind paper just below).</p>
+                                    <blockquote class="blockquote">
+                     <p class="quote">RL agents are basically playing the lottery at every step and trying to figure out what they did to hit the jackpot.</p>
+                  </blockquote>
+                                </div>
+              <hr>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/25/25231.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://github.com/Cloud-CV/Fabrik/blob/master/README.md">fabrik</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    Cloud CV
+                  </h6>
+                  <p></p>
+                                    <blockquote class="blockquote">
+                     <p class="quote">Fabrik is an online collaborative platform to build, visualize and train deep learning models via a simple drag-and-drop interface. It allows researchers to collaboratively develop and debug models using a web GUI that supports importing, editing and exporting networks written in widely popular frameworks like Caffe, Keras, and TensorFlow.</p>
+                  </blockquote>
+                                </div>
+              <hr>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/25/25231.png"
+                           class="fa fa-fw article-logo">
+                                            <img src="https://image.flaticon.com/icons/png/512/155/155292.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="http://www.sysml.cc/doc/150.pdf">A Hierarchical Model for Device Placement</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    Google Brain
+                  </h6>
+                  <p>It could be that in the future Tensorflow will distribute intelligently its graph operations across CPUs and GPUs. They started <a href=https://github.com/tensorflow/tensorflow/commit/b3df3aa4f5842fe3184088ef2fa0bb5d6edc21d5>pushing some code</a>.</p>
+                                    <blockquote class="blockquote">
+                     <p class="quote">We propose a hierarchical model for efficient placement of computational graphs onto hardware devices, especially in heterogeneous environments with a mixture of CPUs, GPUs, and other computational devices.</p>
+                  </blockquote>
+                                </div>
+              <hr>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/25/25231.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://github.com/deepmipt/DeepPavlov">DeepPavlov</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    
+                  </h6>
+                  <p>An open-source conversational AI library to implement and evaluate complex conversational systems.</p>
+                                </div>
+              <hr>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/60/60736.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://www.robinsloan.com/voyages-in-sentence-space/">Voyages in sentence space</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    Robin Sloan
+                  </h6>
+                  <p>It's basically someone who used the implementation of a paper to project sentences in a continuous embedding space (VAE like). With this, you can sample the embedding space to generate a 'gradient' between two sentences; or explore neighboring sentences. If you have a poetic feeling today, you'll like it.</p>
+                                    <blockquote class="blockquote">
+                     <p class="quote">I went looking for adventure. I went out on a mission. I shouted awkwakdly. I stared incredulously. I feel desperate.. I never returned.</p>
+                  </blockquote>
+                                </div>
+              <hr>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/155/155292.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://arxiv.org/abs/1802.09583">Data-dependent PAC-Bayes priors via differential privacy</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    Gintare Karolina Dziugaite, Daniel M. Roy
+                  </h6>
+                  <p></p>
+                                    <blockquote class="blockquote">
+                     <p class="quote">Let me put this in deep learning terms. We show you can use SGLD to optimize certain hyperparameters and still obtain generalization guarantees using differential privacy despite there being no e-differential privacy bounds for SGLD. (<a href=https://twitter.com/roydanroy/status/969471699933585408>here</a>)</p>
+                  </blockquote>
+                                </div>
+              <hr>
+
+                          
+          </div>
+                </div>
+      
+  <!-- Dummy container to force centering. Yes. I'm a front-end noob. -->
+  <div class="col-sm-2"></div>
+
+  <!-- End Grid -->
+  </div>
+  
+  <!-- End Page Container -->
+</div>
+
+</body>
+</html>

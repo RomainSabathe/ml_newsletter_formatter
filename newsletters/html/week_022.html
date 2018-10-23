@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+<title>ML newsletter</title>
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+	html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+
+	.category{
+	  padding: 20px;
+	  margin: auto;
+	  background: #F5F5F5;
+	  margin-bottom: 25px;
+	  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+	  transition: all 0.3s; 
+	  border-radius: 3px;
+	}
+
+    .category-title{
+      margin-bottom: 30px;
+    }
+
+	.category-logo{
+	  margin-right: 10px;
+	}
+
+	.article-logo{
+	  margin-right: 3px;
+	}
+
+    .recommended{
+	  margin-right: 2px;
+    }
+
+    .quote{
+      font-size: 11px;
+    }
+</style>
+
+
+<body>
+
+<!-- Page Container -->
+<div class="container" style="max-width:1400px;">
+
+  <!-- The Grid -->
+  <div class="row">
+  
+      <!-- Dummy container to force centering. Yes. I'm a front-end noob. -->
+      <div class="col-sm-2"></div>
+
+      <div class="col-sm-8">
+
+          
+          <!-- Category block -->
+          <div class="category">
+              <h2 class="category-title">
+                  <img src="https://image.flaticon.com/icons/png/512/653/653500.png"
+                       class="fa fa-fw category-logo">General Machine Learning
+              </h2>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/155/155292.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://arxiv.org/abs/1806.01261">Relational inductive biases, deep learning, and graph networks</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    DeepMind, Google Brain, MIT, University of Edinburgh
+                  </h6>
+                  <p></p>
+                                    <blockquote class="blockquote">
+                     <p class="quote">Just as biology uses nature and nurture cooperatively, we reject the false choice between 'hand-engineering' and 'end-to-end' learning, and instead advocate for an approach which benefits from their complementary strengths. We explore how using relational inductive biases within deep learning architectures can facilitate learning about entities, relations, and rules for composing them. We present a new building block for the AI toolkit with a strong relational inductive bias--the graph network--which generalizes and extends various approaches for neural networks that operate on graphs, and provides a straightforward interface for manipulating structured knowledge and producing structured behaviors.</p>
+                  </blockquote>
+                                </div>
+              <hr>
+
+                          
+          </div>
+          
+          <!-- Category block -->
+          <div class="category">
+              <h2 class="category-title">
+                  <img src="https://image.flaticon.com/icons/png/512/722/722174.png"
+                       class="fa fa-fw category-logo">Computer Vision
+              </h2>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/25/25231.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://sod.pixlab.io/">SOD - An Embedded Computer Vision & Machine Learning Library</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                        <span class="badge">
+                                  Recommended
+                              </span>
+                                                    Pixlab
+                  </h6>
+                  <p>This looks super interesting. It is alibrary dedicated for embeded and IoT devices that provides classic computer vision tools (Sobel, Canny, Hough lines...) as well as deep learning methods and pretrained models (includes: object detection and recognition, eye & pupile tracking (!!), facial & body shape extraction (!!), action classification. It also implements some ready-to-use algorithms for 'biometrics', 'gesture recongition', 'augmented/virtual reality'... Looks promising.</p>
+                                </div>
+              <hr>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/60/60736.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://ai.googleblog.com/2018/06/improving-deep-learning-performance.html">Improving Deep Learning Performance with AutoAugment</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    Google AI
+                  </h6>
+                  <p>I love this idea! And it's simple in its conception! Basically the problem is: can we design a way to 1) encode all possible data augmentation procedures, without having to manually code them individually, and 2) given a dataset and a neural network, find the optimal set of augmentations such that we maximise the network's generalization performance? This blog post is an introduction to the full paper <a href=https://arxiv.org/abs/1805.09501>here</a>. We learn that they used reinforcement learning to find these optimal augmentations. So cool!</p>
+                                </div>
+              <hr>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/25/25231.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://github.com/kondiz/casme">Classifier-agnostic saliency map extraction</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    Konrad Żołna, Krzysztof J. Geras, Kyunghyun Cho.
+                  </h6>
+                  <p>An implementation of <a href=https://arxiv.org/abs/1805.08249>Classifier-agnostic saliency map extraction</a>. The idea is to train simultaneously a classifier and a saliency mapping. The images given in the link are quite convincing.</p>
+                                </div>
+              <hr>
+
+                          
+          </div>
+          
+          <!-- Category block -->
+          <div class="category">
+              <h2 class="category-title">
+                  <img src="https://image.flaticon.com/icons/png/512/179/179121.png"
+                       class="fa fa-fw category-logo">Optimisation & Learning Theory
+              </h2>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/155/155292.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://arxiv.org/abs/1805.12076">Towards Understanding the Role of Over-Parametrization in Generalization of Neural Networks</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    Princeton, Toyota Technology Institute, Facebook AI Research
+                  </h6>
+                  <p></p>
+                                    <blockquote class="blockquote">
+                     <p class="quote">In this work we suggest a novel complexity measure based on unit-wise capacities resulting in a tighter generalization bound for two layer ReLU networks. Our capacity bound correlates with the behavior of test error with increasing network sizes, and could potentially explain the improvement in generalization with over-parametrization. We further present a matching lower bound for the Rademacher complexity that improves over previous capacity lower bounds for neural networks.</p>
+                  </blockquote>
+                                </div>
+              <hr>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/155/155292.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://arxiv.org/abs/1806.00451">Do CIFAR-10 Classifiers Generalize to CIFAR-10?</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    UC Berkeley, MIT
+                  </h6>
+                  <p>Authors tackle the problem of <i>test set overfitting</i> on CIFAR-10. The question is following: the CIFAR-10 test set has been optimised on for 10 years and used as criterion when we compare the performance of models. Do these models truly generalise or are they optimised for the test set? To answer this question, authors have created a new test set of truly unseen images and designed it so its distribution is close from the original CIFAR-10 test set. They test tens of models (and different implementations) on this new test set and the results are quite striking.<br /> There are two main observations: the first one is that there is indeed a performance drop from the original test set to the new one (up to 15% accuracy) and this observation holds across <i>all</i> the models they tested. However, they observe a surprising trend by which the best models on the original test set remain the best models on the new test set. They actually note that there is a linear relationship like: new_perf = a*old_perf + b (with b < 0). Their conclusion is that although this apparent overfitting may be concerning, using a same test set and optimising for it over 10 years has not been detrimental (in terms of evaluation of machine learning models).</p>
+                                </div>
+              <hr>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/25/25231.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://github.com/kmkolasinski/deep-learning-notes/tree/master/max-normed-optimizer">Notes on the application of the Normalized Gradient Descent approach to Deep Learning</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    Kolasinki
+                  </h6>
+                  <p>Quite an interesting read. The author experiments a variation of SGD in which the gradients are normalised (by L2 or L-infinity) to avoid what he calls a double-scalling effect (one that comes from the learning rate, the other from the norm of the gradient vector). If I am not mistakken, this idea was also cental in the awarded paper 'On the Convergence of Adam and Beyond', reviewed by Blanca. Here, the author provides <a href=https://github.com/kmkolasinski/deep-learning-notes/blob/master/max-normed-optimizer/notes.pdf>notes</a> and details his motivations. Interestingly, he ends up using SGD on the learning rate (as was done in some other paper, see <a href=https://medium.com/onfido-tech/towards-faster-training-and-smaller-generalisation-gaps-in-deep-learning-b9767f68ec23>here</a> for an overview ;-)). On MNIST and CIFAR, this methods yields same-or-better results compared to Adam but more importantly: training is smoother and relies less on the initial learning rate. The webpage provides links to additional papers for further reading.</p>
+                                </div>
+              <hr>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/60/60736.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="http://www.awebb.info/blog/who_needs">Who needs loss functions? Mixing manual and automatic differentiation</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    Andrew Webb
+                  </h6>
+                  <p>Quite interesting. The author presents scenarios where given some a priori knowledge on the problem, we can discard the need to specify a loss function. This is achieved by explicitely computing the gradient values for the last layer, and using backprop from there. I doubt this is used a lot in practice though, as it requires that you know the type of label distribution (for instance, in case of regression: Gaussian, Poisson, etc.).</p>
+                                </div>
+              <hr>
+
+                          
+          </div>
+          
+          <!-- Category block -->
+          <div class="category">
+              <h2 class="category-title">
+                  <img src="https://image.flaticon.com/icons/png/512/249/249156.png"
+                       class="fa fa-fw category-logo">Reinforcement Learning
+              </h2>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/174/174858.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://medium.com/rkeramati/towards-reinforcement-learning-inspired-by-humans-without-human-demonstrations-a7c111a4d0de">Towards Reinforcement Learning Inspired By Humans Without Human Demonstrations</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    Ramtin Keramati
+                  </h6>
+                  <p></p>
+                                    <blockquote class="blockquote">
+                     <p class="quote">We present the Strategic Object-Oriented RL (SOORL) algorithm which is the first algorithm to our knowledge that can achieve positive rewards on the notoriously hard Atari game Pitfall! without access to human demonstrations, and can do so within 50 episodes. SOORL uses stronger prior knowledge (access to objects in the environment and a class of potential dynamics model) than standard deep RL algorithms, but much weaker information than methods that require access to trajectories of decent human play.</p>
+                  </blockquote>
+                                </div>
+              <hr>
+
+                          
+          </div>
+          
+          <!-- Category block -->
+          <div class="category">
+              <h2 class="category-title">
+                  <img src="https://image.flaticon.com/icons/png/512/484/484582.png"
+                       class="fa fa-fw category-logo">Natural Language Processing
+              </h2>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/25/25231.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://github.com/Kyubyong/css10">CSS10: A Collection of Single Speaker Speech Datasets for 10 Languages</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    Kakao Brain, Expedia
+                  </h6>
+                  <p>A collection of single speaker speech datasets for ten languages. Could be useful for liveness. Speech-synthesis pre-trained models are also provided. Fun fact: the French model has actually a strong Belgium accent. :)</p>
+                                </div>
+              <hr>
+
+                          
+          </div>
+                </div>
+      
+  <!-- Dummy container to force centering. Yes. I'm a front-end noob. -->
+  <div class="col-sm-2"></div>
+
+  <!-- End Grid -->
+  </div>
+  
+  <!-- End Page Container -->
+</div>
+
+</body>
+</html>
