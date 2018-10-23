@@ -1,3 +1,43 @@
 # ML Newsletter Formatter
 
-WIP - The code is super dirty at the moment.
+This is the source code I use to generate the HTML pages of my weekly newsletter.  
+You can find (almost) all the past editions in the `newsletters/html` folder.  
+To subscribe, see [here](https://twitter.us19.list-manage.com/subscribe?u=cd061bd2d50f684b5f1991b12&id=b6816931f0)  
+
+## Historic
+
+2018-10-19 [Week 37](https://us19.campaign-archive.com/?u=cd061bd2d50f684b5f1991b12&id=d5169be3d9)  
+2018-10-12 [Week 36](https://us19.campaign-archive.com/?u=cd061bd2d50f684b5f1991b12&id=97e93634e8)  
+2018-10-05 [Week 35](https://us19.campaign-archive.com/?u=cd061bd2d50f684b5f1991b12&id=fe68dba1f8)  
+2018-09-28 [Week 34](https://us19.campaign-archive.com/?u=cd061bd2d50f684b5f1991b12&id=19ac790fd8)  
+2018-08-24 [Week 33](https://us18.campaign-archive.com/?u=da28f86966bc81dc040b5e2a6&id=154d961a44)  
+2018-08-17 [Week 32](https://us18.campaign-archive.com/?u=da28f86966bc81dc040b5e2a6&id=c2a613bcd1)  
+2018-08-10 [Week 31](https://us18.campaign-archive.com/?u=da28f86966bc81dc040b5e2a6&id=6977df2ccc)  
+2018-08-03 [Week 30](https://us18.campaign-archive.com/?u=da28f86966bc81dc040b5e2a6&id=072f8285e7)  
+2018-07-27 [Week 29](https://us18.campaign-archive.com/?u=da28f86966bc81dc040b5e2a6&id=3948b908e0)  
+2018-07-20 [Week 28](https://us18.campaign-archive.com/?u=da28f86966bc81dc040b5e2a6&id=67fa800dda)  
+2018-07-13 [Week 27](https://us18.campaign-archive.com/?u=da28f86966bc81dc040b5e2a6&id=db0304ea47)  
+2018-07-06 [Week 26](https://us18.campaign-archive.com/?u=da28f86966bc81dc040b5e2a6&id=04a376a658)  
+2018-06-22 Week 24 (soon)  
+2018-06-15 Week 23 (soon)  
+2018-06-07 Week 22 (soon)  
+2018-06-01 Week 21 (soon)  
+2018-05-25 Week 20 (soon)  
+2018-05-18 Week 19 (soon)  
+2018-05-03 Week 17 (soon)  
+2018-04-27 Week 16 (soon)  
+2018-04-20 Week 15 (soon)  
+2018-04-13 Week 14 (soon)  
+2018-04-06 Week 13 (soon)  
+2018-03-29 Week 12 (soon)  
+2018-03-23 Week 11 (soon)  
+2018-03-16 Week 10 (soon)  
+2018-03-09 Week 09 (soon)  
+2018-03-02 Week 08 (soon)  
+2018-02-23 Week 07 (soon)  
+2018-02-16 Week 06 (soon)  
+2018-02-09 Week 05 (soon)  
+2018-02-02 Week 04 (soon)  
+2018-01-26 Week 03 (soon)  
+2018-01-19 Week 02 (soon)  
+2018-01-12 Week 01 (soon)  
