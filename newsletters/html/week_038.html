@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html>
+<title>ML newsletter</title>
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+	html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+
+	.category{
+	  padding: 20px;
+	  margin: auto;
+	  background: #F5F5F5;
+	  margin-bottom: 25px;
+	  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+	  transition: all 0.3s; 
+	  border-radius: 3px;
+	}
+
+    .category-title{
+      margin-bottom: 30px;
+    }
+
+	.category-logo{
+	  margin-right: 10px;
+	}
+
+	.article-logo{
+	  margin-right: 3px;
+	}
+
+    .recommended{
+	  margin-right: 2px;
+    }
+
+    .quote{
+      font-size: 11px;
+    }
+</style>
+
+
+<body>
+
+<!-- Page Container -->
+<div class="container" style="max-width:1400px;">
+
+  <!-- The Grid -->
+  <div class="row">
+  
+      <!-- Dummy container to force centering. Yes. I'm a front-end noob. -->
+      <div class="col-sm-2"></div>
+
+      <div class="col-sm-8">
+
+          
+          <!-- Category block -->
+          <div class="category">
+              <h2 class="category-title">
+                  <img src="https://image.flaticon.com/icons/png/512/653/653500.png"
+                       class="fa fa-fw category-logo">General Machine Learning
+              </h2>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/60/60736.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://peterroelants.github.io/posts/linear-regression-four-ways/">Regression quattro stagioni</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                        <span class="badge">
+                                  Recommended
+                              </span>
+                                                    Peter Roelants
+                  </h6>
+                  <p>This post proposes a great refresher on maximum likelihood estimation, maximum a posteriori, ordinary least square, gradient descent and even MCMC parameter estimation using Metropolis-Hastings sampling. The setting is simple: one problem (linear regression) and four ways to formulate the problem and solve it. As always with Peter Roelants, code and plots are provided.</p>
+                                </div>
+              <hr>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/60/60736.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://mindcodec.com/an-introduction-to-causal-inference-with-gaussian-processes-part-i/">An Introduction to Causal Inference with Gaussian Processes (Part I)</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    Max Hinne
+                  </h6>
+                  <p>This series of articles presents the GP CaKe model (initially published at NIPS 2017). This model can be thought as an alternative to vector autoregression and dynamical systems theory for time-series prediction. In this first edition, we get a refresher of VAR and DST as well as an introductory example to GP CaKe.</p>
+                                </div>
+              <hr>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/25/25231.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://github.com/modAL-python/modAL">Modular Active Learning framework for Python3</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    Tivadar Danka
+                  </h6>
+                  <p>Note that the Github page offers nice explanations and visuals.</p>
+                                    <blockquote class="blockquote">
+                     <p class="quote">modAL is an active learning framework for Python3, designed with modularity, flexibility and extensibility in mind. Built on top of scikit-learn, it allows you to rapidly create active learning workflows with nearly complete freedom. What is more, you can easily replace parts with your custom built solutions, allowing you to design novel algorithms with ease.</p>
+                  </blockquote>
+                                </div>
+              <hr>
+
+                          
+          </div>
+          
+          <!-- Category block -->
+          <div class="category">
+              <h2 class="category-title">
+                  <img src="https://image.flaticon.com/icons/png/512/149/149243.png"
+                       class="fa fa-fw category-logo">Deep Learning
+              </h2>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/25/25231.png"
+                           class="fa fa-fw article-logo">
+                                            <img src="https://image.flaticon.com/icons/png/512/155/155292.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://github.com/Eric-mingjie/rethinking-network-pruning">Rethinking the Value of Network Pruning</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    UC Berkeley, Tsinghua University
+                  </h6>
+                  <p>In this work submitted to ICLR 2019, authors explore the actual benefits of pruning a large network. Surprisingly, they find that to achieve a same level of performance, it is not necessary to first train a large model and then prune it. Training from scratch the smaller architecture is enough to reach the same performance. Authors provide code for their experiments.</p>
+                                    <blockquote class="blockquote">
+                     <p class="quote">[...] Our results have several implications: 1) training a large, over-parameterized model is not necessary to obtain an efficient final model, 2) learned 'important' weights of the large model are not necessarily useful for the small pruned model, 3) the pruned architecture itself, rather than a set of inherited 'important' weights, is what leads to the efficiency benefit in the final model, which suggests that some pruning algorithms could be seen as performing network architecture search.</p>
+                  </blockquote>
+                                </div>
+              <hr>
+
+                          
+          </div>
+          
+          <!-- Category block -->
+          <div class="category">
+              <h2 class="category-title">
+                  <img src="https://image.flaticon.com/icons/png/512/722/722174.png"
+                       class="fa fa-fw category-logo">Computer Vision
+              </h2>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/25/25231.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://github.com/facebookresearch/maskrcnn-benchmark">Faster R-CNN and Mask R-CNN in PyTorch 1.0</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    Facebook Research
+                  </h6>
+                  <p>Remember the <a href=https://github.com/facebookresearch/Detectron>Detectron</a> repo? It was actually featuring in the third issue of this newsletter, back in January 2018! Well time flies and so does technology, and software. Taking advantage of PyTorch 1.0, this repo offers implementations and weights of RPN, Faster R-CNN and Mask R-CNN that match or exceed Detectron in terms of accuracy. But two times faster. With training code, support for batched inference, multi-GPU training and inference,... A great resource once again!</p>
+                                </div>
+              <hr>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/25/25231.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://github.com/MathiasGruber/PConv-Keras">Partial Convolutions for Image Inpainting using Keras</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    Mathias Gruber
+                  </h6>
+                  <p>Back in April, Nvidia was publishing <a href=http://openaccess.thecvf.com/content_ECCV_2018/papers/Guilin_Liu_Image_Inpainting_for_ECCV_2018_paper.pdf>Image Inpainting for Irregular Holes Using Partial Convolutions</a> to ECCV. Needless to say the results were astonishing. Mr Gruber decided to implement the method and to open source his code. His results are just as breath-taking as the ones in the paper!</p>
+                                </div>
+              <hr>
+
+                          
+          </div>
+          
+          <!-- Category block -->
+          <div class="category">
+              <h2 class="category-title">
+                  <img src="https://image.flaticon.com/icons/png/512/179/179121.png"
+                       class="fa fa-fw category-logo">Optimisation & Learning Theory
+              </h2>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/155/155292.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://arxiv.org/abs/1810.09136">Do Deep Generative Models Know What They Don't Know?</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    DeepMind
+                  </h6>
+                  <p>I came across this paper while reading <a href=https://openreview.net/forum?id=HyxCxhRcY7>Deep Anomaly Detection with Outlier Exposure</a> where a density-estimation model was trained on CIFAR-10. Yet it assigned higher densities to images from SVHN compared to images from CIFAR-10! This submission to ICLR 2019 precisely explores this phenomena. Considering that most cutting-edge out-of-distribution classifiers are based on a similar density-estimation framework, there is no doubt this work will receive some interest.</p>
+                                    <blockquote class="blockquote">
+                     <p class="quote">Generative models are widely viewed to be robust to such mistaken confidence as modeling the density of the input features can be used to detect novel, out-of-distribution inputs. In this paper we challenge this assumption. We find that the model density from flow-based models, VAEs and PixelCNN cannot distinguish images of common objects such as dogs, trucks, and horses (i.e. CIFAR-10) from those of house numbers (i.e. SVHN), assigning a higher likelihood to the latter when the model is trained on the former.</p>
+                  </blockquote>
+                                </div>
+              <hr>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/155/155292.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://arxiv.org/abs/1810.10180">Learned optimizers that outperform SGD on wall-clock and validation loss</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    Google Brain
+                  </h6>
+                  <p></p>
+                                    <blockquote class="blockquote">
+                     <p class="quote">[...] Learned optimizers are notoriously difficult to train and have yet to demonstrate wall-clock speedups over hand-designed optimizers, and thus are rarely used in practice. [...] In this work we propose a training scheme which overcomes both of these difficulties, by dynamically weighting two unbiased gradient estimators for a variational loss on optimizer performance. This allows us to train neural networks to perform optimization of a specific task faster than well tuned first-order methods. [...]</p>
+                  </blockquote>
+                                </div>
+              <hr>
+
+                          
+          </div>
+          
+          <!-- Category block -->
+          <div class="category">
+              <h2 class="category-title">
+                  <img src="https://imageog.flaticon.com/icons/png/512/248/248114.png"
+                       class="fa fa-fw category-logo">Production & Engineering
+              </h2>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/174/174858.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://medium.com/huggingface/training-larger-batches-practical-tips-on-1-gpu-multi-gpu-distributed-setups-ec88c3e51255">Training Neural Nets on Larger Batches: Practical Tips for 1-GPU, Multi-GPU & Distributed setups</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    Thomas Wolf
+                  </h6>
+                  <p>Perhaps at nights you have nightmares where the words <i>CUDA error: out of memory</i> haunt you. Fear not, this blog post will give you a few tips to solve your problems. A wide range of solutions is proposed: parallel training, distributing training, gradient-checkpointing,... Note that it is mostly intended to PyTorch users.</p>
+                                </div>
+              <hr>
+
+                          
+          </div>
+          
+          <!-- Category block -->
+          <div class="category">
+              <h2 class="category-title">
+                  <img src="https://image.flaticon.com/icons/png/512/56/56243.png"
+                       class="fa fa-fw category-logo">Laugh Of The Week
+              </h2>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <b><a href="https://twitter.com/Montreal_AI/status/1054090541397360640">Real-time in-the-wild robust face detection</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    
+                  </h6>
+                  <p></p>
+                                </div>
+              <hr>
+
+                          
+          </div>
+                </div>
+      
+  <!-- Dummy container to force centering. Yes. I'm a front-end noob. -->
+  <div class="col-sm-2"></div>
+
+  <!-- End Grid -->
+  </div>
+  
+  <!-- End Page Container -->
+</div>
+
+</body>
+</html>

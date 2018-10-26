@@ -6,6 +6,7 @@ To subscribe, see [here](https://twitter.us19.list-manage.com/subscribe?u=cd061b
 
 ## Historic
 
+2018-10-26 [Week 38](https://us19.campaign-archive.com/?u=cd061bd2d50f684b5f1991b12&id=f85cac32ed)
 2018-10-19 [Week 37](https://us19.campaign-archive.com/?u=cd061bd2d50f684b5f1991b12&id=d5169be3d9)  
 2018-10-12 [Week 36](https://us19.campaign-archive.com/?u=cd061bd2d50f684b5f1991b12&id=97e93634e8)  
 2018-10-05 [Week 35](https://us19.campaign-archive.com/?u=cd061bd2d50f684b5f1991b12&id=fe68dba1f8)  
@@ -37,7 +38,7 @@ To subscribe, see [here](https://twitter.us19.list-manage.com/subscribe?u=cd061b
 2018-02-23 Week 07 (soon)  
 2018-02-16 Week 06 (soon)  
 2018-02-09 Week 05 (soon)  
-2018-02-02 Week 04 (soon)  
-2018-01-26 Week 03 (soon)  
-2018-01-19 Week 02 (soon)  
-2018-01-12 Week 01 (soon)  
+2018-02-02 Week 04 (internal)  
+2018-01-26 Week 03 (internal)  
+2018-01-19 Week 02 (internal)  
+2018-01-12 Week 01 (internal)  
