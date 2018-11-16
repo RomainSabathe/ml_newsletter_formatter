@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html>
+<title>ML newsletter</title>
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+	html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+
+	.category{
+	  padding: 20px;
+	  margin: auto;
+	  background: #F5F5F5;
+	  margin-bottom: 25px;
+	  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+	  transition: all 0.3s; 
+	  border-radius: 3px;
+	}
+
+    .category-title{
+      margin-bottom: 30px;
+    }
+
+	.category-logo{
+	  margin-right: 10px;
+	}
+
+	.article-logo{
+	  margin-right: 3px;
+	}
+
+    .recommended{
+	  margin-right: 2px;
+    }
+
+    .quote{
+      font-size: 11px;
+    }
+</style>
+
+
+<body>
+
+<!-- Page Container -->
+<div class="container" style="max-width:1400px;">
+
+  
+  <!-- The Grid -->
+  <div class="row">
+  
+      <!-- Dummy container to force centering. Yes. I'm a front-end noob. -->
+      <div class="col-sm-2"></div>
+
+      <div class="col-sm-8">
+
+          
+          <!-- Category block -->
+          <div class="category">
+              <h2 class="category-title">
+                  <img src="https://image.flaticon.com/icons/png/512/653/653500.png"
+                       class="fa fa-fw category-logo">General Machine Learning
+              </h2>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/60/60736.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://jalammar.github.io/illustrated-transformer/">The Illustrated Transformer</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    Jay Alammar
+                  </h6>
+                  <p>The Transformer is a model proposed by Google in <a href=https://arxiv.org/abs/1706.03762>Attention is All You Need</a> in 2017. The specificity of this model is that it is initially intended to be used in NLP and features and attention mecanism,... without the use of recurrent nets! Instead, two sequences of feed-forward networks (one for the encoder, the other for the decoder) and a clever mechanism of key/query/value are used to emulate the attention. If you're like me and found the paper a bit tough to read then you'll appreciate this post which breaks down the Transformer in a top-down approach and offers nice visuals.</p>
+                                </div>
+              <hr>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/25/25231.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://github.com/tensorflow/tfjs-examples">TensorFlow.js Examples</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    Google
+                  </h6>
+                  <p>This repo gathers a list of small-sized TensorFlow.js projects. As expected, each of them comes with a demo and the associated code. Surely a great resource to get started.</p>
+                                </div>
+              <hr>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/60/60736.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://sgfin.github.io/learning-resources/">ML Learning Resources</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    Sam Finlayson
+                  </h6>
+                  <p>Sam collected a list of online resources (textbooks, blog posts, tutorials, notes) to learn more about specific topics of machine learning (bayesian ML, NLP, DRL, information theory, optimization,...). He added a few notes next to each link which is always appreciated. </p>
+                                </div>
+              <hr>
+
+                          
+          </div>
+          
+          <!-- Category block -->
+          <div class="category">
+              <h2 class="category-title">
+                  <img src="https://image.flaticon.com/icons/png/512/149/149243.png"
+                       class="fa fa-fw category-logo">Deep Learning
+              </h2>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/155/155292.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://arxiv.org/abs/1811.01273">Building a Winning Self-Driving Car in Six Months</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    University of Toronto Institute for Aerospace Studies
+                  </h6>
+                  <p></p>
+                                    <blockquote class="blockquote">
+                     <p class="quote">The SAE AutoDrive Challenge is a three-year competition to develop a Level 4 autonomous vehicle by 2020. The first set of challenges were held in April of 2018 in Yuma, Arizona. Our team (aUToronto/Zeus) placed first. In this paper, we describe our complete system architecture and specialized algorithms that enabled us to win. We show that it is possible to develop a vehicle with basic autonomy features in just six months relying on simple, robust algorithms. We do not make use of a prior map. Instead, we have developed a multi-sensor visual localization solution. All of our algorithms run in real-time using CPUs only. We also highlight the closed-loop performance of our system in detail in several experiments.</p>
+                  </blockquote>
+                                </div>
+              <hr>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/25/25231.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://github.com/NVIDIA/waveglow">Waveglow</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    Nvidia
+                  </h6>
+                  <p></p>
+                                    <blockquote class="blockquote">
+                     <p class="quote">In our recent paper, we propose WaveGlow: a flow-based network capable of generating high quality speech from mel-spectrograms. WaveGlow combines insights from Glow and WaveNet in order to provide fast, efficient and high-quality audio synthesis, without the need for auto-regression. WaveGlow is implemented using only a single network, trained using only a single cost function: maximizing the likelihood of the training data, which makes the training procedure simple and stable.</p>
+                  </blockquote>
+                                </div>
+              <hr>
+
+                          
+          </div>
+          
+          <!-- Category block -->
+          <div class="category">
+              <h2 class="category-title">
+                  <img src="https://image.flaticon.com/icons/png/512/722/722174.png"
+                       class="fa fa-fw category-logo">Computer Vision
+              </h2>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/155/155292.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://research.fb.com/publications/a-generative-adversarial-approach-for-zero-shot-learning-from-noisy-texts/">(CVPR 2018)  Zero-shot learning: Using text to more accurately identify images</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    Facebook Research
+                  </h6>
+                  <p></p>
+                                    <blockquote class="blockquote">
+                     <p class="quote">We [...] leverage GANs to imagine unseen categories from text descriptions and hence recognize novel classes with no examples being seen. Specifically, we propose a simple yet effective generative model that takes as input noisy text descriptions about an unseen class (e.g. Wikipedia articles) and generates synthesized visual features for this class. </p>
+                  </blockquote>
+                                </div>
+              <hr>
+
+                          
+          </div>
+          
+          <!-- Category block -->
+          <div class="category">
+              <h2 class="category-title">
+                  <img src="https://image.flaticon.com/icons/png/512/179/179121.png"
+                       class="fa fa-fw category-logo">Optimisation & Learning Theory
+              </h2>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/155/155292.png"
+                           class="fa fa-fw article-logo">
+                                            <img src="https://image.flaticon.com/icons/png/512/25/25231.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://arxiv.org/abs/1810.11630">(NIPS 2018) Informative Features for Model Comparison</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    Max Planck Institute for Intelligent Systems, UCL, Georgia Institute of Technology
+                  </h6>
+                  <p>Note that the authors also propose a <a href=https://github.com/wittawatj/kernel-mod>Python package</a> to be able to run those tests easily. There's even a <a href=https://github.com/wittawatj/kernel-mod/blob/master/ipynb/demo_kmod.ipynb>notebook</a> giving an introduction to their proposed method.</p>
+                                    <blockquote class="blockquote">
+                     <p class="quote">Given two candidate models, and a set of target observations, we address the problem of measuring the relative goodness of fit of the two models. We propose two new statistical tests which are nonparametric, computationally efficient (runtime complexity is linear in the sample size), and interpretable. As a unique advantage, our tests can produce a set of examples (informative features) indicating the regions in the data domain where one model fits significantly better than the other. In a real-world problem of comparing GAN models, the test power of our new test matches that of the state-of-the-art test of relative goodness of fit, while being one order of magnitude faster.</p>
+                  </blockquote>
+                                </div>
+              <hr>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/155/155292.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://arxiv.org/abs/1811.01885">Learning Two Layer Rectified Neural Networks in Polynomial Time</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    Carnegie Mellon University
+                  </h6>
+                  <p></p>
+                                    <blockquote class="blockquote">
+                     <p class="quote">Consider the following fundamental learning problem: given input examples and their vector-valued labels, as defined by an underlying generative neural network, recover the weight matrices of this network. We consider two-layer networks, [...] with ReLU non-linear activation units. Such a network is specified by two weight matrices, [...] our goal is to recover the weight matrices. In this work, we develop algorithms and hardness results under varying assumptions on the input and noise. Although the problem is NP-hard even for [two unit units], by assuming Gaussian marginals over the input X we are able to develop polynomial time algorithms for the approximate recovery [...].</p>
+                  </blockquote>
+                                </div>
+              <hr>
+
+                          
+          </div>
+          
+          <!-- Category block -->
+          <div class="category">
+              <h2 class="category-title">
+                  <img src="https://image.flaticon.com/icons/png/512/249/249156.png"
+                       class="fa fa-fw category-logo">Reinforcement Learning
+              </h2>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/25/25231.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://spinningup.openai.com/en/latest/index.html">Open AI: Spinning Up</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                        <span class="badge">
+                                  Recommended
+                              </span>
+                                                    OpenAI
+                  </h6>
+                  <p>OpenAI just released today a resource aimed at getting you up to date in deep reinforcement learning. Authors provide a list of key papers (split into categories), an introduction to key concepts of DRL, a bunch of standalone code snippets as well as exercices.</p>
+                                </div>
+              <hr>
+
+                          
+          </div>
+          
+          <!-- Category block -->
+          <div class="category">
+              <h2 class="category-title">
+                  <img src="https://image.flaticon.com/icons/png/512/484/484582.png"
+                       class="fa fa-fw category-logo">Natural Language Processing
+              </h2>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/174/174858.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://medium.com/analytics-vidhya/https-medium-com-tomkenter-why-care-about-byte-level-seq2seq-models-in-nlp-26bcf05dd7d3">Why You Should Care About Byte-Level Sequence-to-Sequence Models in NLP</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    Tom Kenter
+                  </h6>
+                  <p>A common way to build sequence-to-sequence models in NLP is to model the sentence at a word level (by associating an embedding to each word in the dictionary). As Mr. Kenter explains, this works well for languages like English or French where variations on a single word are limited (run, running, runs,...). However, other languages such as Turkish or Russian are able to form a sentence by aggregating multiple words into one. Which means that virtually, the size of the Russian word-level dictionnary is infinite! To deal with this sort of issue, the author (who published a <a href=http://www.tomkenter.nl/pdf/kenter_byte-level_2018.pdf>resulting paper</a> at AAAI with Google Research) proposes to use byte-level encoding. The dictionnary is therefore limited to size 256 for any language. This comes with some others interesting properties (and challenges) which are detailed in the post.</p>
+                                </div>
+              <hr>
+
+                          
+          </div>
+          
+          <!-- Category block -->
+          <div class="category">
+              <h2 class="category-title">
+                  <img src="https://imageog.flaticon.com/icons/png/512/248/248114.png"
+                       class="fa fa-fw category-logo">Production & Engineering
+              </h2>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/155/155292.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://arxiv.org/abs/1811.02091">(NIPS 2018) Simple, Distributed, and Accelerated Probabilistic Programming</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    Google Brain
+                  </h6>
+                  <p>The speedup is impressive and could potentially open the door to more probabilistic programming approaches.</p>
+                                    <blockquote class="blockquote">
+                     <p class="quote">We describe a simple, low-level approach for embedding probabilistic programming in a deep learning ecosystem. In particular, we distill probabilistic programming down to a single abstraction---the random variable. Our lightweight implementation in TensorFlow enables numerous applications: a model-parallel variational auto-encoder (VAE) with 2nd-generation tensor processing units (TPUv2s); a data-parallel autoregressive model (Image Transformer) with TPUv2s; and multi-GPU No-U-Turn Sampler (NUTS). For both a state-of-the-art VAE on 64x64 ImageNet and Image Transformer on 256x256 CelebA-HQ, our approach achieves an optimal linear speedup from 1 to 256 TPUv2 chips. With NUTS, we see a 100x speedup on GPUs over Stan and 37x over PyMC3.</p>
+                  </blockquote>
+                                </div>
+              <hr>
+
+                          
+          </div>
+          
+          <!-- Category block -->
+          <div class="category">
+              <h2 class="category-title">
+                  <img src="https://image.flaticon.com/icons/png/512/263/263051.png"
+                       class="fa fa-fw category-logo">Everything Else
+              </h2>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/60/60736.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://wayve.ai/blog/2018/10/8/vision-for-driving-with-deep-learning">Driving Computer Vision with Deep Learning</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    Wayve
+                  </h6>
+                  <p>A sort of product-update of the company Wayve and their computer vision technology for automated driving. After proposing SegNet in 2015, here they show that they are able to obtain semantic segmentation, optical flow estimation and depth prediction; all of this using a unified model and a monocular camera. They also provide a <a href=http://perception.wayve.ai/>web demo</a> which shows the 3d cloud of points estimated by the network (as if obtained by a LIDAR camera). </p>
+                                </div>
+              <hr>
+
+                          
+          </div>
+                </div>
+      
+  <!-- Dummy container to force centering. Yes. I'm a front-end noob. -->
+  <div class="col-sm-2"></div>
+
+  <!-- End Grid -->
+  </div>
+
+    
+  <!-- End Page Container -->
+</div>
+
+</body>
+</html>

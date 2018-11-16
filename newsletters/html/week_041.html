@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+<title>ML newsletter</title>
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+	html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+
+	.category{
+	  padding: 20px;
+	  margin: auto;
+	  background: #F5F5F5;
+	  margin-bottom: 25px;
+	  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+	  transition: all 0.3s; 
+	  border-radius: 3px;
+	}
+
+    .category-title{
+      margin-bottom: 30px;
+    }
+
+	.category-logo{
+	  margin-right: 10px;
+	}
+
+	.article-logo{
+	  margin-right: 3px;
+	}
+
+    .recommended{
+	  margin-right: 2px;
+    }
+
+    .quote{
+      font-size: 11px;
+    }
+</style>
+
+
+<body>
+
+<!-- Page Container -->
+<div class="container" style="max-width:1400px;">
+
+    <div class="row" style="margin-bottom:30px; margin-top:30px;">
+      <div class="col-sm-2"></div>
+      <div class="col-sm-8">
+          <p class="text-sm-left">Apologies for the brievety of this week's edition; I didn't have the occasion to spend as much time on it as usual. Hopefully it will be better starting from next week. Have a nice Friday!</p>
+      </div>
+      <div class="col-sm-2"></div>
+  </div>
+  
+  <!-- The Grid -->
+  <div class="row">
+  
+      <!-- Dummy container to force centering. Yes. I'm a front-end noob. -->
+      <div class="col-sm-2"></div>
+
+      <div class="col-sm-8">
+
+          
+          <!-- Category block -->
+          <div class="category">
+              <h2 class="category-title">
+                  <img src="https://image.flaticon.com/icons/png/512/149/149243.png"
+                       class="fa fa-fw category-logo">Deep Learning
+              </h2>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/155/155292.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://arxiv.org/abs/1811.05233">ImageNet/ResNet-50 Training in 224 Seconds</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    Sony
+                  </h6>
+                  <p></p>
+                                    <blockquote class="blockquote">
+                     <p class="quote">Scaling the distributed deep learning to a massive GPU cluster level is challenging due to the instability of the large mini-batch training and the overhead of the gradient synchronization. We address the instability of the large mini-batch training with batch size control. We address the overhead of the gradient synchronization with 2D-Torus all-reduce. Specifically, 2D-Torus all-reduce arranges GPUs in a logical 2D grid and performs a series of collective operation in different orientations. These two techniques are implemented with Neural Network Libraries (NNL). We have successfully trained ImageNet/ResNet-50 in 224 seconds without significant accuracy loss on ABCI cluster. </p>
+                  </blockquote>
+                                </div>
+              <hr>
+
+                          
+          </div>
+          
+          <!-- Category block -->
+          <div class="category">
+              <h2 class="category-title">
+                  <img src="https://image.flaticon.com/icons/png/512/722/722174.png"
+                       class="fa fa-fw category-logo">Computer Vision
+              </h2>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/155/155292.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://arxiv.org/abs/1811.00982">The Open Images Dataset V4: Unified image classification, object detection, and visual relationship detection at scale</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    Google AI
+                  </h6>
+                  <p></p>
+                                    <blockquote class="blockquote">
+                     <p class="quote">We present Open Images V4, a dataset of 9.2M images with unified annotations for image classification, object detection and visual relationship detection. The images have a Creative Commons Attribution license that allows to share and adapt the material, and they have been collected from Flickr without a predefined list of class names or tags, leading to natural class statistics and avoiding an initial design bias. Open Images V4 offers large scale across several dimensions: 30.1M image-level labels for 19.8k concepts, 15.4M bounding boxes for 600 object classes, and 375k visual relationship annotations involving 57 classes. For object detection in particular, we provide 15x more bounding boxes than the next largest datasets (15.4M boxes on 1.9M images)</p>
+                  </blockquote>
+                                </div>
+              <hr>
+
+                          
+          </div>
+          
+          <!-- Category block -->
+          <div class="category">
+              <h2 class="category-title">
+                  <img src="https://image.flaticon.com/icons/png/512/179/179121.png"
+                       class="fa fa-fw category-logo">Optimisation & Learning Theory
+              </h2>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/155/155292.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://arxiv.org/abs/1811.03804">Gradient Descent Finds Global Minima of Deep Neural Networks</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    CMU, University of Southern California, Peking University, MIT
+                  </h6>
+                  <p></p>
+                                    <blockquote class="blockquote">
+                     <p class="quote">Gradient descent finds a global minimum in training deep neural networks despite the objective function being non-convex. The current paper proves gradient descent achieves zero training loss in polynomial time for a deep over-parameterized neural network with residual connections (ResNet). Our analysis relies on the particular structure of the Gram matrix induced by the neural network architecture. This structure allows us to show the Gram matrix is stable throughout the training process and this stability implies the global optimality of the gradient descent algorithm. Our bounds also shed light on the advantage of using ResNet over the fully connected feedforward architecture; our bound requires the number of neurons per layer scaling exponentially with depth for feedforward networks whereas for ResNet the bound only requires the number of neurons per layer scaling polynomially with depth. We further extend our analysis to deep residual convolutional neural networks and obtain a similar convergence result. </p>
+                  </blockquote>
+                                </div>
+              <hr>
+
+                          
+          </div>
+          
+          <!-- Category block -->
+          <div class="category">
+              <h2 class="category-title">
+                  <img src="https://image.flaticon.com/icons/png/512/484/484582.png"
+                       class="fa fa-fw category-logo">Natural Language Processing
+              </h2>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/60/60736.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://www.lyrn.ai/2018/11/07/explained-bert-state-of-the-art-language-model-for-nlp/">BERT – State of the Art Language Model for NLP</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    LyrnAI
+                  </h6>
+                  <p>A few weeks ago, we linked the <a href=https://github.com/google-research/bert>BERT</a> GitHub repo, which has been a lot discussed in the NLP community. Thanks to this blog post, you should be able to understand how BERT works and why it is so popular without being an NLP expert!</p>
+                                </div>
+              <hr>
+
+                          
+          </div>
+          
+          <!-- Category block -->
+          <div class="category">
+              <h2 class="category-title">
+                  <img src="https://imageog.flaticon.com/icons/png/512/248/248114.png"
+                       class="fa fa-fw category-logo">Production & Engineering
+              </h2>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/60/60736.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://eng.uber.com/scaling-michelangelo/">Scaling Machine Learning at Uber with Michelangelo</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    Uber
+                  </h6>
+                  <p>It is not the first time Uber publishes about its Michelangelo platform. In this post, Uber goes into more details on how researchers and engineers worked together as well as how they scaled their services.</p>
+                                </div>
+              <hr>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/60/60736.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://pgaleone.eu/tensorflow/gan/2018/11/04/tensorflow-2-models-migration-and-new-design/">Tensorflow 2.0: models migration and new design</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    Paolo Galeone
+                  </h6>
+                  <p>A great read for anyone who wants to prepare transitioning to the upcoming Tensorflow 2.0. As the author suggests, this will require a <i>change of mindset</i> which is always a bit difficult at first. Hopefully it will be made easier thanks to this post.</p>
+                                </div>
+              <hr>
+
+                          
+          </div>
+          
+          <!-- Category block -->
+          <div class="category">
+              <h2 class="category-title">
+                  <img src="https://image.flaticon.com/icons/png/512/263/263051.png"
+                       class="fa fa-fw category-logo">Everything Else
+              </h2>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/25/25231.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://github.com/sepandhaghighi/pycm">PyCM</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    Sepand Haghighi
+                  </h6>
+                  <p>With this library, you should be able to compute pretty much any type of metric you can derive from a confusion matrix. And there's a lot.</p>
+                                </div>
+              <hr>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/25/25231.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://hello-magenta.glitch.me/">Making music with magenta.js</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    Magenta (Google Brain)
+                  </h6>
+                  <p></p>
+                                    <blockquote class="blockquote">
+                     <p class="quote">Magenta.js is a JavaScript library that helps you generate art and music on the web. In this tutorial, we'll talk about the music generation bits in @magenta/music -- how to make your browser sing, and in particular, how to make your browser sing like you!</p>
+                  </blockquote>
+                                </div>
+              <hr>
+
+                          
+          </div>
+                </div>
+      
+  <!-- Dummy container to force centering. Yes. I'm a front-end noob. -->
+  <div class="col-sm-2"></div>
+
+  <!-- End Grid -->
+  </div>
+
+    
+  <!-- End Page Container -->
+</div>
+
+</body>
+</html>

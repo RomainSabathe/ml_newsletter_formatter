@@ -55,6 +55,16 @@
 <!-- Page Container -->
 <div class="container" style="max-width:1400px;">
 
+  {% if intro_text %}
+  <div class="row" style="margin-bottom:30px; margin-top:30px;">
+      <div class="col-sm-2"></div>
+      <div class="col-sm-8">
+          <p class="text-sm-left">{{ intro_text }}</p>
+      </div>
+      <div class="col-sm-2"></div>
+  </div>
+  {% endif %}
+
   <!-- The Grid -->
   <div class="row">
   
@@ -111,6 +121,16 @@
 
   <!-- End Grid -->
   </div>
+
+  {% if outro_text %}
+  <div class="row" style="margin-bottom:30px; margin-top:30px;">
+      <div class="col-sm-2"></div>
+      <div class="col-sm-8">
+          <p class="text-sm-left">{{ outro_text }}</p>
+      </div>
+      <div class="col-sm-2"></div>
+  </div>
+  {% endif %}
   
   <!-- End Page Container -->
 </div>

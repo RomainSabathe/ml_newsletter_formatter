@@ -1,0 +1,94 @@
+intro_text:
+
+outro_text:
+
+articles:
+    - title: "Reinforcement Learning with Prediction-Based Rewards"
+      url: "https://blog.openai.com/reinforcement-learning-with-prediction-based-rewards/"
+      type: blog
+      category: rl
+      lab: OpenAI
+      description: "An agent finally managed to beat human performance on Montezuma's Revenge. Interestingly, the approach used here is said to be based on <i>curiosity</i> where the agent is encouraged to explore states it doesn't already know. To do this, the team at OpenAI proposed a variant of <a href=https://arxiv.org/abs/1808.04355>their previous work</a>. The agent is trained to predict what will happen in the next state and is rewarded when this prediction turns out to be wrong. In other words: the agent is rewarded when it finds something unexpected! As always with OpenAI's blog posts, you will find plenty of visualisations. The section on the <i>noisy TV problem</i> is quite amusing!"
+      quote: ""
+      recommended: 
+
+    - title: "Graph Nets"
+      url: "https://github.com/deepmind/graph_nets"
+      type: github
+      category: ml
+      lab: DeepMind
+      description: "We witness more and more works on deep learning applied to geometry and graphs. Recently, DeepMind introduced their ambitious Graph Nets in <a href=https://arxiv.org/abs/1806.01261>this paper</a>, where they <i>explore how using relational inductive biases within deep learning architectures can facilitate learning about entities, relations, and rules for composing them</i>. This library is provided with well-written, well-explained examples such as the <a href=https://colab.research.google.com/github/deepmind/graph_nets/blob/master/graph_nets/demos/shortest_path.ipynb>shortest path problem</a> solved by a Graph Net. See also the slides of <a href=https://docs.google.com/presentation/d/e/2PACX-1vSA16UYIp9wf8F9T7vEuVBE_DyO9GIJZr5rNpV3GUUtFXNs9JN7lYDiatsIQ4CzqXKg8X-kbOtdxh2U/pub?start=false&loop=false&delayms=60000&slide=id.g467e5c748b_0_1603>this introductory tutorial</a> on Graph nets by Yujia Li."
+      quote: ""
+      recommended: True
+
+    - title: "Self-Attention GAN"
+      url: "https://github.com/brain-research/self-attention-gan"
+      type: github+paper
+      category: gan
+      lab: Google Brain
+      description: "Back in May, the <a href=https://arxiv.org/abs/1805.08318>Self-Attention GAN</a> model (SAGAN) was proposed. It combines a GAN with a self-attention map which enables it to generate images using cues from distant locations. This repo is Google Brain's official implementation using TensorFlow."
+      quote: ""
+      recommended: 
+
+    - title: "On the Spectral Bias of Neural Networks"
+      url: "https://arxiv.org/abs/1806.08734"
+      type: paper
+      category: theory
+      lab: Ruprecht-Karls-Universitat, Mila, Universite de Montreal
+      description: "See also this related work: <a href=https://arxiv.org/abs/1807.01251>Training behavior of deep neural networks in frequency domain</a>."
+      quote: "[...] By using tools from Fourier analysis, we show that deep ReLU networks are biased towards low frequency functions, meaning that they cannot have local fluctuations without affecting their global behavior. Intuitively, this property is in line with the observation that over-parameterized networks find simple patterns that generalize across data samples. [...]"
+      recommended: 
+
+    - title: "Rationality and beauty"
+      url: "https://twitter.com/benorlin/status/1057442577262223361"
+      type: twitter
+      category: laugh
+      lab: 
+      description: ""
+      quote: ""
+      recommended: 
+
+    - title: "Depth with Nonlinearity Creates No Bad Local Minima in ResNets"
+      url: "https://arxiv.org/abs/1810.09038"
+      type: paper 
+      category: theory
+      lab: MIT, University of Montreal
+      description: ""
+      quote: "In this paper, we prove that depth with nonlinearity creates no bad local minima in a type of arbitrarily deep ResNets studied in previous work, in the sense that the values of all local minima are no worse than the global minima values of corresponding shallow linear predictors with arbitrary fixed features, and are guaranteed to further improve via residual representations."
+      recommended: 
+
+    - title: "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding"
+      url: "https://github.com/google-research/bert"
+      type: github+paper
+      category: nlp
+      lab: Google Research
+      description: "<a href=https://arxiv.org/abs/1810.04805>This work</a> made quite a lot of noise in the NLP community recently. Authors propose a new way to obtain word embeddings which is both deep (with long-range context) and bidirectional (the context comes from the previous and next words). With these embeddings, they were able to beat the state-of-the-art on several benchmarks and several dataset. They are releasing the weights which took 4 days to obtain on up to 16 TPUS,... No wonder the GitHub repo has already nearly 4,000 stars. "
+      quote: ""
+      recommended: 
+
+    - title: "QNNPACK: Open source library for optimized mobile deep learning"
+      url: "https://code.fb.com/ml-applications/qnnpack/"
+      type: blog+github
+      category: engineering
+      lab: Facebook Code
+      description: "This blog post has been released to explain how Facebook's library QNNPACK works. It provides convolution operations, transposed convolutions and fully-connected neural nets which are optimised for mobile. The library is already used in Facebook's mobile applications. Their benchmark shows that it is now possible to run models like Mask R-CNN or DensePose in real time!"
+      quote: ""
+      recommended: 
+
+    - title: "Playing Mortal Kombat with TensorFlow.js"
+      url: "https://blog.mgechev.com/2018/10/20/transfer-learning-tensorflow-js-data-augmentation-mobile-net/"
+      type: blog
+      category: dl
+      lab: Minko Gechev
+      description: "When a Front-End expert starts using Tensorflow.js, this is was you get. A long, detailed write up of how a CNN-based classification model was trained and ran in-browser. I also see a statement of how powerful <a href=https://github.com/aleju/imgaug>image augmentation</a> and transfer learning can be."
+      quote: ""
+      recommended: 
+
+    - title: "YSDA Natural Language Processing course"
+      url: "https://github.com/yandexdataschool/nlp_course"
+      type: github
+      category: nlp
+      lab: Yandex School of Data Analysis
+      description: "A repo with plenty of resources to learn more about NLP. Although the video lectures are in Russian, they provide courseworks and Jupyter notebooks in English. Also, for each course material, there is a list of related projects and papers that you can use to deepen your understanding."
+      quote: ""
+      recommended: 

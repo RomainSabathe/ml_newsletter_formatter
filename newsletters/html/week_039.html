@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html>
+<title>ML newsletter</title>
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+	html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+
+	.category{
+	  padding: 20px;
+	  margin: auto;
+	  background: #F5F5F5;
+	  margin-bottom: 25px;
+	  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+	  transition: all 0.3s; 
+	  border-radius: 3px;
+	}
+
+    .category-title{
+      margin-bottom: 30px;
+    }
+
+	.category-logo{
+	  margin-right: 10px;
+	}
+
+	.article-logo{
+	  margin-right: 3px;
+	}
+
+    .recommended{
+	  margin-right: 2px;
+    }
+
+    .quote{
+      font-size: 11px;
+    }
+</style>
+
+
+<body>
+
+<!-- Page Container -->
+<div class="container" style="max-width:1400px;">
+
+  
+  <!-- The Grid -->
+  <div class="row">
+  
+      <!-- Dummy container to force centering. Yes. I'm a front-end noob. -->
+      <div class="col-sm-2"></div>
+
+      <div class="col-sm-8">
+
+          
+          <!-- Category block -->
+          <div class="category">
+              <h2 class="category-title">
+                  <img src="https://image.flaticon.com/icons/png/512/653/653500.png"
+                       class="fa fa-fw category-logo">General Machine Learning
+              </h2>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/25/25231.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://github.com/deepmind/graph_nets">Graph Nets</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                        <span class="badge">
+                                  Recommended
+                              </span>
+                                                    DeepMind
+                  </h6>
+                  <p>We witness more and more works on deep learning applied to geometry and graphs. Recently, DeepMind introduced their ambitious Graph Nets in <a href=https://arxiv.org/abs/1806.01261>this paper</a>, where they <i>explore how using relational inductive biases within deep learning architectures can facilitate learning about entities, relations, and rules for composing them</i>. This library is provided with well-written, well-explained examples such as the <a href=https://colab.research.google.com/github/deepmind/graph_nets/blob/master/graph_nets/demos/shortest_path.ipynb>shortest path problem</a> solved by a Graph Net. See also the slides of <a href=https://docs.google.com/presentation/d/e/2PACX-1vSA16UYIp9wf8F9T7vEuVBE_DyO9GIJZr5rNpV3GUUtFXNs9JN7lYDiatsIQ4CzqXKg8X-kbOtdxh2U/pub?start=false&loop=false&delayms=60000&slide=id.g467e5c748b_0_1603>this introductory tutorial</a> on Graph nets by Yujia Li.</p>
+                                </div>
+              <hr>
+
+                          
+          </div>
+          
+          <!-- Category block -->
+          <div class="category">
+              <h2 class="category-title">
+                  <img src="https://image.flaticon.com/icons/png/512/149/149243.png"
+                       class="fa fa-fw category-logo">Deep Learning
+              </h2>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/60/60736.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://blog.mgechev.com/2018/10/20/transfer-learning-tensorflow-js-data-augmentation-mobile-net/">Playing Mortal Kombat with TensorFlow.js</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    Minko Gechev
+                  </h6>
+                  <p>When a Front-End expert starts using Tensorflow.js, this is was you get. A long, detailed write up of how a CNN-based classification model was trained and ran in-browser. I also see a statement of how powerful <a href=https://github.com/aleju/imgaug>image augmentation</a> and transfer learning can be.</p>
+                                </div>
+              <hr>
+
+                          
+          </div>
+          
+          <!-- Category block -->
+          <div class="category">
+              <h2 class="category-title">
+                  <img src="https://image.flaticon.com/icons/png/512/179/179121.png"
+                       class="fa fa-fw category-logo">Optimisation & Learning Theory
+              </h2>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/155/155292.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://arxiv.org/abs/1806.08734">On the Spectral Bias of Neural Networks</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    Ruprecht-Karls-Universitat, Mila, Universite de Montreal
+                  </h6>
+                  <p>See also this related work: <a href=https://arxiv.org/abs/1807.01251>Training behavior of deep neural networks in frequency domain</a>.</p>
+                                    <blockquote class="blockquote">
+                     <p class="quote">[...] By using tools from Fourier analysis, we show that deep ReLU networks are biased towards low frequency functions, meaning that they cannot have local fluctuations without affecting their global behavior. Intuitively, this property is in line with the observation that over-parameterized networks find simple patterns that generalize across data samples. [...]</p>
+                  </blockquote>
+                                </div>
+              <hr>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/155/155292.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://arxiv.org/abs/1810.09038">Depth with Nonlinearity Creates No Bad Local Minima in ResNets</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    MIT, University of Montreal
+                  </h6>
+                  <p></p>
+                                    <blockquote class="blockquote">
+                     <p class="quote">In this paper, we prove that depth with nonlinearity creates no bad local minima in a type of arbitrarily deep ResNets studied in previous work, in the sense that the values of all local minima are no worse than the global minima values of corresponding shallow linear predictors with arbitrary fixed features, and are guaranteed to further improve via residual representations.</p>
+                  </blockquote>
+                                </div>
+              <hr>
+
+                          
+          </div>
+          
+          <!-- Category block -->
+          <div class="category">
+              <h2 class="category-title">
+                  <img src="https://image.flaticon.com/icons/png/512/112/112272.png"
+                       class="fa fa-fw category-logo">Gans & Adversarial Attacks
+              </h2>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/25/25231.png"
+                           class="fa fa-fw article-logo">
+                                            <img src="https://image.flaticon.com/icons/png/512/155/155292.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://github.com/brain-research/self-attention-gan">Self-Attention GAN</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    Google Brain
+                  </h6>
+                  <p>Back in May, the <a href=https://arxiv.org/abs/1805.08318>Self-Attention GAN</a> model (SAGAN) was proposed. It combines a GAN with a self-attention map which enables it to generate images using cues from distant locations. This repo is Google Brain's official implementation using TensorFlow.</p>
+                                </div>
+              <hr>
+
+                          
+          </div>
+          
+          <!-- Category block -->
+          <div class="category">
+              <h2 class="category-title">
+                  <img src="https://image.flaticon.com/icons/png/512/249/249156.png"
+                       class="fa fa-fw category-logo">Reinforcement Learning
+              </h2>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/60/60736.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://blog.openai.com/reinforcement-learning-with-prediction-based-rewards/">Reinforcement Learning with Prediction-Based Rewards</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    OpenAI
+                  </h6>
+                  <p>An agent finally managed to beat human performance on Montezuma's Revenge. Interestingly, the approach used here is said to be based on <i>curiosity</i> where the agent is encouraged to explore states it doesn't already know. To do this, the team at OpenAI proposed a variant of <a href=https://arxiv.org/abs/1808.04355>their previous work</a>. The agent is trained to predict what will happen in the next state and is rewarded when this prediction turns out to be wrong. In other words: the agent is rewarded when it finds something unexpected! As always with OpenAI's blog posts, you will find plenty of visualisations. The section on the <i>noisy TV problem</i> is quite amusing!</p>
+                                </div>
+              <hr>
+
+                          
+          </div>
+          
+          <!-- Category block -->
+          <div class="category">
+              <h2 class="category-title">
+                  <img src="https://image.flaticon.com/icons/png/512/484/484582.png"
+                       class="fa fa-fw category-logo">Natural Language Processing
+              </h2>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/25/25231.png"
+                           class="fa fa-fw article-logo">
+                                            <img src="https://image.flaticon.com/icons/png/512/155/155292.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://github.com/google-research/bert">BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    Google Research
+                  </h6>
+                  <p><a href=https://arxiv.org/abs/1810.04805>This work</a> made quite a lot of noise in the NLP community recently. Authors propose a new way to obtain word embeddings which is both deep (with long-range context) and bidirectional (the context comes from the previous and next words). With these embeddings, they were able to beat the state-of-the-art on several benchmarks and several dataset. They are releasing the weights which took 4 days to obtain on up to 16 TPUS,... No wonder the GitHub repo has already nearly 4,000 stars. </p>
+                                </div>
+              <hr>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/25/25231.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://github.com/yandexdataschool/nlp_course">YSDA Natural Language Processing course</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    Yandex School of Data Analysis
+                  </h6>
+                  <p>A repo with plenty of resources to learn more about NLP. Although the video lectures are in Russian, they provide courseworks and Jupyter notebooks in English. Also, for each course material, there is a list of related projects and papers that you can use to deepen your understanding.</p>
+                                </div>
+              <hr>
+
+                          
+          </div>
+          
+          <!-- Category block -->
+          <div class="category">
+              <h2 class="category-title">
+                  <img src="https://imageog.flaticon.com/icons/png/512/248/248114.png"
+                       class="fa fa-fw category-logo">Production & Engineering
+              </h2>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/60/60736.png"
+                           class="fa fa-fw article-logo">
+                                            <img src="https://image.flaticon.com/icons/png/512/25/25231.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://code.fb.com/ml-applications/qnnpack/">QNNPACK: Open source library for optimized mobile deep learning</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    Facebook Code
+                  </h6>
+                  <p>This blog post has been released to explain how Facebook's library QNNPACK works. It provides convolution operations, transposed convolutions and fully-connected neural nets which are optimised for mobile. The library is already used in Facebook's mobile applications. Their benchmark shows that it is now possible to run models like Mask R-CNN or DensePose in real time!</p>
+                                </div>
+              <hr>
+
+                          
+          </div>
+          
+          <!-- Category block -->
+          <div class="category">
+              <h2 class="category-title">
+                  <img src="https://image.flaticon.com/icons/png/512/56/56243.png"
+                       class="fa fa-fw category-logo">Laugh Of The Week
+              </h2>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <b><a href="https://twitter.com/benorlin/status/1057442577262223361">Rationality and beauty</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    
+                  </h6>
+                  <p></p>
+                                </div>
+              <hr>
+
+                          
+          </div>
+                </div>
+      
+  <!-- Dummy container to force centering. Yes. I'm a front-end noob. -->
+  <div class="col-sm-2"></div>
+
+  <!-- End Grid -->
+  </div>
+
+    
+  <!-- End Page Container -->
+</div>
+
+</body>
+</html>

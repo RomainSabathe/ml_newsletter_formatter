@@ -1,0 +1,76 @@
+intro_text: "Apologies for the brievety of this week's edition; I didn't have the occasion to spend as much time on it as usual. Hopefully it will be better starting from next week. Have a nice Friday!"
+
+outro_text:
+
+articles:
+    - title: "PyCM"
+      url: "https://github.com/sepandhaghighi/pycm"
+      type: github
+      category: other
+      lab: Sepand Haghighi
+      description: "With this library, you should be able to compute pretty much any type of metric you can derive from a confusion matrix. And there's a lot."
+      quote: ""
+      recommended: 
+
+    - title: "BERT – State of the Art Language Model for NLP"
+      url: "https://www.lyrn.ai/2018/11/07/explained-bert-state-of-the-art-language-model-for-nlp/"
+      type: blog
+      category:  nlp
+      lab: LyrnAI 
+      description: "A few weeks ago, we linked the <a href=https://github.com/google-research/bert>BERT</a> GitHub repo, which has been a lot discussed in the NLP community. Thanks to this blog post, you should be able to understand how BERT works and why it is so popular without being an NLP expert!"
+      quote: ""
+      recommended: 
+
+    - title: "Scaling Machine Learning at Uber with Michelangelo"
+      url: "https://eng.uber.com/scaling-michelangelo/"
+      type: blog
+      category: engineering
+      lab: Uber
+      description: "It is not the first time Uber publishes about its Michelangelo platform. In this post, Uber goes into more details on how researchers and engineers worked together as well as how they scaled their services."
+      quote: ""
+      recommended: 
+
+    - title: "Tensorflow 2.0: models migration and new design"
+      url: "https://pgaleone.eu/tensorflow/gan/2018/11/04/tensorflow-2-models-migration-and-new-design/"
+      type: blog
+      category: engineering
+      lab: Paolo Galeone
+      description: "A great read for anyone who wants to prepare transitioning to the upcoming Tensorflow 2.0. As the author suggests, this will require a <i>change of mindset</i> which is always a bit difficult at first. Hopefully it will be made easier thanks to this post."
+      quote: ""
+      recommended: 
+
+    - title: "Making music with magenta.js"
+      url: "https://hello-magenta.glitch.me/"
+      type: github
+      category: other
+      lab: Magenta (Google Brain)
+      description: ""
+      quote: "Magenta.js is a JavaScript library that helps you generate art and music on the web. In this tutorial, we'll talk about the music generation bits in @magenta/music -- how to make your browser sing, and in particular, how to make your browser sing like you!"
+      recommended: 
+
+    - title: "Gradient Descent Finds Global Minima of Deep Neural Networks"
+      url: "https://arxiv.org/abs/1811.03804"
+      type: paper
+      category: theory
+      lab: CMU, University of Southern California, Peking University, MIT
+      description: ""
+      quote: "Gradient descent finds a global minimum in training deep neural networks despite the objective function being non-convex. The current paper proves gradient descent achieves zero training loss in polynomial time for a deep over-parameterized neural network with residual connections (ResNet). Our analysis relies on the particular structure of the Gram matrix induced by the neural network architecture. This structure allows us to show the Gram matrix is stable throughout the training process and this stability implies the global optimality of the gradient descent algorithm. Our bounds also shed light on the advantage of using ResNet over the fully connected feedforward architecture; our bound requires the number of neurons per layer scaling exponentially with depth for feedforward networks whereas for ResNet the bound only requires the number of neurons per layer scaling polynomially with depth. We further extend our analysis to deep residual convolutional neural networks and obtain a similar convergence result. "
+      recommended: 
+
+    - title: "The Open Images Dataset V4: Unified image classification, object detection, and visual relationship detection at scale"
+      url: "https://arxiv.org/abs/1811.00982"
+      type: paper
+      category: cv
+      lab: Google AI
+      description: ""
+      quote: "We present Open Images V4, a dataset of 9.2M images with unified annotations for image classification, object detection and visual relationship detection. The images have a Creative Commons Attribution license that allows to share and adapt the material, and they have been collected from Flickr without a predefined list of class names or tags, leading to natural class statistics and avoiding an initial design bias. Open Images V4 offers large scale across several dimensions: 30.1M image-level labels for 19.8k concepts, 15.4M bounding boxes for 600 object classes, and 375k visual relationship annotations involving 57 classes. For object detection in particular, we provide 15x more bounding boxes than the next largest datasets (15.4M boxes on 1.9M images)"
+      recommended: 
+
+    - title: "ImageNet/ResNet-50 Training in 224 Seconds"
+      url: "https://arxiv.org/abs/1811.05233"
+      type: paper
+      category: dl
+      lab: Sony
+      description: ""
+      quote: "Scaling the distributed deep learning to a massive GPU cluster level is challenging due to the instability of the large mini-batch training and the overhead of the gradient synchronization. We address the instability of the large mini-batch training with batch size control. We address the overhead of the gradient synchronization with 2D-Torus all-reduce. Specifically, 2D-Torus all-reduce arranges GPUs in a logical 2D grid and performs a series of collective operation in different orientations. These two techniques are implemented with Neural Network Libraries (NNL). We have successfully trained ImageNet/ResNet-50 in 224 seconds without significant accuracy loss on ABCI cluster. "
+      recommended: 

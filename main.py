@@ -72,11 +72,12 @@ def render(yaml_path):
     j2_env = Environment(loader=FileSystemLoader(TEMPLATE_DIR),
                          trim_blocks=True)
 
-    categories = _load_categories(yaml_path)
-
     html_path = yaml_path_to_html_path(yaml_path)
     with html_path.open('w') as f:
-        f.write(j2_env.get_template('template.html').render(categories=categories))
+        f.write(j2_env.get_template('template.html')
+                      .render(categories=_load_categories(yaml_path),
+                              intro_text=_load_intro_text(yaml_path),
+                              outro_text=_load_outro_text(yaml_path)))
 
 
 def yaml_path_to_html_path(yaml_path):
@@ -116,6 +117,20 @@ def clean_categories(category):
     elif category.lower() == 'laugh':
         return 'Laugh of the Week'
     return 'Everything Else'
+
+
+def _load_intro_text(path):
+    # TODO: revamp all the '_load_...' functions under a unified function.
+    # We shouldn't have to load the file 3 times...
+    with path.open('r') as f:
+        content = yaml.load(f)
+    return content['intro_text']
+
+
+def _load_outro_text(path):
+    with path.open('r') as f:
+        content = yaml.load(f)
+    return content['outro_text']
 
 
 def _load_categories(path):
@@ -184,8 +199,8 @@ if __name__ == '__main__':
     for yaml_path in Path('newsletters/yaml').iterdir():
         # We don't generate if the HTML already exists.
         html_path = yaml_path_to_html_path(yaml_path)
-        if not html_path.exists():
-            try:
-                render(yaml_path)
-            except Exception as e:
-                print(f'Couldnt generate {html_path}: {e}')
+        #if not html_path.exists():
+        try:
+            render(yaml_path)
+        except Exception as e:
+            print(f'Couldnt generate {html_path}: {e}')
