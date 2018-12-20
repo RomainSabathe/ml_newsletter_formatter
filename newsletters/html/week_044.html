@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+<title>ML newsletter</title>
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+	html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+
+	.category{
+	  padding: 20px;
+	  margin: auto;
+	  background: #F5F5F5;
+	  margin-bottom: 25px;
+	  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+	  transition: all 0.3s; 
+	  border-radius: 3px;
+	}
+
+    .category-title{
+      margin-bottom: 30px;
+    }
+
+	.category-logo{
+	  margin-right: 10px;
+	}
+
+	.article-logo{
+	  margin-right: 3px;
+	}
+
+    .recommended{
+	  margin-right: 2px;
+    }
+
+    .quote{
+      font-size: 11px;
+    }
+</style>
+
+
+<body>
+
+<!-- Page Container -->
+<div class="container" style="max-width:1400px;">
+
+  
+  <!-- The Grid -->
+  <div class="row">
+  
+      <!-- Dummy container to force centering. Yes. I'm a front-end noob. -->
+      <div class="col-sm-2"></div>
+
+      <div class="col-sm-8">
+
+          
+          <!-- Category block -->
+          <div class="category">
+              <h2 class="category-title">
+                  <img src="https://image.flaticon.com/icons/png/512/653/653500.png"
+                       class="fa fa-fw category-logo">General Machine Learning
+              </h2>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/60/60736.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://towardsdatascience.com/making-your-neural-network-say-i-dont-know-bayesian-nns-using-pyro-and-pytorch-b1c24e6ab8cd">Making Your Neural Network Say “I Don’t Know” — Bayesian NNs using Pyro and PyTorch</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                        <span class="badge">
+                                  Recommended
+                              </span>
+                                                    Paras Chopra
+                  </h6>
+                  <p>If you are still wondering what probabilistic programming is, here's your change to catch up in just about 15 minutes. The author shows how to use Pyro, a probabilistic programming 'add-on' built on top of Pytorch to create a network whose each individual weight is sampled from a parametrized distribution (instead of being a fixed float). The network is trained to classify MNIST digits. Not so exciting; except that we are now able to precisely measure the uncertainty of the model. What I really liked with this article is the many resources that the author provide throughout. For instance: the <a href=http://pyro.ai/examples/intro_part_i.html#>Pyro tutorial</a>, an <a href=https://www.ibm.com/blogs/research/2018/11/pyro-wml/>IBM article</a> on probabilistic programming, this <a href=https://www.youtube.com/watch?time_continue=4&v=DYRK0-_K2UU>ICML 2018 tutorial on variational bayes</a>. In you want to dig more on this topic, note that one of the first tutorials at NeurIPS this week was on <a href=https://www.facebook.com/nipsfoundation/videos/289885991643586/>scalable Bayesian inference</a>.</p>
+                                </div>
+              <hr>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/60/60736.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://medium.com/syncedreview/neurips-2018-opens-best-papers-announced-a6b66508c150">Best Papers and Test of Time Award at NeurIPS 2018</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    Synced
+                  </h6>
+                  <p>One of the many NeurIPS-related links of this newsletter's edition but eh, that was the event of the week wasn't it? This short post lists the papers that have received a Best Paper award at the conference, plus a small description of each. A quick way to get up-to-date.</p>
+                                </div>
+              <hr>
+
+                          
+          </div>
+          
+          <!-- Category block -->
+          <div class="category">
+              <h2 class="category-title">
+                  <img src="https://image.flaticon.com/icons/png/512/149/149243.png"
+                       class="fa fa-fw category-logo">Deep Learning
+              </h2>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/60/60736.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://deepmind.com/blog/alphafold/">AlphaFold: Using AI for scientific discovery</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    DeepMind
+                  </h6>
+                  <p>Solving protein folding is, as everyone knows, a huge challenge. The gist of the problem is: given the DNA sequence that 'encodes' the protein, what will the 3d shape of the protein be? DeepMind has been working on that problem for just about two years, but has already built a system that is state-of-the-art in protein structure predictions. To do this, they trained a few deep nets to predict the distance or the angle (in terms of chemical bonds) between pairs of amino acids in the final protein. Other nets were responsible to aggregate all the distance predictions to either estimate the accuracy of the proposed protein or how close it is to the actual 3d structure. The scores were then 'simply' optimized via gradient descent!<br />Related to this topic, the Ecole Polytechnique de Montreal, University of Montreal and the Quebec Artificial Intelligence Institute submitted a <a href=https://arxiv.org/abs/1811.06128>manuscript</a> last month on machine learning for combinatorial optimization.</p>
+                                </div>
+              <hr>
+
+                          
+          </div>
+          
+          <!-- Category block -->
+          <div class="category">
+              <h2 class="category-title">
+                  <img src="https://image.flaticon.com/icons/png/512/179/179121.png"
+                       class="fa fa-fw category-logo">Optimisation & Learning Theory
+              </h2>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/155/155292.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://arxiv.org/abs/1811.12359">Challenging Common Assumptions in the Unsupervised Learning of Disentangled Representations</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    Google AI, ETH Zurich, Max-Plank Institute for Intelligent Systems
+                  </h6>
+                  <p></p>
+                                    <blockquote class="blockquote">
+                     <p class="quote">[...] We first theoretically show that the unsupervised learning of disentangled representations is fundamentally impossible without inductive biases on both the models and the data. Then, we train[...] models covering the six most prominent methods, and evaluate them [...]. On the positive side, we observe that different methods successfully enforce properties 'encouraged' by the corresponding losses. On the negative side, we observe in our study that well-disentangled models seemingly cannot be identified without access to ground-truth labels even if we are allowed to transfer hyperparameters across data sets. [...]</p>
+                  </blockquote>
+                                </div>
+              <hr>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/155/155292.png"
+                           class="fa fa-fw article-logo">
+                                            <img src="https://image.flaticon.com/icons/png/512/149/149125.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://arxiv.org/abs/1805.11604">(NeurIPS 2018) - How Does Batch Normalization Help Optimization?</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    MIT
+                  </h6>
+                  <p>This paper published at NeurIPS 2018 explores the reasons of batch normalization's success. Interestingly, authors find it has probably nothing to do with internal covariate shift. Rather, batch norm would help smoothing the optimization landscape (they prove that the Lipschitz coefficient gets smaller when batch norm is used). To quickly introduce their research, authors published a very nice 3-minute <a href=https://www.youtube.com/watch?v=ZOabsYbmBRM&feature=youtu.be>video</a>.</p>
+                                </div>
+              <hr>
+
+                          
+          </div>
+          
+          <!-- Category block -->
+          <div class="category">
+              <h2 class="category-title">
+                  <img src="https://image.flaticon.com/icons/png/512/249/249156.png"
+                       class="fa fa-fw category-logo">Reinforcement Learning
+              </h2>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/149/149125.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://www.youtube.com/playlist?list=PLqYmG7hTraZDNJre23vqCGIVpfZ_K2RZs">UCL course: Advanced Deep Learning and Reinforcement Learning</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    DeepMind
+                  </h6>
+                  <p><a href=http://www0.cs.ucl.ac.uk/staff/d.silver/web/Teaching.html>David Silver's course</a> on reinforcement learning was already super famous, but here's another series of course on deep learning and reinforcement learning from UCL and DeepMind. In total, there are 18 videos of about 100 minutes each. Better prepare a huge bucket of popcorn, there's a lot of binge watching to do,...</p>
+                                </div>
+              <hr>
+
+                          
+          </div>
+          
+          <!-- Category block -->
+          <div class="category">
+              <h2 class="category-title">
+                  <img src="https://imageog.flaticon.com/icons/png/512/248/248114.png"
+                       class="fa fa-fw category-logo">Production & Engineering
+              </h2>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/25/25231.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://arogozhnikov.github.io/einops/pytorch-examples.html">Writing better code with pytorch and einops</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    Alex Rogozhnikov
+                  </h6>
+                  <p>We already talked about <a href=https://github.com/arogozhnikov/einops>einops</a> a few weeks ago. This library lets you reshape and aggregate tensors by explicitly defining the input shape and the expected output shape. Here, a 'tensor' is a general term as einops supports many libraries, including the now standards numpy, tensorflow and pytorch. I already started using it and it's extremely powerful. Check <a href=https://github.com/arogozhnikov/einops/blob/master/docs/1-einops-basics.ipynb>these examples</a> for instance. Anyways, in this post, einops' author has combined a list of common deep learning architectures (conv net, recurrent model, style-transfer, ResNet, Tacotron, transformer, spatial transformer networks,...) in a side-by-side comparison. On the left: the code that doesn't use einops. On the right: the code that uses einops. As expected, the code on the right is shorter and arguably cleaner than code on the left. This is obtained by an extensive use of Pytorch's <i>Sequential</i> module and less comments, since the shapes are already written down in einops' functions.</p>
+                                </div>
+              <hr>
+
+                          
+          </div>
+          
+          <!-- Category block -->
+          <div class="category">
+              <h2 class="category-title">
+                  <img src="https://image.flaticon.com/icons/png/512/263/263051.png"
+                       class="fa fa-fw category-logo">Everything Else
+              </h2>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/149/149125.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://www.facebook.com/pg/nipsfoundation/videos/">Videos of NeurIPS 2018 talks</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    
+                  </h6>
+                  <p>As it was done over previous years, Facebook is hosting the videos of most (if not all?) talks from NeurIPS 2018 (formerly called NIPS). Sadly, the spotlight sessions don't seem to be named, however the videos of the tutorials have been named. <br /> If you don't have a Facebook account, you can still access the videos. Last time I tried, there was a bug where no videos were shown, but you can fix it by clicking successively on 'Oldest first' then on 'Newest first'.</p>
+                                </div>
+              <hr>
+
+                          
+          </div>
+          
+          <!-- Category block -->
+          <div class="category">
+              <h2 class="category-title">
+                  <img src="https://image.flaticon.com/icons/png/512/56/56243.png"
+                       class="fa fa-fw category-logo">Laugh Of The Week
+              </h2>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <b><a href="https://twitter.com/araffin2/status/1065244364698472449">Chuck Berry was just inventing an efficient way of walking</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    
+                  </h6>
+                  <p></p>
+                                </div>
+              <hr>
+
+                          
+          </div>
+                </div>
+      
+  <!-- Dummy container to force centering. Yes. I'm a front-end noob. -->
+  <div class="col-sm-2"></div>
+
+  <!-- End Grid -->
+  </div>
+
+    
+  <!-- End Page Container -->
+</div>
+
+</body>
+</html>

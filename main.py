@@ -4,7 +4,7 @@ import yaml
 import pandas as pd
 from jinja2 import Environment, FileSystemLoader
 
-TEMPLATE_DIR = '/home/romain/my_git/ml_newsletter_formatter'
+TEMPLATE_DIR = '/home/romain.sabathe/git/ml_newsletter_formatter'
 
 CATEGORIES_INFO = [
     {
@@ -162,9 +162,16 @@ def _load_categories(path):
     df['category'] = df['category'].apply(clean_categories)
     df['category'] = df['category'].str.title()
 
+    if 'quote' not in df.columns:
+        df = df.assign(quote=lambda _: "")
+
     # Hack: placing the recommended articles on top.
+    if 'recommended' not in df.columns:
+        df = df.assign(recommended= lambda _: False)
     df['recommended_helper'] = df.recommended.apply(lambda x: 0 if x else 1)
     df = df.sort_values('recommended_helper')
+
+    df.description = df.description.fillna("")
 
     categories = []
     for category_name, group in df.groupby('category'):

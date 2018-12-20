@@ -1,0 +1,80 @@
+intro_text: ""
+
+outro_text:
+
+articles:
+    - title: "Normalizing Flows: Planar and Radial Flows"
+      lab: Abdul Fatir
+      category: ml
+      type: blog
+      description: "You probably have heard of <a href=https://arxiv.org/abs/1505.05770>Normalizing Flow</a>, a class of variational inference models which is able to model complex densities by applying a sequence of invertible transformations to a simple initial density, like a Gaussian. This has the potential to alleviate some of the issues of variational autoencoders, such as a rather weak prior (unimodal Gaussian). This post is a rather short introduction to normalizing flows; it introduces two invertible transformations: the planar flow and radial flow. In an example, the author shows how this is enough to convert a simple Gaussian into a multimodal distribution. If you want to learn more about flow-based models, have a look at <a href=https://lilianweng.github.io/lil-log/2018/10/13/flow-based-deep-generative-models.html>this post</a> published by Lilian Weng last month. We mentioned it in a previous newsletter. :-)"
+      url: http://abdulfatir.com/Normalizing-Flows-Part-1/
+
+    - title: "Machine Learninig and Pattern Recognition - now freely available online"
+      url: https://www.microsoft.com/en-us/research/people/cmbishop/#!prml-book
+      lab: Christopher Bishop
+      category: ml
+      type: paper
+      description: "The book by itself is not something new; but it still is a reference and it is now in free access online. It is also worth having a look at <a href=http://mbmlbook.com/>Model-Based Machine Learning</a> by the same author and John Winn (the book isn't completed yet though)."
+
+    - title: "Tencent ML-Images"
+      url: https://github.com/Tencent/tencent-ml-images
+      type: github
+      category: ml
+      lab: Tencent
+      description: "Tencent just released a massive dataset of about 17.69 million images annotated with up to 11k+ classes! The images have been gathered by carefully assembling ImagetNet and Open Images. Authors also outsource a pretrained ResNet-101, trained on Tencent ML-Images and which achieved state-of-the-art on ImageNet."
+
+    - title: "GAN Dissection: Visualizing and Understanding Generative Adversarial Networks"
+      url: https://arxiv.org/abs/1811.10597v1
+      lab: "MIT, MIT-IBM Watson AI Lab, The Chinese University of Hong Kong, Google Research, IBM Research"
+      category: gan
+      type: paper
+      quote: "[...], visualization and understanding of GANs is largely missing. How does a GAN represent our visual world internally? What causes the artifacts in GAN results? How do architectural choices affect GAN learning? [...]
+          In this work, we present an analytic framework to visualize and understand GANs at the unit-, object-, and scene-level. We first identify a group of interpretable units that are closely related to object concepts [...]. Then, we quantify the causal effect of interpretable units [...]. Finally, we examine the contextual relationship between these units and their surrounding [...]. [...] <b>We provide open source interpretation tools to help peer researchers and practitioners better understand their GAN models</b>."
+
+    - title: trixi
+      type: github
+      category: engineering
+      url: https://trixi.readthedocs.io/en/latest/index.html
+      lab: "Division of Medical Image Computing, German Cancer Research Center"
+      description: "Not a single day goes by without my coworkers being annoyed by how much I rave about <a href=https://github.com/IDSIA/sacred>Sacred</a>. There is a bunch of tools that let you monitor, log and compare experiments for better tracking and reproducibility and to me, Sacred is one of the best. Now Trixi is a recently open-sourced alternative. It appears to be extremely versatile, modular and exhaustive. Will definitively try to give it a go in the few coming weeks! Authors provide some examples, like a <a href=https://github.com/MIC-DKFZ/basic_unet_example/blob/master/experiments/UNetExperiment.py>UNet training script</a> and <a href=https://github.com/MIC-DKFZ/trixi/blob/master/examples/pytorch_experiment.ipynb>integrating Trixi with pytorch</a>. "
+
+    - title: "I'll just have a look at the Tensorboard graph to debug my network"
+      url: https://twitter.com/mark_riedl/status/1067625823333687296
+      type: twitter
+      category: laugh
+
+    - title: "A unified theory of adaptive stochastic gradient descent as Bayesian filtering"
+      url: https://arxiv.org/abs/1807.07540
+      type: paper
+      category: theory
+      lab: Janelia Research Campus
+      quote: "We formulate stochastic gradient descent (SGD) as a Bayesian filtering problem. Inference in the Bayesian setting naturally gives rise to BRMSprop and BAdam: Bayesian variants of RMSprop and Adam. Remarkably, the Bayesian approach recovers many features of state-of-the-art adaptive SGD methods, including amoungst others root-mean-square normalization, Nesterov acceleration and AdamW. As such, the Bayesian approach provides one explanation for the empirical effectiveness of state-of-the-art adaptive SGD algorithms. [...]"
+
+    - title: "Nesterov's Momemtum"
+      category: theory
+      type: blog
+      url: https://dominikschmidt.xyz/nesterov-momentum/
+      lab: Dominik Schmidt, Sebastien Bubeck
+      description: "A simple and visual description of what Nesterov's Momentum is. Nothing new or incredibly fancy here. However you might be interested in reading a proof of the 1/t^2 speed of convergence for Nesterov's momentum on smooth convex objective functions by Sebastien Bubeck <a href=https://blogs.princeton.edu/imabandit/2018/11/21/a-short-proof-for-nesterovs-momentum/>here</a> (it's very short!). And just in case you haven't read <i>the</i> classic blog post introducing the most common different flavors of gradient descent, have a look at this <a href=http://ruder.io/optimizing-gradient-descent/>post</a> by Sebastian Ruder. The original post is from 2016 but the latest update was made in February 2018."
+
+    - title: ModelDepot
+      category: other
+      type: github
+      url: https://modeldepot.io/search
+      lab: ModelDepot
+      description: "Looking for the latest implementation of a specific object-detection model? Or you'd like to use a pre-trained model for a task you are not too familiar with? Chances are ModelDepot will help you do that. In appearance, it's quite simple: it's a search engine for publicly available model implementations. It is not the first time we see that around, but I was overall impressed by the speed and the accuracy of the results.  There are some well-thought features such as the possibility to sort by GitHub stars or most recent commit."
+
+    - url: https://eng.uber.com/go-explore/
+      lab: Uber AI
+      type: blog
+      category: rl
+      title: "Go Explore - Solving Montezuma's Revenge (and SOTA on Pitfall)"
+      description: "It's hard to keep track of the SOTA on Montezuma's Revenge. We talked a few times already about this difficult Atari game which stayed unsolved for a few years (even when using deep reinforcement learning). About five months ago, OpenAI used <a href=https://blog.openai.com/learning-montezumas-revenge-from-a-single-demonstration/>a single human demonstration</a> to obtain an impressive score. More recently, a few weeks ago, we talked about <a href=https://blog.openai.com/reinforcement-learning-with-prediction-based-rewards/>Random Network Distillation</a>, a curiosity-driven appproach that was used by OpenAI to 'solve' the game without human assistance, reaching a score of about 10k. Well this record just got beaten by Uber, who obtained a score of about 35k points. This blog post describes their approach. The key is to encourage the agent to learn <i>how</i> to get back to a state it has already visited. From there, proper exploration can resume."
+
+    - title: "Sampling Can Be Faster Than Optimization"
+      url: https://arxiv.org/abs/1811.08413v1
+      type: paper
+      category: theory
+      lab: Department of Statistics, UC Berkeley
+      quote: "Optimization algorithms and Monte Carlo sampling algorithms have provided the computational foundations for the rapid growth in applications of statistical machine learning in recent years. [...] existing results have been obtained primarily in the setting of convex functions (for optimization) and log-concave functions (for sampling). In this setting, [...], optimization algorithms are unsurprisingly more efficient computationally than sampling algorithms. We instead examine a class of nonconvex objective functions that arise in mixture modeling and multi-stable systems. In this nonconvex setting, we find that the computational complexity of sampling algorithms scales linearly with the model dimension while that of optimization algorithms scales exponentially."

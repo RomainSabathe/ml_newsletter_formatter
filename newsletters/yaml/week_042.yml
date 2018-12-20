@@ -1,0 +1,87 @@
+intro_text: "A lot of engineering-related projects this week, all of which are super interesting. Fast computation of euclidean distance in large databases, privacy-preserving trainings and explicit tensor reshaping and annotations,.. yummy! Have a nice Friday!"
+
+outro_text:
+
+articles:
+    - title: "TSALib"
+      url: "https://towardsdatascience.com/introducing-tensor-shape-annotation-library-tsalib-963b5b13c35b"
+      type: medium + github
+      category: engineering
+      lab: Nishant Sinha
+      description: "Remember having hard times trying to read the code of some complex architecture? Seeing transformations and permutations that didn't make much sense? One potential reason for this is the lack of understanding of what the code is trying to achieve and what the objects in the code are. Comments could help but it's hard to enforce them. What if we were given a tool that serves both the purpose of comments (as a documentation) <b>and</b> that could be used to perform transformations more easily (e.g: permutation, concatenation, etc.)? That is the goal of TSALib (read: Tensor Shape Annotation library). This library uses Python 3 hints mechanism to interpret the shape of tensors and provides tools to manipulate them. It supports numpy, tensorflow and pytorch. Go and check out the blog post if you want to learn more; it can serve as a sort of introduction."
+      quote: ""
+      recommended: 
+
+    - title: "Einops"
+      url: "https://github.com/arogozhnikov/einops"
+      type: github
+      category: engineering
+      lab: Alex Rogozhnikov
+      description: "A library I'm quite excited about. Similarly to TSALib that we already talked about, Einops enables you to perform tensor transformations by explicitly writing the shape and dimensions of the input and expected output. For this use, it appears Einops is more powerful than TSALib (judge yourself by watching the video on the github page or checking the introductory examples <a href=https://github.com/arogozhnikov/einops/blob/master/docs/1-einops-basics.ipynb>here</a>). This is understandable since this types of transformation is the sole purpose of Einops, whereas TSALib focuses more on providing <i>annotations</i>. In other words, although Einops and TSALib have some overlaps, they are trying to achieve two different things and there are no reason why they couldn't be both used. Note that Einops supports numpy, tensorflow, pytorch, chainer, gluon, mxnet,..."
+      quote: ""
+      recommended: 
+
+    - title: "Bayesian Gradient Descent: Online Variational Bayes Learning with Increased Robustness to Catastrophic Forgetting and Weight Pruning"
+      url: "https://arxiv.org/abs/1803.10123"
+      type: paper
+      category: theory
+      lab: Israel Institute of Technology
+      quote: "We suggest a novel approach for the estimation of the posterior distribution of the weights of a neural network, using an online version of the variational Bayes method. Having a confidence measure of the weights allows to combat several shortcomings of neural networks, such as their parameter redundancy, and their notorious vulnerability to the change of input distribution ('catastrophic forgetting'). Specifically, We show that this approach helps alleviate the catastrophic forgetting phenomenon - even without the knowledge of when the tasks are been switched. Furthermore, it improves the robustness of the network to weight pruning - even without re-training."
+      description: ""
+      recommended: 
+
+    - title: "Ruin Thanksgiving in four words:"
+      url: "https://twitter.com/SussilloDavid/status/1065384108535119872"
+      type: twitter
+      category: laugh
+      lab: 
+      description: ""
+      quote: ""
+      recommended: 
+
+    - title: "EuclidesDB"
+      url: "https://euclidesdb.readthedocs.io/en/latest/"
+      type: github
+      category: engineering
+      lab: Christian S. Perone
+      description: "A tool that could be extremely useful for production services that do matching and comparisons of neural network's embeddings. EuclidesDB offers C++ bindings and protobuff support for fast computation and indexing as well as gRPC for fast network communication. Examples are provided and it appears fairly easy to create a database of embeddings and to do search on them. For now it is only supported by pytorch."
+      quote: ""
+      recommended: 
+
+    - title: "BigGAN demo in colab notebook"
+      url: "https://colab.research.google.com/github/tensorflow/hub/blob/master/examples/colab/biggan_generation_with_tf_hub.ipynb"
+      type: github
+      category: gans
+      lab: TensorflowHub
+      description: "You probably have heard of <a href=https://arxiv.org/abs/1809.11096>BigGAN</a>, a model proposed at ICLR 2019 that is capable of generating impressive real-looking images at high resolution without the need for progressive growing. This colab notebook is loaded with a pretrained BigGAN model so you can generate more of those delicious hamburger images. Or any of the thousand classes (!!) available actually. A pretrained model is always appreciated, especially when we consider that it could cost up to <a href=https://twitter.com/quasimondo/status/1065610256917692416>tens of thousands of dollars</a> to obtain it,..."
+      quote: ""
+      recommended: 
+
+    - title: "PySyft"
+      url: "https://github.com/OpenMined/PySyft"
+      type: github + paper
+      category: ml
+      lab: Imperial College London, DeepMind, Case Western Reserve University
+      description: "This library allows you to do Multi-Party computation which is a sub-branch of cryptography for privacy-preserving computation, using pytorch. With PySyft, it becomes easy to create a pool of workers and distribute the data (and training) among the workers. Authors provide a docker image for ease of use as well as some examples, including one for <a href=https://colab.research.google.com/drive/1F3ALlA3ogfeeVXuwQwVoX4PimzTDJhPy#scrollTo=PTCvX6H9JDCt>federated learning</a>. The example is short and easy to understand: you create the workers, you split the dataset such that each worker will see only one part of the dataset. At training time, each worker works on its part of the data, and the model is trained based on the gradients sent back by the workers. Authors also published a <a href=https://arxiv.org/abs/1811.04017>paper</a> for this work."
+      quote: ""
+      recommended: 
+
+    - title: "Controversial ICLR Paper submissions"
+      url: "https://twitter.com/iclr2019/status/1065079004611452928"
+      type: twitter
+      category: ml
+      lab: ICLR
+      description: "Interesting initiative from ICLR oganizers: they are making a list of some papers that have been particularly debated. The number of comments for each submission is quite high and I'm sure are full of interesting discussions."
+      quote: ""
+      recommended: 
+
+    - title: "Arbitrary image stylization in TensorFlow.js"
+      url: "https://github.com/reiinakano/arbitrary-image-stylization-tfjs"
+      type: github
+      category: dl
+      lab: Reiichiro Nakano
+      description: "An open-source Tensorflow.js implementation of style transfer. A webdemo is available so you can have fun with it. There is no central server where the images are sent and processed since it uses Tensorflow.js! It's all in your browser. If you have a powerful machine, it should be quick to try lots of different content/style images combinations."
+      quote: ""
+      recommended: 
+
+

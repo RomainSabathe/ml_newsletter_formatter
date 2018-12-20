@@ -1,0 +1,66 @@
+intro_text: ""
+
+outro_text:
+
+articles:
+- title: "Challenging Common Assumptions in the Unsupervised Learning of Disentangled Representations"
+  url: "https://arxiv.org/abs/1811.12359"
+  type: "paper"
+  category: "theory"
+  lab: "Google AI, ETH Zurich, Max-Plank Institute for Intelligent Systems"
+  quote: "[...] We first theoretically show that the unsupervised learning of disentangled representations is fundamentally impossible without inductive biases on both the models and the data. Then, we train[...] models covering the six most prominent methods, and evaluate them [...]. On the positive side, we observe that different methods successfully enforce properties 'encouraged' by the corresponding losses. On the negative side, we observe in our study that well-disentangled models seemingly cannot be identified without access to ground-truth labels even if we are allowed to transfer hyperparameters across data sets. [...]"
+
+- title: "Best Papers and Test of Time Award at NeurIPS 2018"
+  url: "https://medium.com/syncedreview/neurips-2018-opens-best-papers-announced-a6b66508c150"
+  type: "blog"
+  category: "ml"
+  lab: "Synced"
+  description: "One of the many NeurIPS-related links of this newsletter's edition but eh, that was the event of the week wasn't it? This short post lists the papers that have received a Best Paper award at the conference, plus a small description of each. A quick way to get up-to-date."
+
+- title: "(NeurIPS 2018) - How Does Batch Normalization Help Optimization?"
+  lab: "MIT"
+  url: "https://arxiv.org/abs/1805.11604"
+  type: "paper + video"
+  category: "theory"
+  description: "This paper published at NeurIPS 2018 explores the reasons of batch normalization's success. Interestingly, authors find it has probably nothing to do with internal covariate shift. Rather, batch norm would help smoothing the optimization landscape (they prove that the Lipschitz coefficient gets smaller when batch norm is used). To quickly introduce their research, authors published a very nice 3-minute <a href=https://www.youtube.com/watch?v=ZOabsYbmBRM&feature=youtu.be>video</a>."
+
+- title: "UCL course: Advanced Deep Learning and Reinforcement Learning"
+  url: https://www.youtube.com/playlist?list=PLqYmG7hTraZDNJre23vqCGIVpfZ_K2RZs
+  type: "video"
+  category: "rl"
+  lab: "DeepMind"
+  description: "<a href=http://www0.cs.ucl.ac.uk/staff/d.silver/web/Teaching.html>David Silver's course</a> on reinforcement learning was already super famous, but here's another series of course on deep learning and reinforcement learning from UCL and DeepMind. In total, there are 18 videos of about 100 minutes each. Better prepare a huge bucket of popcorn, there's a lot of binge watching to do,..."
+
+- title: "Writing better code with pytorch and einops"
+  url: "https://arogozhnikov.github.io/einops/pytorch-examples.html"
+  category: "engineering"
+  type: "github"
+  lab: "Alex Rogozhnikov"
+  description: "We already talked about <a href=https://github.com/arogozhnikov/einops>einops</a> a few weeks ago. This library lets you reshape and aggregate tensors by explicitly defining the input shape and the expected output shape. Here, a 'tensor' is a general term as einops supports many libraries, including the now standards numpy, tensorflow and pytorch. I already started using it and it's extremely powerful. Check <a href=https://github.com/arogozhnikov/einops/blob/master/docs/1-einops-basics.ipynb>these examples</a> for instance. Anyways, in this post, einops' author has combined a list of common deep learning architectures (conv net, recurrent model, style-transfer, ResNet, Tacotron, transformer, spatial transformer networks,...) in a side-by-side comparison. On the left: the code that doesn't use einops. On the right: the code that uses einops. As expected, the code on the right is shorter and arguably cleaner than code on the left. This is obtained by an extensive use of Pytorch's <i>Sequential</i> module and less comments, since the shapes are already written down in einops' functions." 
+
+- title: "Chuck Berry was just inventing an efficient way of walking"
+  url: "https://twitter.com/araffin2/status/1065244364698472449"
+  category: "laugh"
+  type: "twitter"
+
+- title: "AlphaFold: Using AI for scientific discovery"
+  lab: "DeepMind"
+  category: "dl"
+  type: "blog"
+  url: "https://deepmind.com/blog/alphafold/"
+  description: "Solving protein folding is, as everyone knows, a huge challenge. The gist of the problem is: given the DNA sequence that 'encodes' the protein, what will the 3d shape of the protein be? DeepMind has been working on that problem for just about two years, but has already built a system that is state-of-the-art in protein structure predictions. To do this, they trained a few deep nets to predict the distance or the angle (in terms of chemical bonds) between pairs of amino acids in the final protein. Other nets were responsible to aggregate all the distance predictions to either estimate the accuracy of the proposed protein or how close it is to the actual 3d structure. The scores were then 'simply' optimized via gradient descent!<br />Related to this topic, the Ecole Polytechnique de Montreal, University of Montreal and the Quebec Artificial Intelligence Institute submitted a <a href=https://arxiv.org/abs/1811.06128>manuscript</a> last month on machine learning for combinatorial optimization." 
+
+- title: "Videos of NeurIPS 2018 talks"
+  lab: ""
+  category: "other"
+  type: "video"
+  url: "https://www.facebook.com/pg/nipsfoundation/videos/"
+  description: "As it was done over previous years, Facebook is hosting the videos of most (if not all?) talks from NeurIPS 2018 (formerly called NIPS). Sadly, the spotlight sessions don't seem to be named, however the videos of the tutorials have been named. <br /> If you don't have a Facebook account, you can still access the videos. Last time I tried, there was a bug where no videos were shown, but you can fix it by clicking successively on 'Oldest first' then on 'Newest first'."
+
+- title: "Making Your Neural Network Say “I Don’t Know” — Bayesian NNs using Pyro and PyTorch"
+  type: "blog"
+  category: "ml"
+  recommended: True
+  lab: "Paras Chopra"
+  url: "https://towardsdatascience.com/making-your-neural-network-say-i-dont-know-bayesian-nns-using-pyro-and-pytorch-b1c24e6ab8cd"
+  description: "If you are still wondering what probabilistic programming is, here's your change to catch up in just about 15 minutes. The author shows how to use Pyro, a probabilistic programming 'add-on' built on top of Pytorch to create a network whose each individual weight is sampled from a parametrized distribution (instead of being a fixed float). The network is trained to classify MNIST digits. Not so exciting; except that we are now able to precisely measure the uncertainty of the model. What I really liked with this article is the many resources that the author provide throughout. For instance: the <a href=http://pyro.ai/examples/intro_part_i.html#>Pyro tutorial</a>, an <a href=https://www.ibm.com/blogs/research/2018/11/pyro-wml/>IBM article</a> on probabilistic programming, this <a href=https://www.youtube.com/watch?time_continue=4&v=DYRK0-_K2UU>ICML 2018 tutorial on variational bayes</a>. In you want to dig more on this topic, note that one of the first tutorials at NeurIPS this week was on <a href=https://www.facebook.com/nipsfoundation/videos/289885991643586/>scalable Bayesian inference</a>."
