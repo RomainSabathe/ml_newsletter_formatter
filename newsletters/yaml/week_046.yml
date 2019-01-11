@@ -1,0 +1,66 @@
+intro_text: ""
+
+outro_text:
+
+articles:
+- title: "ICLR 2019 - Accepted papers"
+  url: "https://openreview.net/group?id=ICLR.cc/2019/Conference#accepted-poster-papers"
+  type: "paper"
+  category: "ml"
+  lab: "ICLR"
+  description: "A list of all the posters and orals accepted at ICLR 2019. It's just been announced this morning."
+  recommended: "True"
+
+- title: "arXiv - Bayesian Optimization in AlphaGo"
+  url: "https://arxiv.org/abs/1812.06855"
+  lab: "DeepMind"
+  category: "theory"
+  type: "paper"
+  quote: "During the development of AlphaGo, its many hyper-parameters were tuned with Bayesian optimization multiple times. This automatic tuning process resulted in substantial improvements in playing strength. For example, prior to the match with Lee Sedol, we tuned the latest AlphaGo agent and this improved its win-rate from 50% to 66.5% in self-play games. [...] It is our hope that this brief case study will be of interest to Go fans, and also provide Bayesian optimization practitioners with some insights and inspiration."
+
+- title: "Learning to be funny"
+  url: "https://twitter.com/hardmaru/status/1058141909388939264"
+  category: "laugh"
+  type: "twitter"
+
+- title: "The major advancements in Deep Learning in 2018"
+  lab: "Javier Couto (Tryolabs)"
+  url: https://tryolabs.com/blog/2018/12/19/major-advancements-deep-learning-2018/"
+  type: "blog"
+  category: "ml"
+  description: "The end of the year is close! As expected, a few summaries of the year 2018 are being posted. I really enjoyed this one which focuses on the most remarkable papers published this year (according to the author's point of view!). He did a great job at introducing the problem that each paper is trying to solve and why the proposed solution could be a game-changer. The focus is on NLP (with BERT, Deep Contextualized Word Representations, transfer learning with ULMFiT) and computer vision (video-to-video synthesis and study of transfer learning in computer vision tasks). The final section also gives some well-deserved honourable mentions."
+
+- title: "Learning to Drive: Beyond Pure Imitation"
+  url: "https://medium.com/waymo/learning-to-drive-beyond-pure-imitation-465499f8bcb2"
+  lab: "Waymo"
+  type: "medium"
+  category: "dl"
+  description: "This is an interesting article by Waymo in which authors describe how they used supervised learning to train an autonomous vehicle (see a video <a href=https://www.youtube.com/watch?v=vnco1FRdaC0&feature=youtu.be>here</a> and <a href=https://www.youtube.com/watch?v=eRFFWnabppc>here</a>). 60 days worth of driving footage were used to train <i>ChauffeurNet</i>, a recurrent neural net that had its memory model specifically engineered for the task at hand. An important point of this post is how careful augmentation was used to train the network to deal with unexpected cases (like slight deviation from the expected trajectory, or a parked vehicle on the side of the road). By slightly modifying the target trajectory and enforcing a loss that discourages collisions, authors managed to obtain an agent that was better at dealing with scenarios that never occurred in the original training footage."
+
+- title: "Nevergrad"
+  url: "https://github.com/facebookresearch/nevergrad"
+  lab: "Facebook"
+  type: "github"
+  category: "ml"
+  description: "This python package from Facebook has just been released today. It includes a set of tools to perform optimisation on non-derivable objective functions via optimisers such as particle swarm optimisation, differential evolution and others. Interestingly, this package is more than just a library of optimisers. There are actually some sub-packages to gather the experiments, plot the results or pre-process the experiment (to correctly specify to types of variables to optimise). There's even a module to optimise non-python code!"
+
+- title: "arXiv - Provable limitations of deep learning"
+  url: "https://arxiv.org/abs/1812.06369"
+  type: "paper"
+  category: "theory"
+  lab: "EPFL, MIT"
+  quote: "[...] This paper gives a first set of results proving that deep learning algorithms fail at learning certain efficiently learnable functions. Parity functions form the running example of our results [...] The failures shown in this paper apply to training poly-size NNs on function distributions of low cross-predictability with a descent algorithm that is either run with limited memory per sample [...]. We further claim that such types of constraints are necessary to obtain failures, in that <b>exact SGD with careful non-random initialization can learn parities.</b> [...]"
+
+- title: "Bayesian Convolutional Neural Networks"
+  url: "https://github.com/kumar-shridhar/Master-Thesis-BayesianCNN"
+  type: "paper + github"
+  category: "dl"
+  lab: "Kumar Shridhar"
+  description: "This is the Master thesis from Mr. Shridhar. It can serve as an approachable introduction to bayesian methods in deep learning as he provides interesting visuals and explanations on <i>bayes by backprop</i>. He implements the Bayesian versions of  LeNet and AlexNet and train them on MNIST, CIFAR-10 and CIFAR-100. The code is also available."
+
+- title: "Improving deep learning models with bag of tricks"
+  url: "https://github.com/kmkolasinski/deep-learning-notes/blob/master/seminars/2018-12-Improving-DL-with-tricks/Improving_deep_learning_models_with_bag_of_tricks.pdf"
+  type: "paper + github"
+  lab: "Krzysztof Kolasiński (Fornax)"
+  category: "dl"
+  description: "Last week we mentioned a manuscript from Amazon where authors presented a few tips and tricks on how to squeeze a few percentage points of performance from a deep model. This link is fairly similar in the concept; although these are the slides of a presentation. The slides are well annotated and come with associated plots. The author goes over some tricks regarding the learning rate (cyclical LR, SGD with warm restarts), the size of minibatches, weight decay with Adam, or even the labels (label smoothing) etc."

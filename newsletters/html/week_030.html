@@ -83,11 +83,11 @@
                   <h6 class="w3-text">
                                                     Google Brain
                   </h6>
-                  <p>This paper deals with the many uncertainties that we face when releasing models to production. Will the predictions be consistent? Will the model crash for some inputs? We can see there are at least two types of uncertainties: the first one is concerned with overfitting and the model's generalization capabilities while the second is linked to stability of the running code (numerical errors such as NaNs could make the code crash). While the former issue of overfitting is vastly explored in the litterature, the latter is often overlooked. In this work, authors take inspiration from code <i>fuzzing</i> where an algorithm is aggresively testing all possibilities of a code to find ways to make it crash (imagine testing all if/else branch combinations for instance). They define what <i>fuzzing</i> would mean for the activations of a neural network and show in some toy experiments that their algorithm is able to find numerical errors and inconsistencies on a trained network.</p>
                                     <blockquote class="blockquote">
                      <p class="quote">In this work, we introduce automated software testing techniques for neural networks that are well-suited to discovering errors which occur only for rare inputs. Specifically, we develop coverage-guided fuzzing (CGF) methods for neural networks. [...] We then discuss the application of CGF to the following goals: finding numerical errors in trained neural networks, generating disagreements between neural networks and quantized versions of those networks, and surfacing undesirable behavior in character level language models.</p>
                   </blockquote>
-                                </div>
+                                    <p>This paper deals with the many uncertainties that we face when releasing models to production. Will the predictions be consistent? Will the model crash for some inputs? We can see there are at least two types of uncertainties: the first one is concerned with overfitting and the model's generalization capabilities while the second is linked to stability of the running code (numerical errors such as NaNs could make the code crash). While the former issue of overfitting is vastly explored in the litterature, the latter is often overlooked. In this work, authors take inspiration from code <i>fuzzing</i> where an algorithm is aggresively testing all possibilities of a code to find ways to make it crash (imagine testing all if/else branch combinations for instance). They define what <i>fuzzing</i> would mean for the activations of a neural network and show in some toy experiments that their algorithm is able to find numerical errors and inconsistencies on a trained network.</p>
+              </div>
               <hr>
 
               
@@ -101,8 +101,8 @@
                   <h6 class="w3-text">
                                                     John Miller - Off the convex path
                   </h6>
-                  <p>Over the last year, the landscape of recurrent neural networks has started to shift, particularly after the introduction of the <a href=https://arxiv.org/abs/1706.03762>Transformer</a> and of <a href=https://arxiv.org/abs/1705.03122>convolutional sequence-to-sequence models</a>. This blog post comes as an introduction to these changes. It explains why complex feed-forward models are gaining more and more attraction for tasks usually handled by recurrent models. The post also serves as an opening for the paper published by the author: <a href=https://arxiv.org/abs/1805.10369>When Recurrent Models Don't Need to be Recurrent</a>.</p>
-                                </div>
+                                    <p>Over the last year, the landscape of recurrent neural networks has started to shift, particularly after the introduction of the <a href=https://arxiv.org/abs/1706.03762>Transformer</a> and of <a href=https://arxiv.org/abs/1705.03122>convolutional sequence-to-sequence models</a>. This blog post comes as an introduction to these changes. It explains why complex feed-forward models are gaining more and more attraction for tasks usually handled by recurrent models. The post also serves as an opening for the paper published by the author: <a href=https://arxiv.org/abs/1805.10369>When Recurrent Models Don't Need to be Recurrent</a>.</p>
+              </div>
               <hr>
 
               
@@ -116,11 +116,11 @@
                   <h6 class="w3-text">
                                                     Tencent Inc., Hong Kong Baptist University
                   </h6>
-                  <p>This work has received a lot of attention in the community lately. The reason is quite simple: they obtained close-to state-of-the-art performance on ImageNet in less than 10 minutes. Less than 7 minutes even! A year ago, the fastest we could do was <a ref=https://arxiv.org/abs/1706.02677>in about an hour</a>. The paper proposes multiple innovations that made this possible. In particular, they were able to scale up the batch size and yet achieve consistent training (from a batch size of 8,192 in the previous work to 64,000 here). At the same time, the number of GPUs also scaled up... from 256 to 1,024 and even 2,048!</p>
                                     <blockquote class="blockquote">
                      <p class="quote">Our training system can achieve 75.8% top-1 test accuracy [on ImageNet] in only 6.6 minutes using 2048 Tesla P40 GPUs. When training AlexNet with 95 epochs, our system can achieve 58.7% top-1 test accuracy within 4 minutes, which also outperforms all other existing systems.</p>
                   </blockquote>
-                                </div>
+                                    <p>This work has received a lot of attention in the community lately. The reason is quite simple: they obtained close-to state-of-the-art performance on ImageNet in less than 10 minutes. Less than 7 minutes even! A year ago, the fastest we could do was <a ref=https://arxiv.org/abs/1706.02677>in about an hour</a>. The paper proposes multiple innovations that made this possible. In particular, they were able to scale up the batch size and yet achieve consistent training (from a batch size of 8,192 in the previous work to 64,000 here). At the same time, the number of GPUs also scaled up... from 256 to 1,024 and even 2,048!</p>
+              </div>
               <hr>
 
                           
@@ -146,11 +146,11 @@
                   <h6 class="w3-text">
                                                     SenseTime Research, University of California, Nanyang Technological University
                   </h6>
-                  <p>Authors explore the influence of noise in terms of labels for face recognition performance. Many of the large-scale face datasets publicly available are well-known for being quite noisy. In this work, they release a cleaned version of the MegaFace and MS-Celeb-1M dataset and share their insights.</p>
                                     <blockquote class="blockquote">
                      <p class="quote">While a variety of architectures and loss functions have been devised, we still have a limited understanding of the source and consequence of label noise inherent in existing datasets. We make the following contributions: [...] with the original datasets and cleaned subsets, we profile and analyze label noise properties of MegaFace and MS-Celeb-1M. <b>We show that a few orders more samples are needed to achieve the same accuracy yielded by a clean subset.</b> [...]</p>
                   </blockquote>
-                                </div>
+                                    <p>Authors explore the influence of noise in terms of labels for face recognition performance. Many of the large-scale face datasets publicly available are well-known for being quite noisy. In this work, they release a cleaned version of the MegaFace and MS-Celeb-1M dataset and share their insights.</p>
+              </div>
               <hr>
 
                           
@@ -174,11 +174,11 @@
                   <h6 class="w3-text">
                                                     Google Brain, Deep Mind
                   </h6>
-                  <p></p>
                                     <blockquote class="blockquote">
                      <p class="quote">We propose noise contrastive priors (NCPs). The key idea is to train the model to output high uncertainty for data points outside of the training distribution. NCPs do so using an input prior, which adds noise to the inputs of the current mini batch, and an output prior, which is a wide distribution given these inputs. NCPs are compatible with any model that represents predictive uncertainty, are easy to scale, and yield reliable uncertainty estimates throughout training.</p>
                   </blockquote>
-                                </div>
+                                    <p></p>
+              </div>
               <hr>
 
               
@@ -192,11 +192,11 @@
                   <h6 class="w3-text">
                                                     University of Oxford
                   </h6>
-                  <p></p>
                                     <blockquote class="blockquote">
                      <p class="quote">[...] By applying a modified version of the coding theorem from algorithmic information theory and by performing extensive empirical analysis of random neural networks, we argue that <b>the parameter function map of deep neural networks is exponentially biased towards functions with lower descriptional complexity</b>. We show explicitly for supervised learning of Boolean functions that the intrinsic simplicity bias of deep neural networks means that they generalize significantly better than an unbiased learning algorithm does.</p>
                   </blockquote>
-                                </div>
+                                    <p></p>
+              </div>
               <hr>
 
                           
@@ -225,8 +225,8 @@
                               </span>
                                                     Dylan Djian
                   </h6>
-                  <p>The author explains how he went to reproduce the results of AlphaGo Zero. I found his explanations very clear and he made both the code and the concepts of AlphaGo Zero easier to grasp. A fair amount of engineering went into this project (with the use of async processes, databases, etc.) which makes it all the more interesting. </p>
-                                </div>
+                                    <p>The author explains how he went to reproduce the results of AlphaGo Zero. I found his explanations very clear and he made both the code and the concepts of AlphaGo Zero easier to grasp. A fair amount of engineering went into this project (with the use of async processes, databases, etc.) which makes it all the more interesting. </p>
+              </div>
               <hr>
 
               
@@ -242,8 +242,8 @@
                   <h6 class="w3-text">
                                                     OpenAI
                   </h6>
-                  <p>This article explains how researchers from OpenAI managed to train a physical robotic hand to manipulate objects such as a cube. Handling a hand remains a tough problem in robotics. Here, all the training was done in a simulated environment and absolutely no data coming from real-world experimences has been used. </p>
-                                </div>
+                                    <p>This article explains how researchers from OpenAI managed to train a physical robotic hand to manipulate objects such as a cube. Handling a hand remains a tough problem in robotics. Here, all the training was done in a simulated environment and absolutely no data coming from real-world experimences has been used. </p>
+              </div>
               <hr>
 
                           
@@ -267,11 +267,11 @@
                   <h6 class="w3-text">
                                                     University of California, California NanoSystems Institute
                   </h6>
-                  <p>Researchers built a physical optical system mimicking an artificial neural network that is able to perform classification based on light sources. A quite promising concept although commentators pointed out that this setup doesn't incorporate any non-linearities... yet?</p>
                                     <blockquote class="blockquote">
                      <p class="quote">. We introduce a physical mechanism to perform machine learning by demonstrating an all-optical Diffractive Deep Neural Network (D2NN) architecture that can implement various functions following the deep learning-based design of passive diffractive layers that work collectively. [...] Our all-optical deep learning framework can perform, at the speed of light [...]</p>
                   </blockquote>
-                                </div>
+                                    <p>Researchers built a physical optical system mimicking an artificial neural network that is able to perform classification based on light sources. A quite promising concept although commentators pointed out that this setup doesn't incorporate any non-linearities... yet?</p>
+              </div>
               <hr>
 
                           
@@ -293,8 +293,8 @@
                   <h6 class="w3-text">
                                                     
                   </h6>
-                  <p></p>
-                                </div>
+                                    <p></p>
+              </div>
               <hr>
 
                           

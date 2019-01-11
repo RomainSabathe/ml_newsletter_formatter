@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+<title>ML newsletter</title>
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+	html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+
+	.category{
+	  padding: 20px;
+	  margin: auto;
+	  background: #F5F5F5;
+	  margin-bottom: 25px;
+	  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+	  transition: all 0.3s; 
+	  border-radius: 3px;
+	}
+
+    .category-title{
+      margin-bottom: 30px;
+    }
+
+	.category-logo{
+	  margin-right: 10px;
+	}
+
+	.article-logo{
+	  margin-right: 3px;
+	}
+
+    .recommended{
+	  margin-right: 2px;
+    }
+
+    .quote{
+      font-size: 11px;
+    }
+</style>
+
+
+<body>
+
+<!-- Page Container -->
+<div class="container" style="max-width:1400px;">
+
+  
+  <!-- The Grid -->
+  <div class="row">
+  
+      <!-- Dummy container to force centering. Yes. I'm a front-end noob. -->
+      <div class="col-sm-2"></div>
+
+      <div class="col-sm-8">
+
+          
+          <!-- Category block -->
+          <div class="category">
+              <h2 class="category-title">
+                  <img src="https://image.flaticon.com/icons/png/512/653/653500.png"
+                       class="fa fa-fw category-logo">General Machine Learning
+              </h2>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/60/60736.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://www.jgoertler.com/visual-exploration-gaussian-processes/">A Visual Exploration of Gaussian Processes</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                        <span class="badge">
+                                  Recommended
+                              </span>
+                                                    Jochen Görtler, Rebecca Kehlbeck, Oliver Deussen - University of Konstanz
+                  </h6>
+                                    <blockquote class="blockquote">
+                     <p class="quote">How to turn a collection of small building blocks into a versatile tool for solving regression problems.</p>
+                  </blockquote>
+                                    <p>We are lucky enough this week to have two articles focusing on Gaussian processes! This first one is currently under review to become a <a href=https://distill.pub/>Distill</a> article, so you can expect nice interactive visualisations. There are no specific pre-requisites to read this post. It presents the fundamentals of Gaussian processes, with an emphasis on what is means for conditionals and marginals of Gaussians to be Gaussian; as well as the importance of the kernel for modelling. In particular I really enjoyed being able to modify the kernel on the fly and observe what a resulting sampled function looked like. It really helps getting more familiar with Gaussian processes.</p>
+              </div>
+              <hr>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/60/60736.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://peterroelants.github.io/posts/gaussian-process-tutorial/">Understanding Gaussian processes</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                        <span class="badge">
+                                  Recommended
+                              </span>
+                                                    Peter Roelants
+                  </h6>
+                                    <blockquote class="blockquote">
+                     <p class="quote">Understanding Gaussian processes and implement a GP in Python.</p>
+                  </blockquote>
+                                    <p>This second article on GPs is actually a series of article that goes into much more detail compared to the previous one. The fundamentals of GPs are explained as well, but now we also get to see how to implement a Gaussian process. First it is all with numpy and toy examples and then in the <a href=https://peterroelants.github.io/posts/gaussian-process-kernel-fitting/>second post</a> we use Tensorflow probability on a real-world example. It turns out to be extremely informative as we learn how to effectively combine kernels to model some properties of the data (like periodicity, continuity, global trend) and how to use Tensorflow probability to estimate the parameters of the different kernels. The <a href=https://peterroelants.github.io/posts/gaussian-process-kernels/>third post</a> is dedicated to getting a more intuitive understanding of the kernels and their influence. Overall the three articles provide a very instructive and coherent material to get started with Gaussian processes both theoretically and in practice.</p>
+              </div>
+              <hr>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/25/25231.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://github.com/tensorflow/privacy">Tensorflow Privacy</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    tensorflow - Galen Andrew, Steve Chien, Nicolas Papernot
+                  </h6>
+                                    <blockquote class="blockquote">
+                     <p class="quote">This repository contains the source code for TensorFlow Privacy, a Python library that includes implementations of TensorFlow optimizers for training machine learning models with differential privacy. The library comes with tutorials and analysis tools for computing the privacy guarantees provided.</p>
+                  </blockquote>
+                                    <p></p>
+              </div>
+              <hr>
+
+                          
+          </div>
+          
+          <!-- Category block -->
+          <div class="category">
+              <h2 class="category-title">
+                  <img src="https://image.flaticon.com/icons/png/512/149/149243.png"
+                       class="fa fa-fw category-logo">Deep Learning
+              </h2>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/155/155292.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://arxiv.org/abs/1812.07997">[ArXiv-IEEE] Explanatory Graphs for CNNs</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    Shanghai Jiao Tong University, University of California
+                  </h6>
+                                    <blockquote class="blockquote">
+                     <p class="quote">This paper introduces a graphical model, namely an explanatory graph, which reveals the knowledge hierarchy hidden inside conv-layers of a pre-trained CNN. Each filter in a conv-layer of a CNN for object classification usually represents a mixture of object parts. We develop a simple yet effective method to disentangle object-part pattern components from each filter. We construct an explanatory graph to organize the mined part patterns, where a node represents a part pattern, and each edge encodes co-activation relationships and spatial relationships between patterns. More crucially, given a pre-trained CNN, the explanatory graph is learned without a need of annotating object parts. [...]</p>
+                  </blockquote>
+                                    <p>See also an earlier work published at AAAI 2018 by the same authors <a href=https://aaai.org/ocs/index.php/AAAI/AAAI18/paper/download/17354/16757>here</a>.</p>
+              </div>
+              <hr>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/25/25231.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://github.com/lexfridman/mit-deep-learning">MIT Deep Learning</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    Lex Fridman (MIT)
+                  </h6>
+                                    <blockquote class="blockquote">
+                     <p class="quote">Tutorials, assignments, and competitions for MIT Deep Learning related courses.</p>
+                  </blockquote>
+                                    <p>There's only a single tutorial in this repo at the moment (on a <a href=https://github.com/lexfridman/mit-deep-learning/blob/master/tutorial_driving_scene_segmentation/tutorial_driving_scene_segmentation.ipynb>driving scene segmentation</a>), but more will be added in the future.</p>
+              </div>
+              <hr>
+
+                          
+          </div>
+          
+          <!-- Category block -->
+          <div class="category">
+              <h2 class="category-title">
+                  <img src="https://image.flaticon.com/icons/png/512/722/722174.png"
+                       class="fa fa-fw category-logo">Computer Vision
+              </h2>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/60/60736.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://lilianweng.github.io/lil-log/2018/12/27/object-detection-part-4.html">Object Detection: Fast Detection Models</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    Lilian Weng
+                  </h6>
+                                    <p>This blog post is actually the fourth in a series of posts dedicated to object detection. The <a href=https://lilianweng.github.io/lil-log/2017/12/31/object-recognition-for-dummies-part-3.html>last</a> one was posted more than a year ago so I was very excited to read this new post. This time Lilian Weng, who we already mentioned for a great introductory post on <a href=https://lilianweng.github.io/lil-log/2018/10/13/flow-based-deep-generative-models.html>flow-based generative models</a>, summarises a number of papers that introduced state-of-art fast detection models. These models are 'fast' in the sense that contrary to standard detection models they don't explicitly go through a phase of region proposal. YOLO (v1, v2, v3 and 9000) are introduced as well as SSD and RetinaNet. For all of them, we get a description of how they work, what loss function they use and what architecture it is based on.</p>
+              </div>
+              <hr>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/155/155292.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://arxiv.org/abs/1901.01499">[ArXiv] Understanding the (un)interpretability of natural image distributions using generative models</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    University of Maryland
+                  </h6>
+                                    <blockquote class="blockquote">
+                     <p class="quote">[...] Standard density estimation methods have historically lacked the power to model complex and high-dimensional image distributions. [...] We describe methods to extract explicit probability density estimates from GANs, and explore the properties of these image density functions. [...] However, we also show that density functions of natural images are difficult to interpret and thus limited in use. We study reasons for this lack of interpretability, and show that we can get interpretability back by doing density estimation on latent representations of images.</p>
+                  </blockquote>
+                                    <p></p>
+              </div>
+              <hr>
+
+                          
+          </div>
+          
+          <!-- Category block -->
+          <div class="category">
+              <h2 class="category-title">
+                  <img src="https://image.flaticon.com/icons/png/512/179/179121.png"
+                       class="fa fa-fw category-logo">Optimisation & Learning Theory
+              </h2>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/155/155292.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://arxiv.org/abs/1901.00279">[ArXiv] Elimination of All Bad Local Minima in Deep Learning</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    Kawaguchi, Pack Kaelbling (MIT)
+                  </h6>
+                                    <blockquote class="blockquote">
+                     <p class="quote">In this paper, we theoretically prove that we can eliminate all suboptimal local minima by adding one neuron per output unit to any deep neural network, for multi-class classification, binary classification, and regression with an arbitrary loss function. At every local minimum of any deep neural network with added neurons, the set of parameters of the original neural network (without added neurons) is guaranteed to be a global minimum of the original neural network. [...]</p>
+                  </blockquote>
+                                    <p>If you are interested in this topic, we can also read this paper published at NeurIPS 2018: <a href=https://papers.nips.cc/paper/7688-adding-one-neuron-can-eliminate-all-bad-local-minima >Adding One Neuron Can Eliminate All Bad Local Minima</a>.</p>
+              </div>
+              <hr>
+
+                          
+          </div>
+          
+          <!-- Category block -->
+          <div class="category">
+              <h2 class="category-title">
+                  <img src="https://imageog.flaticon.com/icons/png/512/248/248114.png"
+                       class="fa fa-fw category-logo">Production & Engineering
+              </h2>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/60/60736.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="http://typingducks.com/blog/reproducible_research_with_containers/">Reproducible research with containers</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    Seyoung Park - Typing Ducks
+                  </h6>
+                                    <blockquote class="blockquote">
+                     <p class="quote">Reproduction is an important part of science. Use a container like Docker or Singularity which contains everything about your research: code, data, libraries and software dependencies. With containers reproducing the environment now takes a matter of minutes.</p>
+                  </blockquote>
+                                    <p>If you have been living under a rock and are not sure what Docker is or what it can do for you, then this article will be helpful! The author explains the difference between virtual machines, containers and Python virtual environments. He also shows how Singularity can be used with Docker to produce reproducible experiments on a cluster.</p>
+              </div>
+              <hr>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/60/60736.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="http://nlp.seas.harvard.edu/NamedTensor?fbclid=IwAR2FusFxf-c24whTSiF8B3R2EKz_-zRfF32jpU8D-F5G7rreEn9JiCfMl48">Tensor Considered Harmful</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    Alexander Rush - Harvard NLP
+                  </h6>
+                                    <blockquote class="blockquote">
+                     <p class="quote">Despite its ubiquity in deep learning, Tensor is broken. It forces bad habits such as exposing private dimensions, broadcasting based on absolute position, and keeping type information in documentation. This post presents a proof-of-concept of an alternative approach, named tensors, with named dimensions. This change eliminates the need for indexing, dim arguments, einsum- style unpacking, and documentation-based coding. The prototype PyTorch library accompanying this blog post is available as namedtensor.</p>
+                  </blockquote>
+                                    <p>If you have ever written some deep learning code with a lower-level interface like Tensorflow and Pytorch, you know the struggle of having to comment many lines with the expected shape of the tensor you are manipulating. If you have ever read some deep learning code that is not commented enough, you know the feeling of not knowing what exactly is achieved when doing <code>tf.math.reduce_mean(tensor, 2) </code>. A few partial solutions have started to grow recently (I've personally became hooked to <a href=https://github.com/arogozhnikov/einops>einops</a> and use it extensively). These solutions are partial because they build on top of the existing tensor objects for Tensorflow or Pytorch. In this post, Alexander Rush proposes to re-think tensors by enforcing an explicit <i>meaning</i> to their dimensions; basically by naming them. The result is a prototype Pytorch package that lets you do things like <code>image = torch.randn(dict(height=32, width=32, channel=3)).mean('width')</code> to average the pixel values of an image on its width axis.<br />Note that the author just published yesterday a <a href=http://nlp.seas.harvard.edu/NamedTensor2>follow-up</a> of his post. This time the emphasis is on how such a new tensor structure could be used to improve deep learning code.</p>
+              </div>
+              <hr>
+
+                          
+          </div>
+                </div>
+      
+  <!-- Dummy container to force centering. Yes. I'm a front-end noob. -->
+  <div class="col-sm-2"></div>
+
+  <!-- End Grid -->
+  </div>
+
+    
+  <!-- End Page Container -->
+</div>
+
+</body>
+</html>

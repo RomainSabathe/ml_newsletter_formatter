@@ -83,11 +83,11 @@
                   <h6 class="w3-text">
                                                     Cédric Colas (Inria)
                   </h6>
-                  <p>The author explores the question of statistical difference between algorithms performance and how can we thoroughly estimate if an algorithm is superior to another.  He first offers a detailed reminder of the fundation of statistical tests (null hypothesis, p-value, t-test etc.). He then studies two tests commonly used (namely the Welch's t-test and the bootstraped confidence intervals) and, using examples, gives advises as to when to use one or the other. The examples he uses are quite interesting,...and surprising! </p>
                                     <blockquote class="blockquote">
                      <p class="quote">Perhaps the most surprising thing is this: running the same algorithm 10 times with the same hyper-parameters using 10 different random seeds and averaging performance over two splits of 5 seeds can lead to learning curves seemingly coming from different statistical distributions.</p>
                   </blockquote>
-                                </div>
+                                    <p>The author explores the question of statistical difference between algorithms performance and how can we thoroughly estimate if an algorithm is superior to another.  He first offers a detailed reminder of the fundation of statistical tests (null hypothesis, p-value, t-test etc.). He then studies two tests commonly used (namely the Welch's t-test and the bootstraped confidence intervals) and, using examples, gives advises as to when to use one or the other. The examples he uses are quite interesting,...and surprising! </p>
+              </div>
               <hr>
 
                           
@@ -113,8 +113,8 @@
                   <h6 class="w3-text">
                                                     Uber AI Labs
                   </h6>
-                  <p>Researchers train a CNN to take as input a black image with one single white pixel and to output the coordinate of the pixel. They observe that the model couldn't properly solve this task (the test performance was always below a significant threshold). The reverse problem (from pixel coordinate to generating an image) couldn't be solved either. They propose a fix called CoordConv which simply consists in adding two feature maps encoding the (x, y) location of the pixels. They argue that, although this breaks CNN's equivariance and therefore appear counterintuitive, the number of added parameters remains low. It's just a few added kernels for these 2 new feature maps and the network might as well decide to set their corresponding weights to zero. They test their method on common deep-learning problems. They observe improvements in object detection and reinforcement learning (where an agent has to move in a maze for instance). Interestingly, they observe <i>microscopic</i> improvement on image classification which is reassuring as CoordConv did not degrade the performance.<br />In any case, I recommend watching the associated video <a href=https://www.youtube.com/watch?time_continue=5&v=8yFQc6elePA>here</a>. They do a great job at explaining their work and it's even fun to watch.</p>
-                                </div>
+                                    <p>Researchers train a CNN to take as input a black image with one single white pixel and to output the coordinate of the pixel. They observe that the model couldn't properly solve this task (the test performance was always below a significant threshold). The reverse problem (from pixel coordinate to generating an image) couldn't be solved either. They propose a fix called CoordConv which simply consists in adding two feature maps encoding the (x, y) location of the pixels. They argue that, although this breaks CNN's equivariance and therefore appear counterintuitive, the number of added parameters remains low. It's just a few added kernels for these 2 new feature maps and the network might as well decide to set their corresponding weights to zero. They test their method on common deep-learning problems. They observe improvements in object detection and reinforcement learning (where an agent has to move in a maze for instance). Interestingly, they observe <i>microscopic</i> improvement on image classification which is reassuring as CoordConv did not degrade the performance.<br />In any case, I recommend watching the associated video <a href=https://www.youtube.com/watch?time_continue=5&v=8yFQc6elePA>here</a>. They do a great job at explaining their work and it's even fun to watch.</p>
+              </div>
               <hr>
 
                           
@@ -138,11 +138,11 @@
                   <h6 class="w3-text">
                                                     Onfido Research
                   </h6>
-                  <p>Our first published paper ever! This fine work helped us achieve extremely accurate bounding boxes for our document-localization engine. Congrats to those involved!</p>
                                     <blockquote class="blockquote">
                      <p class="quote">Modern Convolutional Neural Networks (CNN) are extremely powerful on a range of computer vision tasks. However, their performance may degrade when the data is characterised by large intra-class variability caused by spatial transformations. The Spatial Transformer Network (STN) is currently the method of choice for providing CNNs the ability to remove those transformations and improve performance in an end-to-end learning framework. In this paper, we propose Densely Fused Spatial Transformer Network (DeSTNet), which, to the best of our knowledge, is the first dense fusion pattern for combining multiple STNs. Specifically, we show how changing the connectivity pattern of multiple STNs from sequential to dense leads to more powerful alignment modules. Extensive experiments on three benchmarks namely, MNIST, GTSRB, and IDocDB show that the proposed technique outperforms related state-of-the-art methods (i.e., STNs and CSTNs) both in terms of accuracy and robustness.</p>
                   </blockquote>
-                                </div>
+                                    <p>Our first published paper ever! This fine work helped us achieve extremely accurate bounding boxes for our document-localization engine. Congrats to those involved!</p>
+              </div>
               <hr>
 
               
@@ -156,8 +156,8 @@
                   <h6 class="w3-text">
                                                     VGG, Oxford
                   </h6>
-                  <p>First blog post from the VGG group. Here they are tackling the problem of: how can a deep network create a visual representation of its surrounding, and how it can it remember it? The approach followed here seems to map each coordinate of the world with a feature vector given by the network. There's a 12 minutes spotlight talk at CVPR 2018 <a href=https://youtu.be/HAOCaqvcf8w?t=4m36s>here</a>.</p>
-                                </div>
+                                    <p>First blog post from the VGG group. Here they are tackling the problem of: how can a deep network create a visual representation of its surrounding, and how it can it remember it? The approach followed here seems to map each coordinate of the world with a feature vector given by the network. There's a 12 minutes spotlight talk at CVPR 2018 <a href=https://youtu.be/HAOCaqvcf8w?t=4m36s>here</a>.</p>
+              </div>
               <hr>
 
               
@@ -171,11 +171,11 @@
                   <h6 class="w3-text">
                                                     Facebook Research
                   </h6>
-                  <p>Researchers managed to accurately track keypoints on hands of people performing all sorts of activities (playing music, manipulating objects). The video they present is quite impressive. I hope this work will open a few doors (for enhancing VR experience, or to create a database of hand motion for robots).</p>
                                     <blockquote class="blockquote">
                      <p class="quote">Optical marker-based motion capture is the dominant way for obtaining high-fidelity human body animation for special effects, movies, and video games. However, motion capture has seen limited application to the human hand due to the difficulty of automatically identifying (or labeling) identical markers on self-similar fingers. We propose a technique that frames the labeling problem as a keypoint regression problem conducive to a solution using convolutional neural networks. We demonstrate robustness of our labeling solution to occlusion, ghost markers, hand shape, and even motions involving two hands or handheld objects.</p>
                   </blockquote>
-                                </div>
+                                    <p>Researchers managed to accurately track keypoints on hands of people performing all sorts of activities (playing music, manipulating objects). The video they present is quite impressive. I hope this work will open a few doors (for enhancing VR experience, or to create a database of hand motion for robots).</p>
+              </div>
               <hr>
 
               
@@ -191,11 +191,11 @@
                   <h6 class="w3-text">
                                                     OpenAI
                   </h6>
-                  <p>A statement that GANs and VAEs are not the only models to propose solid image generation capabilities! Here they explore a new type of <i>flow-based generative model</i> called Glow. From my limited understanding, flow-based generative models have some of the advantages of VAEs (where the input distribution is continuously mapped on a latent distribution) but at the same time offer exact latent-variable inference. This allows exact inference and therefore probably faster trainings. In particular, in this work, they trained their Glow model on an unlabeled set of face images. Once it has been trained, they were able to find the latent directions corresponding to expected characteristics of the dataset (age, sex, smile...) allowing them to move along those directions even though they never explicitely appeared in training! Admittedly the main contribution of this paper is an architecture improvement over an older flow-based generative model called <i>RealNVP</i>. In particular, authors introduce reversible 1x1 convolutions.</p>
                                     <blockquote class="blockquote">
                      <p class="quote">Glow is a type of reversible generative model, also called flow-based generative model, and is an extension of the NICE and RealNVP techniques. Flow-based generative models have so far gained little attention in the research community compared to GANs and VAEs.</p>
                   </blockquote>
-                                </div>
+                                    <p>A statement that GANs and VAEs are not the only models to propose solid image generation capabilities! Here they explore a new type of <i>flow-based generative model</i> called Glow. From my limited understanding, flow-based generative models have some of the advantages of VAEs (where the input distribution is continuously mapped on a latent distribution) but at the same time offer exact latent-variable inference. This allows exact inference and therefore probably faster trainings. In particular, in this work, they trained their Glow model on an unlabeled set of face images. Once it has been trained, they were able to find the latent directions corresponding to expected characteristics of the dataset (age, sex, smile...) allowing them to move along those directions even though they never explicitely appeared in training! Admittedly the main contribution of this paper is an architecture improvement over an older flow-based generative model called <i>RealNVP</i>. In particular, authors introduce reversible 1x1 convolutions.</p>
+              </div>
               <hr>
 
                           
@@ -222,8 +222,8 @@
                               </span>
                                                     Princeton University (by Sanjeev Arora)
                   </h6>
-                  <p>That is a very very cool resource for anyone interested in theoretical understanding of deep learning. Not only do the slides cover a lot of ground (I'm looking forward to the release of the video) but the webpage also provides tons of additional resources categorised by theme (optim, generalization, role of depth)... Papers, blogs and conference tutorials are listed.</p>
-                                </div>
+                                    <p>That is a very very cool resource for anyone interested in theoretical understanding of deep learning. Not only do the slides cover a lot of ground (I'm looking forward to the release of the video) but the webpage also provides tons of additional resources categorised by theme (optim, generalization, role of depth)... Papers, blogs and conference tutorials are listed.</p>
+              </div>
               <hr>
 
                           
@@ -250,11 +250,11 @@
                               </span>
                                                     MPI Tübingen, ETH Zurich, Microsoft Research
                   </h6>
-                  <p>This work has been shared a lot, notably because authors managed to generate high-resolution images without using any 'progressive growing' trick (a la Nvidia), thanks to theoretical considerations, .</p>
                                     <blockquote class="blockquote">
                      <p class="quote">Our analysis shows that GAN training with instance noise or zero-centered gradient penalties converges. On the other hand, we show that Wasserstein-GANs and WGAN-GP with a finite number of discriminator updates per generator update do not always converge to the equilibrium point. We discuss these results, <b>leading us to a new explanation for the stability problems of GAN training</b>. Based on our analysis, we extend our convergence results to more general GANs and prove local convergence for simplified gradient penalties even if the generator and data distributions lie on lower dimensional manifolds. We find these penalties to work well in practice and <b>use them to learn high-resolution generative image models for a variety of datasets with little hyperparameter tuning</b>.</p>
                   </blockquote>
-                                </div>
+                                    <p>This work has been shared a lot, notably because authors managed to generate high-resolution images without using any 'progressive growing' trick (a la Nvidia), thanks to theoretical considerations, .</p>
+              </div>
               <hr>
 
               
@@ -268,11 +268,11 @@
                   <h6 class="w3-text">
                                                     MIT, University of California, Berkeley
                   </h6>
-                  <p>In a white-box setting, a popular defense strategy is to use <i>gradient masking</i> where the model learns to not provide useful gradient information, hence making useless any attack relying on the latter gradients. Authors observe that this defense strategy is so popular that it was used 7 times at ICLR 2018. Yet, by carefully analysing each of them, authors managed to overcome them and by doing so proved that gradient masking is not a failsafe defense yet.</p>
                                     <blockquote class="blockquote">
                      <p class="quote">We identify obfuscated gradients, a kind of gradient masking, as a phenomenon that leads to a false sense of security in defenses against adversarial examples. While defenses that cause obfuscated gradients appear to defeat iterative optimization-based attacks, we find defenses relying on this effect can be circumvented. We describe characteristic behaviors of defenses exhibiting the effect, and for each of the three types of obfuscated gradients we discover, we develop attack techniques to overcome it.</p>
                   </blockquote>
-                                </div>
+                                    <p>In a white-box setting, a popular defense strategy is to use <i>gradient masking</i> where the model learns to not provide useful gradient information, hence making useless any attack relying on the latter gradients. Authors observe that this defense strategy is so popular that it was used 7 times at ICLR 2018. Yet, by carefully analysing each of them, authors managed to overcome them and by doing so proved that gradient masking is not a failsafe defense yet.</p>
+              </div>
               <hr>
 
                           
@@ -296,11 +296,11 @@
                   <h6 class="w3-text">
                                                     University of California, Berkeley
                   </h6>
-                  <p>Seven weeks ago, we were recommanding <a href=http://bair.berkeley.edu/blog/2018/05/17/delayed-impact/>this blog post</a> from BAIR as a worthy read. This paper is the original material the blog post was based on, and it goes into much, much more details.</p>
                                     <blockquote class="blockquote">
                      <p class="quote">We study how static fairness criteria interact with temporal indicators of well-being, such as long-term improvement, stagnation, and decline in a variable of interest. We demonstrate that even in a one-step feedback model, common fairness criteria in general do not promote improvement over time, and may in fact cause harm in cases where an unconstrained objective would not. </p>
                   </blockquote>
-                                </div>
+                                    <p>Seven weeks ago, we were recommanding <a href=http://bair.berkeley.edu/blog/2018/05/17/delayed-impact/>this blog post</a> from BAIR as a worthy read. This paper is the original material the blog post was based on, and it goes into much, much more details.</p>
+              </div>
               <hr>
 
                           
@@ -324,8 +324,8 @@
                   <h6 class="w3-text">
                                                     Benjamin Recht, University of California, Berkeley
                   </h6>
-                  <p>A survey on reinforcement learning with a focus on continuous control applications.</p>
-                                </div>
+                                    <p>A survey on reinforcement learning with a focus on continuous control applications.</p>
+              </div>
               <hr>
 
                           
@@ -349,11 +349,11 @@
                   <h6 class="w3-text">
                                                     RISELab, UC Berkeley
                   </h6>
-                  <p>Some weeks ago, a library built on top on Pandas called <i>Pandas on Ray</i> was released. The novelty was the ability to distribute the computation performed on the dataframe. In this post, authors draw some first observations based on people's feedback. They are also announcing that future versions of Pandas on Ray will use both the benefit of eager and lazy execution.</p>
                                     <blockquote class="blockquote">
                      <p class="quote">[After asking Pandas to diggest a CSV of 370 mb] If you're running this notebook for yourself, you may have noticed that it completes almost instantly. In the background, the file is still being read, but we return the prompt to you as soon as we have deployed all of the tasks to read different parts of the file.</p>
                   </blockquote>
-                                </div>
+                                    <p>Some weeks ago, a library built on top on Pandas called <i>Pandas on Ray</i> was released. The novelty was the ability to distribute the computation performed on the dataframe. In this post, authors draw some first observations based on people's feedback. They are also announcing that future versions of Pandas on Ray will use both the benefit of eager and lazy execution.</p>
+              </div>
               <hr>
 
                           
@@ -377,8 +377,8 @@
                   <h6 class="w3-text">
                                                     Tim Dutton
                   </h6>
-                  <p><i>Politics + AI</i> is a new Medium-based 'newspaper' where authors will publish articles dealing with AI-related policies. Their introduction can be read <a href=https://medium.com/politics-ai/welcome-to-politics-ai-bdbd2dda4b60>here</a>. <i>An overview of national AI strategies</i> is their first proper article. They detail the official plans and intentions of major nations to develop AI efforts.</p>
-                                </div>
+                                    <p><i>Politics + AI</i> is a new Medium-based 'newspaper' where authors will publish articles dealing with AI-related policies. Their introduction can be read <a href=https://medium.com/politics-ai/welcome-to-politics-ai-bdbd2dda4b60>here</a>. <i>An overview of national AI strategies</i> is their first proper article. They detail the official plans and intentions of major nations to develop AI efforts.</p>
+              </div>
               <hr>
 
               
@@ -392,8 +392,8 @@
                   <h6 class="w3-text">
                                                     Atsushi Sakai
                   </h6>
-                  <p>As the title indicates, it's a repo with tons of sample  code for major robotic algorithms for localization, path planning, mapping and others. The author even provided an animation showing the result of the algorithm for each of them! Massive amount of work here.</p>
-                                </div>
+                                    <p>As the title indicates, it's a repo with tons of sample  code for major robotic algorithms for localization, path planning, mapping and others. The author even provided an animation showing the result of the algorithm for each of them! Massive amount of work here.</p>
+              </div>
               <hr>
 
               
@@ -407,8 +407,8 @@
                   <h6 class="w3-text">
                                                     Zachary C. Lipton & Jacob Steinhardt
                   </h6>
-                  <p>This article (or paper) presented for the ICML Machine Learning Debates workshop explores some of the critics that are often being made to published papers and reviewers of the ML community over the last few years. Those critics typically condemn unhealthy research in the form of <i>mathiness</i> (over-complicating equations for the sake of looking convincing), misuse of language, over-speculation to the detriment of proper explanation or unability to precisely identify the source of gain from a proposed method (is it due to the architecture, or to a better hyperparameter tuning?). In this article, authors cite a variety of works (with big names), some of them being examples of good practices and others of bad practices. As demonstration of goodwill, they often include themselves in this latter category.</p>
-                                </div>
+                                    <p>This article (or paper) presented for the ICML Machine Learning Debates workshop explores some of the critics that are often being made to published papers and reviewers of the ML community over the last few years. Those critics typically condemn unhealthy research in the form of <i>mathiness</i> (over-complicating equations for the sake of looking convincing), misuse of language, over-speculation to the detriment of proper explanation or unability to precisely identify the source of gain from a proposed method (is it due to the architecture, or to a better hyperparameter tuning?). In this article, authors cite a variety of works (with big names), some of them being examples of good practices and others of bad practices. As demonstration of goodwill, they often include themselves in this latter category.</p>
+              </div>
               <hr>
 
                           
