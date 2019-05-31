@@ -45,7 +45,7 @@
     }
 
     .quote{
-      font-size: 11px;
+      font-size: 12px;
     }
 </style>
 
@@ -53,7 +53,7 @@
 <body>
 
 <!-- Page Container -->
-<div class="container" style="max-width:1400px;">
+<div class="container-fluid">
 
   {% if intro_text %}
   <div class="row" style="margin-bottom:30px; margin-top:30px;">
@@ -68,10 +68,7 @@
   <!-- The Grid -->
   <div class="row">
   
-      <!-- Dummy container to force centering. Yes. I'm a front-end noob. -->
-      <div class="col-sm-2"></div>
-
-      <div class="col-sm-8">
+      <div class="col-md-6 col-md-offset-3">
 
           {% for category in categories %}
 
@@ -101,6 +98,18 @@
                           {% endif %}
                           {{ article['lab'] }}
                   </h6>
+
+                  {% if article['img'] != "" %}
+                  <div style="padding-bottom: 15px;">
+                      <a href="{{ article['url'] }}">
+                          <img src={{ article['img'] }}
+                               class="img-responsive center-block"
+                               style="max-width: 80%;
+                                      border: 1px solid #A5A5A5;">
+                      </a>
+                  </div>
+                  {% endif %}
+
                   {% if article['quote'] != "" %}
                   <blockquote class="blockquote">
                      <p class="quote">{{ article['quote'] }}</p>
@@ -115,9 +124,6 @@
           </div>
           {% endfor %}
       </div>
-      
-  <!-- Dummy container to force centering. Yes. I'm a front-end noob. -->
-  <div class="col-sm-2"></div>
 
   <!-- End Grid -->
   </div>

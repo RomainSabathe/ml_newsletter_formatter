@@ -1,0 +1,22 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[dev-packages]
+
+[packages]
+numpy = "*"
+pandas = "*"
+ipython = "*"
+tqdm = "*"
+ipdb = "*"
+pip = "==18.0"
+py-trello = "*"
+pyaml = "*"
+requests = "*"
+"Jinja2" = "*"
+PyYAML = "*"
+
+[requires]
+python_version = "3.6"

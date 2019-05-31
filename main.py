@@ -4,7 +4,8 @@ import yaml
 import pandas as pd
 from jinja2 import Environment, FileSystemLoader
 
-TEMPLATE_DIR = '/home/romain.sabathe/git/ml_newsletter_formatter'
+
+TEMPLATE_DIR = '/home/romain/my_git/ml_newsletter_formatter'
 
 CATEGORIES_INFO = [
     {
@@ -58,6 +59,7 @@ TYPE_LOGOS = {
     'video': 'https://image.flaticon.com/icons/png/512/149/149125.png',
     'github': 'https://image.flaticon.com/icons/png/512/25/25231.png',
     'notes': 'https://image.flaticon.com/icons/png/512/149/149353.png',
+    'twitter': 'https://image.flaticon.com/icons/png/512/8/8800.png',
     'news': 'https://image.flaticon.com/icons/png/512/4/4442.png'}
 
 
@@ -164,6 +166,8 @@ def _load_categories(path):
 
     if 'quote' not in df.columns:
         df = df.assign(quote=lambda _: "")
+    if 'img' not in df.columns:
+        df = df.assign(img=lambda _: "")
 
     # Hack: placing the recommended articles on top.
     if 'recommended' not in df.columns:
