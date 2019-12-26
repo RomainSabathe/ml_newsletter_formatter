@@ -1,0 +1,97 @@
+articles:
+  - category: dl
+    description: 'OpenAI just published an improvement over the famous Transformer
+      network. This one is called the Sparse Transformer because each output attends
+      to only a subset of the inputs (instead of the whole range of inputs for the
+      Transformer). This allows the model to use less memory and to be extended to
+      larger sequences. More importantly, this architecture can work on different
+      modalities (image, audio, text) which was not possible before (see <a href=https://arxiv.org/abs/1706.03762>Transformer</a>
+      for text and <a href=https://arxiv.org/abs/1802.05751>Image Transformer</a>
+      for images for instance). The post also presents nice-looking gifs that show
+      how each layer of the Sparse Transformer can learn different patterns of attention.
+      Official implementation is available.'
+    lab: OpenAI
+    title: 'Generative Modeling with Sparse Transformers'
+    type: blog
+    url: https://openai.com/blog/sparse-transformer/
+  - category: engineering
+    description:
+    lab: 'Stanford University'
+    quote: 'Memory is increasingly often the bottleneck when training neural network
+      models. Despite this, techniques to lower the overall memory requirements of
+      training have been less widely studied compared to the extensive literature
+      on reducing the memory requirements of inference. In this paper we study a fundamental
+      question: How much memory is actually needed to train a neural network? To answer
+      this question, we profile the overall memory usage of training on two representative
+      deep learning benchmarks -- the WideResNet model for image classification and
+      the DynamicConv Transformer model for machine translation -- and comprehensively
+      evaluate four standard techniques for reducing the training memory requirements
+      [...]. Using appropriate combinations of these techniques, we show that it is
+      possible to the reduce the memory required to train a WideResNet-28-2 on CIFAR-10
+      by up to 60.7x with a 0.4% loss in accuracy, and reduce the memory required
+      to train a DynamicConv model on IWSLT''14 German to English translation by up
+      to 8.7x with a BLEU score drop of 0.15.'
+    title: "[arXiv] Low-Memory Neural Network Training: A Technical Report"
+    type: paper
+    url: https://arxiv.org/abs/1904.10631
+  - category: laugh
+    description: 'For context: last weekend, it was possible for anyone to play a
+      game against OpenAI''s Dota 2 bot which defeated pro gamers a few weeks ago.
+      The bot played against nearly <a href=https://twitter.com/OpenAI/status/1120421259274334209>31,000
+      players</a> and lost only 0.6% of its games.'
+    lab: 'Natesh Ganesh'
+    title: 'OpenAI''s bot against the human swarm'
+    type: twitter
+    url: https://twitter.com/GaneshNatesh/status/1121408777964728321
+  - category: cv
+    description: 'The official Pytorch implementation of the <a href=https://arxiv.org/abs/1903.04411>Learning
+      to Paint with Model-based Deep Reinforcement Learning</a> paper.'
+    lab: 'Peking University, Face++'
+    title: LearningToPaint
+    type: paper
+    url: https://github.com/hzwer/LearningToPaint
+  - category: gan
+    description:
+    lab: 'University of California, Davis'
+    quote: 'We propose FineGAN, a novel unsupervised GAN framework, which disentangles
+      the background, object shape, and object appearance to hierarchically generate
+      images of fine-grained object categories. To disentangle the factors without
+      any supervision, our key idea is to use information theory to associate each
+      factor to a latent code, and to condition the relationships between the codes
+      in a specific way to induce the desired hierarchy. Through extensive experiments,
+      we show that FineGAN achieves the desired disentanglement to generate realistic
+      and diverse images belonging to fine-grained classes of birds, dogs, and cars.
+      Using FineGAN''s automatically learned features, we also cluster real images
+      as a first attempt at solving the novel problem of unsupervised fine-grained
+      object category discovery.'
+    title: "[CVPR 2019] FineGAN: Unsupervised Hierarchical Disentanglement for Fine-Grained\
+      \ Object Generation and Discovery"
+    type: paper
+    url: http://krsingh.cs.ucdavis.edu/krishna_files/papers/finegan/index.html
+  - category: vis
+    description: 'This is an interesting post with some good examples if you have
+      never worked on class imbalance problems or with missing labels before. The
+      first part of the post deals with class imbalance. The author reviews several
+      methods to tackle this problem including feature-level approaches (ADASYN, SMOTE),
+      data-level approaches (i.e. augmentation) and algorithm-level approaches (cost-sensitive
+      SVM, U-Net, Focal Loss,...). It''s a relatively quick read as all the said methods
+      are extremely briefly explained (2 lines or less). The second part of the post
+      is dedicated to the problem of missing labels.'
+    lab: 'Sarfaraz Hussein'
+    title: 'Pro Tips: Class Imbalance and Missing Labels'
+    type: blog
+    url: https://medium.com/ai-ml-at-symantec/ai-ml-security-pro-tips-class-imbalance-and-missing-labels-764fd18b7bf8
+  - category: dl
+    description: 'Andrej Karpathy hasn''t written a blog post in about a year and
+      a half, making this one all the more appreciated! This post could be yet another
+      ''best-pratices when tuning a neural network'' post and it actually is. However
+      I don''t think I have encountered such long and thorough list to ''tips and
+      tricks'' before. I''m sure some of them could be transformed into motivational
+      images. Heck, I''ve made <a href=https://imgur.com/j2SBOXk>one</a>. :-) '
+    lab: 'Andrej Karpathy'
+    recommended: true
+    title: 'A Recipe for Training Neural Networks'
+    type: blog
+    url: https://karpathy.github.io/2019/04/25/recipe/
+intro_text: ""
+outro_text: ""

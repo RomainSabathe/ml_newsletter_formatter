@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+<title>ML newsletter</title>
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+	html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+
+	.category{
+	  padding: 20px;
+	  margin: auto;
+	  background: #F5F5F5;
+	  margin-bottom: 25px;
+	  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+	  transition: all 0.3s; 
+	  border-radius: 3px;
+	}
+
+    .category-title{
+      margin-bottom: 30px;
+    }
+
+	.category-logo{
+	  margin-right: 10px;
+	}
+
+	.article-logo{
+	  margin-right: 3px;
+	}
+
+    .recommended{
+	  margin-right: 2px;
+    }
+
+    .quote{
+      font-size: 11px;
+    }
+</style>
+
+
+<body>
+
+<!-- Page Container -->
+<div class="container" style="max-width:1400px;">
+
+  
+  <!-- The Grid -->
+  <div class="row">
+  
+      <!-- Dummy container to force centering. Yes. I'm a front-end noob. -->
+      <div class="col-sm-2"></div>
+
+      <div class="col-sm-8">
+
+          
+          <!-- Category block -->
+          <div class="category">
+              <h2 class="category-title">
+                  <img src="https://image.flaticon.com/icons/png/512/653/653500.png"
+                       class="fa fa-fw category-logo">General Machine Learning
+              </h2>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/60/60736.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://blog.evjang.com/2019/02/maml-jax.html?utm_campaign=NLP%20News&utm_medium=email&utm_source=Revue%20newsletter">Meta-Learning in 50 Lines of JAX</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    Eric Jang
+                  </h6>
+                                    <p>You were looking for a practical introduction to meta-learning and to the <a href=https://arxiv.org/abs/1703.03400>MAML</a> type of loss in particular? You also wanted to see how to train try a simple network with <a href=https://github.com/google/jax>JAX</a>? Eric Jang does both in this introductory blog post. JAX is introduced with toy examples and then used to implement MAML with just a few functions. The functional approach to training a neural net is not necessarily straightforward for those who are used to Tensorflow or Pytorch, so expect to read this blog at least a couple times!</p>
+              </div>
+              <hr>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/60/60736.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://vivien000.github.io/blog/journal/learning-though-auxiliary_tasks.html?utm_campaign=NLP%20News&utm_medium=email&utm_source=Revue%20newsletter">Learning through Auxiliary Tasks</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    <a href=https://vivien000.github.io/blog/>Unsupervised Thoughts</a>
+                  </h6>
+                                    <p>This is a nice blog post where the author introduces the unweighted cosine and weighted cosine methods (presented in this <a href=https://openreview.net/forum?id=r1gl7hC5Km>paper</a> rejected from ICLR 2019). The two methods can be used when a network is optimised for both a primary task and an auxiliary task. The idea is to transform the gradient obtained from the auxiliary task in such a way that it doesn't hamper optimisation on the primary task. In the blog post, the author offers a geometrical interpretation of how this can be achieved. He also proposes a variation of the unweighted/weighted cosine methods and benchmark them on both a toy task and a real task (attractiveness classification on the CelebA dataset).</p>
+              </div>
+              <hr>
+
+                          
+          </div>
+          
+          <!-- Category block -->
+          <div class="category">
+              <h2 class="category-title">
+                  <img src="https://image.flaticon.com/icons/png/512/149/149243.png"
+                       class="fa fa-fw category-logo">Deep Learning
+              </h2>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/155/155292.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://arxiv.org/abs/1812.05159?utm_campaign=NLP%20News&utm_medium=email&utm_source=Revue%20newsletter">[ICLR 2019] An Empirical Study of Example Forgetting during Deep Neural Network Learning</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    Carnegie Mellon University, Microsoft Research Montreal, MILA, Universite de Montreal
+                  </h6>
+                                    <blockquote class="blockquote">
+                     <p class="quote">[...] Our goal is to understand whether a related phenomenon occurs when data does not undergo a clear distributional shift. We define a `forgetting event' to have occurred when an individual training example transitions from being classified correctly to incorrectly over the course of learning. Across several benchmark data sets, we find that: (i) certain examples are forgotten with high frequency, and some not at all; (ii) a data set's (un)forgettable examples generalize across neural architectures; and (iii) based on forgetting dynamics, a significant fraction of examples can be omitted from the training data set while still maintaining state-of-the-art generalization performance.</p>
+                  </blockquote>
+                                    <p></p>
+              </div>
+              <hr>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/155/155292.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://arxiv.org/abs/1903.05789v1">[ICLR 2019] Diagnosing and Enhancing VAE Models</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    Tsinghua University, Microsoft Research
+                  </h6>
+                                    <blockquote class="blockquote">
+                     <p class="quote">Although variational autoencoders (VAEs) represent a widely influential deep generative model, many aspects of the underlying energy function remain poorly understood. In particular, it is commonly believed that Gaussian encoder/decoder assumptions reduce the effectiveness of VAEs in generating realistic samples. In this regard, we rigorously analyze the VAE objective, differentiating situations where this belief is and is not actually true. We then leverage the corresponding insights to develop a simple VAE enhancement that requires no additional hyperparameters or sensitive tuning. Quantitatively, this proposal produces crisp samples and stable FID scores that are actually competitive with a variety of GAN models, all while retaining desirable attributes of the original VAE architecture. [...]</p>
+                  </blockquote>
+                                    <p></p>
+              </div>
+              <hr>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/155/155292.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://arxiv.org/abs/1807.06653">[arXiv] Invariant Information Clustering for Unsupervised Image Classification and Segmentation</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    University of Oxford
+                  </h6>
+                                    <blockquote class="blockquote">
+                     <p class="quote">We present a novel clustering objective that learns a neural network classifier from scratch, given only unlabelled data samples. The model discovers clusters that accurately match semantic classes, achieving state-of-the-art results in eight unsupervised clustering benchmarks spanning image classification and segmentation. [...] The trained network directly outputs semantic labels, rather than high dimensional representations that need external processing to be usable for semantic clustering. The objective is simply to maximise mutual information between the class assignments of each pair. [...]</p>
+                  </blockquote>
+                                    <p></p>
+              </div>
+              <hr>
+
+                          
+          </div>
+          
+          <!-- Category block -->
+          <div class="category">
+              <h2 class="category-title">
+                  <img src="https://image.flaticon.com/icons/png/512/179/179121.png"
+                       class="fa fa-fw category-logo">Optimisation & Learning Theory
+              </h2>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/60/60736.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://pouannes.github.io/blog/initialization/">How to initialize deep neural networks? Xavier and Kaiming initialization</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    Pierre Ouannes
+                  </h6>
+                                    <p>Where does the Xavier and Kaiming initializations come from? Why is there a magic number 2? A square root? This blog post is all about this question. I found the author particularly mindful of the inexperienced readers as he takes the time to explain each term and each result. Another solid although similar post on the subject is given by DeepGrid <a href=https://www.jefkine.com/deep/2016/08/08/initialization-of-deep-networks-case-of-rectifiers/>here</a>.</p>
+              </div>
+              <hr>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/155/155292.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://arxiv.org/abs/1903.11680">[arXiv] Gradient Descent with Early Stopping is Provably Robust to Label Noise for Overparameterized Neural Networks</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    University of California, University of Southern California
+                  </h6>
+                                    <blockquote class="blockquote">
+                     <p class="quote">[...] we show that first order methods such as gradient descent are provably robust to noise/corruption on a constant fraction of the labels despite over-parametrization under a rich dataset model. In particular: i) First, we show that in the first few iterations where the updates are still in the vicinity of the initialization these algorithms only fit to the correct labels essentially ignoring the noisy labels. ii) Secondly, we prove that to start to overfit to the noisy labels these algorithms must stray rather far from from the initial model which can only occur after many more iterations. [...]</p>
+                  </blockquote>
+                                    <p></p>
+              </div>
+              <hr>
+
+                          
+          </div>
+          
+          <!-- Category block -->
+          <div class="category">
+              <h2 class="category-title">
+                  <img src="https://imageog.flaticon.com/icons/png/512/248/248114.png"
+                       class="fa fa-fw category-logo">Production & Engineering
+              </h2>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/60/60736.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://towardsdatascience.com/checklist-for-debugging-neural-networks-d8b2a9434f21">Checklist for debugging neural networks</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    Cecelia Shao
+                  </h6>
+                                    <p>The experienced practitioner often already knows all the tricks presented in this post but it's always good to see them laid out like so. In particular, the author advocates for a systematic approach: start simple first (simple architecture, overfit on a single sample), confirm the loss (theoretically and numerically on simple cases), check outputs and connections (can the gradient flow from output to input?) and diagnose hyperparameters.</p>
+              </div>
+              <hr>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/155/155292.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://arxiv.org/abs/1903.12650">[arXiv] Yet Another Accelerated SGD: ResNet-50 Training on ImageNet in 74.7 seconds</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    Fujitsu Laboratories
+                  </h6>
+                                    <blockquote class="blockquote">
+                     <p class="quote">[...]. Distributed deep learning using the large mini-batch is a key technology to address the demand and is a great challenge as it is difficult to achieve high scalability on large clusters without compromising accuracy. In this paper, we introduce optimization methods which we applied to this challenge. We achieved the training time of 74.7 seconds using 2,048 GPUs on ABCI cluster applying these methods. The training throughput is over 1.73 million images/sec and the top-1 validation accuracy is 75.08%.</p>
+                  </blockquote>
+                                    <p></p>
+              </div>
+              <hr>
+
+                          
+          </div>
+                </div>
+      
+  <!-- Dummy container to force centering. Yes. I'm a front-end noob. -->
+  <div class="col-sm-2"></div>
+
+  <!-- End Grid -->
+  </div>
+
+    
+  <!-- End Page Container -->
+</div>
+
+</body>
+</html>

@@ -1,0 +1,143 @@
+articles:
+  - category: dl
+    description: 'If you believe in the idea of <a href=https://hbr.org/2015/10/how-1-performance-improvements-led-to-olympic-gold>marginal
+      improvements</a> then you will very likely like this post. It is actually the
+      last in a <a href=https://myrtle.ai/how-to-train-your-resnet/>series</a> of
+      posts that covers efficient training on CIFAR-10 by reviewing hyperparameter
+      optimization, architecture, regularisation and all the rest you could think
+      of. Here the author uses a palette of tricks that has usually been applied to
+      ImageNet and distilled among several papers. The metric for this benchmark is
+      the time to reach 94% accuracy on the validation set. Regardless of how questionable
+      this metric might be, the list of tricks is interesting and probably worth taking
+      note of. More importantly, the last experiment shows that by optimising this
+      metric, one can actually improve overall accuracy if we let the training run
+      for longer. In other words, optimising for a reasonable accuracy very quickly
+      seems to be a rewarding strategy if we are interested in obtaining a ''good''
+      accuracy (regardless of training time).'
+    img: https://i.ibb.co/PNBktdN/Selection-959.png
+    lab: Myrtle
+    title: 'How to Train Your ResNet 8: Bag of Tricks'
+    type: blog
+    url: https://myrtle.ai/how-to-train-your-resnet-8-bag-of-tricks/
+  - category:
+    description: 'This post introduces <a href=https://ml-retrospectives.github.io/>ML
+      Retrospectives</a> and its NeurIPS workshop. The idea is simple: the author
+      of a paper might have a different view of their own work at the time they are
+      trying to get the paper accepted compared to years later when they describe
+      them to colleagues. They might have a different opinion; they might be aware
+      of new limitations; they might have not mentioned failed attempts. ML Retrospectives
+      is a place for authors to share this kind of precious information. See an <a
+      href=https://ml-retrospectives.github.io/published_retrospectives/2019/adem/>example</a>
+      for yourselves.'
+    lab: 'Ryan Lowe - Mila, Facebook AI, Standford University, Uber AI'
+    quote: 'Nowadays, part of reading papers is trying to decipher which claims are
+      technically sound. It’s not uncommon to read a paper in machine learning and
+      think: ''Okay, what are they trying to hide? What secret trick do you need to
+      actually get this to work?'' For many researchers, this skepticism has been
+      hard-earned trying to build on top of cool ideas that simply didn’t work as
+      advertised. What’s amazing is how often this happens without us thinking twice
+      about it.'
+    title: 'Introducing Retrospectives: ''Real Talk'' for your Past Papers'
+    type: blog
+    url: https://thegradient.pub/introducing-retrospectives/
+  - category: vis
+    description:
+    img: https://i.ibb.co/9ZpwGxX/Selection-958.png
+    lab: 'UW Interactive Data Lab'
+    quote: 'A data visualization curriculum of interactive notebooks, using Vega-Lite
+      and Altair. This repository contains a series of Python-based Jupyter notebooks,
+      a corresponding set of JavaScript notebooks are available online on Observable.'
+    title: 'A data visualization curriculum of interactive notebooks'
+    type: github
+    url: https://github.com/uwdata/visualization-curriculum
+  - category: dl
+    description:
+    img: https://i.ibb.co/qdtWk36/Selection-956.png
+    lab: 'Princeton University'
+    quote: 'The classification performance of deep neural networks has begun to asymptote
+      at near-perfect levels. However, their ability to generalize outside the training
+      set and their robustness to adversarial attacks have not. In this paper, we
+      make progress on this problem by training with full label distributions that
+      reflect human perceptual uncertainty. We first present a new benchmark dataset
+      which we call CIFAR10H, containing a full distribution of human labels for each
+      image of the CIFAR10 test set. We then show that, while contemporary classifiers
+      fail to exhibit human-like uncertainty on their own, explicit training on our
+      dataset closes this gap, supports improved generalization to increasingly out-of-training-distribution
+      test datasets, and confers robustness to adversarial attacks.'
+    title: "[ICCV 2019] Human uncertainty makes classification more robust"
+    type: paper
+    url: https://arxiv.org/abs/1908.07086v1
+  - category: nlp
+    description:
+    img: https://i.ibb.co/w4cDKHk/Selection-957.png
+    lab: 'Beihang University, Microsoft Research'
+    quote: 'Language model pre-training, such as BERT, has achieved remarkable results
+      in many NLP tasks. However, it is unclear why the pre-training-then-fine-tuning
+      paradigm can improve performance and generalization capability across different
+      tasks. In this paper, we propose to visualize loss landscapes and optimization
+      trajectories of fine-tuning BERT on specific datasets. First, we find that pre-training
+      reaches a good initial point across downstream tasks, which leads to wider optima
+      and easier optimization compared with training from scratch. We also demonstrate
+      that the fine-tuning procedure is robust to overfitting, even though BERT is
+      highly over-parameterized for downstream tasks. Second, the visualization results
+      indicate that fine-tuning BERT tends to generalize better because of the flat
+      and wide optima, and the consistency between the training loss surface and the
+      generalization error surface. Third, the lower layers of BERT are more invariant
+      during fine-tuning, which suggests that the layers that are close to input learn
+      more transferable representations of language.'
+    title: "[EMNLP 2019] Visualizing and Understanding the Effectiveness of BERT"
+    type: paper
+    url: https://arxiv.org/abs/1908.05620v1
+  - category: theory
+    description: 'Last week, we mentioned <a href=https://arxiv.org/abs/1908.03265>On
+      the Variance of the Adaptative Learning Rate and Beyond</a>. This paper got
+      quite a bit of attention. Authors introduce RAdam, an optimizer based on Adam
+      that aims at solving the learning rate warmup ''problem''. In other words: theoretically
+      you could use RAdam and obtain close to the same results as if you were using
+      Adam and a learning rate warmup scheme. This blog post compares Adam and RAdam
+      in the setting of reinforcement learning, on Atari games.The author concludes
+      that RAdam is not the breakthrough that will change reinforcement learning forever.
+      However I note that on the 6 experiments he tried, RAdam was in most cases equivalent
+      to Adam (or very slightly better) and marginally better on a few remaining cases.
+      This would tend to suggest that RAdam is at least not worse than Adam (with
+      the configuration the author chose, on this specific task, yada yada). So it''s
+      still worth a try.'
+    img: https://miro.medium.com/max/1568/1*V4HtlKqk5OJfM3wi7cMdhg.png
+    lab: 'Chris Nota'
+    title: 'RAdam: A New State-of-the-Art Optimizer for RL?'
+    type: blog
+    url: https://medium.com/autonomous-learning-library/radam-a-new-state-of-the-art-optimizer-for-rl-442c1e830564
+  - category: engineering
+    description: 'Here is a package I had never heard of but that seems fairly popular,
+      shame on me. It appears that Snorkel is a tool for <i>programmatically building
+      and managing training datasets</i>. Originally it was designed for text-based
+      datasets, but this blog post introduces its newest release where authors announce
+      that Snorkel now supports other modalities (including numpy arrays, pandas dataframes,...).
+      Exciting! I''ll keep an eye on that one.'
+    img: https://www.snorkel.org/doks-theme/assets/images/layout/Overview.png
+    lab: Snorkel
+    title: 'Introducing the New Snorkel · Snorkel'
+    type: github
+    url: https://www.snorkel.org/hello-world-v-0-9/
+  - category: cv
+    description: 'I would highly recommend that you open the pdf of the paper and
+      zoom in to see the details. The results shown are very impressive.'
+    img: https://i.ibb.co/jWYcnrG/Selection-955.png
+    lab: 'The Chinese University of Hong Kong, Tsinghua University, University of
+      Electronic Science and Technology of China, NLPR, CASIA, SenseTime Research'
+    quote: "[...] In this work, we propose Additive Focal Variational Auto-encoder\
+      \ (AF-VAE), a novel approach that can arbitrarily manipulate high-resolution\
+      \ face images using a simple yet effective model and only weak supervision of\
+      \ reconstruction and KL divergence losses. First, a novel additive Gaussian\
+      \ Mixture assumption is introduced with an unsupervised clustering mechanism\
+      \ in the structural latent space, which endows better disentanglement and boosts\
+      \ multi-modal representation with external memory. Second, to improve the perceptual\
+      \ quality of synthesized results, two simple strategies in architecture design\
+      \ are further tailored and discussed on the behavior of Human Visual System\
+      \ (HVS) for the first time, allowing for fine control over the model complexity\
+      \ and sample quality. [...]"
+    title: "[ICCV 2019] Make a Face: Towards Arbitrary High Fidelity Face Manipulation"
+    type: paper
+    url: https://arxiv.org/abs/1908.07191v1
+intro_text: ""
+outro_text: ""

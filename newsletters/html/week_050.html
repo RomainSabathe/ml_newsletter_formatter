@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+<title>ML newsletter</title>
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+	html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+
+	.category{
+	  padding: 20px;
+	  margin: auto;
+	  background: #F5F5F5;
+	  margin-bottom: 25px;
+	  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+	  transition: all 0.3s; 
+	  border-radius: 3px;
+	}
+
+    .category-title{
+      margin-bottom: 30px;
+    }
+
+	.category-logo{
+	  margin-right: 10px;
+	}
+
+	.article-logo{
+	  margin-right: 3px;
+	}
+
+    .recommended{
+	  margin-right: 2px;
+    }
+
+    .quote{
+      font-size: 11px;
+    }
+</style>
+
+
+<body>
+
+<!-- Page Container -->
+<div class="container" style="max-width:1400px;">
+
+  
+  <!-- The Grid -->
+  <div class="row">
+  
+      <!-- Dummy container to force centering. Yes. I'm a front-end noob. -->
+      <div class="col-sm-2"></div>
+
+      <div class="col-sm-8">
+
+          
+          <!-- Category block -->
+          <div class="category">
+              <h2 class="category-title">
+                  <img src="https://image.flaticon.com/icons/png/512/653/653500.png"
+                       class="fa fa-fw category-logo">General Machine Learning
+              </h2>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/25/25231.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://github.com/zaidalyafeai/Notebooks">Machine learning notebooks in different subjects optimized to run in google collaboratory</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    Zaid Alyafeai
+                  </h6>
+                                    <p>This GitHub page offers a substantial list of famous projects  in one place (Pix2Pix, eager execution, Sketcher, BigGan, U-Net, Mask R-CNN and others,...). What's more, all the implementations are available through a Colab notebook for immediate experimentation. :-)</p>
+              </div>
+              <hr>
+
+                          
+          </div>
+          
+          <!-- Category block -->
+          <div class="category">
+              <h2 class="category-title">
+                  <img src="https://image.flaticon.com/icons/png/512/149/149243.png"
+                       class="fa fa-fw category-logo">Deep Learning
+              </h2>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/155/155292.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://arxiv.org/abs/1901.08560v1">[arXiv] Semi-Unsupervised Learning with Deep Generative Models: Clustering and Classifying using Ultra-Sparse Labels</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    University of Oxford, Alan Turing Institute
+                  </h6>
+                                    <blockquote class="blockquote">
+                     <p class="quote">We introduce semi-unsupervised learning, an extreme case of semi-supervised learning with ultra-sparse categorisation where some classes have no labels in the training set. That is, in the training data some classes are sparsely labelled and other classes appear only as unlabelled data. [...] We develop two deep generative models for classification in this regime[..]. By changing their probabilistic structure to contain a mixture of Gaussians in their continuous latent space, these new models can learn in both unsupervised and semi-unsupervised paradigms. [...]</p>
+                  </blockquote>
+                                    <p></p>
+              </div>
+              <hr>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/60/60736.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://towardsdatascience.com/how-to-visualize-convolutional-features-in-40-lines-of-code-70b7d87b0030">How to visualize convolutional features in 40 lines of code</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    Fabio M. Graetz
+                  </h6>
+                                    <p>Feature visualisation for neural networks is not something particularly new. To me, the reference article remains this <a href=https://distill.pub/2017/feature-visualization/>Distill article</a> by Chris Olah et al. But what I liked with this post is that the feature visualisations are harder to analyse compared to the ones shown in the Distill article. The author does a good job at selecting a few features for which we can only have an vague intuition of what they are responsible for. To verify these intuitions, the author selects a few images which may match the said filter and analyse the network's response.</p>
+              </div>
+              <hr>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/155/155292.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://cs.stanford.edu/people/dorarad/gqa/">Dataset: Visual Reasoning in the Real World</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    Drew Hudson & Christopher Manning
+                  </h6>
+                                    <blockquote class="blockquote">
+                     <p class="quote">A New Dataset for Visual Question Answering</p>
+                  </blockquote>
+                                    <p>This new dataset looks super neat. It comes with 20 million questions on a variety of images. Each image is annotated with spatial relationships (like: the glass is on the table), plus coordinates of the objects in the scene. All the questions are also categorised by semantic and structural types. The website offers nice <a href=https://cs.stanford.edu/people/dorarad/gqa/vis.html>visuals</a> to quickly explore what the dataset has to offer.</p>
+              </div>
+              <hr>
+
+                          
+          </div>
+          
+          <!-- Category block -->
+          <div class="category">
+              <h2 class="category-title">
+                  <img src="https://image.flaticon.com/icons/png/512/179/179121.png"
+                       class="fa fa-fw category-logo">Optimisation & Learning Theory
+              </h2>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/60/60736.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://blog.janestreet.com/l2-regularization-and-batch-norm/">L2 Regularization and Batch Norm</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                        <span class="badge">
+                                  Recommended
+                              </span>
+                                                    David Wu
+                  </h6>
+                                    <p>That is a really interesting blog post in which the author explores the relationship between batch norm and L2 regularization. In the first part, we see how L2 regularization is virtually useless when using batch normalization (because batch norm is invariant to the scale of weights). However, in the second part, the author describes how L2 reg can change the magnitude of the gradient updates relative to the norm of the weights. In essence, using batch norm without L2 regularization acts as if the learning rate was decaying during training. The justification for this phenomenon is first given using simple formulas. Then, experiments are conducted on ResNet-20 and CIFAR-10 to verify the theory. The graphs shown near the end of the post are quite insightful.</p>
+              </div>
+              <hr>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/155/155292.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://arxiv.org/abs/1901.09491">[arXiv] Stiffness: A New Perspective on Generalization in Neural Networks</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    Google AI
+                  </h6>
+                                    <blockquote class="blockquote">
+                     <p class="quote">We investigate neural network training and generalization using the concept of stiffness. We measure how stiff a network is by looking at how a small gradient step on one example affects the loss on another example. [...] Our results demonstrate that stiffness is a useful concept for diagnosing and characterizing generalization. We observe that small learning rates lead to initial learning of more specific features that do not translate well to improvements on inputs from all classes, whereas high learning rates initially benefit all classes at once. We measure stiffness as a function of distance between data points and observe that higher learning rates induce positive correlation between changes in loss further apart, pointing towards a regularization effect of learning rate. [...]</p>
+                  </blockquote>
+                                    <p></p>
+              </div>
+              <hr>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/155/155292.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://arxiv.org/abs/1901.09149">[arXiv] Escaping Saddle Points with Adaptive Gradient Methods</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    MIT EECS, Google Research
+                  </h6>
+                                    <blockquote class="blockquote">
+                     <p class="quote">Adaptive methods such as Adam and RMSProp are widely used in deep learning but are not well understood. In this paper, we seek a crisp, clean and precise characterization of their behavior in nonconvex settings. To this end, we first provide a novel view of adaptive methods as preconditioned SGD, where the preconditioner is estimated in an online manner. By studying the preconditioner on its own, we elucidate its purpose: it rescales the stochastic gradient noise to be isotropic near stationary points, which helps escape saddle points. Furthermore, we show that adaptive methods can efficiently estimate the aforementioned preconditioner. By gluing together these two components, we provide the first (to our knowledge) second-order convergence result for any adaptive method. The key insight from our analysis is that, compared to SGD, adaptive methods escape saddle points faster, and can converge faster overall to second-order stationary points.</p>
+                  </blockquote>
+                                    <p></p>
+              </div>
+              <hr>
+
+                          
+          </div>
+          
+          <!-- Category block -->
+          <div class="category">
+              <h2 class="category-title">
+                  <img src="https://image.flaticon.com/icons/png/512/249/249156.png"
+                       class="fa fa-fw category-logo">Reinforcement Learning
+              </h2>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/25/25231.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://github.com/Unity-Technologies/obstacle-tower-env">Obstacle Tower Environment</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    Unity Technologies
+                  </h6>
+                                    <blockquote class="blockquote">
+                     <p class="quote">The Obstacle Tower is a procedurally generated environment consisting of multiple floors to be solved by a learning agent. It is designed to test learning agents abilities in computer vision, locomotion skills, high-level planning, and generalization. [...]</p>
+                  </blockquote>
+                                    <p>Now that more and more labs managed to solve Montezuma's Revenge, it seems the RL community is looking for a next challenge in vision, motion and exploration. This tool provided by Unity might be the one. The world is in 3D and procedurally generated with quite a variety of environments. It's also directly compatible with Gym for faster integration. I'm eager to see future results on this benchmark.</p>
+              </div>
+              <hr>
+
+                          
+          </div>
+          
+          <!-- Category block -->
+          <div class="category">
+              <h2 class="category-title">
+                  <img src="https://image.flaticon.com/icons/png/512/56/56243.png"
+                       class="fa fa-fw category-logo">Laugh Of The Week
+              </h2>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/8/8800.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://twitter.com/NMasha11/status/1089589075567366144">They diverge later on.…</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    Masha Naslidnyk
+                  </h6>
+                                    <p></p>
+              </div>
+              <hr>
+
+                          
+          </div>
+                </div>
+      
+  <!-- Dummy container to force centering. Yes. I'm a front-end noob. -->
+  <div class="col-sm-2"></div>
+
+  <!-- End Grid -->
+  </div>
+
+    
+  <!-- End Page Container -->
+</div>
+
+</body>
+</html>

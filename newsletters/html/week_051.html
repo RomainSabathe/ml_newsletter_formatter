@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+<title>ML newsletter</title>
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+	html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+
+	.category{
+	  padding: 20px;
+	  margin: auto;
+	  background: #F5F5F5;
+	  margin-bottom: 25px;
+	  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+	  transition: all 0.3s; 
+	  border-radius: 3px;
+	}
+
+    .category-title{
+      margin-bottom: 30px;
+    }
+
+	.category-logo{
+	  margin-right: 10px;
+	}
+
+	.article-logo{
+	  margin-right: 3px;
+	}
+
+    .recommended{
+	  margin-right: 2px;
+    }
+
+    .quote{
+      font-size: 11px;
+    }
+</style>
+
+
+<body>
+
+<!-- Page Container -->
+<div class="container" style="max-width:1400px;">
+
+  
+  <!-- The Grid -->
+  <div class="row">
+  
+      <!-- Dummy container to force centering. Yes. I'm a front-end noob. -->
+      <div class="col-sm-2"></div>
+
+      <div class="col-sm-8">
+
+          
+          <!-- Category block -->
+          <div class="category">
+              <h2 class="category-title">
+                  <img src="https://image.flaticon.com/icons/png/512/149/149243.png"
+                       class="fa fa-fw category-logo">Deep Learning
+              </h2>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/155/155292.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://openreview.net/forum?id=H1gsz30cKX">[ICLR 19] Fixup Initialization: Residual Learning Without Normalization</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    MIT, Google Brain, Stanford University
+                  </h6>
+                                    <blockquote class="blockquote">
+                     <p class="quote">Normalization layers are a staple in state-of-the-art deep neural network architectures. They are widely believed to stabilize training, enable higher learning rate, accelerate convergence and improve generalization, [...]. In this work, we challenge the commonly-held beliefs by showing that none of the perceived benefits is unique to normalization. Specifically, we propose fixed-update initialization (Fixup), [...]. We find training residual networks with Fixup to be as stable as training with normalization -- even for networks with 10,000 layers. Furthermore, with proper regularization, Fixup enables residual networks without normalization to achieve state-of-the-art performance in image classification and machine translation</p>
+                  </blockquote>
+                                    <p></p>
+              </div>
+              <hr>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/155/155292.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://arxiv.org/abs/1902.00275">[arXiv] Flow++: Improving Flow-Based Generative Models with Variational Dequantization and Architecture Design</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    UC Berkeley, covariant.ai
+                  </h6>
+                                    <blockquote class="blockquote">
+                     <p class="quote">Flow-based generative models are powerful exact likelihood models with efficient sampling and inference. Despite their computational efficiency, flow-based models generally have much worse density modeling performance compared to state-of-the-art autoregressive models. In this paper, we investigate and improve upon three limiting design choices employed by flow-based models in prior work [..]. Based on our findings, we propose Flow++, a new flow-based model that is now the state-of-the-art non-autoregressive model for unconditional density estimation on standard image benchmarks. [...]</p>
+                  </blockquote>
+                                    <p></p>
+              </div>
+              <hr>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/25/25231.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://github.com/NVlabs/stylegan">StyleGAN - Official TensorFlow Implementation</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    NVIDIA
+                  </h6>
+                                    <p>A few weeks ago, we talked about <a href=https://arxiv.org/abs/1812.04948>StyleGAN</a>, a new GAN architecture that is capable of generating high-resolution realistic images. In addition, the architecture incorporates possibilities to tweak the <i>content</i> of an image relative to its <i>style</i>. Authors just released their implementation and people on the internet have already started playing around with it. Some mandatory cats can be found <a href=https://twitter.com/genekogan/status/1093180351437029376>here</a> while creepy failure cases can be found <a href=https://twitter.com/kcimc/status/1092827997978181632>here</a>. Happy hacking!</p>
+              </div>
+              <hr>
+
+                          
+          </div>
+          
+          <!-- Category block -->
+          <div class="category">
+              <h2 class="category-title">
+                  <img src="https://image.flaticon.com/icons/png/512/179/179121.png"
+                       class="fa fa-fw category-logo">Optimisation & Learning Theory
+              </h2>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/155/155292.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://arxiv.org/abs/1810.08591">[arXiv] A Modern Take on the Bias-Variance Tradeoff in Neural Networks</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    Mila, Universite de Montreal
+                  </h6>
+                                    <blockquote class="blockquote">
+                     <p class="quote">We revisit the bias-variance tradeoff for neural networks in light of modern empirical findings. The traditional bias-variance tradeoff in machine learning suggests that as model capacity grows, bias decreases and variance increases. In contrast, we find that both bias and variance can decrease with the number of parameters. To better understand this, we decompose the total variance into variance due to training set sampling and variance due to initialization. Surprisingly, variance due to training set sampling is roughly constant with both network width and depth, in the over-parameterized setting. We provide theoretical analysis, in a simplified setting inspired by linear models, that is consistent with our empirical findings.</p>
+                  </blockquote>
+                                    <p></p>
+              </div>
+              <hr>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/155/155292.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://arxiv.org/abs/1902.01996">[arXiv] Are All Layers Created Equal?</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    Google
+                  </h6>
+                                    <blockquote class="blockquote">
+                     <p class="quote">[...] We study empirically the layer-wise functional structure of over-parameterized deep models. We provide evidence for the heterogeneous characteristic of layers. To do so, we introduce the notion of (post training) re-initialization and re-randomization robustness. We show that layers can be categorized into either 'robust' or 'critical'. In contrast to critical layers, resetting the robust layers to their initial value has no negative consequence, and in many cases they barely change throughout training. Our study provides further evidence that mere parameter counting or norm accounting is too coarse in studying generalization of deep models.</p>
+                  </blockquote>
+                                    <p></p>
+              </div>
+              <hr>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/60/60736.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="http://paulrubenstein.co.uk/variational-autoencoders-are-not-autoencoders/">Variational Autoencoders are not autoencoders</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    Paul Rubenstein
+                  </h6>
+                                    <p>This is a small but instructive post on variational autoencoders. The author had one objective in mind: remind us that variational autoencoders are not meant to be autoencoders. The 'autoencoding' aspect of those models is just a trick to obtain a lower bound on the log-likelihood on the data distribution generated by the models. For this we introduce an approximate posterior that is obtained thanks to what we usually call an <i>encoder</i>. But as the author shows, an optimal solution to the problem is obtained once we don't need the encoder anymore; i.e. when the generator is independent from the latent variable. In other words: an optimal 'variational autoencoder' is not an autoencoder as it doesn't use the latent variable (and therefore its input).</p>
+              </div>
+              <hr>
+
+                          
+          </div>
+          
+          <!-- Category block -->
+          <div class="category">
+              <h2 class="category-title">
+                  <img src="https://image.flaticon.com/icons/png/512/484/484582.png"
+                       class="fa fa-fw category-logo">Natural Language Processing
+              </h2>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/60/60736.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://lilianweng.github.io/lil-log/2019/01/31/generalized-language-models.html">Generalized Language Models</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    Lilian Weng
+                  </h6>
+                                    <blockquote class="blockquote">
+                     <p class="quote">[....] We will discuss the models on learning contextualized word vectors, as well as the new trend in large unsupervised pre-trained language models which have achieved amazing SOTA results on a variety of language tasks.</p>
+                  </blockquote>
+                                    <p>We talked about BERT a few times; a work that had a great impact in the NLP community. In this post you will find a summary of where BERT comes from and some of the ground laying works that have preceded it, like ELMo and the Transformer.</p>
+              </div>
+              <hr>
+
+                          
+          </div>
+          
+          <!-- Category block -->
+          <div class="category">
+              <h2 class="category-title">
+                  <img src="https://image.flaticon.com/icons/png/512/56/56243.png"
+                       class="fa fa-fw category-logo">Laugh Of The Week
+              </h2>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/155/155292.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://twitter.com/ankurhandos/status/1091531295354580992">YOLOv3 and the art of the Introduction</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    Ankur Handa
+                  </h6>
+                                    <p></p>
+              </div>
+              <hr>
+
+                          
+          </div>
+                </div>
+      
+  <!-- Dummy container to force centering. Yes. I'm a front-end noob. -->
+  <div class="col-sm-2"></div>
+
+  <!-- End Grid -->
+  </div>
+
+    
+  <!-- End Page Container -->
+</div>
+
+</body>
+</html>

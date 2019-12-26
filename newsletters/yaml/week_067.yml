@@ -1,0 +1,120 @@
+articles:
+  - category: theory
+    description: 'In this blog post, Rong Ge introduces a <a href=https://arxiv.org/abs/1906.06247>paper</a>
+      he recently submitted, along with colleagues from Duke University and Princeton
+      University. In the paper, researches explore the notion of <i>mode connectivity</i>,
+      that is the relationship that links two optima of a loss function. In particular,
+      prior works pointed out that given any two optimal set of weights for a given
+      network and a given loss function, there exists a piece-wise linear combination
+      of the weights that is an optimal solution as well. In the post, Dr Ge shows
+      what such combination looks like when the network is said to be <i>dropout stable</i>
+      (in the paper, they extend the result to <i>noisy stability</i> and <i>channel-wise
+      dropout stability</i>). As he says, ''our methods do not answer all mysteries
+      about mode connectivity [but] are a first-cut explanation for how mode connectivity
+      can arise in realistic deep nets''. He made a good effort to make it easy to
+      read for people who aren''t comfortable with theory papers, so give it a go!'
+    img: http://www.offconvex.org/assets/modes.PNG
+    lab: '<a href=http://www.offconvex.org/>Off the convex path</a> - Rong Ge'
+    title: 'Landscape Connectivity of Low Cost Solutions for Multilayer Nets'
+    type: blog
+    url: http://www.offconvex.org/2019/06/16/modeconnectivity/
+  - category: ml
+    description: 'This is quite a great blog post that offers either an introduction
+      or a refresher on generative modelling: how the problem is formulated, which
+      metrics can be used, what types of sampling mechanisms have been tried and a
+      lot more. Eric Jang also includes plenty of references to dig deeper, be it
+      blog posts, papers, <a href=https://statistics.stanford.edu/>Stanford links</a>,...
+      Definitively a top resource to get a quick and decent overview of the field.'
+    img: https://lh3.googleusercontent.com/joXi6MzAiWxX9MtZR7QRMR6w7OFa5U1zQ9UR9odufiXQ3T6sVUXfcHDEcRjWm6NhWdG1TFhUEi22jxA0mv9pQ03A63uotmT1Sf2MUKaoYGaUgZ9H8Jj_M05nSx9rueAvfMK_70fU
+    lab: '<a href=https://blog.evjang.com/>Eric Jang</a>'
+    recommended: true
+    title: 'Tips for Training Likelihood Models'
+    type: blog
+    url: https://blog.evjang.com/2019/07/likelihood-model-tips.html
+  - category: nlp
+    description: 'A great little resource to explore important papers in NLP. It''s
+      simply organised and works well: a category, a paper, its link and a summary
+      that fits in less than 3 lines.'
+    lab: 'Mihail Eric'
+    title: 'NLP Library: curated collection of papers for the NLP practitioner'
+    type: github
+    url: https://github.com/mihail911/nlp-library
+  - category: dl
+    description: 'Want to know what is cutting edge in the field of neural architecture
+      search? This blog post will help you with this! You will find ~10 papers published
+      at CVPR summarised in just one or two paragraphs.'
+    img: https://i.ibb.co/Y8hjMgN/Selection-941.png
+    lab: '<a href=https://drsleep.github.io/>Vladimir Nekrasov</a>'
+    title: 'Neural Architecture Search at CVPR 2019'
+    type: blog
+    url: https://drsleep.github.io/NAS-at-CVPR-2019/
+  - category: gan
+    description:
+    img: https://i.ibb.co/tY3h42g/Selection-940.png
+    lab: DeepMind
+    quote: 'Adversarially trained generative models (GANs) have recently achieved
+      compelling image synthesis results. But despite early successes in using GANs
+      for unsupervised representation learning, they have since been superseded by
+      approaches based on self-supervision. In this work we show that progress in
+      image generation quality translates to substantially improved representation
+      learning performance. Our approach, BigBiGAN, builds upon the state-of-the-art
+      BigGAN model, extending it to representation learning by adding an encoder and
+      modifying the discriminator. We extensively evaluate the representation learning
+      and generation capabilities of these BigBiGAN models, demonstrating that these
+      generation-based models achieve the state of the art in unsupervised representation
+      learning on ImageNet, as well as in unconditional image generation.'
+    title: "[arXiv] Large Scale Adversarial Representation Learning"
+    type: paper
+    url: https://arxiv.org/abs/1907.02544
+  - category: cv
+    description:
+    lab: 'University of Amsterdam, Radboud University Medical Center'
+    quote: 'The accurate estimation of predictive uncertainty carries importance in
+      medical scenarios such as lung node segmentation. Unfortunately, most existing
+      works on predictive uncertainty do not return calibrated uncertainty estimates,
+      which could be used in practice. In this work we exploit multi-grader annotation
+      variability as a source of ''groundtruth'' aleatoric uncertainty, which can
+      be treated as a target in a supervised learning problem. We combine this groundtruth
+      uncertainty with a Probabilistic U-Net and test on the LIDC-IDRI lung nodule
+      CT dataset and MICCAI2012 prostate MRI dataset. We find that we are able to
+      improve predictive uncertainty estimates. We also find that we can improve sample
+      accuracy and sample diversity.'
+    title: "[MICCAI 2019] Supervised Uncertainty Quantification for Segmentation with\
+      \ Multiple Annotations"
+    type: paper
+    url: https://arxiv.org/abs/1907.01949
+  - category: laugh
+    description:
+    img: https://imgs.xkcd.com/comics/trained_a_neural_net.png
+    lab: xkcd
+    title: '"Yeah, I trained a neural net to sort the unlabeled photos into categories"'
+    type: twitter
+    url: https://xkcd.com/2173/
+  - category: cv
+    description:
+    img: http://www.robots.ox.ac.uk/~vgg/research/unsupervised_pose/img/model.jpg
+    lab: 'University of Oxford, DeepMind, University of Edinburgh, Facebook AI Research'
+    quote: 'We introduce a method for learning landmark detectors from unlabelled
+      video frames and unpaired labels. This allows us to learn a detector from a
+      large collection of raw videos given only a few example annotations harvested
+      from existing data or motion capture. We achieve this by formulating the landmark
+      detection task as one of image translation, learning to map an image of the
+      object to an image of its landmarks, represented as a skeleton. The advantage
+      is that this translation problem can then be tackled by CycleGAN. However, we
+      show that a naive application of CycleGAN confounds appearance and pose information,
+      with suboptimal keypoint detection performance. We solve this problem by introducing
+      an analytical and differentiable renderer for the skeleton image so that no
+      appearance information can be leaked in the skeleton. Then, since cycle consistency
+      requires to reconstruct the input image from the skeleton, we supply the appearance
+      information thus removed by conditioning the generator with a second image of
+      the same object (e.g. another frame from a video). Furthermore, while CycleGAN
+      uses two cycle consistency constraints, we show that the second one is detrimental
+      in this application and we discard it, significantly simplifying the model.
+      We show that these modifications improve the quality of the learned detector
+      leading to state-of-the-art unsupervised landmark detection performance in a
+      number of challenging human pose and facial landmark detection benchmarks.'
+    title: "[CVPR 2019] Learning Landmarks from Unaligned Data using Image Translation"
+    type: paper
+    url: http://www.robots.ox.ac.uk/~vgg/research/unsupervised_pose/
+intro_text: ""
+outro_text: ""

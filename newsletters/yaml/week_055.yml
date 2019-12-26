@@ -1,0 +1,130 @@
+articles:
+  - category: ml
+    description: 'This is a short article in which authors show how to use structural
+      time series models within Tensorflow Probability. This type of models is quite
+      flexible as one can define local trends and seasonal trends very explicitly
+      for better interpretability. A new set of tools have been integrated to Tensorflow
+      Probability to do exactly this type of modelling. In the post, authors shows
+      how to use it with two text-book examples: forecasting CO2 concentration in
+      Hawaii and forecasting the demand for electricity in Australia.'
+    lab: 'Dave Moore, Jacob Burnim (TensorFlow Probability Team)'
+    title: 'Structural Time Series modeling in TensorFlow Probability'
+    type: blog
+    url: https://medium.com/tensorflow/structural-time-series-modeling-in-tensorflow-probability-344edac24083
+  - category: cv
+    description: 'A very nice post post that summarises no less than 7 papers on pose
+      estimation; ranging from 2014 up to state-of-the-art at CVPR 2019. They are
+      all explained in simple and concise terms. For each, in 10 lines or so, we are
+      given the general idea of the paper as well as the specificity of the architecture
+      that was used. it''s also a great way to get up to speed with some of the most
+      ambitious CNN architectures out there like HRNet or stacked hourglass.'
+    lab: 'Sudharshan Chandra Babu (Nanonets)'
+    title: 'A 2019 guide to Human Pose Estimation with Deep Learning'
+    type: blog
+    url: https://blog.nanonets.com/human-pose-estimation-2d-guide/?utm_source=reddit&utm_medium=social&utm_campaign=pose&utm_content=GROUP_NAME
+  - category: theory
+    description: 'This post is almost a month old; shame on me for missing it, because
+      it is a really nice read! In this one, Lilian Weng offers a review of different
+      recent papers on generation and overfitting in deep learning. She starts with
+      reminders of how generalisation was conceptualised before the deep learning
+      era (in particular using standard notions of information theory) then move on
+      the more recent results. In particular, there is both a summary and a reimplementation
+      of 3 reference papers that were published in 2018 and later.'
+    lab: 'Lilian Weng'
+    recommended: true
+    title: 'Are Deep Neural Networks Dramatically Overfitted?'
+    type: blog
+    url: https://lilianweng.github.io/lil-log/2019/03/14/are-deep-neural-networks-dramatically-overfitted.html?utm_campaign=NLP%20News&utm_medium=email&utm_source=Revue%20newsletter
+  - category: dl
+    description: 'This post is a rather short summary of <a href=https://openreview.net/forum?id=B1EA-M-0Z>Deep
+      Neural Networks as Gaussian Processes</a>, a paper published at ICLR 2018 in
+      which authors extend a <a href=http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.446.9306&rep=rep1&type=pdf>result</a>
+      from 1994. This post gives the gist of the proof found in both works. The first
+      result states that a one-hidden-layer perceptron is equivalent to a Gaussian
+      process (with a kernel based on the loss function) if the number of hidden units
+      is sufficiently large. The second result extends on the first and proves that
+      any layer in a deep network is equivalent to a Gaussian process if it has enough
+      units.'
+    lab: 'Pillow Lab Blog'
+    title: 'Deep Neural Networks as Gaussian Processes'
+    type: blog
+    url: https://pillowlab.wordpress.com/2019/04/14/deep-neural-networks-as-gaussian-processes/
+  - category: dl
+    description: 'See also an MXNet implementation <a href=https://github.com/terrychenism/OctaveConv>here</a>
+      and a Pytorch one <a href=https://github.com/lxtGH/OctaveConv_pytorch>here</a>.'
+    lab: 'Facebook AI, National University of Singapore, Qihoo 360 AI Institute'
+    quote: "[...] The output feature maps of a convolution layer can be seen as a\
+      \ mixture of information at different frequencies. In this work, we propose\
+      \ to factorize the mixed feature maps by their frequencies and design a novel\
+      \ Octave Convolution (OctConv) operation to store and process feature maps that\
+      \ vary spatially 'slower' at a lower spatial resolution reducing both memory\
+      \ and computation cost. Unlike existing multi-scale methods, OctConv is formulated\
+      \ as a single, generic, plug-and-play convolutional unit that can be used as\
+      \ a direct replacement of (vanilla) convolutions without any adjustments in\
+      \ the network architecture. [...] We experimentally show that by simply replacing\
+      \ convolutions with OctConv, we can consistently boost accuracy for both image\
+      \ and video recognition tasks, while reducing memory and computational cost.\
+      \ [...]."
+    title: "[arXiv] Drop an Octave: Reducing Spatial Redundancy in Convolutional Neural\
+      \ Networks with Octave Convolution"
+    type: paper
+    url: https://arxiv.org/abs/1904.05049
+  - category: cv
+    description:
+    lab: 'Google Brain'
+    quote: "[...] In this paper, we describe a simple procedure called AutoAugment\
+      \ to automatically search for improved data augmentation policies. In our implementation,\
+      \ we have designed a search space where a policy consists of many sub-policies,\
+      \ one of which is randomly chosen for each image in each mini-batch. A sub-policy\
+      \ consists of two operations, each operation being an image processing function\
+      \ such as translation, rotation, or shearing, and the probabilities and magnitudes\
+      \ with which the functions are applied. We use a search algorithm to find the\
+      \ best policy such that the neural network yields the highest validation accuracy\
+      \ on a target dataset. Our method achieves state-of-the-art accuracy on CIFAR-10,\
+      \ CIFAR-100, SVHN, and ImageNet (without additional data). [...] Augmentation\
+      \ policies we find are transferable between datasets. The policy learned on\
+      \ ImageNet transfers well to achieve significant improvements on other datasets,\
+      \ such as Oxford Flowers, Caltech-101, Oxford-IIT Pets, FGVC Aircraft, and Stanford\
+      \ Cars."
+    title: "[CVPR 2019] AutoAugment: Learning Augmentation Policies from Data"
+    type: paper
+    url: https://arxiv.org/abs/1805.09501
+  - category: cv
+    description:
+    lab: 'University of Posts and Telecommunications (Beijing, China), AI Labs (Beijing,
+      China), University, Syracuse'
+    quote: "[...] A number of deep metric learning methods, which ensure that similar\
+      \ examples are mapped close to each other and dissimilar examples are mapped\
+      \ farther apart, have been proposed to construct effective structures for loss\
+      \ functions and have shown promising results. In this paper, different from\
+      \ the approaches on learning the loss structures, we propose a robust SNR distance\
+      \ metric based on Signal-to-Noise Ratio (SNR) for measuring the similarity of\
+      \ image pairs for deep metric learning. [...] Compared with Euclidean distance\
+      \ metric, our SNR distance metric can further jointly reduce the intra-class\
+      \ distances and enlarge the inter-class distances for learned features. Leveraging\
+      \ our SNR distance metric, we propose Deep SNR-based Metric Learning (DSML)\
+      \ to generate discriminative feature embeddings. By extensive experiments on\
+      \ three widely adopted benchmarks, including CARS196, CUB200-2011 and CIFAR10,\
+      \ our DSML has shown its superiority over other state-of-the-art methods. [...]"
+    title: "[CVPR 2019] Signal-to-Noise Ratio: A Robust Distance Metric for Deep Metric\
+      \ Learning"
+    type: paper
+    url: https://arxiv.org/abs/1904.02616v1
+  - category: cv
+    description:
+    lab: 'Google Brain'
+    quote: 'Current state-of-the-art convolutional architectures for object detection
+      are manually designed. Here we aim to learn a better architecture of feature
+      pyramid network for object detection. We adopt Neural Architecture Search and
+      discover a new feature pyramid architecture in a novel scalable search space
+      covering all cross-scale connections. The discovered architecture, named NAS-FPN,
+      consists of a combination of top-down and bottom-up connections to fuse features
+      across scales. NAS-FPN, combined with various backbone models in the RetinaNet
+      framework, achieves better accuracy and latency tradeoff compared to state-of-the-art
+      object detection models. [...]'
+    title: "[CVPR 2019] NAS-FPN: Learning Scalable Feature Pyramid Architecture for\
+      \ Object Detection"
+    type: paper
+    url: https://arxiv.org/abs/1904.07392
+intro_text: ""
+outro_text: ""

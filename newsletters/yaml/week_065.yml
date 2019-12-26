@@ -1,0 +1,100 @@
+articles:
+  - category: cv
+    description: 'The author made a very well explained 4-minute-long <a href=https://www.youtube.com/watch?v=BmNKbnF69eY>video</a>
+      to explain the gist of the paper.'
+    img: https://i.ibb.co/tD4B6gv/Selection-888.png
+    lab: 'Google Research'
+    quote: 'We present a generalization of the Cauchy/Lorentzian, Geman-McClure, Welsch/Leclerc,
+      generalized Charbonnier, Charbonnier/pseudo-Huber/L1-L2, and L2 loss functions.
+      By introducing robustness as a continuous parameter, our loss function allows
+      algorithms built around robust loss minimization to be generalized, which improves
+      performance on basic vision tasks such as registration and clustering. Interpreting
+      our loss as the negative log of a univariate density yields a general probability
+      distribution that includes normal and Cauchy distributions as special cases.
+      This probabilistic interpretation enables the training of neural networks in
+      which the robustness of the loss automatically adapts itself during training,
+      which improves performance on learning-based tasks such as generative image
+      synthesis and unsupervised monocular depth estimation, without requiring any
+      manual parameter tuning.'
+    title: "[CVPR 2019] A General and Adaptive Robust Loss Function"
+    type: paper
+    url: https://arxiv.org/abs/1701.03077
+  - category: theory
+    description:
+    img: https://i.ibb.co/NmRT06R/Selection-889.png
+    lab: 'Mila, Université de Montréal, Google Brain'
+    quote: 'This work revisits the use of information criteria to characterize the
+      generalization of deep learning models. In particular, we empirically demonstrate
+      the effectiveness of the Takeuchi information criterion (TIC), an extension
+      of the Akaike information criterion (AIC) for misspecified models, in estimating
+      the generalization gap, shedding light on why quantities such as the number
+      of parameters cannot quantify generalization. The TIC depends on both the Hessian
+      of the loss H and the covariance of the gradients C. By exploring the similarities
+      and differences between these two matrices as well as the Fisher information
+      matrix F, we study the interplay between noise and curvature in deep models.
+      We also address the question of whether C is a reasonable approximation to F,
+      as is commonly assumed.'
+    title: "[arXiv] Information matrices and generalization"
+    type: paper
+    url: https://arxiv.org/abs/1906.07774v1
+  - category: cv
+    description:
+    img: https://i.ibb.co/VVhSN5t/Selection-890.png
+    lab: 'The Chinese University of Hong Kong, Inception Institute of Artificial Intelligence,
+      Beijing Institute of Technology'
+    quote: 'Recent years have witnessed a surge in the popularity of attention mechanisms
+      encoded within deep neural networks. Inspired by the selective attention in
+      the visual cortex, artificial attention is designed to focus a neural network
+      on the most task-relevant input signal. Many works claim that the attention
+      mechanism offers an extra dimension of interpretability by explaining where
+      the neural networks look. However, recent studies demonstrate that artificial
+      attention maps do not always coincide with common intuition. In view of these
+      conflicting evidences, here we make a systematic study on using artificial attention
+      and human attention in neural network design. With three example computer vision
+      tasks (i.e., salient object segmentation, video action recognition, and fine-grained
+      image classification), diverse representative network backbones (i.e., AlexNet,
+      VGGNet, ResNet) and famous architectures (i.e., Two-stream, FCN), corresponding
+      real human gaze data, and systematically conducted large-scale quantitative
+      studies, we offer novel insights into existing artificial attention mechanisms
+      and give preliminary answers to several key questions related to human and artificial
+      attention mechanisms. <b>Our overall results demonstrate that human attention
+      is capable of bench-marking the meaningful `ground-truth'' in attention-driven
+      tasks, where the more the artificial attention is close to the human attention,
+      the better the performance</b>; for higher-level vision tasks, it is case-by-case.
+      We believe it would be advisable for attention-driven tasks to explicitly force
+      a better alignment between artificial and human attentions to boost the performance;
+      such alignment would also benefit making the deep networks more transparent
+      and explainable for higher-level computer vision tasks.'
+    title: "[arXiv] Human vs Machine Attention in Neural Networks: A Comparative Study"
+    type: paper
+    url: https://arxiv.org/abs/1906.08764v2
+  - category: dl
+    description:
+    img: https://i.ibb.co/vkKb1W0/Selection-891.png
+    lab: 'Indian Institute of Technology Hyderabad'
+    quote: 'Mini-batch gradient descent based methods are the de facto algorithms
+      for training neural network architectures today. We introduce a mini-batch selection
+      strategy based on submodular function maximization. Our novel submodular formulation
+      captures the informativeness of each sample and diversity of the whole subset.
+      We design an efficient, greedy algorithm which can give high-quality solutions
+      to this NP-hard combinatorial optimization problem. Our extensive experiments
+      on standard datasets show that the deep models trained using the proposed batch
+      selection strategy provide better generalization than Stochastic Gradient Descent
+      as well as a popular baseline sampling strategy across different learning rates,
+      batch sizes, and distance metrics.'
+    title: "[ IJCAI 2019] Submodular Batch Selection for Training Deep Neural Networks"
+    type: paper
+    url: https://arxiv.org/abs/1906.08771v1
+  - category: cv
+    description: 'In this short blog post, the author combines ideas from the two
+      different works: the first one <a href=https://distill.pub/2018/differentiable-parameterizations/>performs
+      style transfer</a> with a non-VGG architecture while the second trains <a href=https://arxiv.org/abs/1906.00945>feature-robust
+      ResNet</a>. The result is an improvement in image quality when using a non-VGG
+      architecture for style transfer.'
+    img: https://i.ibb.co/xYXC7xP/Selection-892.png
+    lab: 'Reiichiro Nakano'
+    title: 'Neural Style Transfer with Adversarially Robust Classifiers'
+    type: blog
+    url: https://reiinakano.com/2019/06/21/robust-neural-style-transfer.html
+intro_text: "My apologies for the rather short edition this week. Hope you will like it nonetheless! Have a nice Friday."
+outro_text: ""

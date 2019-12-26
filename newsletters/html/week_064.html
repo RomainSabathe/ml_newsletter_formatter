@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+<title>ML newsletter</title>
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+	html,body,h1,h2,h3,h4,h5,h6 {
+        font-family: "Roboto", sans-serif;
+    }
+
+    p {
+        font-size: 15px;
+    }
+
+	.category{
+	  padding: 20px;
+	  margin: auto;
+	  background: #F5F5F5;
+	  margin-bottom: 25px;
+	  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+	  transition: all 0.3s; 
+	  border-radius: 3px;
+	}
+
+    .category-title{
+      margin-bottom: 30px;
+    }
+
+	.category-logo{
+	  margin-right: 10px;
+	}
+
+	.article-logo{
+	  margin-right: 3px;
+	}
+
+    .recommended{
+	  margin-right: 2px;
+    }
+
+    .quote{
+      font-family: "Times New Roman", serif;
+      font-size: 15px;
+    }
+</style>
+
+
+<body>
+
+<!-- Page Container -->
+<div class="container-fluid">
+
+  
+  <!-- The Grid -->
+  <div class="row">
+  
+      <div class="col-md-10 col-md-offset-1">
+
+          
+          <!-- Category block -->
+          <div class="category">
+              <h2 class="category-title">
+                  <img src="https://image.flaticon.com/icons/png/512/722/722174.png"
+                       class="fa fa-fw category-logo">Computer Vision
+              </h2>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/155/155292.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://mattdeitke.github.io/CVPR-2019/">2019 CVPR Accepted Papers</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    Matt Deitke
+                  </h6>
+
+                                    <div style="padding-bottom: 15px;">
+                      <a href="https://mattdeitke.github.io/CVPR-2019/">
+                          <img src=https://trello-attachments.s3.amazonaws.com/5bf506f9456de85b3a3d0024/5d07cd6b0266338f6649c00a/5a6d40fb9a009d68444cf8801c792f55/content_image.jpg
+                               class="img-responsive center-block"
+                               style="max-width: 80%;
+                                      max-height: 300px;
+                                      border: 1px solid #A5A5A5;">
+                      </a>
+                  </div>
+                  
+                                    <p>After ICML last week, CVPR followed and was held at the same Long Beach Convention Center. There are a lot of different links out there to explore all of the content that has been published. The title one is a fork from <a href=http://www.arxiv-sanity.com/>arXiv Sanity</a> adapted to CVPR. Otherwise a more fundamental way of navigating is the <a href=http://openaccess.thecvf.com/CVPR2019.py>official list of accepted papers</a>. For the statistics of the conference, there is a <a href=https://github.com/hoya012/CVPR-2019-Paper-Statistics>GitHub repo</a> aggregating them. Lastly, Synced as usual provided a short <a href=https://syncedreview.com/2019/06/18/cvpr-2019-attracts-9k-attendees-best-papers-announced-imagenet-honoured-10-years-later/>blog post</a> mentioning the names of the best papers. The work leading to the creation of ImageNet was awarded with the equivalent of a test-of-time award, recognising the importance of this work for the development of deep learning-based computer vision over the last ten years.</p>
+              </div>
+              <hr>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/155/155292.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://arxiv.org/abs/1906.05909v1">[arXiv] Stand-Alone Self-Attention in Vision Models</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    Google Research, Brain team
+                  </h6>
+
+                                    <div style="padding-bottom: 15px;">
+                      <a href="https://arxiv.org/abs/1906.05909v1">
+                          <img src=https://i.ibb.co/wwxdg4w/Selection-197.png
+                               class="img-responsive center-block"
+                               style="max-width: 80%;
+                                      max-height: 300px;
+                                      border: 1px solid #A5A5A5;">
+                      </a>
+                  </div>
+                  
+                                    <blockquote class="blockquote">
+                     <p class="quote">Convolutions are a fundamental building block of modern computer vision systems. Recent approaches have argued for going beyond convolutions in order to capture long-range dependencies. These efforts focus on augmenting convolutional models with content-based interactions, such as self-attention and non-local means, to achieve gains on a number of vision tasks. The natural question that arises is whether attention can be a stand-alone primitive for vision models instead of serving as just an augmentation on top of convolutions. In developing and testing a pure self-attention vision model, we verify that self-attention can indeed be an effective stand-alone layer. <b>A simple procedure of replacing all instances of spatial convolutions with a form of self-attention applied to ResNet model produces a fully self-attentional model that outperforms the baseline on ImageNet classification with 12% fewer FLOPS and 29% fewer parameters.</b> On COCO object detection, a pure self-attention model matches the mAP of a baseline RetinaNet while having 39% fewer FLOPS and 34% fewer parameters. Detailed ablation studies demonstrate that self-attention is especially impactful when used in later layers. These results establish that stand-alone self-attention is an important addition to the vision practitioner's toolbox.</p>
+                  </blockquote>
+                                    <p></p>
+              </div>
+              <hr>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/155/155292.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://github.com/adobe/antialiased-cnns">[ICML 2019] Making Convolutional Networks Shift-Invariant Again</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    Adobe Research
+                  </h6>
+
+                                    <div style="padding-bottom: 15px;">
+                      <a href="https://github.com/adobe/antialiased-cnns">
+                          <img src=https://richzhang.github.io/antialiased-cnns/resources/gifs2/video_00810.gif
+                               class="img-responsive center-block"
+                               style="max-width: 80%;
+                                      max-height: 300px;
+                                      border: 1px solid #A5A5A5;">
+                      </a>
+                  </div>
+                  
+                                    <blockquote class="blockquote">
+                     <p class="quote">Modern convolutional networks are not shift-invariant, as small input shifts or translations can cause drastic changes in the output. Commonly used downsampling methods, such as max-pooling, strided-convolution, and average-pooling, ignore the sampling theorem. The well-known signal processing fix is anti-aliasing by low-pass filtering before downsampling. However, simply inserting this module into deep networks degrades performance; as a result, it is seldomly used today. We show that when integrated correctly, it is compatible with existing architectural components, such as max-pooling and strided-convolution. We observe increased accuracy in ImageNet classification, across several commonly-used architectures, such as ResNet, DenseNet, and MobileNet, indicating effective regularization. Furthermore, we observe better generalization, in terms of stability and robustness to input corruptions. Our results demonstrate that this classical signal processing technique has been undeservingly overlooked in modern deep networks.</p>
+                  </blockquote>
+                                    <p></p>
+              </div>
+              <hr>
+
+                          
+          </div>
+          
+          <!-- Category block -->
+          <div class="category">
+              <h2 class="category-title">
+                  <img src="https://image.flaticon.com/icons/png/512/179/179121.png"
+                       class="fa fa-fw category-logo">Optimisation & Learning Theory
+              </h2>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/155/155292.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://arxiv.org/abs/1906.04724">[aXiv] Large Scale Structure of Neural Network Loss Landscapes</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    Google Research, New York University
+                  </h6>
+
+                                    <div style="padding-bottom: 15px;">
+                      <a href="https://arxiv.org/abs/1906.04724">
+                          <img src=https://i.ibb.co/ZN3gy6J/Selection-198.png
+                               class="img-responsive center-block"
+                               style="max-width: 80%;
+                                      max-height: 300px;
+                                      border: 1px solid #A5A5A5;">
+                      </a>
+                  </div>
+                  
+                                    <blockquote class="blockquote">
+                     <p class="quote">There are many surprising and perhaps counter-intuitive properties of optimization of deep neural networks. We propose and experimentally verify a unified phenomenological model of the loss landscape that incorporates many of them. High dimensionality plays a key role in our model. Our core idea is to model the loss landscape as a set of high dimensional wedges that together form a large-scale, inter-connected structure and towards which optimization is drawn. We first show that hyperparameter choices such as learning rate, network width and L2 regularization, affect the path optimizer takes through the landscape in a similar ways, influencing the large scale curvature of the regions the optimizer explores. Finally, we predict and demonstrate new counter-intuitive properties of the loss-landscape. We show an existence of low loss subspaces connecting a set (not only a pair) of solutions, and verify it experimentally. Finally, we analyze recently popular ensembling techniques for deep networks in the light of our model.</p>
+                  </blockquote>
+                                    <p></p>
+              </div>
+              <hr>
+
+                          
+          </div>
+          
+          <!-- Category block -->
+          <div class="category">
+              <h2 class="category-title">
+                  <img src="https://image.flaticon.com/icons/png/512/484/484582.png"
+                       class="fa fa-fw category-logo">Natural Language Processing
+              </h2>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/155/155292.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://arxiv.org/abs/1906.08237#">[arXiv] XLNet: Generalized Autoregressive Pretraining for Language Understanding</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    Carnegie Mellon University, Google Brain
+                  </h6>
+
+                                    <div style="padding-bottom: 15px;">
+                      <a href="https://arxiv.org/abs/1906.08237#">
+                          <img src=https://i.ibb.co/M9Kbwsb/Selection-199.png
+                               class="img-responsive center-block"
+                               style="max-width: 80%;
+                                      max-height: 300px;
+                                      border: 1px solid #A5A5A5;">
+                      </a>
+                  </div>
+                  
+                                    <blockquote class="blockquote">
+                     <p class="quote">With the capability of modeling bidirectional contexts, denoising autoencoding based pretraining like BERT achieves better performance than pretraining approaches based on autoregressive language modeling. However, relying on corrupting the input with masks, BERT neglects dependency between the masked positions and suffers from a pretrain-finetune discrepancy. In light of these pros and cons, we propose XLNet, a generalized autoregressive pretraining method that (1) enables learning bidirectional contexts by maximizing the expected likelihood over all permutations of the factorization order and (2) overcomes the limitations of BERT thanks to its autoregressive formulation. Furthermore, XLNet integrates ideas from Transformer-XL, the state-of-the-art autoregressive model, into pretraining. <b>Empirically, XLNet outperforms BERT on 20 tasks, often by a large margin, and achieves state-of-the-art results on 18 tasks including question answering, natural language inference, sentiment analysis, and document ranking.</b></p>
+                  </blockquote>
+                                    <p>The <a href=https://github.com/zihangdai/xlnet>code</a> is also available. What an exciting time for NLP!</p>
+              </div>
+              <hr>
+
+                          
+          </div>
+          
+          <!-- Category block -->
+          <div class="category">
+              <h2 class="category-title">
+                  <img src="https://imageog.flaticon.com/icons/png/512/248/248114.png"
+                       class="fa fa-fw category-logo">Production & Engineering
+              </h2>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/25/25231.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://github.com/allegroai/trains">TRAINS - Auto-Magical Experiment Manager & Version Control for AI</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    <a href=https://allegro.ai>allegroai</a>
+                  </h6>
+
+                                    <div style="padding-bottom: 15px;">
+                      <a href="https://github.com/allegroai/trains">
+                          <img src=https://github.com/allegroai/trains/raw/master/docs/webapp_screenshots.gif?raw=true
+                               class="img-responsive center-block"
+                               style="max-width: 80%;
+                                      max-height: 300px;
+                                      border: 1px solid #A5A5A5;">
+                      </a>
+                  </div>
+                  
+                                    <p>Yet another alternative to <a href=https://github.com/IDSIA/sacred>Sacred</a>, <a href=https://github.com/mlflow/mlflow>ML Flow</a> and alike,... But I won't complain. It's quite the opposite actually! A strong argument that creators of TRAINS use is that their library should integrate seamlessly in a project; 'magically' in two lines of code. Obviously that makes me a bit sceptic in terms of the customisation and flexibility that TRAINS would offer. Unfortunately I didn't have the time yet to try it. But when I do, I hope I'll be proven wrong! :-)</p>
+              </div>
+              <hr>
+
+                          
+          </div>
+                </div>
+
+  <!-- End Grid -->
+  </div>
+
+    
+  <!-- End Page Container -->
+</div>
+
+</body>
+</html>

@@ -1,0 +1,123 @@
+articles:
+  - category: dl
+    description:
+    img: https://i.ibb.co/VVj1Zhy/Selection-273.png
+    lab: 'University of California, Davis Stern School of Business'
+    quote: "[...] In this paper, we introduce a new method that attaches an explicit\
+      \ uncertainty statement to the probabilities of classification using deep neural\
+      \ networks. Precisely, we view that the classification probabilities are sampled\
+      \ from an unknown distribution, and we propose to learn this distribution through\
+      \ the Dirichlet mixture that is flexible enough for approximating any continuous\
+      \ distribution on the simplex. We then construct credible intervals from the\
+      \ learned distribution to assess the uncertainty of the classification probabilities.\
+      \ Our approach is easy to implement, computationally efficient, and can be coupled\
+      \ with any deep neural network architecture. <b>Our method leverages the crucial\
+      \ observation that, in many classification applications such as medical diagnosis,\
+      \ more than one class labels are available for each observational unit.</b>\
+      \ We demonstrate the usefulness of our approach through simulations and a real\
+      \ data example."
+    title: "[arXiv] Quantifying Intrinsic Uncertainty in Classification via Deep Dirichlet\
+      \ Mixture Networks"
+    type: paper
+    url: https://arxiv.org/abs/1906.04450v2
+  - category: theory
+    description:
+    img: https://i.ibb.co/xHpVV2R/Selection-272.png
+    lab: 'University of Illinois, Georgia Tech, Microsoft Dynamics 365 AI, Microsoft
+      Research'
+    quote: 'The learning rate warmup heuristic achieves remarkable success in stabilizing
+      training, accelerating convergence and improving generalization for adaptive
+      stochastic optimization algorithms like RMSprop and Adam. Here, we study its
+      mechanism in details. Pursuing the theory behind warmup, we identify a problem
+      of the adaptive learning rate (i.e., it has problematically large variance in
+      the early stage), suggest warmup works as a variance reduction technique, and
+      provide both empirical and theoretical evidence to verify our hypothesis. We
+      further propose RAdam, a new variant of Adam, by introducing a term to rectify
+      the variance of the adaptive learning rate. Extensive experimental results on
+      image classification, language modeling, and neural machine translation verify
+      our intuition and demonstrate the effectiveness and robustness of our proposed
+      method.'
+    title: "[arXiv] On the Variance of the Adaptive Learning Rate and Beyond"
+    type: paper
+    url: https://arxiv.org/abs/1908.03265
+  - category: dl
+    description:
+    lab: 'Google Brain'
+    quote: "[...] We aim to fill this gap and introduce ATMC, an adaptive noise MCMC\
+      \ algorithm that estimates and is able to sample from the posterior of a neural\
+      \ network. ATMC dynamically adjusts the amount of momentum and noise applied\
+      \ to each parameter update in order to compensate for the use of stochastic\
+      \ gradients. We use a ResNet architecture without batch normalization to test\
+      \ ATMC on the Cifar10 benchmark and the large scale ImageNet benchmark and show\
+      \ that, despite the absence of batch normalization, ATMC outperforms a strong\
+      \ optimization baseline in terms of both classification accuracy and test log-likelihood.\
+      \ We show that ATMC is intrinsically robust to overfitting on the training data\
+      \ and that ATMC provides a better calibrated measure of uncertainty compared\
+      \ to the optimization baseline."
+    title: "[arXiv] Bayesian Inference for Large Scale Image Classification"
+    type: paper
+    url: https://arxiv.org/abs/1908.03491
+  - category: cv
+    description:
+    img: https://i.ibb.co/nmLfkz9/Selection-271.png
+    lab: 'Bosch Center for Artificial Intelligence, University of Bonn'
+    quote: 'To verify and validate networks, it is essential to gain insight into
+      their decisions, limitations as well as possible shortcomings of training data.
+      In this work, we propose a post-hoc, optimization based visual explanation method,
+      which highlights the evidence in the input image for a specific prediction.
+      Our approach is based on a novel technique to defend against adversarial evidence
+      (i.e. faulty evidence due to artefacts) by filtering gradients during optimization.
+      The defense does not depend on human-tuned parameters. It enables explanations
+      which are both fine-grained and preserve the characteristics of images, such
+      as edges and colors. The explanations are interpretable, suited for visualizing
+      detailed evidence and can be tested as they are valid model inputs. We qualitatively
+      and quantitatively evaluate our approach on a multitude of models and datasets.'
+    title: "[CVPR 2019] Interpretable and Fine-Grained Visual Explanations for Convolutional\
+      \ Neural Networks"
+    type: paper
+    url: https://arxiv.org/abs/1908.02686v1
+  - category: nlp
+    description:
+    img: https://bair.berkeley.edu/static/blog/memorization/predictive_models_2x.png
+    lab: 'The Berkeley Artificial Intelligence Research Blog'
+    quote: "It is important whenever designing new technologies to ask “how will this\
+      \ affect people’s privacy?” This topic is especially important with regard to\
+      \ machine learning, where machine learning models are often trained on sensitive\
+      \ user data and then released to the public. For example, in the last few years\
+      \ we have seen models trained on users’ private emails, text messages, and medical\
+      \ records.\nThis article covers two aspects of our upcoming USENIX Security\
+      \ paper that investigates to what extent neural networks memorize rare and unique\
+      \ aspects of their training data."
+    title: 'Evaluating and Testing Unintended Memorization in Neural Networks'
+    type: blog
+    url: https://bair.berkeley.edu/blog/2019/08/13/memorization/
+  - category: cv
+    description: 'If you liked this article, make sure to check the <a href=https://heartbeat.fritz.ai/@mwitiderrick>author''s
+      page</a>. You will find other ''2019 guides'' on object detection, pose estimation,
+      semantic segmentation,...'
+    img: https://miro.medium.com/max/700/1*G3lkgBddl8XtcuVtDQ6XKA.png
+    lab: 'Derrick Mwiti'
+    quote: 'In this article, we’ll look at how deep learning can be used to compress
+      images in order to improve performance when working with image data.'
+    title: 'A 2019 Guide to Deep Learning-Based Image Compression'
+    type: blog
+    url: https://heartbeat.fritz.ai/a-2019-guide-to-deep-learning-based-image-compression-2f5253b4d811
+  - category: cv
+    description:
+    img: https://i.ibb.co/Yfkn9Y8/Selection-270.png
+    lab: 'Tianjin University, Harbin Institute of Technology'
+    quote: 'Blind deconvolution is a classical yet challenging low-level vision problem
+      with many real-world applications. Traditional maximum a posterior (MAP) based
+      methods rely heavily on fixed and handcrafted priors that certainly are insufficient
+      in characterizing clean images and blur kernels, and usually adopt specially
+      designed alternating minimization to avoid trivial solution. [...] To connect
+      MAP and deep models, we in this paper present two generative networks for respectively
+      modeling the deep priors of clean image and blur kernel, and propose an unconstrained
+      neural optimization solution to blind deconvolution. [...]. The process of neural
+      optimization can be explained as a kind of ''zero-shot'' self-supervised learning
+      of the generative networks, and thus our proposed method is dubbed SelfDeblur.'
+    title: "[arXiv] Neural Blind Deconvolution Using Deep Priors"
+    type: paper
+    url: https://arxiv.org/abs/1908.02197v1
+intro_text: ""
+outro_text: ""

@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+<title>ML newsletter</title>
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+	html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+
+	.category{
+	  padding: 20px;
+	  margin: auto;
+	  background: #F5F5F5;
+	  margin-bottom: 25px;
+	  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+	  transition: all 0.3s; 
+	  border-radius: 3px;
+	}
+
+    .category-title{
+      margin-bottom: 30px;
+    }
+
+	.category-logo{
+	  margin-right: 10px;
+	}
+
+	.article-logo{
+	  margin-right: 3px;
+	}
+
+    .recommended{
+	  margin-right: 2px;
+    }
+
+    .quote{
+      font-size: 11px;
+    }
+</style>
+
+
+<body>
+
+<!-- Page Container -->
+<div class="container" style="max-width:1400px;">
+
+  
+  <!-- The Grid -->
+  <div class="row">
+  
+      <!-- Dummy container to force centering. Yes. I'm a front-end noob. -->
+      <div class="col-sm-2"></div>
+
+      <div class="col-sm-8">
+
+          
+          <!-- Category block -->
+          <div class="category">
+              <h2 class="category-title">
+                  <img src="https://image.flaticon.com/icons/png/512/653/653500.png"
+                       class="fa fa-fw category-logo">General Machine Learning
+              </h2>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/60/60736.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://www.inference.vc/causal-inference-2-illustrating-interventions-in-a-toy-example/">Causal Inference 2: Illustrating Interventions via a Toy Example</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    inFERENCe (Ferenc Huszár)
+                  </h6>
+                                    <p>If you are like me and know nothing about causal inference then this blog post will be an interesting read! We learn how 3 seemingly same Gaussian distributions can actually reveal having fundamental differences. How? By the way they are generated. If an external agent was to apply a same intervention on the generation process then the three resulting distributions would be a lot different! This is a good reminder that, as the last figure of the blog shows, data distribution does not necessarily explains <i>everything</i> about the data. What I'm saying doesn't make any sense? Then you should read the post! ;-)</p>
+              </div>
+              <hr>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/60/60736.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://planspace.org/20181226-gaussian_processes_are_not_so_fancy/">Gaussian Processes are Not So Fancy</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    Aaron Schumacher
+                  </h6>
+                                    <p>A new post on Gaussian Processes! This one is slightly different from the posts we had a couple weeks ago  in the sense that the author focuses more on similarities that Gaussian Processes have with k-nearest neighbours and linear regression. For a better introduction to GPs, see the posts we referred in a previous newsletter (<a href=https://peterroelants.github.io/posts/gaussian-process-tutorial/>here</a> and <a href=https://www.jgoertler.com/visual-exploration-gaussian-processes/>here</a>).</p>
+              </div>
+              <hr>
+
+                          
+          </div>
+          
+          <!-- Category block -->
+          <div class="category">
+              <h2 class="category-title">
+                  <img src="https://image.flaticon.com/icons/png/512/149/149243.png"
+                       class="fa fa-fw category-logo">Deep Learning
+              </h2>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/155/155292.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://arxiv.org/abs/1901.04407">[arXiv] Self-Driving Cars: A Survey</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    Universidade Federal do Espírito Santo Vitória, Brasil
+                  </h6>
+                                    <blockquote class="blockquote">
+                     <p class="quote">We survey research on self-driving cars published in the literature focusing on autonomous cars developed since the DARPA challenges, [...] In this survey, we present the typical architecture of the autonomy system of self-driving cars. We also review research on relevant methods for perception and decision making. Furthermore, we present a detailed description of the architecture of the autonomy system of the UFES's car, IARA. Finally, we list prominent autonomous research cars developed by technology companies and reported in the media.</p>
+                  </blockquote>
+                                    <p></p>
+              </div>
+              <hr>
+
+                          
+          </div>
+          
+          <!-- Category block -->
+          <div class="category">
+              <h2 class="category-title">
+                  <img src="https://image.flaticon.com/icons/png/512/722/722174.png"
+                       class="fa fa-fw category-logo">Computer Vision
+              </h2>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/60/60736.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://medium.com/@cody.marie.wild/generating-with-style-the-mechanics-behind-nvidias-highly-realistic-gan-images-b6937237e3c6?sk=556a85aa3ff3bc05bb439c983564dfe9">Generating, With Style: The Mechanics Behind NVIDIA’s Highly Realistic GAN Images</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                        <span class="badge">
+                                  Recommended
+                              </span>
+                                                    Cody Marie Wild
+                  </h6>
+                                    <p>Just over a month ago, a team at NVIDIA submitted a paper showing <a href=https://arxiv.org/abs/1812.04948>new state-of-the-art results</a> on image generation using GANs. Among the novelties brought by the paper: a mapping of the usual latent space from where latent codes z are sampled; the use of <a href=https://arxiv.org/abs/1703.06868>adaptative instance normalization</a> at different stages of the generator and some noise added to the feature maps during the generation process. If you are not interested in all the specifics details of the paper, this blog post is perfect for you to get the gist of it.</p>
+              </div>
+              <hr>
+
+                          
+          </div>
+          
+          <!-- Category block -->
+          <div class="category">
+              <h2 class="category-title">
+                  <img src="https://image.flaticon.com/icons/png/512/179/179121.png"
+                       class="fa fa-fw category-logo">Optimisation & Learning Theory
+              </h2>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/155/155292.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://arxiv.org/abs/1901.07859">[arXiv] How do Mixture Density RNNs Predict the Future?</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    Department of Informatics, University of Oslo, Norway
+                  </h6>
+                                    <blockquote class="blockquote">
+                     <p class="quote">Gaining a better understanding of how and what machine learning systems learn is important to increase confidence in their decisions and catalyze further research. In this paper, we analyze the predictions made by a specific type of recurrent neural network, mixture density RNNs (MD-RNNs). These networks learn to model predictions as a combination of multiple Gaussian distributions, making them particularly interesting for problems where a sequence of inputs may lead to several distinct future possibilities.[...]</p>
+                  </blockquote>
+                                    <p></p>
+              </div>
+              <hr>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/155/155292.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://arxiv.org/abs/1901.03611">[arXiv] The Benefits of Over-parameterization at Initialization in Deep ReLU Networks</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    Montreal   Institute   for   Learning   Algorithms, Universite de Montreal
+                  </h6>
+                                    <blockquote class="blockquote">
+                     <p class="quote">It has been noted in existing literature that over-parameterization in ReLU networks generally leads to better performance. While there could be several reasons for this, we investigate desirable network properties at initialization which may be enjoyed by ReLU networks. [...] In the case of deep ReLU networks with weight vectors normalized by their norm, we derive an initialization required to tap the aforementioned benefits from over-parameterization without which network fails to learn for large depth.</p>
+                  </blockquote>
+                                    <p></p>
+              </div>
+              <hr>
+
+                          
+          </div>
+          
+          <!-- Category block -->
+          <div class="category">
+              <h2 class="category-title">
+                  <img src="https://image.flaticon.com/icons/png/512/249/249156.png"
+                       class="fa fa-fw category-logo">Reinforcement Learning
+              </h2>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/60/60736.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://deepmind.com/blog/alphastar-mastering-real-time-strategy-game-starcraft-ii/">AlphaStar: Mastering the Real-Time Strategy Game StarCraft II</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                        <span class="badge">
+                                  Recommended
+                              </span>
+                                                    DeepMind
+                  </h6>
+                                    <p>StarCraft II is close to be solved it appears! Yesterday, DeepMind released the footage of 10 games played by their newest agent called AlphaStar against two professional players (MaNa and TLO). AlphaStar won every single game! DeepMind shares some of the ideas that were used to build AlphaStar in this post. Obviously, state-of-the-art reinforcement learning is necessary  (with methods such as experience-replay, self-imitation learning, policy distillation). But more interestingly, much of the progress of the agent has been obtained in the last two months by organising a virtual tournament called the AlphaStar League. In the League, several versions of AlphaStar were competing against each other and each agent had a different learning objective. This consistently increased the Nash distribution of the agents, until the best agent was good enough to beat professional players.</p>
+              </div>
+              <hr>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/60/60736.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="http://inoryy.com/post/tensorflow2-deep-reinforcement-learning/">Deep Reinforcement Learning with TensorFlow 2.0</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    Roman Ring
+                  </h6>
+                                    <p>This is a concise tutorial on how to implement an Advantage Actor-Critic agent with Tensorflow 2.0, taking advantage of the Keras API. It is well thought as we build the model piece-by-piece in meaningful steps. The author also offers a reminder of what an advantage actor-critic is and how it differs from value-based methods.</p>
+              </div>
+              <hr>
+
+                          
+          </div>
+          
+          <!-- Category block -->
+          <div class="category">
+              <h2 class="category-title">
+                  <img src="https://imageog.flaticon.com/icons/png/512/248/248114.png"
+                       class="fa fa-fw category-logo">Production & Engineering
+              </h2>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/60/60736.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://trello-attachments.s3.amazonaws.com/5bf506f9456de85b3a3d0024/5c481fff860a545120e9b248/a3baff8cc1aacdd1cbf31199c00eb732/15658638.png">tensorflow/datasets: A collection of datasets ready to use with TensorFlow</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    Tensorflow
+                  </h6>
+                                    <p>Here's a repo that started in September 2018 but that I was not aware of. I am sure it will prove to be extremely useful as it provides a common interface to access some standard datasets like MNIST, CIFAR, COCO, ImageNet, SVHN, CelebA and even non-image datasets like IMDB-Reviews. To use the dataset, it's super simple: <code>datasets = tfds.load(name='mnist')</code>.</p>
+              </div>
+              <hr>
+
+                          
+          </div>
+                </div>
+      
+  <!-- Dummy container to force centering. Yes. I'm a front-end noob. -->
+  <div class="col-sm-2"></div>
+
+  <!-- End Grid -->
+  </div>
+
+    
+  <!-- End Page Container -->
+</div>
+
+</body>
+</html>

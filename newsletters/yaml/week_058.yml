@@ -1,0 +1,131 @@
+articles:
+  - category: engineering
+    description: 'Transformer-XL is, with GPT-2, one of the leading architectures
+      in NLP, especially for language models. Training these models from scratch on
+      extremely large datasets like WebText or WikiText-103 still takes a fair amount
+      of time. In this post, authors describe how they were able to scale up the training
+      using multiple machines and a bigger batch size.'
+    lab: 'Yaroslav Bulatov, Ben Mann, Darius Lam'
+    title: 'Scaling Transformer-XL to 128 GPUs'
+    type: blog
+    url: https://medium.com/south-park-commons/scaling-transformer-xl-to-128-gpus-85849508ec35
+  - category: rl
+    description: 'A gentle introduction to the problem of transferring robotic knowledge
+      obtained in a simulation to the physical world. In particular, the author explores
+      domain randomization, a method that randomly modifies attributes of the simulation
+      (physics dynamics like weight of objects, gravity, surface properties or even
+      colors, behaviour of light, etc.) as a sort of data augmentation. The post is
+      a thorough survey of papers exploring this topic; some of them are very recent
+      like <a href=https://arxiv.org/abs/1904.11621>Meta-Sim</a> which we talked about
+      last week. '
+    lab: 'Lilian Weng'
+    title: 'Domain Randomization for Sim2Real Transfer'
+    type: blog
+    url: https://lilianweng.github.io/lil-log/2019/05/05/domain-randomization.html
+  - author: 'Dae Ha Kim'
+    category: dl
+    description: 'This is a valuable resource for anyone interested in metric learning.
+      The papers presented cover an almost 15-year span with the latest ones being
+      from CVPR 2019.'
+    title: 'Survey of Deep Metric Learning: A comprehensive survey of deep metric
+      learning and related works'
+    type: github
+    url: https://github.com/kdhht2334/Survey_of_Deep_Metric_Learning
+  - category: cv
+    description: 'This post goes through the implementation of the Fast-SCNN architecture
+      with the Keras API of Tensorflow 2.0. <a href=https://arxiv.org/abs/1902.04502>Fast-SCNN</a>
+      is a fast segmentation model capable of above-real-time segmentation of high-resolution
+      images proposed in February this year. The post is a good reference for implementation
+      details but does not provide additional insights into the architecture compared
+      to the original paper. In particular, you will want to be familiar with common
+      tricks found in fast nets: depthwise separable convolutions, pyramid pooling
+      modules, inverted residual bottlenecks,...'
+    lab: 'Kshitiz Rimal'
+    title: 'Fast-SCNN explained and implemented using Tensorflow 2.0'
+    type: blog
+    url: https://medium.com/deep-learning-journals/fast-scnn-explained-and-implemented-using-tensorflow-2-0-6bd17c17a49e
+  - category: dl
+    description: 'See also another paper that explores the lottery ticket hypothesis
+      by Uber AI Labs <a href=https://arxiv.org/abs/1905.01067>here</a> (arXiv preprint).'
+    lab: 'MIT CSAIL'
+    quote: "[...] Contemporary experience is that sparse architectures produced by\
+      \ pruning are difficult to train from the start, which would similarly improve\
+      \ training performance. We find that a standard pruning technique naturally\
+      \ uncovers subnetworks whose initializations made them capable of training effectively.\
+      \ Based on these results, we articulate the 'lottery ticket hypothesis:' dense,\
+      \ randomly-initialized, feed-forward networks contain subnetworks ('winning\
+      \ tickets') that - when trained in isolation - reach test accuracy comparable\
+      \ to the original network in a similar number of iterations. The winning tickets\
+      \ we find have won the initialization lottery: their connections have initial\
+      \ weights that make training particularly effective. We present an algorithm\
+      \ to identify winning tickets and a series of experiments that support the lottery\
+      \ ticket hypothesis and the importance of these fortuitous initializations.\
+      \ [...]"
+    title: "[Best paper ICLR 2019] The Lottery Ticket Hypothesis: Finding Sparse,\
+      \ Trainable Neural Networks"
+    type: paper
+    url: https://openreview.net/forum?id=rJl-b3RcF7
+  - category: dl
+    description:
+    lab: 'Google Research, Google Brain'
+    quote: 'We present the next generation of MobileNets based on a combination of
+      complementary search techniques as well as a novel architecture design. MobileNetV3
+      is tuned to mobile phone CPUs through a combination of hardware aware network
+      architecture search (NAS) complemented by the NetAdapt algorithm and then subsequently
+      improved through novel architecture advances. This paper starts the exploration
+      of how automated search algorithms and network design can work together to harness
+      complementary approaches improving the overall state of the art. [...] '
+    title: "[arXiv] Searching for MobileNetV3"
+    type: paper
+    url: https://arxiv.org/abs/1905.02244
+  - category: nlp
+    description:
+    lab: 'Mila/Universite de Montreal and Microsoft Research'
+    quote: 'Natural language is hierarchically structured: smaller units (e.g., phrases)
+      are nested within larger units (e.g., clauses). When a larger constituent ends,
+      all of the smaller constituents that are nested within it must also be closed.
+      While the standard LSTM architecture allows different neurons to track information
+      at different time scales, it does not have an explicit bias towards modeling
+      a hierarchy of constituents. This paper proposes to add such inductive bias
+      by ordering the neurons; a vector of master input and forget gates ensures that
+      when a given neuron is updated, all the neurons that follow it in the ordering
+      are also updated. Our novel recurrent architecture, ordered neurons LSTM (ON-LSTM),
+      achieves good performance on four different tasks: language modeling, unsupervised
+      parsing, targeted syntactic evaluation, and logical inference.'
+    title: "[Best paper ICLR 2019] Ordered Neurons: Integrating Tree Structures into\
+      \ Recurrent Neural Networks"
+    type: paper
+    url: https://openreview.net/forum?id=B1l6qiR5F7
+  - category: engineering
+    description: 'This post is a love letter to <a href=https://dvc.org/>DVC</a>,
+      a Git-like system for data versioning. The author first shows why Git and Git
+      LFS may not be suitable for a proper data versioning for machine learning (limit
+      in the file size and in the location where the files can be stored). Instead,
+      DVC is presented as a flexible, robust way towards reproducibility. In the post,
+      the author gives an introduction to how DVC works and how it could be used in
+      a work environment.'
+    lab: 'David Herron'
+    title: 'Why Git and Git-LFS is not enough to solve the Machine Learning Reproducibility
+      crisis'
+    type: blog
+    url: https://towardsdatascience.com/why-git-and-git-lfs-is-not-enough-to-solve-the-machine-learning-reproducibility-crisis-f733b49e96e8
+  - category: theory
+    description:
+    lab: 'Google Brain, University of Michigan'
+    quote: 'Recent work has sought to understand the behavior of neural networks by
+      comparing representations between layers and between different trained models.
+      We examine methods for comparing neural network representations based on canonical
+      correlation analysis (CCA). We show that CCA belongs to a family of statistics
+      for measuring multivariate similarity, but that neither CCA nor any other statistic
+      that is invariant to invertible linear transformation can measure meaningful
+      similarities between representations of higher dimension than the number of
+      data points. We introduce a similarity index that measures the relationship
+      between representational similarity matrices and does not suffer from this limitation.
+      This similarity index is equivalent to centered kernel alignment (CKA) and is
+      also closely connected to CCA. Unlike CCA, CKA can reliably identify correspondences
+      between representations in networks trained from different initializations.'
+    title: "[ICML 2019] Similarity of Neural Network Representations Revisited"
+    type: paper
+    url: https://arxiv.org/abs/1905.00414
+intro_text: ""
+outro_text: ""

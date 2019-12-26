@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+<title>ML newsletter</title>
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+	html,body,h1,h2,h3,h4,h5,h6 {
+        font-family: "Roboto", sans-serif;
+    }
+
+    p {
+        font-size: 15px;
+    }
+
+	.category{
+	  padding: 20px;
+	  margin: auto;
+	  background: #F5F5F5;
+	  margin-bottom: 25px;
+	  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+	  transition: all 0.3s; 
+	  border-radius: 3px;
+	}
+
+	.intro-text{
+	  padding: 20px;
+	  margin: auto;
+	  margin-bottom: 10px;
+	  background: #F0EEEE;
+	  box-shadow: 0 6px 12px rgba(0,0,0,0.16), 0 6px 12px rgba(0,0,0,0.23);
+	  transition: all 0.3s; 
+	}
+
+    .category-title{
+      margin-bottom: 30px;
+    }
+
+	.category-logo{
+	  margin-right: 10px;
+	}
+
+	.article-logo{
+	  margin-right: 3px;
+	}
+
+    .recommended{
+	  margin-right: 2px;
+    }
+
+    .quote{
+      font-family: "Times New Roman", serif;
+      font-size: 15px;
+    }
+</style>
+
+
+<body>
+
+<!-- Page Container -->
+<div class="container-fluid">
+
+  
+  <!-- The Grid -->
+  <div class="row">
+  
+      <div class="col-md-10 col-md-offset-1">
+
+          
+          <!-- Category block -->
+          <div class="category">
+              <h2 class="category-title">
+                  <img src="https://image.flaticon.com/icons/png/512/653/653500.png"
+                       class="fa fa-fw category-logo">General Machine Learning
+              </h2>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/155/155292.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="http://bdl101.ml/">Bayesian Deep Learning 101</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    Yarin Gal
+                  </h6>
+
+                                    <div style="padding-bottom: 15px;">
+                      <a href="http://bdl101.ml/">
+                          <img src=https://i.ibb.co/kmdQ5NB/Selection-961.png
+                               class="img-responsive center-block"
+                               style="max-width: 80%;
+                                      max-height: 300px;
+                                      border: 1px solid #A5A5A5;">
+                      </a>
+                  </div>
+                  
+                                    <p>Two set of slides plus other resources presented by Yarin Gal at the Machine Learning Summer School of Moscow this year.</p>
+              </div>
+              <hr>
+
+                          
+          </div>
+          
+          <!-- Category block -->
+          <div class="category">
+              <h2 class="category-title">
+                  <img src="https://image.flaticon.com/icons/png/512/149/149243.png"
+                       class="fa fa-fw category-logo">Deep Learning
+              </h2>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/155/155292.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://arxiv.org/abs/1908.09822v1">[ICCV 2019] Confidence Regularized Self-Training</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    Carnegie Mellon University, NVIDIA, General Motors R&D
+                  </h6>
+
+                                    <div style="padding-bottom: 15px;">
+                      <a href="https://arxiv.org/abs/1908.09822v1">
+                          <img src=https://i.ibb.co/khK61MB/Selection-962.png
+                               class="img-responsive center-block"
+                               style="max-width: 80%;
+                                      max-height: 300px;
+                                      border: 1px solid #A5A5A5;">
+                      </a>
+                  </div>
+                  
+                                    <blockquote class="blockquote">
+                     <p class="quote">Recent advances in domain adaptation show that deep self-training presents a powerful means for unsupervised domain adaptation. These methods often involve an iterative process of predicting on target domain and then taking the confident predictions as pseudo-labels for retraining. However, since pseudo-labels can be noisy, self-training can put overconfident label belief on wrong classes, leading to deviated solutions with propagated errors. To address the problem, we propose a confidence regularized self-training (CRST) framework, formulated as regularized self-training. Our method treats pseudo-labels as continuous latent variables jointly optimized via alternating optimization. We propose two types of confidence regularization: label regularization (LR) and model regularization (MR). CRST-LR generates soft pseudo-labels while CRST-MR encourages the smoothness on network output. Extensive experiments on image classification and semantic segmentation show that CRSTs outperform their non-regularized counterpart with state-of-the-art performance.</p>
+                  </blockquote>
+                                    <p></p>
+              </div>
+              <hr>
+
+                          
+          </div>
+          
+          <!-- Category block -->
+          <div class="category">
+              <h2 class="category-title">
+                  <img src="https://image.flaticon.com/icons/png/512/484/484582.png"
+                       class="fa fa-fw category-logo">Natural Language Processing
+              </h2>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/60/60736.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="http://www.peterbloem.nl/blog/transformers">Transformers from scratch</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    Peter Bloem
+                  </h6>
+
+                                    <div style="padding-bottom: 15px;">
+                      <a href="http://www.peterbloem.nl/blog/transformers">
+                          <img src=https://i.ibb.co/f8TMTzD/Selection-960.png
+                               class="img-responsive center-block"
+                               style="max-width: 80%;
+                                      max-height: 300px;
+                                      border: 1px solid #A5A5A5;">
+                      </a>
+                  </div>
+                  
+                                    <blockquote class="blockquote">
+                     <p class="quote">Transformers are a very exciting family of machine learning architectures. Many good tutorials exist but in the last few years, transformers have mostly become simpler, so that it is now much more straightforward to explain how modern architectures work. This post is an attempt to explain directly how modern transformers work, and why, without some of the historical baggage.</p>
+                  </blockquote>
+                                    <p></p>
+              </div>
+              <hr>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/25/25231.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://github.com/facebookresearch/adaptive-span">Adaptive Attention Span for Transformers</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    Facebook Research
+                  </h6>
+
+                                    <div style="padding-bottom: 15px;">
+                      <a href="https://github.com/facebookresearch/adaptive-span">
+                          <img src=https://raw.githubusercontent.com/facebookresearch/adaptive-span/master/README_files/span.png
+                               class="img-responsive center-block"
+                               style="max-width: 80%;
+                                      max-height: 300px;
+                                      border: 1px solid #A5A5A5;">
+                      </a>
+                  </div>
+                  
+                                    <blockquote class="blockquote">
+                     <p class="quote">This is a code for running experiments in <a href=https://arxiv.org/abs/1905.07799>Adaptive Attention Span for Transformers</a> paper. It trains a Transformer model on character-level language modeling tasks. The adaptive span allows a model to learn an optimal context size for each self-attention head from training data.</p>
+                  </blockquote>
+                                    <p></p>
+              </div>
+              <hr>
+
+                          
+          </div>
+                </div>
+
+  <!-- End Grid -->
+  </div>
+
+    
+  <!-- End Page Container -->
+</div>
+
+</body>
+</html>

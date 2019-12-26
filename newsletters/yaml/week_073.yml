@@ -1,0 +1,121 @@
+articles:
+  - category: theory
+    description: 'If you''re completely new to evolution strategies, there are perhaps
+      other resources that are more intuitive, like this <a href=http://blog.otoro.net/2017/10/29/visual-evolution-strategies/>visual
+      guide to evolution strategies</a>. Otherwise it''s a good post to get a better
+      view of the different popular algorithms (CMA-ES, NES) and their applications
+      to deep reinforcement learning.'
+    lab: 'Lilian Weng'
+    quote: 'Gradient descent is not the only option when learning optimal model parameters.
+      Evolution Strategies (ES) works out well in the cases where we don’t know the
+      precise analytic form of an objective function or cannot compute the gradients
+      directly. This post dives into several classic ES methods, as well as how ES
+      can be used in deep reinforcement learning.'
+    title: 'Evolution Strategies'
+    type: blog
+    url: https://lilianweng.github.io/lil-log/2019/09/05/evolution-strategies.html
+  - category: engineering
+    description: 'I have rarely read a post that goes in so much depth both in the
+      engineering aspects (data pipelines, testing, deployment and serving) but also
+      in the research aspects (experiments tracking, data quality, interpretability
+      and fairness,...). There is a bunch of links to tools and good ideas that apply
+      to the whole length of a machine learning project.'
+    lab: 'Danilo Sato, Arif Wider, Christoph Windheuser'
+    quote: 'Machine Learning applications are becoming popular in our industry, however
+      the process for developing, deploying, and continuously improving them is more
+      complex compared to more traditional software, such as a web service or a mobile
+      application. They are subject to change in three axis: the code itself, the
+      model, and the data. Their behaviour is often complex and hard to predict, and
+      they are harder to test, harder to explain, and harder to improve. Continuous
+      Delivery for Machine Learning (CD4ML) is the discipline of bringing Continuous
+      Delivery principles and practices to Machine Learning applications.'
+    recommended: true
+    title: 'Continuous Delivery for Machine Learning'
+    type: blog
+    url: https://martinfowler.com/articles/cd4ml.html
+  - category: gan
+    description:
+    img: https://i.ibb.co/1sV3fpn/Selection-279.png
+    lab: 'University of Guelph, Vector Institute for Artificial Intelligence, University
+      of Waterloo, ...'
+    quote: 'Batch normalization (batch norm) is often used in an attempt to stabilize
+      and accelerate training in deep neural networks. In many cases it indeed decreases
+      the number of parameter updates required to achieve low training error. However,
+      it also reduces robustness to small adversarial input perturbations and noise
+      by double-digit percentages, as we show on five standard datasets. Furthermore,
+      substituting weight decay for batch norm is sufficient to nullify the relationship
+      between adversarial vulnerability and the input dimension. Our work is consistent
+      with a mean-field analysis that found that batch norm causes exploding gradients. '
+    title: "[ICML 2019 Workshop] Batch Normalization is a Cause of Adversarial Vulnerability"
+    type: paper
+    url: https://arxiv.org/abs/1905.02161
+  - category: dl
+    description: 'An implementation of <a href=http://proceedings.mlr.press/v97/yang19c/yang19c.pdf>LegoNet:
+      Efficient Convolutional Neural Networks with Lego Filters</a>.'
+    img: https://i.ibb.co/mSHwDDr/Selection-278.png
+    lab: 'HUAWEI Noah''s Ark Lab'
+    title: 'A Pytorch implementation of "LegoNet: Efficient Convolutional Neural Networks
+      with Lego Filters" (ICML 2019)'
+    type: github
+    url: https://github.com/huawei-noah/LegoNet
+  - category: nlp
+    description:
+    img: https://i.ibb.co/qWsqqz3/Selection-276.png
+    lab: 'University of California, Tencent AI Lab'
+    quote: 'We introduce a large-scale dataset called TabFact which consists of 117,854
+      manually annotated statements with regard to 16,573 Wikipedia tables, their
+      relations are classified as ENTAILED and REFUTED. In this project, we aim to
+      test the existing machine learning model''s capability to handle the cases where
+      both semantic inference and symbolic inference are involved.'
+    title: 'TabFact: A Large-scale Dataset for Table-based Fact Verification'
+    type: github
+    url: https://github.com/wenhuchen/Table-Fact-Checking
+  - category: dl
+    description:
+    lab: 'University of Freiburg, Bosch Center for Artificial Intelligence'
+    quote: 'We describe a set of best practices for the young field of neural architecture
+      search (NAS). '
+    title: "[arXiv] Best Practices for Scientific Research on Neural Architecture\
+      \ Search"
+    type: paper
+    url: https://arxiv.org/abs/1909.02453v1
+  - category: engineering
+    description: 'In this post, Max Halford conveys all the love he has for online
+      learning. For problems that could correctly fit into an online learning framework,
+      he sees the opportunity as too good to miss. No scheduling of model retraining,
+      no data gathering step, no risky deployments. He promotes a tool he has contributed
+      to creating: <a href=https://github.com/creme-ml/creme>Creme</a> (that we mentioned
+      some weeks ago). Unfortunately, there are no mentions of the drawbacks and challenges
+      induced by online training.'
+    lab: 'Max Halford'
+    title: 'A smooth approach to putting machine learning into production'
+    type: blog
+    url: https://maxhalford.github.io/blog/a-smooth-approach-to-putting-machine-learning-into-production/
+  - category: ml
+    description:
+    img: https://i.ibb.co/x1F4ySk/Selection-275.png
+    lab: 'IBM Research'
+    quote: 'As artificial intelligence and machine learning algorithms make further
+      inroads into society, calls are increasing from multiple stakeholders for these
+      algorithms to explain their outputs. At the same time, these stakeholders, whether
+      they be affected citizens, government regulators, domain experts, or system
+      developers, present different requirements for explanations. Toward addressing
+      these needs, we introduce AI Explainability 360, an open-source software toolkit
+      featuring eight diverse and state-of-the-art explainability methods and two
+      evaluation metrics. Equally important, we provide a taxonomy to help entities
+      requiring explanations to navigate the space of explanation methods, not only
+      those in the toolkit but also in the broader literature on explainability. For
+      data scientists and other users of the toolkit, we have implemented an extensible
+      software architecture that organizes methods according to their place in the
+      AI modeling pipeline. We also discuss enhancements to bring research innovations
+      closer to consumers of explanations, ranging from simplified, more accessible
+      versions of algorithms, to tutorials and an interactive web demo to introduce
+      AI explainability to different audiences and application domains. Together,
+      our toolkit and taxonomy can help identify gaps where more explainability methods
+      are needed and provide a platform to incorporate them as they are developed. '
+    title: "[arXiv] One Explanation Does Not Fit All: A Toolkit and Taxonomy of AI\
+      \ Explainability Techniques"
+    type: paper
+    url: https://arxiv.org/abs/1909.03012v1
+intro_text: ""
+outro_text: ""

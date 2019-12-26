@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<title>ML newsletter</title>
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+	html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+
+	.category{
+	  padding: 20px;
+	  margin: auto;
+	  background: #F5F5F5;
+	  margin-bottom: 25px;
+	  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+	  transition: all 0.3s; 
+	  border-radius: 3px;
+	}
+
+    .category-title{
+      margin-bottom: 30px;
+    }
+
+	.category-logo{
+	  margin-right: 10px;
+	}
+
+	.article-logo{
+	  margin-right: 3px;
+	}
+
+    .recommended{
+	  margin-right: 2px;
+    }
+
+    .quote{
+      font-size: 11px;
+    }
+</style>
+
+
+<body>
+
+<!-- Page Container -->
+<div class="container" style="max-width:1400px;">
+
+  
+  <!-- The Grid -->
+  <div class="row">
+  
+      <!-- Dummy container to force centering. Yes. I'm a front-end noob. -->
+      <div class="col-sm-2"></div>
+
+      <div class="col-sm-8">
+
+          
+          <!-- Category block -->
+          <div class="category">
+              <h2 class="category-title">
+                  <img src="https://image.flaticon.com/icons/png/512/653/653500.png"
+                       class="fa fa-fw category-logo">General Machine Learning
+              </h2>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/60/60736.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://twitter.com/quocleix/status/1129809121685884928">The Quiet Semi-Supervised Revolution</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    Vincent Vanhoucke
+                  </h6>
+                                    <p>Vincent Vanhoucke mentions the common disappointment that people face when trying out semi-supervised learning. Only to reveal near the end the post that the struggle might be over. He mentions two important works on the subject published recently: <a href=https://arxiv.org/abs/1905.02249>MixMatch</a> and <a href=1904.12848>Unsupervised Data Augmentation</a>, which we talked about in a previous issue. <br/> Note: I use a Twitter link as it avoids being blocked by Medium's paywall.</p>
+              </div>
+              <hr>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/25/25231.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://github.com/microsoft/tensorwatch">Tensorwatch: Debugging, monitoring and visualization for Deep Learning and Reinforcement Learning</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    Microsoft
+                  </h6>
+                                    <blockquote class="blockquote">
+                     <p class="quote">TensorWatch is a debugging and visualization tool designed for deep learning and reinforcement learning. It fully leverages Jupyter Notebook to show real time visualizations and offers unique capabilities to query the live training process without having to sprinkle logging statements all over. </p>
+                  </blockquote>
+                                    <p>For the love of notebooks.</p>
+              </div>
+              <hr>
+
+                          
+          </div>
+          
+          <!-- Category block -->
+          <div class="category">
+              <h2 class="category-title">
+                  <img src="https://image.flaticon.com/icons/png/512/149/149243.png"
+                       class="fa fa-fw category-logo">Deep Learning
+              </h2>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/25/25231.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://github.com/achaiah/pywick">Pywick: High-level batteries-included neural network training library for Pytorch</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    <a href=achaiah>achaiah</a>
+                  </h6>
+                                    <blockquote class="blockquote">
+                     <p class="quote">Pywick is a high-level Pytorch training framework that aims to get you up and running quickly with state of the art neural networks. [...] Pywick tries to stay on the bleeding edge of research into neural networks. If you just wish to run a vanilla CNN, this is probably going to be overkill. However, if you want to get lost in the world of neural networks, fine-tuning and hyperparameter optimization for months on end then this is probably the right place for you :)</p>
+                  </blockquote>
+                                    <p>This probably can be probably be helpful to some, as it essentially rewrites different components seen in other more specialised libraries (<a href=https://github.com/pytorch/ignite>Ignite</a> for the Keras-like approach to model compilation, <a href=https://github.com/albu/albumentations>Albumentations</a> for data augmentation and this <a href=https://github.com/Cadene/pretrained-models.pytorch>repo</a> for model zoo).</p>
+              </div>
+              <hr>
+
+                          
+          </div>
+          
+          <!-- Category block -->
+          <div class="category">
+              <h2 class="category-title">
+                  <img src="https://image.flaticon.com/icons/png/512/722/722174.png"
+                       class="fa fa-fw category-logo">Computer Vision
+              </h2>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/155/155292.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://www.youtube.com/watch?v=p1b5aiTrGzY&feature=youtu.be">Few-Shot Adversarial Learning of Realistic Neural Talking Head Models</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    Samsung AI, Skolkovo Institute of Science and Technology <a href="https://arxiv.org/abs/1905.08233v1"><div class="text-center" style="padding-top: 10px; padding-bottom: 10px"><img src=https://i.ibb.co/1z1yMBY/Selection-190.png border="0" class="img-fluid"></a></div>
+                  </h6>
+                                    <blockquote class="blockquote">
+                     <p class="quote">[...] In order to create a personalized talking head model, [traditional methods] require training on a large dataset of images of a single person. [...] Here, we present a system with such few-shot capability. It performs lengthy meta-learning on a large dataset of videos, and after that is able to frame few- and one-shot learning of neural talking head models of previously unseen people as adversarial training problems with high capacity generators and discriminators. Crucially, the system is able to initialize the parameters of both the generator and the discriminator in a person-specific way, so that training can be based on just a few images and done quickly [...]</p>
+                  </blockquote>
+                                    <p>You probably have seen this work in the news this week. You can also check out the <a href=https://www.youtube.com/watch?v=p1b5aiTrGzY&feature=youtu.be>video description</a>.</p>
+              </div>
+              <hr>
+
+                          
+          </div>
+          
+          <!-- Category block -->
+          <div class="category">
+              <h2 class="category-title">
+                  <img src="https://image.flaticon.com/icons/png/512/56/56243.png"
+                       class="fa fa-fw category-logo">Laugh Of The Week
+              </h2>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/8/8800.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://twitter.com/hardmaru/status/1130997787259166722">You can tell the authors tried extra hard when...</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    hardmaru
+                  </h6>
+                                    <p></p>
+              </div>
+              <hr>
+
+                          
+          </div>
+                </div>
+      
+  <!-- Dummy container to force centering. Yes. I'm a front-end noob. -->
+  <div class="col-sm-2"></div>
+
+  <!-- End Grid -->
+  </div>
+
+    
+  <!-- End Page Container -->
+</div>
+
+</body>
+</html>

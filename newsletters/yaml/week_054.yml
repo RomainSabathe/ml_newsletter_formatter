@@ -1,0 +1,110 @@
+articles:
+  - category: cv
+    description:
+    lab: 'Stanford University'
+    quote: "[...]. Here, we describe a method that trains an embedding function to\
+      \ maximize a metric of local aggregation, causing similar data instances to\
+      \ move together in the embedding space, while allowing dissimilar instances\
+      \ to separate. This aggregation metric is dynamic, allowing soft clusters of\
+      \ different scales to emerge. We evaluate our procedure on several large-scale\
+      \ visual recognition datasets, achieving state-of-the-art unsupervised transfer\
+      \ learning performance on object recognition in ImageNet, scene recognition\
+      \ in Places 205, and object detection in PASCAL VOC."
+    title: "[arXiv] Local Aggregation for Unsupervised Learning of Visual Embeddings"
+    type: paper
+    url: https://arxiv.org/abs/1903.12355v1
+  - category: dl
+    description:
+    lab: 'Max Planck Institute for Intelligent Systems'
+    quote: 'Variational Autoencoders (VAEs) provide a theoretically-backed framework
+      for deep generative models. However, they often produce ''blurry'' images, which
+      is linked to their training objective. Sampling in the most popular implementation,
+      the Gaussian VAE, can be interpreted as simply injecting noise to the input
+      of a deterministic decoder. In practice, this simply enforces a smooth latent
+      space structure. We challenge the adoption of the full VAE framework on this
+      specific point in favor of a simpler, deterministic one. Specifically, we investigate
+      how substituting stochasticity with other explicit and implicit regularization
+      schemes can lead to a meaningful latent space without having to force it to
+      conform to an arbitrarily chosen prior. [...]'
+    title: "[arXiv] From Variational to Deterministic Autoencoders"
+    type: paper
+    url: https://arxiv.org/abs/1903.12436
+  - category: cv
+    description: 'Code is available <a href=https://github.com/seungwonpark/RandWireNN>here</a>.'
+    lab: 'Facebook AI Research'
+    quote: "[...] In this paper, we explore a more diverse set of connectivity patterns\
+      \ through the lens of randomly wired neural networks. To do this, we first define\
+      \ the concept of a stochastic network generator that encapsulates the entire\
+      \ network generation process. Encapsulation provides a unified view of [network\
+      \ architecture search] and randomly wired networks. Then, we use three classical\
+      \ random graph models to generate randomly wired graphs for networks. The results\
+      \ are surprising: several variants of these random generators yield network\
+      \ instances that have competitive accuracy on the ImageNet benchmark. These\
+      \ results suggest that new efforts focusing on designing better network generators\
+      \ may lead to new breakthroughs by exploring less constrained search spaces\
+      \ with more room for novel design."
+    title: "[arXiv] Exploring Randomly Wired Neural Networks for Image Recognition"
+    type: paper
+    url: https://arxiv.org/abs/1904.01569
+  - category: nlp
+    description: 'If you wanted to start an NLP toy project, you could read this post
+      and get started in minutes. I found the author very didactic, providing sufficient
+      amount of details to explain how Seq2Seq and attention models work, as well
+      as clean and structured code. Bonus: the code uses Tensorflow 2.0 :)'
+    lab: '<a href=https://machinetalk.org/>Machine Talk</a>'
+    recommended: true
+    title: 'Neural Machine Translation With Attention Mechanism'
+    type: blog
+    url: https://machinetalk.org/2019/03/29/neural-machine-translation-with-attention-mechanism/
+  - category: engineering
+    description: 'Tensorflow 2.0 described by one of its key contributors! It is obvious
+      when reading the post that the author, Akshay Agrawal, is passionate about software
+      engineering, which makes it all the more entertaining to go through. He provides
+      an overview of the key changes that are coming with the new version of Tensorflow
+      and confirms several times that the Keras API is optional: TF stays as flexible
+      as before. I particularly liked the honest comparisons between Tensorflow and
+      other frameworks like Pytorch 1.0. In some cases, he even went to say that for
+      specific use cases <i>TorchScript</i> would be better than <i>tf.function</i>.'
+    lab: '<a href=https://www.debugmind.com/>Debug Mind</a>'
+    title: 'A Primer on TensorFlow 2.0'
+    type: blog
+    url: https://www.debugmind.com/2019/04/07/a-primer-on-tensorflow-2-0/
+  - category: gan
+    description: 'This article can be seen as a short survey on the challenges faced
+      by the GAN community. It lays out important questions such as the influence
+      of batch size, the relationship with other generative models or the type of
+      distribution that can be modelled by a GAN. The article differs from other Distill
+      articles in the sense that the intent is not to teach a specific notion (using
+      fancy graphs and animations) but rather to pinpoint areas of research.'
+    lab: 'Augustus Odena (Google Brain)'
+    title: "[Distill] Open Questions about Generative Adversarial Networks"
+    type: blog
+    url: https://distill.pub/2019/gan-open-problems/
+  - category: gan
+    description: 'A Facebook implementation of some state-of-art GANs with Pytorch.
+      Currently it is featuring the <a href=https://arxiv.org/pdf/1710.10196.pdf>Progressive
+      Growing of GANs</a> and <a href=https://arxiv.org/pdf/1511.06434.pdf>DCGAN</a>.
+      <a href=https://arxiv.org/abs/1812.04948>StyleGAN</a> will follow shortly.'
+    lab: 'Facebook Research'
+    title: 'Gan zoo: A mix of GAN implementations'
+    type: github
+    url: https://github.com/facebookresearch/pytorch_GAN_zoo?fbclid=IwAR0mhvTD192Lq1nrW8ZGHvHpq2KMq7BxtxeFBAB7yjH58zA3XT3DCi1Qxsc
+  - category: dl
+    description: 'The first two sections of this post are an introduction to the transformer
+      networks and capsule networks. They can be skipped for readers who are already
+      accustomed with those architectures. The last part however dives into the similarities
+      and dissimilarities between the two architectures, a subject I have never encountered.
+      <br /> In a nutshell: both of these networks have some sort of filtering mechanism
+      by which deeper layers only receive a part of the signal coming from earlier
+      layers. How this filtering is performed differs depending on the architecture:
+      in transformer networks, the output of an early layer is masked several times
+      (via the different <i>attention heads</i>) before being forwarded to the next
+      layer (bottom up). In capsule nets, it is the units in the deeper layers that
+      ''choose'' which inputs to receive signal from using the routing mechanism (top
+      down).'
+    lab: 'Smira Abnar (University of Amsterdam)'
+    title: 'From Attention in Transformers to Dynamic Routing in Capsule Nets'
+    type: blog
+    url: https://staff.fnwi.uva.nl/s.abnar/?p=108
+intro_text: ""
+outro_text: ""

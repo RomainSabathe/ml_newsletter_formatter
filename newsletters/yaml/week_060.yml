@@ -1,0 +1,69 @@
+articles:
+  - category: ml
+    description: 'Vincent Vanhoucke mentions the common disappointment that people
+      face when trying out semi-supervised learning. Only to reveal near the end the
+      post that the struggle might be over. He mentions two important works on the
+      subject published recently: <a href=https://arxiv.org/abs/1905.02249>MixMatch</a>
+      and <a href=1904.12848>Unsupervised Data Augmentation</a>, which we talked about
+      in a previous issue. <br/> Note: I use a Twitter link as it avoids being blocked
+      by Medium''s paywall.'
+    lab: 'Vincent Vanhoucke'
+    title: 'The Quiet Semi-Supervised Revolution'
+    type: blog
+    url: https://twitter.com/quocleix/status/1129809121685884928
+  - category: laugh
+    description:
+    lab: hardmaru
+    title: 'You can tell the authors tried extra hard when...'
+    type: twitter
+    url: https://twitter.com/hardmaru/status/1130997787259166722
+  - category: dl
+    description: 'This probably can be probably be helpful to some, as it essentially
+      rewrites different components seen in other more specialised libraries (<a href=https://github.com/pytorch/ignite>Ignite</a>
+      for the Keras-like approach to model compilation, <a href=https://github.com/albu/albumentations>Albumentations</a>
+      for data augmentation and this <a href=https://github.com/Cadene/pretrained-models.pytorch>repo</a>
+      for model zoo).'
+    lab: '<a href=achaiah>achaiah</a>'
+    quote: 'Pywick is a high-level Pytorch training framework that aims to get you
+      up and running quickly with state of the art neural networks. [...] Pywick tries
+      to stay on the bleeding edge of research into neural networks. If you just wish
+      to run a vanilla CNN, this is probably going to be overkill. However, if you
+      want to get lost in the world of neural networks, fine-tuning and hyperparameter
+      optimization for months on end then this is probably the right place for you
+      :)'
+    title: 'Pywick: High-level batteries-included neural network training library
+      for Pytorch'
+    type: github
+    url: https://github.com/achaiah/pywick
+  - category: cv
+    description: 'You probably have seen this work in the news this week. You can
+      also check out the <a href=https://www.youtube.com/watch?v=p1b5aiTrGzY&feature=youtu.be>video
+      description</a>.'
+    lab: 'Samsung AI, Skolkovo Institute of Science and Technology <a href="https://arxiv.org/abs/1905.08233v1"><div
+      class="text-center" style="padding-top: 10px; padding-bottom: 10px"><img src=https://i.ibb.co/1z1yMBY/Selection-190.png
+      border="0" class="img-fluid"></a></div>'
+    quote: "[...] In order to create a personalized talking head model, [traditional\
+      \ methods] require training on a large dataset of images of a single person.\
+      \ [...] Here, we present a system with such few-shot capability. It performs\
+      \ lengthy meta-learning on a large dataset of videos, and after that is able\
+      \ to frame few- and one-shot learning of neural talking head models of previously\
+      \ unseen people as adversarial training problems with high capacity generators\
+      \ and discriminators. Crucially, the system is able to initialize the parameters\
+      \ of both the generator and the discriminator in a person-specific way, so that\
+      \ training can be based on just a few images and done quickly [...]"
+    title: 'Few-Shot Adversarial Learning of Realistic Neural Talking Head Models'
+    type: paper
+    url: https://www.youtube.com/watch?v=p1b5aiTrGzY&feature=youtu.be
+  - category: ml
+    description: 'For the love of notebooks.'
+    lab: Microsoft
+    quote: 'TensorWatch is a debugging and visualization tool designed for deep learning
+      and reinforcement learning. It fully leverages Jupyter Notebook to show real
+      time visualizations and offers unique capabilities to query the live training
+      process without having to sprinkle logging statements all over. '
+    title: 'Tensorwatch: Debugging, monitoring and visualization for Deep Learning
+      and Reinforcement Learning'
+    type: github
+    url: https://github.com/microsoft/tensorwatch
+intro_text: ""
+outro_text: ""

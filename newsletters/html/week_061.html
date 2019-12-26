@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+<title>ML newsletter</title>
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+	html,body,h1,h2,h3,h4,h5,h6 {
+        font-family: "Roboto", sans-serif;
+    }
+
+    p {
+        font-size: 15px;
+    }
+
+	.category{
+	  padding: 20px;
+	  margin: auto;
+	  background: #F5F5F5;
+	  margin-bottom: 25px;
+	  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+	  transition: all 0.3s; 
+	  border-radius: 3px;
+	}
+
+    .category-title{
+      margin-bottom: 30px;
+    }
+
+	.category-logo{
+	  margin-right: 10px;
+	}
+
+	.article-logo{
+	  margin-right: 3px;
+	}
+
+    .recommended{
+	  margin-right: 2px;
+    }
+
+    .quote{
+      font-family: "Times New Roman", serif;
+      font-size: 13px;
+    }
+</style>
+
+
+<body>
+
+<!-- Page Container -->
+<div class="container-fluid">
+
+  
+  <!-- The Grid -->
+  <div class="row">
+  
+      <div class="col-md-10 col-md-offset-1">
+
+          
+          <!-- Category block -->
+          <div class="category">
+              <h2 class="category-title">
+                  <img src="https://image.flaticon.com/icons/png/512/653/653500.png"
+                       class="fa fa-fw category-logo">General Machine Learning
+              </h2>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/155/155292.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="http://proceedings.mlr.press/v97/">Accepted papers at ICML 2019</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    
+                  </h6>
+
+                  
+                                    <p>The title says it all: it's the official list of all papers accepted to ICML 2019. Quite unrelated, but there's a nice link of many of the posters presented at ICLR 2019 <a href=https://postersession.ai/>here</a>.</p>
+              </div>
+              <hr>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/25/25231.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://arxiv.org/abs/1905.10498">[arXiv] Cold Case: The Lost MNIST Digits</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    New York University, Facebook AI Research
+                  </h6>
+
+                  
+                                    <blockquote class="blockquote">
+                     <p class="quote">Although the popular MNIST dataset [LeCun et al., 1994] is derived from the NIST database [Grother and Hanaoka, 1995], the precise processing steps for this derivation have been lost to time. We propose a reconstruction that is accurate enough to serve as a replacement for the MNIST dataset, with insignificant changes in accuracy. We trace each MNIST digit to its NIST source and its rich metadata such as writer identifier, partition identifier, etc. <b>We also reconstruct the complete MNIST test set with 60,000 samples instead of the usual 10,000.</b> Since the balance 50,000 were never distributed, <b>they enable us to investigate the impact of twenty-five years of MNIST experiments on the reported testing performances</b>. Our results unambiguously confirm the trends observed by Recht et al. [2018, 2019]: although the misclassification rates are slightly off, classifier ordering and model selection remain broadly reliable. We attribute this phenomenon to the pairing benefits of comparing classifiers on the same digits.</p>
+                  </blockquote>
+                                    <p>You can find <a href=https://github.com/facebookresearch/qmnist>here</a> the official repo containing the 60k QMNIST test set.</p>
+              </div>
+              <hr>
+
+                          
+          </div>
+          
+          <!-- Category block -->
+          <div class="category">
+              <h2 class="category-title">
+                  <img src="https://image.flaticon.com/icons/png/512/722/722174.png"
+                       class="fa fa-fw category-logo">Computer Vision
+              </h2>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/155/155292.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://arxiv.org/abs/1905.11369v1">[arXiv] Object Discovery with a Copy-Pasting GAN</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    DeepMind, VGG (University of Oxford)
+                  </h6>
+
+                                    <div style="padding-bottom: 15px;">
+                      <a href="https://arxiv.org/abs/1905.11369v1">
+                          <img src=https://i.ibb.co/TtjjzSc/Selection-192.png
+                               class="img-responsive center-block"
+                               style="max-width: 80%;
+                                      border: 1px solid #A5A5A5;">
+                      </a>
+                  </div>
+                  
+                                    <blockquote class="blockquote">
+                     <p class="quote">We tackle the problem of object discovery, where objects are segmented for a given input image, and the system is trained without using any direct supervision whatsoever. A novel copy-pasting GAN framework is proposed, where <b>the generator learns to discover an object in one image by compositing it into another image such that the discriminator cannot tell that the resulting image is fake</b>. After carefully addressing subtle issues, such as preventing the generator from `cheating', <b>this game results in the generator learning to select objects</b>, as copy-pasting objects is most likely to fool the discriminator. The system is shown to work well on four very different datasets, including large object appearance variations in challenging cluttered backgrounds.</p>
+                  </blockquote>
+                                    <p></p>
+              </div>
+              <hr>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/25/25231.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="http://www.robots.ox.ac.uk/~qwang/SiamMask/">[CVPR 2019] Fast Online Object Tracking and Segmentation: A Unifying Approach</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    CASIA, FiveAI, University of Oxford
+                  </h6>
+
+                                    <div style="padding-bottom: 15px;">
+                      <a href="http://www.robots.ox.ac.uk/~qwang/SiamMask/">
+                          <img src=http://www.robots.ox.ac.uk/~qwang/SiamMask/img/SiamMask.jpg
+                               class="img-responsive center-block"
+                               style="max-width: 80%;
+                                      border: 1px solid #A5A5A5;">
+                      </a>
+                  </div>
+                  
+                                    <blockquote class="blockquote">
+                     <p class="quote">In this paper we illustrate how to perform both realtime object tracking and semi-supervised video object segmentation with a single simple approach. Our method, dubbed SiamMask, improves the offline training procedure of popular fully-convolutional Siamese approaches for object tracking by augmenting the loss with a binary segmentation task. <b>Once trained, SiamMask solely relies on a single bounding-box initialisation and operates online, producing class-agnostic object segmentation masks and rotated bounding boxes at 35 frames per second.</b> Despite its simplicity, versatility and fast speed, our strategy allows us to establish a new state-of-the-art among real-time trackers on VOT-2018, while at the same time demonstrating competitive performance and the best speed for the semi-supervised video object segmentation task on DAVIS-2016 and DAVIS-2017.</p>
+                  </blockquote>
+                                    <p>The project's page provides useful resources: the paper, an explanatory video, some demo videos and the <a href=https://github.com/foolwood/SiamMask>source</a>. I recommend watching some of the videos: the results are quite remarkable!</p>
+              </div>
+              <hr>
+
+                          
+          </div>
+          
+          <!-- Category block -->
+          <div class="category">
+              <h2 class="category-title">
+                  <img src="https://image.flaticon.com/icons/png/512/179/179121.png"
+                       class="fa fa-fw category-logo">Optimisation & Learning Theory
+              </h2>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/155/155292.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://arxiv.org/abs/1905.11604">[arXiv] SGD on Neural Networks Learns Functions of Increasing Complexity</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    Harvard University
+                  </h6>
+
+                                    <div style="padding-bottom: 15px;">
+                      <a href="https://arxiv.org/abs/1905.11604">
+                          <img src=https://i.ibb.co/0X9D7mM/Selection-194.png
+                               class="img-responsive center-block"
+                               style="max-width: 80%;
+                                      border: 1px solid #A5A5A5;">
+                      </a>
+                  </div>
+                  
+                                    <blockquote class="blockquote">
+                     <p class="quote">We perform an experimental study of the dynamics of Stochastic Gradient Descent (SGD) in learning deep neural networks for several real and synthetic classification tasks. <b>We show that in the initial epochs, almost all of the performance improvement of the classifier obtained by SGD can be explained by a linear classifier.</b> More generally, we give evidence for the hypothesis that, <b>as iterations progress, SGD learns functions of increasing complexity.</b> This hypothesis can be helpful in explaining why SGD-learned classifiers tend to generalize well even in the over-parameterized regime. We also show that the linear classifier learned in the initial stages is 'retained' throughout the execution even if training is continued to the point of zero training error, and complement this with a theoretical result in a simplified model. <b>Key to our work is a new measure of how well one classifier explains the performance of another, based on conditional mutual information.</b></p>
+                  </blockquote>
+                                    <p></p>
+              </div>
+              <hr>
+
+                          
+          </div>
+          
+          <!-- Category block -->
+          <div class="category">
+              <h2 class="category-title">
+                  <img src="https://image.flaticon.com/icons/png/512/112/112272.png"
+                       class="fa fa-fw category-logo">Gans & Adversarial Attacks
+              </h2>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/155/155292.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://arxiv.org/abs/1905.10887">[arXiv] Classification Accuracy Score for Conditional Generative Models</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    DeepMind
+                  </h6>
+
+                  
+                                    <blockquote class="blockquote">
+                     <p class="quote">Deep generative models (DGMs) of images are now sufficiently mature that they produce nearly photorealistic samples and obtain scores similar to the data distribution on heuristics such as Frechet Inception Distance. These results, especially on large-scale datasets such as ImageNet, suggest that DGMs are learning the data distribution in a perceptually meaningful space, and can be used in downstream tasks. To test this latter hypothesis, we use class-conditional generative models from a number of model classes---variational autoencoder, autoregressive models, and generative adversarial networks---to infer the class labels of real data. We perform this inference by training the image classifier using only synthetic data, and using the classifier to predict labels on real data. <b>The performance on this task, which we call Classification Accuracy Score (CAS), highlights some surprising results not captured by traditional metrics</b> and comprise our contributions. First, when using a state-of-the-art GAN (BigGAN), Top-5 accuracy decreases by 41.6% compared to the original data and conditional generative models from other model classes, such as high-resolution VQ-VAE and Hierarchical Autoregressive Models, substantially outperform GANs on this benchmark. Second, <b>CAS automatically surfaces particular classes for which generative models failed to capture the data distribution, and were previously unknown in the literature</b>. Third, <b>we find traditional GAN metrics such as Frechet Inception Distance neither predictive of CAS nor useful when evaluating non-GAN models.</b> [...]</p>
+                  </blockquote>
+                                    <p></p>
+              </div>
+              <hr>
+
+                          
+          </div>
+                </div>
+
+  <!-- End Grid -->
+  </div>
+
+    
+  <!-- End Page Container -->
+</div>
+
+</body>
+</html>

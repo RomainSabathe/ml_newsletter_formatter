@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html>
+<title>ML newsletter</title>
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+	html,body,h1,h2,h3,h4,h5,h6 {
+        font-family: "Roboto", sans-serif;
+    }
+
+    p {
+        font-size: 15px;
+    }
+
+	.category{
+	  padding: 20px;
+	  margin: auto;
+	  background: #F5F5F5;
+	  margin-bottom: 25px;
+	  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+	  transition: all 0.3s; 
+	  border-radius: 3px;
+	}
+
+    .category-title{
+      margin-bottom: 30px;
+    }
+
+	.category-logo{
+	  margin-right: 10px;
+	}
+
+	.article-logo{
+	  margin-right: 3px;
+	}
+
+    .recommended{
+	  margin-right: 2px;
+    }
+
+    .quote{
+      font-family: "Times New Roman", serif;
+      font-size: 15px;
+    }
+</style>
+
+
+<body>
+
+<!-- Page Container -->
+<div class="container-fluid">
+
+  
+  <!-- The Grid -->
+  <div class="row">
+  
+      <div class="col-md-10 col-md-offset-1">
+
+          
+          <!-- Category block -->
+          <div class="category">
+              <h2 class="category-title">
+                  <img src="https://image.flaticon.com/icons/png/512/653/653500.png"
+                       class="fa fa-fw category-logo">General Machine Learning
+              </h2>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/60/60736.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://armenag.com/2019/05/30/flow-based-generative-models-bijective-transforms-and-neural-lossless-compression/">Flow-Based Generative Models, Bijective Transforms and Neural Lossless Compression</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    <a href=https://armenag.com/>Armen Aghajanyan</a>
+                  </h6>
+
+                  
+                                    <p>This blog gives a bit a context to appreciate the paper <a href=https://arxiv.org/abs/1905.07376>Integer Discrete Flows and Lossless Compression</a> published recently on arXiv. Armen revisits the formulation of generative models and presents the nice properties (and difficulties) of flow-based models. Another good starting point is <a href=https://lilianweng.github.io/lil-log/2018/10/13/flow-based-deep-generative-models.html>this post</a> by Lilian Weng.</p>
+              </div>
+              <hr>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/60/60736.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://docs.google.com/document/d/1MQ83GqL7Nr9_wHCox6xNjtK56FdmyEFsR8DTw15KbnU/edit?usp=sharing">Machine Learning Writing Month</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    <a href=https://twitter.com/decodyng?lang=en>Cody Wild</a>
+                  </h6>
+
+                  
+                                    <p>In May, <a href=https://twitter.com/decodyng?lang=en>Cody Wild</a> started a paper-reading marathon; something she does twice a year. Every day, she read one machine learning paper and summarised it on <a href=https://www.shortscience.org/>Short Science</a>. Here's an  <a href=https://www.shortscience.org/paper?bibtexKey=zhou2019deconstructing&a=decodyng>example</a>. To make it easier for us to search and go through all the summaries, she created a Google Document where she aggregated <i>all</i> of them, images included. The result is a doc of 44 pages and the gist of 31 papers on a wide range of topics (reinforcement learning, optimization , NLP, model explanation,...). Isn't that wonderful?</p>
+              </div>
+              <hr>
+
+                          
+          </div>
+          
+          <!-- Category block -->
+          <div class="category">
+              <h2 class="category-title">
+                  <img src="https://image.flaticon.com/icons/png/512/149/149243.png"
+                       class="fa fa-fw category-logo">Deep Learning
+              </h2>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/155/155292.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://arxiv.org/abs/1905.11946">[ICML 2019] EfficientNet: Rethinking Model Scaling for Convolutional Neural Networks</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    Google Research, Brain Team
+                  </h6>
+
+                                    <div style="padding-bottom: 15px;">
+                      <a href="https://arxiv.org/abs/1905.11946">
+                          <img src=https://i.ibb.co/n1vZX2H/Selection-196.png
+                               class="img-responsive center-block"
+                               style="max-width: 80%;
+                                      max-height: 512px;
+                                      border: 1px solid #A5A5A5;">
+                      </a>
+                  </div>
+                  
+                                    <blockquote class="blockquote">
+                     <p class="quote">Convolutional Neural Networks (ConvNets) are commonly developed at a fixed resource budget, and then scaled up for better accuracy if more resources are available. In this paper, we systematically study model scaling and identify that carefully balancing network depth, width, and resolution can lead to better performance. Based on this observation, <b>we propose a new scaling method that uniformly scales all dimensions of depth/width/resolution using a simple yet highly effective compound coefficient</b>. We demonstrate the effectiveness of this method on scaling up MobileNets and ResNet. To go even further, we use neural architecture search to design a new baseline network and scale it up to obtain a family of models, called EfficientNets, which achieve much better accuracy and efficiency than previous ConvNets. In particular, <b>our EfficientNet-B7 achieves state-of-the-art 84.4% top-1 / 97.1% top-5 accuracy on ImageNet, while being 8.4x smaller and 6.1x faster on inference than the best existing ConvNet</b>. Our EfficientNets also transfer well and achieve state-of-the-art accuracy on CIFAR-100 (91.7%), Flowers (98.8%), and 3 other transfer learning datasets, with an order of magnitude fewer parameters. Source code is at this https URL.</p>
+                  </blockquote>
+                                    <p>This paper has been quite discussed this week. It is probably due to the combination of impressive results (new SOTA on ImageNet with fewer parameters and less computation needed) and the ease of implementation. Actually every day new GitHub repos implementing the EfficientNet architecture are created. See <a href=https://github.com/tensorflow/tpu/tree/master/models/official/efficientnet>here</a> for the official implementation (with pretrained weights) and <a href=https://github.com/lukemelas/EfficientNet-PyTorch>here</a> for the currently most popular Pytorch implementation which offers pretrained weights as well. If you're looking for a quick overview of this paper, I have made some <a href=https://docs.google.com/presentation/d/1d-oDi7auUr-Qi3ab1maa7plX_Qae26JQGTSHvhnMMMU/edit?usp=sharing>slides</a>.</p>
+              </div>
+              <hr>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/155/155292.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://arxiv.org/abs/1906.00446">[arXiv] Generating Diverse High-Fidelity Images with VQ-VAE-2</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    DeepMind
+                  </h6>
+
+                                    <div style="padding-bottom: 15px;">
+                      <a href="https://arxiv.org/abs/1906.00446">
+                          <img src=https://i.ibb.co/QpPZjFX/Selection-195.png
+                               class="img-responsive center-block"
+                               style="max-width: 80%;
+                                      max-height: 512px;
+                                      border: 1px solid #A5A5A5;">
+                      </a>
+                  </div>
+                  
+                                    <blockquote class="blockquote">
+                     <p class="quote">We explore the use of Vector Quantized Variational AutoEncoder (VQ-VAE) models for large scale image generation. To this end, we scale and enhance the autoregressive priors used in VQ-VAE to generate synthetic samples of much higher coherence and fidelity than possible before. We use simple feed-forward encoder and decoder networks, making our model an attractive candidate for applications where the encoding and/or decoding speed is critical. Additionally, VQ-VAE requires sampling an autoregressive model only in the compressed latent space, which is an order of magnitude faster than sampling in the pixel space, especially for large images. We demonstrate that a multi-scale hierarchical organization of VQ-VAE, augmented with powerful priors over the latent codes, is <b>able to generate samples with quality that rivals that of state of the art Generative Adversarial Networks on multifaceted datasets such as ImageNet, while not suffering from GAN's known shortcomings such as mode collapse and lack of diversity.</b></p>
+                  </blockquote>
+                                    <p>Another paper that received quite a lot of attention this week. Authors manage to obtain a variational autoencoder capable of generating  images in high resolution with strong long-term coherence. The results are visually competitive with state-of-the-art GANs like BigGAN.</p>
+              </div>
+              <hr>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/25/25231.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://github.com/mariusbrataas/flowpoints_ml">flowpoints_ml: An intuitive approach to creating deep learning models</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    <a href=https://github.com/mariusbrataas>Marius Brataas</a>
+                  </h6>
+
+                                    <div style="padding-bottom: 15px;">
+                      <a href="https://github.com/mariusbrataas/flowpoints_ml">
+                          <img src=https://github.com/mariusbrataas/flowpoints_ml/blob/master/public/cifar10net.png?raw=true
+                               class="img-responsive center-block"
+                               style="max-width: 80%;
+                                      max-height: 512px;
+                                      border: 1px solid #A5A5A5;">
+                      </a>
+                  </div>
+                  
+                                    <p>This is a cool little project that I foresee can be useful if you are starting a project from scratch with a small architecture. Flowpoints is basically yet another GUI that lets you build neural net architectures, however I quite enjoyed using it. It appears to be quite powerful as it supports skip connections, non-sequential flows and most of the common neural net operations. Once the graph has been defined, a code is generated (either for Tensorflow or Pytorch) not only for the model architecture, but also for training ops, validation ops, loss plotting and model saving and loading! Another nice little feature is that Flowpoints can generate a weblink  for your architecture. The link can be used either to share the architecture with others, or for yourself as part of the documentation on the model's architecture. <br />As far as I am aware, there no yet support for recurrent connections or copy/paste functionalities, making it difficult to create deeper architectures like ResNet.</p>
+              </div>
+              <hr>
+
+                          
+          </div>
+          
+          <!-- Category block -->
+          <div class="category">
+              <h2 class="category-title">
+                  <img src="https://image.flaticon.com/icons/png/512/179/179121.png"
+                       class="fa fa-fw category-logo">Optimisation & Learning Theory
+              </h2>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/155/155292.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://arxiv.org/abs/1905.13545">[arXiv] High Frequency Component Helps Explain the Generalization of Convolutional Neural Networks</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    Carnegie Mellon University
+                  </h6>
+
+                                    <div style="padding-bottom: 15px;">
+                      <a href="https://arxiv.org/abs/1905.13545">
+                          <img src=https://i.ibb.co/qJYt664/Selection-828.png
+                               class="img-responsive center-block"
+                               style="max-width: 80%;
+                                      max-height: 512px;
+                                      border: 1px solid #A5A5A5;">
+                      </a>
+                  </div>
+                  
+                                    <blockquote class="blockquote">
+                     <p class="quote">We investigate the relationship between the frequency spectrum of image data and the generalization behavior of convolutional neural networks (CNN). We first notice CNN's ability in capturing the high-frequency components of images. These high-frequency components are almost imperceptible to a human. Thus the observation can serve as one of the explanations of the existence of adversarial examples, and can also help verify CNN's trade-off between robustness and accuracy. Our observation also immediately leads to methods that can improve the adversarial robustness of trained CNN. Finally, we also utilize this observation to design a (semi) black-box adversarial attack method.</p>
+                  </blockquote>
+                                    <p></p>
+              </div>
+              <hr>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/60/60736.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://divamgupta.com/unsupervised-learning/semi-supervised-learning/2019/05/31/introduction-to-virtual-adversarial-training.html">An Introduction to Virtual Adversarial Training</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    <a href=https://divamgupta.com/>Divam Gupta</a>
+                  </h6>
+
+                                    <div style="padding-bottom: 15px;">
+                      <a href="https://divamgupta.com/unsupervised-learning/semi-supervised-learning/2019/05/31/introduction-to-virtual-adversarial-training.html">
+                          <img src=https://divamgupta.com/assets/images/posts/vat/image3.png
+                               class="img-responsive center-block"
+                               style="max-width: 80%;
+                                      max-height: 512px;
+                                      border: 1px solid #A5A5A5;">
+                      </a>
+                  </div>
+                  
+                                    <p>In this short post, Divam Gupta introduces virtual adversarial training. An unsupervised method that can be used on an already trained model to enforce smoothness of the output distribution (thus regularizing it and making it stronger against adversarial attacks). There are a few other works that go along the same line (for instance: <a href=https://arxiv.org/abs/1904.12848>Unsupervised Data Augmentation</a>) where the idea is the minimize the KL divergence between the output distribution obtained from real data and the the output distribution obtained from altered data (i.e. augmented or adversarially attacked). The author also presents a toy example with its associated TensorFlow code.</p>
+              </div>
+              <hr>
+
+                          
+          </div>
+          
+          <!-- Category block -->
+          <div class="category">
+              <h2 class="category-title">
+                  <img src="https://image.flaticon.com/icons/png/512/249/249156.png"
+                       class="fa fa-fw category-logo">Reinforcement Learning
+              </h2>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/155/155292.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://science.sciencemag.org/content/364/6443/859">[Science] Human-level performance in 3D multiplayer games with population-based reinforcement learning</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    DeepMind
+                  </h6>
+
+                                    <div style="padding-bottom: 15px;">
+                      <a href="https://science.sciencemag.org/content/364/6443/859">
+                          <img src=https://i.ibb.co/cFKb9WX/Selection-829.png"
+                               class="img-responsive center-block"
+                               style="max-width: 80%;
+                                      max-height: 512px;
+                                      border: 1px solid #A5A5A5;">
+                      </a>
+                  </div>
+                  
+                                    <blockquote class="blockquote">
+                     <p class="quote">Reinforcement learning (RL) has shown great success in increasingly complex single-agent environments and two-player turn-based games. However, the real world contains multiple agents, each learning and acting independently to cooperate and compete with other agents. We used a tournament-style evaluation to demonstrate that an agent can achieve human-level performance in a three-dimensional multiplayer first-person video game, Quake III Arena in Capture the Flag mode, using only pixels and game points scored as input. <b>We used a two-tier optimization process in which a population of independent RL agents are trained concurrently from thousands of parallel matches on randomly generated environments.</b> Each agent learns its own internal reward signal and rich representation of the world. These results indicate the great potential of multiagent reinforcement learning for artificial intelligence research.</p>
+                  </blockquote>
+                                    <p></p>
+              </div>
+              <hr>
+
+                          
+          </div>
+                </div>
+
+  <!-- End Grid -->
+  </div>
+
+    
+  <!-- End Page Container -->
+</div>
+
+</body>
+</html>

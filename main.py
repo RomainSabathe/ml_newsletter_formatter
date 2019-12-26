@@ -1,8 +1,10 @@
 from pathlib import Path
 
 import yaml
+from yaml import Loader
 import pandas as pd
 from jinja2 import Environment, FileSystemLoader
+from trello import TrelloClient
 
 
 TEMPLATE_DIR = '/home/romain/my_git/ml_newsletter_formatter'
@@ -62,6 +64,84 @@ TYPE_LOGOS = {
     'twitter': 'https://image.flaticon.com/icons/png/512/8/8800.png',
     'news': 'https://image.flaticon.com/icons/png/512/4/4442.png'}
 
+
+def parse_cards():
+    client = TrelloClient(
+        api_key='***',
+        api_secret='***',
+        token='***')
+    boards = client.list_boards()
+    for board in boards:
+        if board.name == 'Machine Learning newsletter':
+            break
+    else:
+        raise Exception('Couldnt find the board')
+
+    cards = board.list_lists()[4].list_cards()  # To add
+
+    return {'articles': [parse_one_card(card) for card in cards],
+            'intro_text': "",
+            'outro_text': ""}
+
+
+def parse_one_card(card):
+    # We expect the card description to contain:
+    # 'description'
+    # 'lab'
+    # 'quote'
+    # "img"
+    data = {'title': card.name,
+            **yaml.load(card.description, Loader=Loader)}
+
+    # Attachment
+    attachments = card.fetch_attachments(force=True)
+    for attachment in attachments:
+        if (attachment.get('url').startswith('http') and
+            not attachment.get('url').endswith('jpg') and
+            not attachment.get('url').endswith('jpeg') and
+            not attachment.get('url').endswith('gif') and
+            not attachment.get('url').endswith('png')):
+            data['url'] = attachment.get('url')
+            break
+    else:
+        raise Exception(f"Can't find a URL for card: {card}")
+
+    # Labels
+    categories = {
+        'computer vision': 'cv',
+        'natural language processing': 'nlp',
+        'general machine learning': 'ml',
+        'deep learning': 'dl',
+        'production & engineering': 'engineering',
+        'everything else': None,
+        'data science & visualisation': 'vis',
+        'theory & optimisation': 'theory',
+        'gans & adversarial attacks': 'gan',
+        'reinforcement learning': 'rl',
+        'laugh': 'laugh'}
+
+    for label in card.labels:
+        name = label.name
+        if name.lower() in ['paper', 'blog post', 'video', 'github',
+                            'twitter']:
+            _type = name.lower()
+            if _type == 'blog post':
+                _type = 'blog'
+            data['type'] = _type
+            continue
+
+        elif name.lower() in categories:
+            data['category'] = categories[name.lower()]
+
+        elif name.lower() == 'recommended':
+            data['recommended'] = True
+
+        else:
+            raise Exception(f'Cant find label: {label.name}')
+
+    if 'description' not in data:
+        data['description'] = None
+    return data
 
 
 def render(yaml_path):
@@ -125,13 +205,13 @@ def _load_intro_text(path):
     # TODO: revamp all the '_load_...' functions under a unified function.
     # We shouldn't have to load the file 3 times...
     with path.open('r') as f:
-        content = yaml.load(f)
+        content = yaml.load(f, Loader=Loader)
     return content['intro_text']
 
 
 def _load_outro_text(path):
     with path.open('r') as f:
-        content = yaml.load(f)
+        content = yaml.load(f, Loader=Loader)
     return content['outro_text']
 
 
@@ -143,7 +223,7 @@ def _load_categories(path):
         path (str or pathlib.Path): path to the yaml file to be parsed.
     """
     with path.open('r') as f:
-        content = yaml.load(f)
+        content = yaml.load(f, Loader=Loader)
 
     def add_article_logos(article):
         """Article is a dict."""
@@ -207,11 +287,18 @@ def _get_category_info(category_name):
 
 
 if __name__ == '__main__':
-    for yaml_path in Path('newsletters/yaml').iterdir():
-        # We don't generate if the HTML already exists.
-        html_path = yaml_path_to_html_path(yaml_path)
-        #if not html_path.exists():
-        try:
-            render(yaml_path)
-        except Exception as e:
-            print(f'Couldnt generate {html_path}: {e}')
+    data = parse_cards()
+    #from tqdm import tqdm
+    import pyaml
+    yaml_path = Path('newsletters/yaml/week_073.yml')
+    with yaml_path.open('w') as f:
+        pyaml.dump(data, f)
+
+    # We don't generate if the HTML already exists.
+    html_path = yaml_path_to_html_path(yaml_path)
+    #if not html_path.exists():
+    #render(yaml_path)
+    try:
+        render(yaml_path)
+    except Exception as e:
+        print(f'Couldnt generate {html_path}: {e}')

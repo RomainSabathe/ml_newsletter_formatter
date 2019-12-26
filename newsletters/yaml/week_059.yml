@@ -1,0 +1,89 @@
+articles:
+  - category: cv
+    description: 'Yet another great post from Sudharshan Chandra Babu who already
+      wrote about <a href=https://blog.nanonets.com/human-pose-estimation-2d-guide/>2D
+      pose estimation</a> last month. The format is similar: it is a paper-by-paper
+      survey of some of the latest and most popular works on 3D pose estimation.'
+    lab: 'Sudharshan Chandra Babu'
+    title: 'A 2019 guide to 3D Pose Estimation'
+    type: blog
+    url: https://blog.nanonets.com/human-pose-estimation-3d-guide/
+  - category:
+    description: 'This short post is an introduction to a method that represents tensors
+      in any dimension and their associated operations by using graphs. The graphs
+      are then called Tensor Network Diagrams (or <i>string diagrams</i> depending
+      on your field...). I love this kind of simple yet neat idea. The author presents
+      a few potential applications: a visual representation of SVD and a ''proof''
+      that trace is invariant to cyclic permutations. You should check out the rest
+      of the author''s website, there are a ton of interesting articles.'
+    lab: 'Tai-Danae Bradley'
+    title: 'Matrices as Tensor Network Diagrams'
+    type: blog
+    url: https://www.math3ma.com/blog/matrices-as-tensor-network-diagrams
+  - category: gan
+    description:
+    lab: MIT
+    quote: "[...] <b>We demonstrate that adversarial examples can be directly attributed\
+      \ to the presence of non-robust features</b>: features derived from patterns\
+      \ in the data distribution that are highly predictive, yet brittle and incomprehensible\
+      \ to humans. After capturing these features within a theoretical framework,\
+      \ we establish their widespread existence in standard datasets. Finally, <b>we\
+      \ present a simple setting where we can rigorously tie the phenomena we observe\
+      \ in practice to a misalignment between the (human-specified) notion of robustness\
+      \ and the inherent geometry of the data.</b>"
+    title: "[arXiv] Adversarial Examples Are Not Bugs, They Are Features"
+    type: paper
+    url: https://arxiv.org/pdf/1905.02175v2.pdf
+  - category: dl
+    description:
+    lab: ' The Chinese University of Hong Kong, Tencent Technology'
+    quote: "[...] In this paper, we find that [...] the test accuracy is a quadratic\
+      \ function of the noise ratio in the case of symmetric noise, which explains\
+      \ the experimental findings previously published. Based on our analysis, we\
+      \ apply cross-validation to randomly split noisy datasets, which identifies\
+      \ most samples that have correct labels. Then we adopt the Co-teaching strategy\
+      \ which takes full advantage of the identified samples to train DNNs robustly\
+      \ against noisy labels. [...]."
+    title: "[arXiv] Understanding and Utilizing Deep Neural Networks Trained with\
+      \ Noisy Labels"
+    type: paper
+    url: https://arxiv.org/abs/1905.05040v1
+  - category: cv
+    description:
+    lab: 'University of Michigan, Beihang University, Carleton University'
+    quote: "[...]. If we think of today's object detection as a technical aesthetics\
+      \ under the power of deep learning, then turning back the clock 20 years we\
+      \ would witness the wisdom of cold weapon era. This paper extensively reviews\
+      \ 400+ papers of object detection in the light of its technical evolution, spanning\
+      \ over a quarter-century's time (from the 1990s to 2019). A number of topics\
+      \ have been covered in this paper, including the milestone detectors in history,\
+      \ detection datasets, metrics, fundamental building blocks of the detection\
+      \ system, speed up techniques, and the recent state of the art detection methods.\
+      \ This paper also reviews some important detection applications, such as pedestrian\
+      \ detection, face detection, text detection, etc, and makes an in-deep analysis\
+      \ of their challenges as well as technical improvements in recent years."
+    title: "[arXiv] Object Detection in 20 Years: A Survey"
+    type: paper
+    url: https://arxiv.org/abs/1905.05055v1
+  - category: laugh
+    description: 'A concise and entertaining way of presenting related work :-). Kudos
+      to the authors! If you want to learn more about the paper, see <a href=http://guillefix.me/nnbias/>here</a>.'
+    lab: 'Sam Bowman / University of Oxford'
+    title: 'This is clearly the right way to present related work'
+    type: twitter
+    url: https://twitter.com/sleepinyourhat/status/1126605270090645504/photo/1
+  - category: ml
+    description: 'If the now classic and stunning <a href=https://david-abel.github.io/notes/iclr_2019.pdf>notes
+      from David Abel</a> are too much to handle, then you will like this summary
+      of ICLR 2019. There is a fair selection of works on unsupervised learning, reinforcement
+      learning and bio-inspired deep learning. The author''s good understanding of
+      the field makes it easier to understand where the community is heading towards
+      (model-based reinforcement learning; meta-learning for unsupervised tasks; RNNs
+      being less attractive compared to the <a href=https://arxiv.org/abs/1706.03762>Transformer</a>,
+      etc.).'
+    lab: 'Chip Huyen'
+    title: 'Top 8 trends from ICLR 2019'
+    type: blog
+    url: https://huyenchip.com/2019/05/12/top-8-trends-from-iclr-2019.html
+intro_text: ""
+outro_text: ""

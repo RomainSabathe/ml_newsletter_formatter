@@ -1,0 +1,106 @@
+intro_text: "Hi everyone, my apologies, I haven't been able to send the newsletter for the past few weeks. Hopefully everything should be back to normal starting this week. You will find a few papers that I hope will be interesting to you. My personal preference goes to this blog post/paper on some striking invariance of deep classifiers (see below). Happy Friday!"
+outro_text: ""
+
+articles:
+  - category: engineering
+    description: 'Mr. Spillinger, one of the people building the open source platform  <a
+      href=https://github.com/cortexlabs/cortex>Cortex</a> (which provides tools to
+      deploy and manage models in production) gives insights on what a good machine
+      learning infrastructure should incorporate. There are diverse ideas like modularity,
+      using cloud solution but being agnostic to any cloud provider, the ability to
+      be easily extendable, being able to do continuous deployment etc.'
+    lab: 'Omer Spillinger (Cortex)'
+    title: 'Design Principles for Machine Learning Infrastructure Platforms'
+    type: blog
+    url: https://medium.com/cortex-labs/design-principles-for-machine-learning-infrastructure-platforms-cde7d7910bd5
+  - category: cv
+    description: 'This is the second part of a 2-part series of blog posts on image
+      super-resolution. The <a href=https://medium.com/idealo-tech-blog/a-deep-learning-based-magnifying-glass-dae1f565c359>first
+      post</a> is interesting if you are completely new to the problem of super-resolution.
+      The author gives an overview of how he used the <a href=https://arxiv.org/abs/1802.08797>Residual
+      Dense Network for Image Super-Resolution</a> paper to implement a straight-forward
+      solution.<br /> The second blog post explores less naive solutions such as weight
+      averaging, or the use of pre-trained VGG features. In the last part, he uses
+      a GAN trained using the pre-trained VGG features. Besides being conceptually
+      interesting, this method arguably gives the best visual results. The author
+      provides his code in a <a href=https://github.com/idealo/image-super-resolution>GitHub
+      repository</a> which has grown quite popular.'
+    lab: 'Francesco Cardinale (idealo.de)'
+    title: 'Zoom in... enhance: a Deep Learning based magnifying glass'
+    type: blog
+    url: https://medium.com/idealo-tech-blog/zoom-in-enhance-a-deep-learning-based-magnifying-glass-part-2-c021f98ebede
+  - category: theory
+    description:
+    lab: 'École polytechnique fédérale de Lausanne'
+    quote: "[...] We we study the emergence of structure in the weights by applying\
+      \ methods from topological data analysis. We train simple feedforward neural\
+      \ networks on the MNIST dataset and monitor the evolution of the weights. When\
+      \ initialized to zero, the weights follow trajectories that branch off recurrently,\
+      \ thus generating trees that describe the growth of the effective capacity of\
+      \ each layer. When initialized to tiny random values, the weights evolve smoothly\
+      \ along two-dimensional surfaces. We show that natural coordinates on these\
+      \ learning surfaces correspond to important factors of variation."
+    title: "[arXiv] Topology of Learning in Artificial Neural Networks"
+    type: paper
+    url: https://arxiv.org/abs/1902.08160v1
+  - category: engineering
+    description:
+    lab: 'Rice University'
+    quote: "[...] We propose SLIDE (Sub-LInear Deep learning Engine) that uniquely\
+      \ blends smart randomized algorithms, which drastically reduce the computation\
+      \ during both training and inference, with simple multi-core parallelism on\
+      \ a modest CPU. [...] Our evaluations on large industry-scale datasets, [..]\
+      \ show that training with SLIDE on a 44 core CPU is more than 2.7 times (2 hours\
+      \ vs. 5.5 hours) faster than the same network trained using Tensorflow on Tesla\
+      \ V100 at any given accuracy level. [...]"
+    title: "[arXiv] SLIDE : In Defense of Smart Algorithms over Hardware Acceleration\
+      \ for Large-Scale Deep Learning Systems"
+    type: paper
+    url: https://arxiv.org/abs/1903.03129
+  - category: theory
+    description:
+    lab: 'University of Maryland'
+    quote: "[...] We introduce a novel technique, interpreting a trained neural network\
+      \ by investigating its flip points. A flip point is any point that lies on the\
+      \ boundary between two output classes: e.g. for a neural network with a binary\
+      \ yes/no output, a flip point is any input that generates equal scores for 'yes'\
+      \ and 'no'. [...] For a given input, flip points enable us to measure confidence\
+      \ in the correctness of outputs much more effectively than softmax score. They\
+      \ also identify influential features of the inputs, identify bias, and find\
+      \ changes in the input that change the output of the model. We show that distance\
+      \ between an input and the closest flip point identifies the most influential\
+      \ points in the training data. [...]"
+    title: "[arXiv] Interpreting Neural Networks Using Flip Points"
+    type: paper
+    url: https://arxiv.org/abs/1903.08789v1
+  - category: dl
+    description: 'In classic adversarial attacks, an image with a label A is slightly
+      altered to be classified as class B by a given network. For instance, an image
+      of a car is attacked such that it is being classified as an ostrich by a network,
+      although it still looks like a car to us. In this work published at ICLR, authors
+      manage to produce a different kind of attack. Given the original image of a
+      car and its corresponding classification logits, they can produce an ostrich-looking
+      image which has exactly the same logits as the car image. In fact, they can
+      produce an image of any class from ImageNet that will still have exactly the
+      same activation as the car image. <br /> This achievement shouldn''t understood
+      as a <i>useful</i> adversarial attack per se as it requires availability of
+      the model and for this model to be invertible. However, it gives us more information
+      about how deep nets work. According to the authors, while the first type of
+      adversarial attack (with tiny perturbations) revealed how networks are over-sensitive
+      to non-task-relevant content, this new type of attack conversely indicates that
+      networks can be non-sensitive to task-relevant content. <br /> Authors argue
+      that this phenomena arises because of the cross-entropy loss.  In the last
+      section, they devise an experiment which suggests that networks trained with
+      cross-entropy minimisation tend to pick-up the easiest classification signal
+      available and to entirely rely on it, even though this signal could be irrelevant
+      to the classification task. To mitigate this effect, they propose a new loss
+      function that helps preventing it. <br /> For more details, you can read their
+      ICLR paper: <a href=https://arxiv.org/abs/1811.00401>Excessive Invariance Causes
+      Adversarial Vulnerability</a>.'
+    lab: 'Vector Institute and University of Toronto, University of Bremen, University
+      of Tubingen'
+    recommended: true
+    title: "[ICLR 2019] Deep Classifiers Ignore Almost Everything They See (and how\
+      \ we may be able to fix it)"
+    type: paper
+    url: https://medium.com/@j.jacobsen/deep-classifiers-ignore-almost-everything-they-see-and-how-we-may-be-able-to-fix-it-a6888012516f

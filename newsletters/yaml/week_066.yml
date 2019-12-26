@@ -1,0 +1,123 @@
+articles:
+  - category: theory
+    description:
+    img: https://i.ibb.co/mT0bWvH/image.png
+    lab: 'Université catholique de Louvain'
+    quote: 'Our work presents extensive empirical evidence that layer rotation, i.e.
+      the evolution across training of the cosine distance between each layer''s weight
+      vector and its initialization, constitutes an impressively consistent indicator
+      of generalization performance. In particular, larger cosine distances between
+      final and initial weights of each layer consistently translate into better generalization
+      performance of the final model. Interestingly, this relation admits a network
+      independent optimum: training procedures during which all layers'' weights reach
+      a cosine distance of 1 from their initialization consistently outperform other
+      configurations -by up to 30% test accuracy. Moreover, we show that layer rotations
+      are easily monitored and controlled (helpful for hyperparameter tuning) and
+      potentially provide a unified framework to explain the impact of learning rate
+      tuning, weight decay, learning rate warmups and adaptive gradient methods on
+      generalization and training speed. In an attempt to explain the surprising properties
+      of layer rotation, we show on a 1-layer MLP trained on MNIST that layer rotation
+      correlates with the degree to which features of intermediate layers have been
+      trained.'
+    title: "[ICML Workshop] Layer rotation: a surprisingly powerful indicator of generalization\
+      \ in deep networks?"
+    type: paper
+    url: https://arxiv.org/abs/1806.01603v2
+  - category:
+    description: 'This report is made out of slides with lots of visuals which makes
+      it easy to go through if you are in a rush. It is divided in several sections
+      (Research, Talent, Industry, Politics), each of them giving an interesting insight
+      on the dynamics of artificial intelligence. Topics discussed are advances in
+      reinforcement learning, natural language processing, medical application but
+      also the imbalance men/women in the field, patents, hardware,...  '
+    lab: 'Air Street Capital, UCL Institute for Innovation and Public Purpose'
+    quote: 'In this report, we set out to capture a snapshot of the exponential progress
+      in AI with a focus on developments in the past 12 months. Consider this report
+      as a compilation of the most interesting things we’ve seen that seeks to trigger
+      an informed conversation about the state of AI and its implication for the future.'
+    title: 'State of AI 2019'
+    type: paper
+    url: https://www.stateof.ai/
+  - category: engineering
+    description: 'In this blog post, David Herron states the problem with current
+      machine learning workflows: reproducibility, results sharing, transparency.
+      After stating what an ideal solution should look like, he goes on to compare
+      two popular alternatives: MLFlow and DVC. DVC appears to have his preference
+      for its ease of use (transparent) and its flexibility (the pipelines we can
+      generate with DVC resemble more of a directed acyclic graph rather than a sequence
+      of steps as offered by MLFlow).'
+    img: https://res.cloudinary.com/practicaldev/image/fetch/s--p4K5MDr8--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://thepracticaldev.s3.amazonaws.com/i/5qw1fz7mk4guq9lp27z1.png
+    lab: 'David Herron'
+    title: 'Principled Machine Learning: Practices and Tools for Efficient Collaboration'
+    type: blog
+    url: https://dev.to/robogeek/principled-machine-learning-4eho
+  - category: ml
+    description: 'This is a short introduction to the problem of optimal transport.
+      I would recommend to read for those you have never read anything about optimal
+      transport before. The problem and what we are trying to achieve is well-defined
+      and examples are provided. However there are no explanations on how the Wasserstein
+      distance is actually computed in practice. A public <a href=https://github.com/gpeyre/SinkhornAutoDiff>implementation
+      of the Sinkhorn algorithm</a> is used in the examples.'
+    img: https://dfdazac.github.io/assets/img/sinkhorn_files/sinkhorn_13_1.png
+    lab: '<a href=https://dfdazac.github.io/>Daniel Draza</a>'
+    title: 'Approximating Wasserstein distances with PyTorch'
+    type: blog
+    url: https://dfdazac.github.io/sinkhorn.html?utm_campaign=NLP%20News&utm_medium=email&utm_source=Revue%20newsletter
+  - category: rl
+    description: 'This is cool little blog post, surely intended to those who are
+      more familiar with reinforcement learning than I am! Antonin Raffin almost gives
+      a list of ingredients to quickly train an RC car to drive smoothly in a simulation.
+      He collects ~5 minutes of video footage of a human driving the RC car, then
+      trains a VAE to compress this information. He then uses a Soft Actor-Critic
+      method with a carefully designed reward function and a penalty for non-smooth
+      driving. Well done!'
+    img: https://i.ibb.co/dchyrcy/Selection-915.png
+    lab: '<a href=https://araffin.github.io/>Antonin Raffin</a>'
+    title: 'Learning to Drive Smoothly in Minutes'
+    type: blog
+    url: https://towardsdatascience.com/learning-to-drive-smoothly-in-minutes-450a7cdb35f4
+  - category: dl
+    description:
+    img: https://i.ibb.co/Pjbd0Dn/Selection-913.png
+    lab: 'University of Tsukuba, Yokohama National University, SkillUp AI, Shinshu
+      University'
+    quote: 'High sensitivity of neural architecture search (NAS) methods against their
+      input such as step-size (i.e., learning rate) and search space prevents practitioners
+      from applying them out-of-the-box to their own problems, albeit its purpose
+      is to automate a part of tuning process. Aiming at a fast, robust, and widely-applicable
+      NAS, we develop a generic optimization framework for NAS. We turn a coupled
+      optimization of connection weights and neural architecture into a differentiable
+      optimization by means of stochastic relaxation. It accepts arbitrary search
+      space (widely-applicable) and enables to employ a gradient-based simultaneous
+      optimization of weights and architecture (fast). We propose a stochastic natural
+      gradient method with an adaptive step-size mechanism built upon our theoretical
+      investigation (robust). Despite its simplicity and no problem-dependent parameter
+      tuning, our method exhibited near state-of-the-art performances with low computational
+      budgets both on image classification and inpainting tasks.'
+    title: "[ICML 2019] Adaptive Stochastic Natural Gradient Method for One-Shot Neural\
+      \ Architecture Search"
+    type: paper
+    url: https://arxiv.org/abs/1905.08537v1
+  - category: gan
+    description:
+    img: https://i.ibb.co/7KnSgxC/Selection-914.png
+    lab: 'The University of Tokyo, National Taiwan University'
+    quote: 'Generative image modeling techniques such as GAN demonstrate highly convincing
+      image generation result. However, user interaction is often necessary to obtain
+      the desired results. Existing attempts add interactivity but require either
+      tailored architectures or extra data. We present a human-in-the-optimization
+      method that allows users to directly explore and search the latent vector space
+      of generative image modeling. Our system provides multiple candidates by sampling
+      the latent vector space, and the user selects the best blending weights within
+      the subspace using multiple sliders. In addition, the user can express their
+      intention through image editing tools. The system samples latent vectors based
+      on inputs and presents new candidates to the user iteratively. An advantage
+      of our formulation is that one can apply our method to arbitrary pre-trained
+      model without developing specialized architecture or data. We demonstrate our
+      method with various generative image modeling applications, and show superior
+      performance in a comparative user study with prior art iGAN.'
+    title: "[arXiv] Interactive Subspace Exploration on Generative Image Modelling"
+    type: paper
+    url: https://arxiv.org/abs/1906.09840v2
+intro_text: ""
+outro_text: ""

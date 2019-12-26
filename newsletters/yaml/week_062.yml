@@ -1,0 +1,154 @@
+articles:
+  - category: dl
+    description: 'This paper has been quite discussed this week. It is probably due
+      to the combination of impressive results (new SOTA on ImageNet with fewer parameters
+      and less computation needed) and the ease of implementation. Actually every
+      day new GitHub repos implementing the EfficientNet architecture are created.
+      See <a href=https://github.com/tensorflow/tpu/tree/master/models/official/efficientnet>here</a>
+      for the official implementation (with pretrained weights) and <a href=https://github.com/lukemelas/EfficientNet-PyTorch>here</a>
+      for the currently most popular Pytorch implementation which offers pretrained
+      weights as well. If you''re looking for a quick overview of this paper, I have
+      made some <a href=https://docs.google.com/presentation/d/1d-oDi7auUr-Qi3ab1maa7plX_Qae26JQGTSHvhnMMMU/edit?usp=sharing>slides</a>.'
+    img: https://i.ibb.co/n1vZX2H/Selection-196.png
+    lab: 'Google Research, Brain Team'
+    quote: 'Convolutional Neural Networks (ConvNets) are commonly developed at a fixed
+      resource budget, and then scaled up for better accuracy if more resources are
+      available. In this paper, we systematically study model scaling and identify
+      that carefully balancing network depth, width, and resolution can lead to better
+      performance. Based on this observation, <b>we propose a new scaling method that
+      uniformly scales all dimensions of depth/width/resolution using a simple yet
+      highly effective compound coefficient</b>. We demonstrate the effectiveness
+      of this method on scaling up MobileNets and ResNet. To go even further, we use
+      neural architecture search to design a new baseline network and scale it up
+      to obtain a family of models, called EfficientNets, which achieve much better
+      accuracy and efficiency than previous ConvNets. In particular, <b>our EfficientNet-B7
+      achieves state-of-the-art 84.4% top-1 / 97.1% top-5 accuracy on ImageNet, while
+      being 8.4x smaller and 6.1x faster on inference than the best existing ConvNet</b>.
+      Our EfficientNets also transfer well and achieve state-of-the-art accuracy on
+      CIFAR-100 (91.7%), Flowers (98.8%), and 3 other transfer learning datasets,
+      with an order of magnitude fewer parameters. Source code is at this https URL.'
+    title: "[ICML 2019] EfficientNet: Rethinking Model Scaling for Convolutional Neural\
+      \ Networks"
+    type: paper
+    url: https://arxiv.org/abs/1905.11946
+  - category: dl
+    description: 'Another paper that received quite a lot of attention this week.
+      Authors manage to obtain a variational autoencoder capable of generating  images
+      in high resolution with strong long-term coherence. The results are visually
+      competitive with state-of-the-art GANs like BigGAN.'
+    img: https://i.ibb.co/QpPZjFX/Selection-195.png
+    lab: DeepMind
+    quote: 'We explore the use of Vector Quantized Variational AutoEncoder (VQ-VAE)
+      models for large scale image generation. To this end, we scale and enhance the
+      autoregressive priors used in VQ-VAE to generate synthetic samples of much higher
+      coherence and fidelity than possible before. We use simple feed-forward encoder
+      and decoder networks, making our model an attractive candidate for applications
+      where the encoding and/or decoding speed is critical. Additionally, VQ-VAE requires
+      sampling an autoregressive model only in the compressed latent space, which
+      is an order of magnitude faster than sampling in the pixel space, especially
+      for large images. We demonstrate that a multi-scale hierarchical organization
+      of VQ-VAE, augmented with powerful priors over the latent codes, is <b>able
+      to generate samples with quality that rivals that of state of the art Generative
+      Adversarial Networks on multifaceted datasets such as ImageNet, while not suffering
+      from GAN''s known shortcomings such as mode collapse and lack of diversity.</b>'
+    title: "[arXiv] Generating Diverse High-Fidelity Images with VQ-VAE-2"
+    type: paper
+    url: https://arxiv.org/abs/1906.00446
+  - category: ml
+    description: 'This blog gives a bit a context to appreciate the paper <a href=https://arxiv.org/abs/1905.07376>Integer
+      Discrete Flows and Lossless Compression</a> published recently on arXiv. Armen
+      revisits the formulation of generative models and presents the nice properties
+      (and difficulties) of flow-based models. Another good starting point is <a href=https://lilianweng.github.io/lil-log/2018/10/13/flow-based-deep-generative-models.html>this
+      post</a> by Lilian Weng.'
+    lab: '<a href=https://armenag.com/>Armen Aghajanyan</a>'
+    title: 'Flow-Based Generative Models, Bijective Transforms and Neural Lossless
+      Compression'
+    type: blog
+    url: https://armenag.com/2019/05/30/flow-based-generative-models-bijective-transforms-and-neural-lossless-compression/
+  - category: rl
+    description:
+    img: https://i.ibb.co/cFKb9WX/Selection-829.png"
+    lab: DeepMind
+    quote: 'Reinforcement learning (RL) has shown great success in increasingly complex
+      single-agent environments and two-player turn-based games. However, the real
+      world contains multiple agents, each learning and acting independently to cooperate
+      and compete with other agents. We used a tournament-style evaluation to demonstrate
+      that an agent can achieve human-level performance in a three-dimensional multiplayer
+      first-person video game, Quake III Arena in Capture the Flag mode, using only
+      pixels and game points scored as input. <b>We used a two-tier optimization process
+      in which a population of independent RL agents are trained concurrently from
+      thousands of parallel matches on randomly generated environments.</b> Each agent
+      learns its own internal reward signal and rich representation of the world.
+      These results indicate the great potential of multiagent reinforcement learning
+      for artificial intelligence research.'
+    title: "[Science] Human-level performance in 3D multiplayer games with population-based\
+      \ reinforcement learning"
+    type: paper
+    url: https://science.sciencemag.org/content/364/6443/859
+  - category: theory
+    description:
+    img: https://i.ibb.co/qJYt664/Selection-828.png
+    lab: 'Carnegie Mellon University'
+    quote: 'We investigate the relationship between the frequency spectrum of image
+      data and the generalization behavior of convolutional neural networks (CNN).
+      We first notice CNN''s ability in capturing the high-frequency components of
+      images. These high-frequency components are almost imperceptible to a human.
+      Thus the observation can serve as one of the explanations of the existence of
+      adversarial examples, and can also help verify CNN''s trade-off between robustness
+      and accuracy. Our observation also immediately leads to methods that can improve
+      the adversarial robustness of trained CNN. Finally, we also utilize this observation
+      to design a (semi) black-box adversarial attack method.'
+    title: "[arXiv] High Frequency Component Helps Explain the Generalization of Convolutional\
+      \ Neural Networks"
+    type: paper
+    url: https://arxiv.org/abs/1905.13545
+  - category: dl
+    description: 'This is a cool little project that I foresee can be useful if you
+      are starting a project from scratch with a small architecture. Flowpoints is
+      basically yet another GUI that lets you build neural net architectures, however
+      I quite enjoyed using it. It appears to be quite powerful as it supports skip
+      connections, non-sequential flows and most of the common neural net operations.
+      Once the graph has been defined, a code is generated (either for Tensorflow
+      or Pytorch) not only for the model architecture, but also for training ops,
+      validation ops, loss plotting and model saving and loading! Another nice little
+      feature is that Flowpoints can generate a weblink  for your architecture. The
+      link can be used either to share the architecture with others, or for yourself
+      as part of the documentation on the model''s architecture. <br />As far as I
+      am aware, there no yet support for recurrent connections or copy/paste functionalities,
+      making it difficult to create deeper architectures like ResNet.'
+    img: https://github.com/mariusbrataas/flowpoints_ml/blob/master/public/cifar10net.png?raw=true
+    lab: '<a href=https://github.com/mariusbrataas>Marius Brataas</a>'
+    title: 'flowpoints_ml: An intuitive approach to creating deep learning models'
+    type: github
+    url: https://github.com/mariusbrataas/flowpoints_ml
+  - category: theory
+    description: 'In this short post, Divam Gupta introduces virtual adversarial training.
+      An unsupervised method that can be used on an already trained model to enforce
+      smoothness of the output distribution (thus regularizing it and making it stronger
+      against adversarial attacks). There are a few other works that go along the
+      same line (for instance: <a href=https://arxiv.org/abs/1904.12848>Unsupervised
+      Data Augmentation</a>) where the idea is the minimize the KL divergence between
+      the output distribution obtained from real data and the the output distribution
+      obtained from altered data (i.e. augmented or adversarially attacked). The author
+      also presents a toy example with its associated TensorFlow code.'
+    img: https://divamgupta.com/assets/images/posts/vat/image3.png
+    lab: '<a href=https://divamgupta.com/>Divam Gupta</a>'
+    title: 'An Introduction to Virtual Adversarial Training'
+    type: blog
+    url: https://divamgupta.com/unsupervised-learning/semi-supervised-learning/2019/05/31/introduction-to-virtual-adversarial-training.html
+  - category: ml
+    description: 'In May, <a href=https://twitter.com/decodyng?lang=en>Cody Wild</a>
+      started a paper-reading marathon; something she does twice a year. Every day,
+      she read one machine learning paper and summarised it on <a href=https://www.shortscience.org/>Short
+      Science</a>. Here''s an  <a href=https://www.shortscience.org/paper?bibtexKey=zhou2019deconstructing&a=decodyng>example</a>.
+      To make it easier for us to search and go through all the summaries, she created
+      a Google Document where she aggregated <i>all</i> of them, images included.
+      The result is a doc of 44 pages and the gist of 31 papers on a wide range of
+      topics (reinforcement learning, optimization , NLP, model explanation,...).
+      Isn''t that wonderful?'
+    lab: '<a href=https://twitter.com/decodyng?lang=en>Cody Wild</a>'
+    title: 'Machine Learning Writing Month'
+    type: blog
+    url: https://docs.google.com/document/d/1MQ83GqL7Nr9_wHCox6xNjtK56FdmyEFsR8DTw15KbnU/edit?usp=sharing
+intro_text: ""
+outro_text: ""

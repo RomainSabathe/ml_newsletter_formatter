@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+<title>ML newsletter</title>
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+	html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+
+	.category{
+	  padding: 20px;
+	  margin: auto;
+	  background: #F5F5F5;
+	  margin-bottom: 25px;
+	  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+	  transition: all 0.3s; 
+	  border-radius: 3px;
+	}
+
+    .category-title{
+      margin-bottom: 30px;
+    }
+
+	.category-logo{
+	  margin-right: 10px;
+	}
+
+	.article-logo{
+	  margin-right: 3px;
+	}
+
+    .recommended{
+	  margin-right: 2px;
+    }
+
+    .quote{
+      font-size: 11px;
+    }
+</style>
+
+
+<body>
+
+<!-- Page Container -->
+<div class="container" style="max-width:1400px;">
+
+  
+  <!-- The Grid -->
+  <div class="row">
+  
+      <!-- Dummy container to force centering. Yes. I'm a front-end noob. -->
+      <div class="col-sm-2"></div>
+
+      <div class="col-sm-8">
+
+          
+          <!-- Category block -->
+          <div class="category">
+              <h2 class="category-title">
+                  <img src="https://image.flaticon.com/icons/png/512/653/653500.png"
+                       class="fa fa-fw category-logo">General Machine Learning
+              </h2>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/60/60736.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://medium.com/tensorflow/structural-time-series-modeling-in-tensorflow-probability-344edac24083">Structural Time Series modeling in TensorFlow Probability</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    Dave Moore, Jacob Burnim (TensorFlow Probability Team)
+                  </h6>
+                                    <p>This is a short article in which authors show how to use structural time series models within Tensorflow Probability. This type of models is quite flexible as one can define local trends and seasonal trends very explicitly for better interpretability. A new set of tools have been integrated to Tensorflow Probability to do exactly this type of modelling. In the post, authors shows how to use it with two text-book examples: forecasting CO2 concentration in Hawaii and forecasting the demand for electricity in Australia.</p>
+              </div>
+              <hr>
+
+                          
+          </div>
+          
+          <!-- Category block -->
+          <div class="category">
+              <h2 class="category-title">
+                  <img src="https://image.flaticon.com/icons/png/512/149/149243.png"
+                       class="fa fa-fw category-logo">Deep Learning
+              </h2>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/60/60736.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://pillowlab.wordpress.com/2019/04/14/deep-neural-networks-as-gaussian-processes/">Deep Neural Networks as Gaussian Processes</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    Pillow Lab Blog
+                  </h6>
+                                    <p>This post is a rather short summary of <a href=https://openreview.net/forum?id=B1EA-M-0Z>Deep Neural Networks as Gaussian Processes</a>, a paper published at ICLR 2018 in which authors extend a <a href=http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.446.9306&rep=rep1&type=pdf>result</a> from 1994. This post gives the gist of the proof found in both works. The first result states that a one-hidden-layer perceptron is equivalent to a Gaussian process (with a kernel based on the loss function) if the number of hidden units is sufficiently large. The second result extends on the first and proves that any layer in a deep network is equivalent to a Gaussian process if it has enough units.</p>
+              </div>
+              <hr>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/155/155292.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://arxiv.org/abs/1904.05049">[arXiv] Drop an Octave: Reducing Spatial Redundancy in Convolutional Neural Networks with Octave Convolution</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    Facebook AI, National University of Singapore, Qihoo 360 AI Institute
+                  </h6>
+                                    <blockquote class="blockquote">
+                     <p class="quote">[...] The output feature maps of a convolution layer can be seen as a mixture of information at different frequencies. In this work, we propose to factorize the mixed feature maps by their frequencies and design a novel Octave Convolution (OctConv) operation to store and process feature maps that vary spatially 'slower' at a lower spatial resolution reducing both memory and computation cost. Unlike existing multi-scale methods, OctConv is formulated as a single, generic, plug-and-play convolutional unit that can be used as a direct replacement of (vanilla) convolutions without any adjustments in the network architecture. [...] We experimentally show that by simply replacing convolutions with OctConv, we can consistently boost accuracy for both image and video recognition tasks, while reducing memory and computational cost. [...].</p>
+                  </blockquote>
+                                    <p>See also an MXNet implementation <a href=https://github.com/terrychenism/OctaveConv>here</a> and a Pytorch one <a href=https://github.com/lxtGH/OctaveConv_pytorch>here</a>.</p>
+              </div>
+              <hr>
+
+                          
+          </div>
+          
+          <!-- Category block -->
+          <div class="category">
+              <h2 class="category-title">
+                  <img src="https://image.flaticon.com/icons/png/512/722/722174.png"
+                       class="fa fa-fw category-logo">Computer Vision
+              </h2>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/60/60736.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://blog.nanonets.com/human-pose-estimation-2d-guide/?utm_source=reddit&utm_medium=social&utm_campaign=pose&utm_content=GROUP_NAME">A 2019 guide to Human Pose Estimation with Deep Learning</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    Sudharshan Chandra Babu (Nanonets)
+                  </h6>
+                                    <p>A very nice post post that summarises no less than 7 papers on pose estimation; ranging from 2014 up to state-of-the-art at CVPR 2019. They are all explained in simple and concise terms. For each, in 10 lines or so, we are given the general idea of the paper as well as the specificity of the architecture that was used. it's also a great way to get up to speed with some of the most ambitious CNN architectures out there like HRNet or stacked hourglass.</p>
+              </div>
+              <hr>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/155/155292.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://arxiv.org/abs/1805.09501">[CVPR 2019] AutoAugment: Learning Augmentation Policies from Data</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    Google Brain
+                  </h6>
+                                    <blockquote class="blockquote">
+                     <p class="quote">[...] In this paper, we describe a simple procedure called AutoAugment to automatically search for improved data augmentation policies. In our implementation, we have designed a search space where a policy consists of many sub-policies, one of which is randomly chosen for each image in each mini-batch. A sub-policy consists of two operations, each operation being an image processing function such as translation, rotation, or shearing, and the probabilities and magnitudes with which the functions are applied. We use a search algorithm to find the best policy such that the neural network yields the highest validation accuracy on a target dataset. Our method achieves state-of-the-art accuracy on CIFAR-10, CIFAR-100, SVHN, and ImageNet (without additional data). [...] Augmentation policies we find are transferable between datasets. The policy learned on ImageNet transfers well to achieve significant improvements on other datasets, such as Oxford Flowers, Caltech-101, Oxford-IIT Pets, FGVC Aircraft, and Stanford Cars.</p>
+                  </blockquote>
+                                    <p></p>
+              </div>
+              <hr>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/155/155292.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://arxiv.org/abs/1904.02616v1">[CVPR 2019] Signal-to-Noise Ratio: A Robust Distance Metric for Deep Metric Learning</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    University of Posts and Telecommunications (Beijing, China), AI Labs (Beijing, China), University, Syracuse
+                  </h6>
+                                    <blockquote class="blockquote">
+                     <p class="quote">[...] A number of deep metric learning methods, which ensure that similar examples are mapped close to each other and dissimilar examples are mapped farther apart, have been proposed to construct effective structures for loss functions and have shown promising results. In this paper, different from the approaches on learning the loss structures, we propose a robust SNR distance metric based on Signal-to-Noise Ratio (SNR) for measuring the similarity of image pairs for deep metric learning. [...] Compared with Euclidean distance metric, our SNR distance metric can further jointly reduce the intra-class distances and enlarge the inter-class distances for learned features. Leveraging our SNR distance metric, we propose Deep SNR-based Metric Learning (DSML) to generate discriminative feature embeddings. By extensive experiments on three widely adopted benchmarks, including CARS196, CUB200-2011 and CIFAR10, our DSML has shown its superiority over other state-of-the-art methods. [...]</p>
+                  </blockquote>
+                                    <p></p>
+              </div>
+              <hr>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/155/155292.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://arxiv.org/abs/1904.07392">[CVPR 2019] NAS-FPN: Learning Scalable Feature Pyramid Architecture for Object Detection</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    Google Brain
+                  </h6>
+                                    <blockquote class="blockquote">
+                     <p class="quote">Current state-of-the-art convolutional architectures for object detection are manually designed. Here we aim to learn a better architecture of feature pyramid network for object detection. We adopt Neural Architecture Search and discover a new feature pyramid architecture in a novel scalable search space covering all cross-scale connections. The discovered architecture, named NAS-FPN, consists of a combination of top-down and bottom-up connections to fuse features across scales. NAS-FPN, combined with various backbone models in the RetinaNet framework, achieves better accuracy and latency tradeoff compared to state-of-the-art object detection models. [...]</p>
+                  </blockquote>
+                                    <p></p>
+              </div>
+              <hr>
+
+                          
+          </div>
+          
+          <!-- Category block -->
+          <div class="category">
+              <h2 class="category-title">
+                  <img src="https://image.flaticon.com/icons/png/512/179/179121.png"
+                       class="fa fa-fw category-logo">Optimisation & Learning Theory
+              </h2>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/60/60736.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://lilianweng.github.io/lil-log/2019/03/14/are-deep-neural-networks-dramatically-overfitted.html?utm_campaign=NLP%20News&utm_medium=email&utm_source=Revue%20newsletter">Are Deep Neural Networks Dramatically Overfitted?</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                        <span class="badge">
+                                  Recommended
+                              </span>
+                                                    Lilian Weng
+                  </h6>
+                                    <p>This post is almost a month old; shame on me for missing it, because it is a really nice read! In this one, Lilian Weng offers a review of different recent papers on generation and overfitting in deep learning. She starts with reminders of how generalisation was conceptualised before the deep learning era (in particular using standard notions of information theory) then move on the more recent results. In particular, there is both a summary and a reimplementation of 3 reference papers that were published in 2018 and later.</p>
+              </div>
+              <hr>
+
+                          
+          </div>
+                </div>
+      
+  <!-- Dummy container to force centering. Yes. I'm a front-end noob. -->
+  <div class="col-sm-2"></div>
+
+  <!-- End Grid -->
+  </div>
+
+    
+  <!-- End Page Container -->
+</div>
+
+</body>
+</html>

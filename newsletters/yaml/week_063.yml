@@ -1,0 +1,134 @@
+articles:
+  - category: rl
+    description:
+    lab: OpenAI
+    quote: 'Recent results in Reinforcement Learning (RL) have shown that agents with
+      limited training environments are susceptible to a large amount of overfitting
+      across many domains. A key challenge for RL generalization is to quantitatively
+      explain the effects of changing parameters on testing performance. Such parameters
+      include architecture, regularization, and RL-dependent variables such as discount
+      factor and action stochasticity. <b>We provide empirical results that show complex
+      and interdependent relationships between hyperparameters and generalization.</b>
+      We further show that several empirical metrics such as gradient cosine similarity
+      and trajectory-dependent metrics serve to provide intuition towards these results.'
+    title: "[ICML 2019 Workshop] An Empirical Study on Hyperparameters and their Interdependence\
+      \ for RL Generalization"
+    type: paper
+    url: https://arxiv.org/abs/1906.00431?utm_campaign=RL%20Weekly&utm_medium=email&utm_source=Revue%20newsletter
+  - category: ml
+    description: 'It''s ICML week! Two papers have been selected for the best paper
+      awards: <a href=https://arxiv.org/abs/1811.12359>Challenging Common Assumptions
+      in the Unsupervised Learning of Disentangled Representations</a> and <a href=https://arxiv.org/pdf/1903.03571>Rates
+      of Convergence for Sparse Variational Gaussian Process Regression</a>. You can
+      also find the list of honorable mentions in the blog post.'
+    lab: Synced
+    title: 'ICML 2019: best papers and honorable mentions'
+    type: blog
+    url: https://medium.com/syncedreview/icml-2019-google-eth-zurich-mpi-is-cambridge-prowler-io-share-best-paper-honours-4aeabd5c9fc8
+  - category: ml
+    description: 'This is the link you want to bookmark! Spotlight sessions and other
+      talks are already being uploaded to this Youtube page.'
+    img: https://i.ibb.co/VWZRn3Y/Selection-832.png
+    title: 'ICML 2019 Conference Videos'
+    type: video
+    url: https://www.youtube.com/channel/UCvqEpkx-HQ2nDMT-ob-AADg/videos
+  - category: dl
+    description: 'This blog post is an introduction to a recent MIT paper <a href=https://arxiv.org/abs/1906.00945>Learning
+      Perceptually-Aligned Representations via Adversarial Robustness</a>. As the
+      name suggests, authors train a network to <a href=http://gradientscience.org/robust_opt_pt1>reduce
+      its sensitivity to adversarial examples</a> and observe that by doing so the
+      network learn features that are more meaningful for a human. Several qualitative
+      examples are shown. In a <a href=http://gradientscience.org/robust_apps/>second
+      blog post</a>, authors expand on the idea and show that thanks to the better
+      feature representation, the network can be used for image generation, super-resolution,
+      in-painting and image-to-image translation. My personal favourite application
+      is probably the image I associate with this article which shows potential reasons
+      for the misclassification of a given image.'
+    img: http://gradientscience.org/assets/rf1_images/misclassification_IN.jpg
+    lab: MIT
+    title: 'Robustness beyond Security: Representation Learning'
+    type: paper
+    url: http://gradientscience.org/robust_reps/
+  - category: dl
+    description: 'Pytorch had already a neat API to load standard architectures (VGG,
+      ResNet, DenseNet, MobileNet, etc.) but the list of available architectures rarely
+      grew and required a Pytorch update anyway. Because of this, <a href=https://github.com/Cadene/pretrained-models.pytorch>alternative
+      ''model-zoo'' projects</a> grew quite popular. Pytorch Hub is an attempt to
+      standardise the practice of submitting an architecture and its pretrained weights
+      to the Pytorch ecosystem. Now anyone can contribute to the official list of
+      Pytorch builtin architectures. Some integrations are well-thought. For example,
+      the <a href=https://pytorch.org/hub/pytorch_vision_densenet/>DenseNet page</a>
+      provides instructions and examples on how to load the architecture alongside
+      a Colab notebook to see it in action.'
+    img: https://pytorch.org/assets/images/hub-blog-header-1.png
+    lab: Pytorch
+    title: 'Towards Reproducible Research with PyTorch Hub'
+    type: github
+    url: https://pytorch.org/blog/towards-reproducible-research-with-pytorch-hub/
+  - category: nlp
+    description:
+    img: https://i.ibb.co/cbynkbd/Selection-834.png
+    lab: 'Stanford University, Facebook AI Reseach'
+    quote: 'Large pre-trained neural networks such as BERT have had great recent success
+      in NLP, motivating a growing body of research investigating what aspects of
+      language they are able to learn from unlabeled data. Most recent analysis has
+      focused on model outputs (e.g., language model surprisal) or internal vector
+      representations (e.g., probing classifiers). Complementary to these works, we
+      propose methods for analyzing the attention mechanisms of pre-trained models
+      and apply them to BERT. BERT''s attention heads exhibit patterns such as attending
+      to delimiter tokens, specific positional offsets, or broadly attending over
+      the whole sentence, with heads in the same layer often exhibiting similar behaviors.
+      <b>We further show that certain attention heads correspond well to linguistic
+      notions of syntax and coreference. For example, we find heads that attend to
+      the direct objects of verbs, determiners of nouns, objects of prepositions,
+      and coreferent mentions with remarkably high accuracy.</b> Lastly, we propose
+      an attention-based probing classifier and use it to further demonstrate that
+      substantial syntactic information is captured in BERT''s attention.'
+    title: "[BlackBoxNLP 2019] What Does BERT Look At? An Analysis of BERT's Attention"
+    type: paper
+    url: https://arxiv.org/abs/1906.04341
+  - category: ml
+    description:
+    img: https://i.ibb.co/n090QK2/Selection-831.png
+    lab: 'Inria, Google Brain'
+    quote: 'Not all neural network architectures are created equal, some perform much
+      better than others for certain tasks. But how important are the weight parameters
+      of a neural network compared to its architecture? In this work, we question
+      to what extent neural network architectures alone, without learning any weight
+      parameters, can encode solutions for a given task. <b>We propose a search method
+      for neural network architectures that can already perform a task without any
+      explicit weight training.</b> To evaluate these networks, we populate the connections
+      with a single shared weight parameter sampled from a uniform random distribution,
+      and measure the expected performance. <b>We demonstrate that our method can
+      find minimal neural network architectures that can perform several reinforcement
+      learning tasks without weight training.</b> On a supervised learning domain,
+      we find network architectures that achieve much higher than chance accuracy
+      on MNIST using random weights.'
+    title: "[arXiv] Weight Agnostic Neural Networks"
+    type: paper
+    url: https://weightagnostic.github.io/
+  - category: theory
+    description:
+    lab: NVIDIA
+    quote: 'Deep Neural Networks (DNNs) often rely on very large datasets for training.
+      Given the large size of such datasets, it is conceivable that they contain certain
+      samples that either do not contribute or negatively impact the DNN''s performance.
+      If there is a large number of such samples, subsampling the training dataset
+      in a way that removes them could provide an effective solution to both improve
+      performance and reduce training time. In this paper, we propose an approach
+      called <Active Dataset Subsampling (ADS), to identify favorable subsets within
+      a dataset for training using ensemble based uncertainty estimation. When applied
+      to three image classification benchmarks (CIFAR-10, CIFAR-100 and ImageNet)
+      <b>we find that there are low uncertainty subsets, which can be as large as
+      50% of the full dataset, that negatively impact performance.</b> These subsets
+      are identified and removed with ADS. We demonstrate that datasets obtained using
+      ADS with a lightweight ResNet-18 ensemble remain effective when used to train
+      deeper models like ResNet-101. <b>Our results provide strong empirical evidence
+      that using all the available data for training can hurt performance on large
+      scale vision tasks.</b>'
+    title: "[arXiv] Less is More: An Exploration of Data Redundancy with Active Dataset\
+      \ Subsampling"
+    type: paper
+    url: https://arxiv.org/abs/1905.12737
+intro_text: ""
+outro_text: ""

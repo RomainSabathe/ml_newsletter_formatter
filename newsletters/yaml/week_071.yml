@@ -1,0 +1,55 @@
+articles:
+  - category: nlp
+    description:
+    img: https://i.ibb.co/f8TMTzD/Selection-960.png
+    lab: 'Peter Bloem'
+    quote: 'Transformers are a very exciting family of machine learning architectures.
+      Many good tutorials exist but in the last few years, transformers have mostly
+      become simpler, so that it is now much more straightforward to explain how modern
+      architectures work. This post is an attempt to explain directly how modern transformers
+      work, and why, without some of the historical baggage.'
+    title: 'Transformers from scratch'
+    type: blog
+    url: http://www.peterbloem.nl/blog/transformers
+  - category: nlp
+    description:
+    img: https://raw.githubusercontent.com/facebookresearch/adaptive-span/master/README_files/span.png
+    lab: 'Facebook Research'
+    quote: 'This is a code for running experiments in <a href=https://arxiv.org/abs/1905.07799>Adaptive
+      Attention Span for Transformers</a> paper. It trains a Transformer model on
+      character-level language modeling tasks. The adaptive span allows a model to
+      learn an optimal context size for each self-attention head from training data.'
+    title: 'Adaptive Attention Span for Transformers'
+    type: github
+    url: https://github.com/facebookresearch/adaptive-span
+  - category: ml
+    description: 'Two set of slides plus other resources presented by Yarin Gal at
+      the Machine Learning Summer School of Moscow this year.'
+    img: https://i.ibb.co/kmdQ5NB/Selection-961.png
+    lab: 'Yarin Gal'
+    title: 'Bayesian Deep Learning 101'
+    type: paper
+    url: http://bdl101.ml/
+  - category: dl
+    description:
+    img: https://i.ibb.co/khK61MB/Selection-962.png
+    lab: 'Carnegie Mellon University, NVIDIA, General Motors R&D'
+    quote: 'Recent advances in domain adaptation show that deep self-training presents
+      a powerful means for unsupervised domain adaptation. These methods often involve
+      an iterative process of predicting on target domain and then taking the confident
+      predictions as pseudo-labels for retraining. However, since pseudo-labels can
+      be noisy, self-training can put overconfident label belief on wrong classes,
+      leading to deviated solutions with propagated errors. To address the problem,
+      we propose a confidence regularized self-training (CRST) framework, formulated
+      as regularized self-training. Our method treats pseudo-labels as continuous
+      latent variables jointly optimized via alternating optimization. We propose
+      two types of confidence regularization: label regularization (LR) and model
+      regularization (MR). CRST-LR generates soft pseudo-labels while CRST-MR encourages
+      the smoothness on network output. Extensive experiments on image classification
+      and semantic segmentation show that CRSTs outperform their non-regularized counterpart
+      with state-of-the-art performance.'
+    title: "[ICCV 2019] Confidence Regularized Self-Training"
+    type: paper
+    url: https://arxiv.org/abs/1908.09822v1
+intro_text: ""
+outro_text: ""

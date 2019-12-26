@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+<title>ML newsletter</title>
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+	html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+
+	.category{
+	  padding: 20px;
+	  margin: auto;
+	  background: #F5F5F5;
+	  margin-bottom: 25px;
+	  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+	  transition: all 0.3s; 
+	  border-radius: 3px;
+	}
+
+    .category-title{
+      margin-bottom: 30px;
+    }
+
+	.category-logo{
+	  margin-right: 10px;
+	}
+
+	.article-logo{
+	  margin-right: 3px;
+	}
+
+    .recommended{
+	  margin-right: 2px;
+    }
+
+    .quote{
+      font-size: 11px;
+    }
+</style>
+
+
+<body>
+
+<!-- Page Container -->
+<div class="container" style="max-width:1400px;">
+
+  
+  <!-- The Grid -->
+  <div class="row">
+  
+      <!-- Dummy container to force centering. Yes. I'm a front-end noob. -->
+      <div class="col-sm-2"></div>
+
+      <div class="col-sm-8">
+
+          
+          <!-- Category block -->
+          <div class="category">
+              <h2 class="category-title">
+                  <img src="https://image.flaticon.com/icons/png/512/149/149243.png"
+                       class="fa fa-fw category-logo">Deep Learning
+              </h2>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/25/25231.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://github.com/kdhht2334/Survey_of_Deep_Metric_Learning">Survey of Deep Metric Learning: A comprehensive survey of deep metric learning and related works</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    
+                  </h6>
+                                    <p>This is a valuable resource for anyone interested in metric learning. The papers presented cover an almost 15-year span with the latest ones being from CVPR 2019.</p>
+              </div>
+              <hr>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/155/155292.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://openreview.net/forum?id=rJl-b3RcF7">[Best paper ICLR 2019] The Lottery Ticket Hypothesis: Finding Sparse, Trainable Neural Networks</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    MIT CSAIL
+                  </h6>
+                                    <blockquote class="blockquote">
+                     <p class="quote">[...] Contemporary experience is that sparse architectures produced by pruning are difficult to train from the start, which would similarly improve training performance. We find that a standard pruning technique naturally uncovers subnetworks whose initializations made them capable of training effectively. Based on these results, we articulate the 'lottery ticket hypothesis:' dense, randomly-initialized, feed-forward networks contain subnetworks ('winning tickets') that - when trained in isolation - reach test accuracy comparable to the original network in a similar number of iterations. The winning tickets we find have won the initialization lottery: their connections have initial weights that make training particularly effective. We present an algorithm to identify winning tickets and a series of experiments that support the lottery ticket hypothesis and the importance of these fortuitous initializations. [...]</p>
+                  </blockquote>
+                                    <p>See also another paper that explores the lottery ticket hypothesis by Uber AI Labs <a href=https://arxiv.org/abs/1905.01067>here</a> (arXiv preprint).</p>
+              </div>
+              <hr>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/155/155292.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://arxiv.org/abs/1905.02244">[arXiv] Searching for MobileNetV3</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    Google Research, Google Brain
+                  </h6>
+                                    <blockquote class="blockquote">
+                     <p class="quote">We present the next generation of MobileNets based on a combination of complementary search techniques as well as a novel architecture design. MobileNetV3 is tuned to mobile phone CPUs through a combination of hardware aware network architecture search (NAS) complemented by the NetAdapt algorithm and then subsequently improved through novel architecture advances. This paper starts the exploration of how automated search algorithms and network design can work together to harness complementary approaches improving the overall state of the art. [...] </p>
+                  </blockquote>
+                                    <p></p>
+              </div>
+              <hr>
+
+                          
+          </div>
+          
+          <!-- Category block -->
+          <div class="category">
+              <h2 class="category-title">
+                  <img src="https://image.flaticon.com/icons/png/512/722/722174.png"
+                       class="fa fa-fw category-logo">Computer Vision
+              </h2>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/60/60736.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://medium.com/deep-learning-journals/fast-scnn-explained-and-implemented-using-tensorflow-2-0-6bd17c17a49e">Fast-SCNN explained and implemented using Tensorflow 2.0</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    Kshitiz Rimal
+                  </h6>
+                                    <p>This post goes through the implementation of the Fast-SCNN architecture with the Keras API of Tensorflow 2.0. <a href=https://arxiv.org/abs/1902.04502>Fast-SCNN</a> is a fast segmentation model capable of above-real-time segmentation of high-resolution images proposed in February this year. The post is a good reference for implementation details but does not provide additional insights into the architecture compared to the original paper. In particular, you will want to be familiar with common tricks found in fast nets: depthwise separable convolutions, pyramid pooling modules, inverted residual bottlenecks,...</p>
+              </div>
+              <hr>
+
+                          
+          </div>
+          
+          <!-- Category block -->
+          <div class="category">
+              <h2 class="category-title">
+                  <img src="https://image.flaticon.com/icons/png/512/179/179121.png"
+                       class="fa fa-fw category-logo">Optimisation & Learning Theory
+              </h2>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/155/155292.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://arxiv.org/abs/1905.00414">[ICML 2019] Similarity of Neural Network Representations Revisited</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    Google Brain, University of Michigan
+                  </h6>
+                                    <blockquote class="blockquote">
+                     <p class="quote">Recent work has sought to understand the behavior of neural networks by comparing representations between layers and between different trained models. We examine methods for comparing neural network representations based on canonical correlation analysis (CCA). We show that CCA belongs to a family of statistics for measuring multivariate similarity, but that neither CCA nor any other statistic that is invariant to invertible linear transformation can measure meaningful similarities between representations of higher dimension than the number of data points. We introduce a similarity index that measures the relationship between representational similarity matrices and does not suffer from this limitation. This similarity index is equivalent to centered kernel alignment (CKA) and is also closely connected to CCA. Unlike CCA, CKA can reliably identify correspondences between representations in networks trained from different initializations.</p>
+                  </blockquote>
+                                    <p></p>
+              </div>
+              <hr>
+
+                          
+          </div>
+          
+          <!-- Category block -->
+          <div class="category">
+              <h2 class="category-title">
+                  <img src="https://image.flaticon.com/icons/png/512/249/249156.png"
+                       class="fa fa-fw category-logo">Reinforcement Learning
+              </h2>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/60/60736.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://lilianweng.github.io/lil-log/2019/05/05/domain-randomization.html">Domain Randomization for Sim2Real Transfer</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    Lilian Weng
+                  </h6>
+                                    <p>A gentle introduction to the problem of transferring robotic knowledge obtained in a simulation to the physical world. In particular, the author explores domain randomization, a method that randomly modifies attributes of the simulation (physics dynamics like weight of objects, gravity, surface properties or even colors, behaviour of light, etc.) as a sort of data augmentation. The post is a thorough survey of papers exploring this topic; some of them are very recent like <a href=https://arxiv.org/abs/1904.11621>Meta-Sim</a> which we talked about last week. </p>
+              </div>
+              <hr>
+
+                          
+          </div>
+          
+          <!-- Category block -->
+          <div class="category">
+              <h2 class="category-title">
+                  <img src="https://image.flaticon.com/icons/png/512/484/484582.png"
+                       class="fa fa-fw category-logo">Natural Language Processing
+              </h2>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/155/155292.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://openreview.net/forum?id=B1l6qiR5F7">[Best paper ICLR 2019] Ordered Neurons: Integrating Tree Structures into Recurrent Neural Networks</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    Mila/Universite de Montreal and Microsoft Research
+                  </h6>
+                                    <blockquote class="blockquote">
+                     <p class="quote">Natural language is hierarchically structured: smaller units (e.g., phrases) are nested within larger units (e.g., clauses). When a larger constituent ends, all of the smaller constituents that are nested within it must also be closed. While the standard LSTM architecture allows different neurons to track information at different time scales, it does not have an explicit bias towards modeling a hierarchy of constituents. This paper proposes to add such inductive bias by ordering the neurons; a vector of master input and forget gates ensures that when a given neuron is updated, all the neurons that follow it in the ordering are also updated. Our novel recurrent architecture, ordered neurons LSTM (ON-LSTM), achieves good performance on four different tasks: language modeling, unsupervised parsing, targeted syntactic evaluation, and logical inference.</p>
+                  </blockquote>
+                                    <p></p>
+              </div>
+              <hr>
+
+                          
+          </div>
+          
+          <!-- Category block -->
+          <div class="category">
+              <h2 class="category-title">
+                  <img src="https://imageog.flaticon.com/icons/png/512/248/248114.png"
+                       class="fa fa-fw category-logo">Production & Engineering
+              </h2>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/60/60736.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://medium.com/south-park-commons/scaling-transformer-xl-to-128-gpus-85849508ec35">Scaling Transformer-XL to 128 GPUs</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    Yaroslav Bulatov, Ben Mann, Darius Lam
+                  </h6>
+                                    <p>Transformer-XL is, with GPT-2, one of the leading architectures in NLP, especially for language models. Training these models from scratch on extremely large datasets like WebText or WikiText-103 still takes a fair amount of time. In this post, authors describe how they were able to scale up the training using multiple machines and a bigger batch size.</p>
+              </div>
+              <hr>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/60/60736.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://towardsdatascience.com/why-git-and-git-lfs-is-not-enough-to-solve-the-machine-learning-reproducibility-crisis-f733b49e96e8">Why Git and Git-LFS is not enough to solve the Machine Learning Reproducibility crisis</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    David Herron
+                  </h6>
+                                    <p>This post is a love letter to <a href=https://dvc.org/>DVC</a>, a Git-like system for data versioning. The author first shows why Git and Git LFS may not be suitable for a proper data versioning for machine learning (limit in the file size and in the location where the files can be stored). Instead, DVC is presented as a flexible, robust way towards reproducibility. In the post, the author gives an introduction to how DVC works and how it could be used in a work environment.</p>
+              </div>
+              <hr>
+
+                          
+          </div>
+                </div>
+      
+  <!-- Dummy container to force centering. Yes. I'm a front-end noob. -->
+  <div class="col-sm-2"></div>
+
+  <!-- End Grid -->
+  </div>
+
+    
+  <!-- End Page Container -->
+</div>
+
+</body>
+</html>

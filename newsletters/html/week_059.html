@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+<title>ML newsletter</title>
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+	html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+
+	.category{
+	  padding: 20px;
+	  margin: auto;
+	  background: #F5F5F5;
+	  margin-bottom: 25px;
+	  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+	  transition: all 0.3s; 
+	  border-radius: 3px;
+	}
+
+    .category-title{
+      margin-bottom: 30px;
+    }
+
+	.category-logo{
+	  margin-right: 10px;
+	}
+
+	.article-logo{
+	  margin-right: 3px;
+	}
+
+    .recommended{
+	  margin-right: 2px;
+    }
+
+    .quote{
+      font-size: 11px;
+    }
+</style>
+
+
+<body>
+
+<!-- Page Container -->
+<div class="container" style="max-width:1400px;">
+
+  
+  <!-- The Grid -->
+  <div class="row">
+  
+      <!-- Dummy container to force centering. Yes. I'm a front-end noob. -->
+      <div class="col-sm-2"></div>
+
+      <div class="col-sm-8">
+
+          
+          <!-- Category block -->
+          <div class="category">
+              <h2 class="category-title">
+                  <img src="https://image.flaticon.com/icons/png/512/653/653500.png"
+                       class="fa fa-fw category-logo">General Machine Learning
+              </h2>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/60/60736.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://huyenchip.com/2019/05/12/top-8-trends-from-iclr-2019.html">Top 8 trends from ICLR 2019</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    Chip Huyen
+                  </h6>
+                                    <p>If the now classic and stunning <a href=https://david-abel.github.io/notes/iclr_2019.pdf>notes from David Abel</a> are too much to handle, then you will like this summary of ICLR 2019. There is a fair selection of works on unsupervised learning, reinforcement learning and bio-inspired deep learning. The author's good understanding of the field makes it easier to understand where the community is heading towards (model-based reinforcement learning; meta-learning for unsupervised tasks; RNNs being less attractive compared to the <a href=https://arxiv.org/abs/1706.03762>Transformer</a>, etc.).</p>
+              </div>
+              <hr>
+
+                          
+          </div>
+          
+          <!-- Category block -->
+          <div class="category">
+              <h2 class="category-title">
+                  <img src="https://image.flaticon.com/icons/png/512/149/149243.png"
+                       class="fa fa-fw category-logo">Deep Learning
+              </h2>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/155/155292.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://arxiv.org/abs/1905.05040v1">[arXiv] Understanding and Utilizing Deep Neural Networks Trained with Noisy Labels</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                     The Chinese University of Hong Kong, Tencent Technology
+                  </h6>
+                                    <blockquote class="blockquote">
+                     <p class="quote">[...] In this paper, we find that [...] the test accuracy is a quadratic function of the noise ratio in the case of symmetric noise, which explains the experimental findings previously published. Based on our analysis, we apply cross-validation to randomly split noisy datasets, which identifies most samples that have correct labels. Then we adopt the Co-teaching strategy which takes full advantage of the identified samples to train DNNs robustly against noisy labels. [...].</p>
+                  </blockquote>
+                                    <p></p>
+              </div>
+              <hr>
+
+                          
+          </div>
+          
+          <!-- Category block -->
+          <div class="category">
+              <h2 class="category-title">
+                  <img src="https://image.flaticon.com/icons/png/512/722/722174.png"
+                       class="fa fa-fw category-logo">Computer Vision
+              </h2>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/60/60736.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://blog.nanonets.com/human-pose-estimation-3d-guide/">A 2019 guide to 3D Pose Estimation</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    Sudharshan Chandra Babu
+                  </h6>
+                                    <p>Yet another great post from Sudharshan Chandra Babu who already wrote about <a href=https://blog.nanonets.com/human-pose-estimation-2d-guide/>2D pose estimation</a> last month. The format is similar: it is a paper-by-paper survey of some of the latest and most popular works on 3D pose estimation.</p>
+              </div>
+              <hr>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/155/155292.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://arxiv.org/abs/1905.05055v1">[arXiv] Object Detection in 20 Years: A Survey</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    University of Michigan, Beihang University, Carleton University
+                  </h6>
+                                    <blockquote class="blockquote">
+                     <p class="quote">[...]. If we think of today's object detection as a technical aesthetics under the power of deep learning, then turning back the clock 20 years we would witness the wisdom of cold weapon era. This paper extensively reviews 400+ papers of object detection in the light of its technical evolution, spanning over a quarter-century's time (from the 1990s to 2019). A number of topics have been covered in this paper, including the milestone detectors in history, detection datasets, metrics, fundamental building blocks of the detection system, speed up techniques, and the recent state of the art detection methods. This paper also reviews some important detection applications, such as pedestrian detection, face detection, text detection, etc, and makes an in-deep analysis of their challenges as well as technical improvements in recent years.</p>
+                  </blockquote>
+                                    <p></p>
+              </div>
+              <hr>
+
+                          
+          </div>
+          
+          <!-- Category block -->
+          <div class="category">
+              <h2 class="category-title">
+                  <img src="https://image.flaticon.com/icons/png/512/112/112272.png"
+                       class="fa fa-fw category-logo">Gans & Adversarial Attacks
+              </h2>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/155/155292.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://arxiv.org/pdf/1905.02175v2.pdf">[arXiv] Adversarial Examples Are Not Bugs, They Are Features</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    MIT
+                  </h6>
+                                    <blockquote class="blockquote">
+                     <p class="quote">[...] <b>We demonstrate that adversarial examples can be directly attributed to the presence of non-robust features</b>: features derived from patterns in the data distribution that are highly predictive, yet brittle and incomprehensible to humans. After capturing these features within a theoretical framework, we establish their widespread existence in standard datasets. Finally, <b>we present a simple setting where we can rigorously tie the phenomena we observe in practice to a misalignment between the (human-specified) notion of robustness and the inherent geometry of the data.</b></p>
+                  </blockquote>
+                                    <p></p>
+              </div>
+              <hr>
+
+                          
+          </div>
+          
+          <!-- Category block -->
+          <div class="category">
+              <h2 class="category-title">
+                  <img src="https://image.flaticon.com/icons/png/512/263/263051.png"
+                       class="fa fa-fw category-logo">Everything Else
+              </h2>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/60/60736.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://www.math3ma.com/blog/matrices-as-tensor-network-diagrams">Matrices as Tensor Network Diagrams</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    Tai-Danae Bradley
+                  </h6>
+                                    <p>This short post is an introduction to a method that represents tensors in any dimension and their associated operations by using graphs. The graphs are then called Tensor Network Diagrams (or <i>string diagrams</i> depending on your field...). I love this kind of simple yet neat idea. The author presents a few potential applications: a visual representation of SVD and a 'proof' that trace is invariant to cyclic permutations. You should check out the rest of the author's website, there are a ton of interesting articles.</p>
+              </div>
+              <hr>
+
+                          
+          </div>
+          
+          <!-- Category block -->
+          <div class="category">
+              <h2 class="category-title">
+                  <img src="https://image.flaticon.com/icons/png/512/56/56243.png"
+                       class="fa fa-fw category-logo">Laugh Of The Week
+              </h2>
+
+              
+              <div class="article">
+                  <h5 class="article-title">
+                                            <img src="https://image.flaticon.com/icons/png/512/8/8800.png"
+                           class="fa fa-fw article-logo">
+                                            <b><a href="https://twitter.com/sleepinyourhat/status/1126605270090645504/photo/1">This is clearly the right way to present related work</a></b>
+                  </h5>
+
+                  <h6 class="w3-text">
+                                                    Sam Bowman / University of Oxford
+                  </h6>
+                                    <p>A concise and entertaining way of presenting related work :-). Kudos to the authors! If you want to learn more about the paper, see <a href=http://guillefix.me/nnbias/>here</a>.</p>
+              </div>
+              <hr>
+
+                          
+          </div>
+                </div>
+      
+  <!-- Dummy container to force centering. Yes. I'm a front-end noob. -->
+  <div class="col-sm-2"></div>
+
+  <!-- End Grid -->
+  </div>
+
+    
+  <!-- End Page Container -->
+</div>
+
+</body>
+</html>
